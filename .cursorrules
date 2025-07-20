@@ -1,0 +1,204 @@
+# Python Style Guide and Best Practices
+
+## Code Style and Formatting
+
+### PEP 8 Compliance
+- Follow PEP 8 style guidelines for Python code
+- Use 4 spaces for indentation (no tabs)
+- Maximum line length of 88 characters (Black formatter default)
+- Use snake_case for variables, functions, and modules
+- Use PascalCase for classes
+- Use UPPER_CASE for constants
+
+### Import Organization
+```python
+# Standard library imports
+import os
+import sys
+from typing import List, Dict, Optional
+
+# Third-party imports
+import requests
+import pandas as pd
+
+# Local application imports
+from .models import User
+from .utils import helper_function
+```
+
+### String Formatting
+- Prefer f-strings for Python 3.6+
+- Use `.format()` for complex formatting
+- Avoid %-formatting
+
+### Type Hints
+- Use type hints for function parameters and return values
+- Import types from typing module when needed
+- Use Optional[T] for nullable types
+- Use Union[T1, T2] or T1 | T2 for union types
+
+## Documentation
+
+### Docstrings
+- Use Google or NumPy docstring format consistently
+- Include type information in docstrings
+- Document exceptions that may be raised
+- Use descriptive parameter and return value descriptions
+
+### Comments
+- Write self-documenting code when possible
+- Use comments to explain "why" not "what"
+- Keep comments up to date with code changes
+- Use TODO, FIXME, NOTE comments appropriately
+
+## Code Structure
+
+### Functions and Methods
+- Keep functions small and focused (single responsibility)
+- Limit function parameters (use dataclasses or classes for complex data)
+- Return early to reduce nesting
+- Use descriptive function names that indicate purpose
+
+### Classes
+- Follow the Single Responsibility Principle
+- Use `__init__` for initialization, not complex logic
+- Implement `__repr__` and `__eq__` when appropriate
+- Use properties for computed attributes
+- Prefer composition over inheritance
+
+### Error Handling
+- Use specific exception types
+- Don't catch bare exceptions unless necessary
+- Use context managers (`with` statements) for resource management
+- Log errors with appropriate detail
+
+### Logging
+- Use structlog for all logging
+- Don't pass an "extra" object to structlog. Pass interesting variables as named params. 
+- Use structlog bind_contextvars to set logging contexts for groups of related methods
+
+## Best Practices
+
+### Performance
+- Use list comprehensions over map/filter when readable
+- Prefer `in` operator over `list.index()` for membership testing
+- Use `collections.defaultdict` and `collections.Counter` when appropriate
+- Profile code before optimizing
+
+### Security
+- Validate and sanitize all input data
+- Use parameterized queries for database operations
+- Avoid `eval()` and `exec()` with user input
+- Use secrets module for cryptographic operations
+
+### Testing
+- Write unit tests for all functions and classes
+- Use descriptive test names
+- Follow AAA pattern (Arrange, Act, Assert)
+- Use fixtures and mocks appropriately
+- Aim for high test coverage
+
+### Data Structures
+- Use appropriate data structures (dicts for lookups, sets for uniqueness)
+- Consider using dataclasses for simple data containers
+- Use enums for constants with meaning
+- Prefer tuples for immutable data
+
+## Project Structure
+
+### File Organization
+- One class per file for complex classes
+- Group related functionality in modules
+- Use `__init__.py` files appropriately
+- Keep main execution code in `if __name__ == "__main__":` blocks
+
+### Naming Conventions
+- Use descriptive names that reveal intent
+- Avoid single-letter variables except in loops
+- Use plural names for collections
+- Prefix private methods with underscore
+
+## Tools and Quality
+
+### Code Quality Tools
+- Use Black for code formatting
+- Use isort for import sorting
+- Use flake8 or pylint for linting
+- Use mypy for type checking
+- Use pre-commit hooks for automated checks
+- Use poetry for Python package management
+- Use pytest for testing
+
+### Version Control
+- Write meaningful commit messages
+- Keep commits focused and atomic
+- Use feature branches for development
+- Review code before merging
+
+## Specific Guidelines for This Project
+
+### Beowulf Text Processing
+- Use clear variable names for Old English (OE) and Modern English (ME) text
+- Validate line numbering consistency
+- Handle Unicode text properly for Old English characters
+- Use appropriate data structures for fitt boundaries
+
+### Data Validation
+- Implement comprehensive validation for text data
+- Use assertions for development-time checks
+- Provide clear error messages for validation failures
+- Test edge cases and boundary conditions
+
+### File Handling
+- Use context managers for file operations
+- Specify encoding explicitly (utf-8)
+- Handle file not found errors gracefully
+- Use pathlib for path operations when possible
+
+## Anti-patterns to Avoid
+
+- Don't use mutable default arguments
+- Don't modify lists while iterating over them
+- Don't use bare except clauses
+- Don't use global variables unnecessarily
+- Don't write overly complex list comprehensions
+- Don't ignore return values from functions
+- Don't use `==` to compare with None (use `is`)
+
+## Performance Considerations
+
+- Use `range()` instead of `xrange()` (Python 3)
+- Use `enumerate()` when you need both index and value
+- Use `zip()` for parallel iteration
+- Use `any()` and `all()` for boolean operations on iterables
+- Use `collections.deque` for efficient queue operations
+
+## Memory Management
+
+- Use generators for large datasets
+- Be mindful of object references and circular references
+- Use `del` statements to remove references when appropriate
+- Consider using `weakref` for caches and observers
+
+## Logging
+
+- Use the logging module instead of print statements
+- Configure appropriate log levels
+- Include contextual information in log messages
+- Use structured logging for complex applications
+
+## Configuration
+
+- Use environment variables for configuration
+- Use configuration files for complex settings
+- Validate configuration values at startup
+- Provide sensible defaults
+
+## Internationalization
+
+- Use Unicode strings consistently
+- Handle text encoding properly
+- Consider localization for user-facing text
+- Use appropriate locale settings for formatting
+
+This style guide should be followed for all Python code in the project to ensure consistency, readability, and maintainability. 
