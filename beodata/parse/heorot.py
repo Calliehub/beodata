@@ -9,29 +9,31 @@ from heorot.dk, including conversion to various formats (JSON, CSV, ASS subtitle
 import csv
 import json
 import logging
+import os
 import re
+from pathlib import Path
 from typing import Dict, List
 
 import pysubs2
 import requests
 import structlog
 from bs4 import BeautifulSoup
-from pathlib import Path
 
-from ..text.numbering import FITT_BOUNDARIES
-from ..subtitle.constants import SECONDS_PER_LINE, ASS_PARAMS, LINE_NUMBER_MARKERS
+from beodata.subtitle.constants import ASS_PARAMS, LINE_NUMBER_MARKERS, SECONDS_PER_LINE
+from beodata.text.numbering import FITT_BOUNDARIES
 
-# Configure logging
-logging.basicConfig(
-    format="%(message)s",
-    level=logging.INFO,
-)
+# URL of our Beowulf text (messy HTML)
+HEOROT_URL = "https://heorot.dk/beowulf-rede-text.html"
+# Define the data directory relative to this file (for test and output data)
+DATA_DIR = Path(__file__).parent.parent.parent / "tests" / "data" / "fitts"
 
-# Configure structlog
+LOG_LEVEL = os.environ.get("LOG_LEVEL", "INFO").upper()
+logging.basicConfig(level=LOG_LEVEL)
+
 structlog.configure(
     processors=[
         structlog.processors.TimeStamper(fmt="iso"),
-        structlog.processors.JSONRenderer(),
+        structlog.dev.ConsoleRenderer(pad_event=25),
     ],
     context_class=dict,
     logger_factory=structlog.stdlib.LoggerFactory(),
@@ -41,9 +43,6 @@ structlog.configure(
 
 # Get a logger
 logger = structlog.get_logger()
-
-# Define the data directory relative to this file (for test data)
-DATA_DIR = Path(__file__).parent.parent.parent / "tests" / "data" / "fitts"
 
 
 def normalize_text(text: str) -> str:
@@ -194,26 +193,29 @@ def get_fitt(fitt_num: int, lines: List[Dict[str, str]]) -> List[Dict[str, str]]
     return lines[start:end]
 
 
-def do_file(filestem: str, url: str) -> None:
+def fetch_store_and_parse(output_file_stem: str, url: str) -> List[Dict[str, str]]:
     """
     Process a file by fetching, parsing, and saving in multiple formats.
 
     Args:
-        filestem: Base name for output files
+        output_file_stem: Base name for output files
         url: URL to fetch HTML content from
     """
-    html = fetch_and_store(url, f"{filestem}.html")
+    html = fetch_and_store(url, f"{output_file_stem}.html")
     parsed_lines = parse(html)
     logger.info(
-        "parsed the file", filestem=filestem, url=url, linecount=len(parsed_lines)
+        "parsed the file",
+        output_file_stem=output_file_stem,
+        url=url,
+        n_lines=len(parsed_lines),
     )
 
     # Save to JSON file
-    json_path = DATA_DIR / f"{filestem}.json"
+    json_path = DATA_DIR / f"{output_file_stem}.json"
     with json_path.open("w", encoding="utf-8") as json_file:
         json.dump(parsed_lines, json_file, indent=4, ensure_ascii=False)
 
-    csv_path = DATA_DIR / f"{filestem}.csv"
+    csv_path = DATA_DIR / f"{output_file_stem}.csv"
     with csv_path.open(mode="w", newline="") as file:
         fieldnames = parsed_lines[0].keys()
         writer = csv.DictWriter(file, fieldnames=fieldnames)
@@ -221,6 +223,7 @@ def do_file(filestem: str, url: str) -> None:
         writer.writerows(parsed_lines)
 
     write_ass(parsed_lines)
+    return parsed_lines
 
 
 def write_ass(lines: List[Dict[str, str]]) -> None:
@@ -231,6 +234,7 @@ def write_ass(lines: List[Dict[str, str]]) -> None:
         lines: List of all line data
     """
     from pathlib import Path
+
     for fitt_id, fitt_bounds in enumerate(FITT_BOUNDARIES):
         logger.info(
             "Writing .ass file for fitt", fitt_id=fitt_id, fitt_bounds=fitt_bounds
@@ -312,7 +316,7 @@ def make_sub(
 
 def run() -> None:
     """Main function to process the Beowulf text."""
-    do_file("maintext", "https://heorot.dk/beowulf-rede-text.html")
+    fetch_store_and_parse("maintext", HEOROT_URL)
 
 
 if __name__ == "__main__":
