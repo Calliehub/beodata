@@ -9,9 +9,8 @@ from heorot.dk, including conversion to various formats (JSON, CSV, ASS subtitle
 import csv
 import json
 import logging
-import os
 import re
-from typing import Dict, List, Optional, Self, Tuple, TypedDict
+from typing import Dict, List
 
 import pysubs2
 import requests
