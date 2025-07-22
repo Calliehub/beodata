@@ -7,9 +7,14 @@ from Beowulf text data.
 """
 
 from typing import Dict, Final
+from pathlib import Path
 
 # Timing constants
 SECONDS_PER_LINE: Final[int] = 4
+
+# Define subtitle and blank template paths relative to the test file location
+SUBTITLE_DIR = Path(__file__).parent.parent.parent / "tests" / "data" / "subtitles"
+BLANK_ASS_PATH = Path(__file__).parent.parent.parent / "tests" / "data" / "blank.ass"
 
 # ASS subtitle parameters
 ASS_PARAMS: Final[Dict[str, str]] = {
@@ -18,8 +23,8 @@ ASS_PARAMS: Final[Dict[str, str]] = {
     "big_number_style": "Big Numbers",
     "all_number_style": "All Numbers",
     "fitt_heading_style": "Fitt Headings",
-    "blank_template": "data/blank.ass",
-    "output_file": "data/subtitles/fitt_{fitt_id}.ass",
+    "blank_template": str(BLANK_ASS_PATH),
+    "output_file": str(SUBTITLE_DIR / "fitt_{fitt_id}.ass"),
 }
 
 # Line number markers for special display

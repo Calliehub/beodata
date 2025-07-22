@@ -1,5 +1,4 @@
 # app data
-./data
 
 # Python cache files
 __pycache__/
@@ -134,12 +133,6 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
-
-# PyCharm
-.idea/
-
-# VS Code
-.vscode/
 
 # macOS
 .DS_Store

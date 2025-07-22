@@ -17,6 +17,7 @@ import pysubs2
 import requests
 import structlog
 from bs4 import BeautifulSoup
+from pathlib import Path
 
 from ..text.numbering import FITT_BOUNDARIES
 from ..subtitle.constants import SECONDS_PER_LINE, ASS_PARAMS, LINE_NUMBER_MARKERS
@@ -41,6 +42,9 @@ structlog.configure(
 
 # Get a logger
 logger = structlog.get_logger()
+
+# Define the data directory relative to this file (for test data)
+DATA_DIR = Path(__file__).parent.parent.parent / "tests" / "data" / "fitts"
 
 
 def normalize_text(text: str) -> str:
@@ -79,17 +83,18 @@ def fetch_and_store(url: str, filename: str) -> str:
     Raises:
         requests.RequestException: If the HTTP request fails
     """
-    if not os.path.exists(filename):
+    file_path = DATA_DIR / Path(filename).name
+    if not file_path.exists():
         logger.warning("Fetching HTML from heorot.dk")
         response = requests.get(url)
         response.raise_for_status()  # Ensure we got a valid response
 
-        with open(filename, "w", encoding="utf-8") as file:
+        with file_path.open("w", encoding="utf-8") as file:
             file.write(response.text)
             return response.text
     else:
         logger.warning("HTML is already stored locally, skipping HTTP fetch")
-        with open(filename, "r", encoding="utf-8") as file:
+        with file_path.open("r", encoding="utf-8") as file:
             return file.read()
 
 
@@ -198,17 +203,19 @@ def do_file(filestem: str, url: str) -> None:
         filestem: Base name for output files
         url: URL to fetch HTML content from
     """
-    html = fetch_and_store(url, f"data/fitts/{filestem}.html")
+    html = fetch_and_store(url, f"{filestem}.html")
     parsed_lines = parse(html)
     logger.info(
         "parsed the file", filestem=filestem, url=url, linecount=len(parsed_lines)
     )
 
     # Save to JSON file
-    with open(f"data/fitts/{filestem}.json", "w", encoding="utf-8") as json_file:
+    json_path = DATA_DIR / f"{filestem}.json"
+    with json_path.open("w", encoding="utf-8") as json_file:
         json.dump(parsed_lines, json_file, indent=4, ensure_ascii=False)
 
-    with open(f"data/fitts/{filestem}.csv", mode="w", newline="") as file:
+    csv_path = DATA_DIR / f"{filestem}.csv"
+    with csv_path.open(mode="w", newline="") as file:
         fieldnames = parsed_lines[0].keys()
         writer = csv.DictWriter(file, fieldnames=fieldnames)
         writer.writeheader()
@@ -224,6 +231,7 @@ def write_ass(lines: List[Dict[str, str]]) -> None:
     Args:
         lines: List of all line data
     """
+    from pathlib import Path
     for fitt_id, fitt_bounds in enumerate(FITT_BOUNDARIES):
         logger.info(
             "Writing .ass file for fitt", fitt_id=fitt_id, fitt_bounds=fitt_bounds
@@ -234,7 +242,8 @@ def write_ass(lines: List[Dict[str, str]]) -> None:
         fitt = get_fitt(fitt_id, lines)
 
         # init our subtitle file based on the blank template
-        subs = pysubs2.load(ASS_PARAMS["blank_template"], encoding="UTF-8")
+        blank_template_path = Path(ASS_PARAMS["blank_template"])
+        subs = pysubs2.load(str(blank_template_path), encoding="UTF-8")
         subs.clear()
         subs.info["Fitt"] = str(fitt_id)
         subs.info["First Line"] = fitt[0]["line"]
@@ -273,7 +282,8 @@ def write_ass(lines: List[Dict[str, str]]) -> None:
             # increment for next subtitle
             start_time += SECONDS_PER_LINE
             end_time += SECONDS_PER_LINE
-        subs.save(ASS_PARAMS["output_file"].format(fitt_id=fitt_id), encoding="UTF-8")
+        output_file_path = Path(ASS_PARAMS["output_file"].format(fitt_id=fitt_id))
+        subs.save(str(output_file_path), encoding="UTF-8")
 
 
 def make_sub(

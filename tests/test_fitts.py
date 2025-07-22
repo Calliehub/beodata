@@ -8,18 +8,25 @@ the quality and consistency of Beowulf text data.
 
 import json
 from typing import Dict, List, Optional, Self, TypedDict
+from pathlib import Path
 
+import beodata.parse.heorot
 import pytest
 
 from beodata.text.numbering import FITT_BOUNDARIES
 
 
-@pytest.fixture
+@pytest.fixture(scope="session")
 def beowulf_data():
     """Load Beowulf text data for testing."""
-    with open("data/fitts/maintext.json", "r", encoding="utf-8") as f:
-        return json.load(f)
+    print("LOADING DATA FROM HEOROT.DK")
+    beodata.parse.heorot.run()
+    return load_heorot_file()
 
+def load_heorot_file():
+    path = Path(__file__).parent / "data" / "fitts" / "maintext.json"
+    with path.open("r", encoding="utf-8") as f:
+        return json.load(f)
 
 def test_line_numbering_sequential(beowulf_data):
     """Line numbers should be sequential starting from 0."""
@@ -80,7 +87,10 @@ def test_no_empty_text_after_line_zero(beowulf_data):
         me_empty = not line_data["ME"].strip()
 
         # line 2229 doesn't exist, so both OE and ME are empty
-        if line_num != 2229:
+        if line_num == 2229:
+            assert oe_empty, f"Line {line_num} has non-empty OE text"
+            assert me_empty, f"Line {line_num} has non-empty ME text"
+        else:
             assert not oe_empty, f"Line {line_num} has empty OE text"
             assert not me_empty, f"Line {line_num} has empty ME text"
 
