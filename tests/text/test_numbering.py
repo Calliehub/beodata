@@ -1,9 +1,9 @@
 from beodata.text.numbering import FITT_BOUNDARIES
 
 
-def test_fitt_coverage_complete():
+def test_fitt_coverage_complete() -> None:
     """All lines 1-3182 should be covered by fitt boundaries."""
-    covered_lines = set()
+    covered_lines: set[int] = set()
     for i, (start, end, name) in enumerate(FITT_BOUNDARIES):
         if i == 24:  # Skip non-existent fitt 24
             continue

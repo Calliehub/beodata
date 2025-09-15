@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(poetry run black:*)",
+      "Bash(poetry run isort:*)",
+      "Bash(poetry run mypy:*)",
+      "Bash(poetry run flake8:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -12,12 +12,12 @@ import logging
 import os
 import re
 from pathlib import Path
-from typing import Dict, List
+from typing import Any, Dict, List, Union
 
 import pysubs2
 import requests
 import structlog
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 
 from beodata.subtitle.constants import ASS_PARAMS, LINE_NUMBER_MARKERS, SECONDS_PER_LINE
 from beodata.text.numbering import FITT_BOUNDARIES
@@ -117,10 +117,15 @@ def parse(html: str) -> List[Dict[str, str]]:
 
     if len(tables) > 0:
         for table in tables:
-            table_rows = table.find_all("tr")
+            if isinstance(table, Tag):
+                table_rows = table.find_all("tr")
+            else:
+                continue
             last_oe = None
 
             for row in table_rows:
+                if not isinstance(row, Tag):
+                    continue
                 note_divs = row.find_all("div")
                 if len(note_divs) > 0:
                     for note_div in note_divs:
@@ -177,7 +182,7 @@ def parse(html: str) -> List[Dict[str, str]]:
     return lines
 
 
-def get_fitt(fitt_num: int, lines: List[Dict[str, str]]) -> List[Dict[str, str]]:
+def get_fitt(fitt_num: int, lines: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """
     Extract lines for a specific fitt.
 
@@ -193,7 +198,7 @@ def get_fitt(fitt_num: int, lines: List[Dict[str, str]]) -> List[Dict[str, str]]
     return lines[start:end]
 
 
-def fetch_store_and_parse(output_file_stem: str, url: str) -> List[Dict[str, str]]:
+def fetch_store_and_parse(output_file_stem: str, url: str) -> List[Dict[str, Any]]:
     """
     Process a file by fetching, parsing, and saving in multiple formats.
 
@@ -262,20 +267,18 @@ def write_ass(lines: List[Dict[str, str]]) -> None:
             subs.append(make_sub(line["OE"], start_time, end_time, "original_style"))
             subs.append(make_sub(line["ME"], start_time, end_time, "modern_style"))
             subs.append(
-                make_sub(line["line"], start_time, end_time, "all_number_style")
+                make_sub(str(line["line"]), start_time, end_time, "all_number_style")
             )
-            try:
-                if LINE_NUMBER_MARKERS[line["line"]]:
-                    subs.append(
-                        make_sub(
-                            LINE_NUMBER_MARKERS[line["line"]],
-                            start_time,
-                            end_time,
-                            "big_number_style",
-                        )
+            line_num = line["line"]
+            if isinstance(line_num, int) and line_num in LINE_NUMBER_MARKERS:
+                subs.append(
+                    make_sub(
+                        str(LINE_NUMBER_MARKERS[line_num]),
+                        start_time,
+                        end_time,
+                        "big_number_style",
                     )
-            except KeyError:
-                pass  # no big number for this line
+                )
 
             if line["line"] == fitt_bounds[0]:
                 subs.append(

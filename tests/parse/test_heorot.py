@@ -8,6 +8,7 @@ the quality and consistency of Beowulf text data.
 
 import json
 from pathlib import Path
+from typing import Any, List
 
 import pytest
 
@@ -17,20 +18,20 @@ from beodata.text.numbering import FITT_BOUNDARIES
 
 # all tests use 1 fetch of the text
 @pytest.fixture(scope="session")
-def heorot_text():
+def heorot_text() -> List[dict[str, Any]]:
     beodata.parse.heorot.run()
     path = Path(__file__).parent.parent / "data" / "fitts" / "maintext.json"
     with path.open("r", encoding="utf-8") as f:
         return json.load(f)
 
 
-def test_line_numbering_sequential(heorot_text):
+def test_line_numbering_sequential(heorot_text: List[dict[str, Any]]) -> None:
     """Line numbers should be sequential starting from 0."""
     for i, line_data in enumerate(heorot_text):
         assert line_data["line"] == i, f"Line {i} has wrong number: {line_data['line']}"
 
 
-def test_total_line_count(heorot_text):
+def test_total_line_count(heorot_text: List[dict[str, Any]]) -> None:
     """Total line count should match expected value."""
     expected_count = 3183
     actual_count = len(heorot_text)
@@ -39,7 +40,7 @@ def test_total_line_count(heorot_text):
     ), f"Expected {expected_count} lines, got {actual_count}"
 
 
-def test_fitt_boundaries_valid(heorot_text):
+def test_fitt_boundaries_valid(heorot_text: List[dict[str, Any]]) -> None:
     """Fitt boundaries should be within valid line ranges."""
     max_line = len(heorot_text) - 1
     for i, (start, end, name) in enumerate(FITT_BOUNDARIES):
@@ -50,7 +51,7 @@ def test_fitt_boundaries_valid(heorot_text):
         assert start <= end, f"Fitt {i} start {start} > end {end}"
 
 
-def test_required_fields_present(heorot_text):
+def test_required_fields_present(heorot_text: List[dict[str, Any]]) -> None:
     """Each line must have 'line', 'OE', and 'ME' fields."""
     required_fields = {"line", "OE", "ME"}
     for i, line_data in enumerate(heorot_text):
@@ -58,7 +59,7 @@ def test_required_fields_present(heorot_text):
         assert not missing, f"Line {i} missing fields: {missing}"
 
 
-def test_line_zero_empty(heorot_text):
+def test_line_zero_empty(heorot_text: List[dict[str, Any]]) -> None:
     """Line 0 should have empty OE and ME text."""
     line_0 = heorot_text[0]
     assert line_0["line"] == 0, "First entry should be line 0"
@@ -66,7 +67,7 @@ def test_line_zero_empty(heorot_text):
     assert line_0["ME"] == "", "Line 0 ME text should be empty"
 
 
-def test_famous_opening_line(heorot_text):
+def test_famous_opening_line(heorot_text: List[dict[str, Any]]) -> None:
     """Line 1 should contain the famous 'Hwæt!' opening."""
     line_1 = heorot_text[1]
     assert line_1["line"] == 1, "Second entry should be line 1"
@@ -75,7 +76,7 @@ def test_famous_opening_line(heorot_text):
     assert line_1["ME"].strip(), "Line 1 should have a translation"
 
 
-def test_no_empty_text_after_line_zero(heorot_text):
+def test_no_empty_text_after_line_zero(heorot_text: List[dict[str, Any]]) -> None:
     """Lines 1+ should not have empty OE or ME text, unless both are empty (structural)."""
     for line_data in heorot_text[1:]:
         line_num = line_data["line"]
@@ -91,7 +92,7 @@ def test_no_empty_text_after_line_zero(heorot_text):
             assert not me_empty, f"Line {line_num} has empty ME text"
 
 
-def test_line_2229_empty(heorot_text):
+def test_line_2229_empty(heorot_text: List[dict[str, Any]]) -> None:
     """Line 2229 should be empty (it's missing in the ms)"""
     line_2229 = heorot_text[2229]
     assert line_2229["line"] == 2229, "Line 2229 should be line 2229"
