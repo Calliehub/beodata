@@ -20,6 +20,7 @@ import structlog
 from bs4 import BeautifulSoup, Tag
 
 from beodata.subtitle.constants import ASS_PARAMS, LINE_NUMBER_MARKERS, SECONDS_PER_LINE
+from beodata.text.models import dict_data_to_beowulf_lines
 from beodata.text.numbering import FITT_BOUNDARIES
 
 # URL of our Beowulf text (messy HTML)
@@ -320,6 +321,13 @@ def make_sub(
 def run() -> None:
     """Main function to process the Beowulf text."""
     fetch_store_and_parse("maintext", HEOROT_URL)
+
+
+def model_dump() -> None:
+    raw_lines = fetch_store_and_parse("maintext", HEOROT_URL)
+    model_lines = dict_data_to_beowulf_lines(raw_lines)
+    for line in model_lines:
+        print(str(line))
 
 
 if __name__ == "__main__":
