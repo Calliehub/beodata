@@ -1,3 +1,4 @@
+fail_fast: true
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.5.0
@@ -29,6 +30,6 @@ repos:
         entry: poetry run pytest
         language: system
         pass_filenames: false
-        always_run: true
+        always_run: false
         stages: [pre-commit]
         args: [--tb=short]
