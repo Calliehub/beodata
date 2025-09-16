@@ -20,7 +20,7 @@ import structlog
 from bs4 import BeautifulSoup, Tag
 
 from beodata.subtitle.constants import ASS_PARAMS, LINE_NUMBER_MARKERS, SECONDS_PER_LINE
-from beodata.text.models import dict_data_to_beowulf_lines
+from beodata.text.models import BeowulfLine, dict_data_to_beowulf_lines
 from beodata.text.numbering import FITT_BOUNDARIES
 
 # URL of our Beowulf text (messy HTML)
@@ -183,20 +183,21 @@ def parse(html: str) -> List[Dict[str, str]]:
     return lines
 
 
-def get_fitt(fitt_num: int, lines: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+def get_fitt(fitt_num: int, lines: List[BeowulfLine]) -> List[BeowulfLine]:
     """
-    Extract lines for a specific fitt.
+    Extract BeowulfLine objects for a specific fitt.
 
     Args:
         fitt_num: The fitt number to extract
-        lines: List of all line data
+        lines: List of all BeowulfLine objects
 
     Returns:
-        List of line data for the specified fitt
+        List of BeowulfLine objects for the specified fitt
     """
-    start = FITT_BOUNDARIES[fitt_num][0]
-    end = FITT_BOUNDARIES[fitt_num][1] + 1
-    return lines[start:end]
+    start_line = FITT_BOUNDARIES[fitt_num][0]
+    end_line = FITT_BOUNDARIES[fitt_num][1]
+
+    return [line for line in lines if start_line <= line.line_number <= end_line]
 
 
 def fetch_store_and_parse(output_file_stem: str, url: str) -> List[Dict[str, Any]]:
@@ -239,6 +240,9 @@ def write_ass(lines: List[Dict[str, str]]) -> None:
     Args:
         lines: List of all line data
     """
+
+    beowulf_lines = dict_data_to_beowulf_lines(lines)
+
     from pathlib import Path
 
     for fitt_id, fitt_bounds in enumerate(FITT_BOUNDARIES):
@@ -248,47 +252,54 @@ def write_ass(lines: List[Dict[str, str]]) -> None:
         if fitt_id == 24:
             continue  # there's no 24 in Beowulf
 
-        fitt = get_fitt(fitt_id, lines)
+        fitt = get_fitt(fitt_id, beowulf_lines)
 
         # init our subtitle file based on the blank template
         blank_template_path = Path(ASS_PARAMS["blank_template"])
         subs = pysubs2.load(str(blank_template_path), encoding="UTF-8")
         subs.clear()
         subs.info["Fitt"] = str(fitt_id)
-        subs.info["First Line"] = fitt[0]["line"]
-        subs.info["Last Line"] = fitt[-1]["line"]
+        subs.info["First Line"] = fitt[0].line_number
+        subs.info["Last Line"] = fitt[-1].line_number
 
-        line_number = -1
         start_time = 0
         end_time = start_time + SECONDS_PER_LINE
-        subtitle = None
 
         for line in fitt:
             # Old English
-            subs.append(make_sub(line["OE"], start_time, end_time, "original_style"))
-            subs.append(make_sub(line["ME"], start_time, end_time, "modern_style"))
             subs.append(
-                make_sub(str(line["line"]), start_time, end_time, "all_number_style")
+                make_sub(line.old_english, start_time, end_time, "original_style")
             )
-            line_num = line["line"]
-            if isinstance(line_num, int) and line_num in LINE_NUMBER_MARKERS:
+            subs.append(
+                make_sub(line.modern_english, start_time, end_time, "modern_style")
+            )
+            subs.append(
+                make_sub(
+                    str(line.line_number), start_time, end_time, "all_number_style"
+                )
+            )
+
+            # Add big number marker if this line has one
+            if line.line_number in LINE_NUMBER_MARKERS:
                 subs.append(
                     make_sub(
-                        str(LINE_NUMBER_MARKERS[line_num]),
+                        str(LINE_NUMBER_MARKERS[line.line_number]),
                         start_time,
                         end_time,
                         "big_number_style",
                     )
                 )
 
-            if line["line"] == fitt_bounds[0]:
+            # Add fitt title if this line has one
+            if line.is_title_line:
                 subs.append(
-                    make_sub(fitt_bounds[2], start_time, end_time, "fitt_heading_style")
+                    make_sub(line.title, start_time, end_time, "fitt_heading_style")
                 )
 
             # increment for next subtitle
             start_time += SECONDS_PER_LINE
             end_time += SECONDS_PER_LINE
+
         output_file_path = Path(ASS_PARAMS["output_file"].format(fitt_id=fitt_id))
         subs.save(str(output_file_path), encoding="UTF-8")
 
