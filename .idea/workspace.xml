@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="717fc3ec-52f4-4ddf-b5a8-7c90f29a9cfc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/mcp_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp_probe.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp_server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.claude/settings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/settings.local.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -194,7 +189,7 @@
       <workItem from="1763960489239" duration="296000" />
       <workItem from="1769211935544" duration="46000" />
       <workItem from="1769213823380" duration="788000" />
-      <workItem from="1769214890575" duration="2914000" />
+      <workItem from="1769214890575" duration="3371000" />
     </task>
     <servers />
   </component>
