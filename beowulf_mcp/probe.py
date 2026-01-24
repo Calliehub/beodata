@@ -3,7 +3,7 @@
 Probe the Beowulf MCP server to list available tools and resources.
 
 Usage:
-    poetry run python beowulf_mcp/mcp_probe.py
+    poetry run python beowulf_mcp/probe.py
 """
 
 import asyncio
@@ -20,7 +20,7 @@ async def probe_server() -> None:
     """Connect to the MCP server and list all available tools and resources."""
     server_params = StdioServerParameters(
         command="python",
-        args=["beowulf_mcp/mcp_server.py"],
+        args=["beowulf_mcp/server.py"],
         env={"PYTHONPATH": "/Users/chris/dev/beodata"},
     )
 

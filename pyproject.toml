@@ -93,4 +93,4 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.scripts]
 heorot = "beodata.parse.heorot:run"
 model_dump = "beodata.parse.heorot:model_dump"
-server = "beowulf_mcp.mcp_server:run_server"
+server = "beowulf_mcp.server:run_server"
