@@ -28,7 +28,7 @@ def fetch_and_store(url: str, filename: str) -> str:
     """
     file_path = DATA_DIR / Path(filename).name
     if not file_path.exists():
-        logger.warning("Fetching HTML from heorot.dk")
+        logger.info("Fetching HTML", url=url, file=file_path.name)
         response = requests.get(url)
         response.raise_for_status()
 
@@ -36,6 +36,9 @@ def fetch_and_store(url: str, filename: str) -> str:
             file.write(response.text)
             return response.text
     else:
-        logger.warning("HTML is already stored locally, skipping HTTP fetch")
+        logger.info("HTML is already stored locally, skipping HTTP fetch")
         with file_path.open("r", encoding="utf-8") as file:
+            logger.debug(
+                "File opened successfully, reading content...", file=file_path.name
+            )
             return file.read()
