@@ -4,7 +4,10 @@ version = "0.1.0"
 description = ""
 authors = ["Callie Tweney <cat@pobox.com>"]
 readme = "README.md"
-packages = [{"include" = "beodata"}]
+packages = [
+    {"include" = "beodata"},
+    {"include" = "beowulf_mcp"}
+]
 
 [tool.poetry.dependencies]
 python = "^3.13"
@@ -90,4 +93,4 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.scripts]
 heorot = "beodata.parse.heorot:run"
 model_dump = "beodata.parse.heorot:model_dump"
-server = "mcp_server:run_server"
+server = "beowulf_mcp.mcp_server:run_server"
