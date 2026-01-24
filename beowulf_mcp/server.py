@@ -162,14 +162,14 @@ async def read_resource(uri: AnyUrl) -> List[ReadResourceContents]:
 
 
 @server.call_tool()
-async def call_tool(request: CallToolRequest) -> CallToolResult:
+async def call_tool(tool_name: str, tool_args: dict[str, Any]) -> CallToolResult:
     """Handle tool calls."""
-    if request.name == "get_beowulf_lines":
+    if tool_name == "get_beowulf_lines":
         # Get all Beowulf lines
         raw_lines = fetch_store_and_parse("maintext", HEOROT_URL)
         beowulf_lines = dict_data_to_beowulf_lines(raw_lines)
 
-        format_type = request.arguments.get("format", "full")
+        format_type = tool_args.get("format", "full")
 
         if format_type == "summary":
             # Return summary info
@@ -200,8 +200,8 @@ async def call_tool(request: CallToolRequest) -> CallToolResult:
             ]
         )
 
-    elif request.name == "get_fitt_lines":
-        fitt_number = request.arguments["fitt_number"]
+    elif tool_name == "get_fitt_lines":
+        fitt_number = tool_args["fitt_number"]
 
         if fitt_number == 24:
             raise ValueError("Fitt 24 does not exist in Beowulf")
@@ -239,7 +239,7 @@ async def call_tool(request: CallToolRequest) -> CallToolResult:
         )
 
     else:
-        raise ValueError(f"Unknown tool: {request.name}")
+        raise ValueError(f"Unknown tool: {tool_name}")
 
 
 async def main():
