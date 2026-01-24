@@ -96,6 +96,6 @@ build-backend = "poetry.core.masonry.api"
 
 # handy run target definitions: here is your entry point to fetch and parse data
 [tool.poetry.scripts]
-heorot = "beodata.parse.heorot:run"
-model_dump = "beodata.parse.heorot:model_dump"
+heorot = "beodata.cli:run"
+model_dump = "beodata.cli:model_dump"
 server = "beowulf_mcp.server:run_server"
