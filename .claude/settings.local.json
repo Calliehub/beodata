@@ -7,7 +7,15 @@
       "Bash(poetry run flake8:*)",
       "Bash(poetry run pytest:*)",
       "Bash(poetry run:*)",
-      "Bash(timeout 3 poetry run server)"
+      "Bash(timeout 3 poetry run server)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:docs.pytest.org)",
+      "Bash(poetry show:*)",
+      "Bash(pip index:*)",
+      "Bash(poetry search:*)",
+      "Bash(curl:*)",
+      "Bash(python:*)",
+      "Bash(poetry update:*)"
     ],
     "deny": [],
     "ask": []

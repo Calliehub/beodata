@@ -34,7 +34,7 @@ logging.basicConfig(level=LOG_LEVEL)
 structlog.configure(
     processors=[
         structlog.processors.TimeStamper(fmt="iso"),
-        structlog.dev.ConsoleRenderer(pad_event=25),
+        structlog.dev.ConsoleRenderer(pad_event_to=25),
     ],
     context_class=dict,
     logger_factory=structlog.stdlib.LoggerFactory(),
