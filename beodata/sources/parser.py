@@ -37,7 +37,7 @@ def parse(html: str) -> List[Dict[str, Any]]:
     Parse HTML content and extract Beowulf text lines.
 
     Args:
-        html: HTML content to parse
+        html: HTML content to sources
 
     Returns:
         List of dictionaries containing line data with 'line', 'OE', and 'ME' keys

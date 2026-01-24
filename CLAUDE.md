@@ -22,7 +22,7 @@ pre-commit install
 # Main entry point - processes Beowulf text and generates all formats
 poetry run heorot
 # Alternative:
-poetry run python -m beodata.parse.heorot
+poetry run python -m beodata.sources.heorot
 ```
 
 ### Testing and Quality Checks
@@ -31,7 +31,7 @@ poetry run python -m beodata.parse.heorot
 poetry run pytest
 
 # Run specific test file
-poetry run pytest tests/parse/test_heorot.py
+poetry run pytest tests/sources/test_heorot.py
 
 # Code formatting and linting (these run automatically via pre-commit)
 poetry run black .

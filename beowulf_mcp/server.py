@@ -31,7 +31,7 @@ from mcp.types import (
 )
 from pydantic import AnyUrl
 
-from beodata.parse.heorot import HEOROT_URL, fetch_store_and_parse
+from beodata.sources.heorot import HEOROT_URL, fetch_store_and_parse
 from beodata.text.models import BeowulfLine, dict_data_to_beowulf_lines
 
 # Initialize the MCP server

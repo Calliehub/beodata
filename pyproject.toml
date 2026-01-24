@@ -94,7 +94,7 @@ extend-ignore = ["E203", "W503"]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
-# handy run target definitions: here is your entry point to fetch and parse data
+# handy run target definitions: here is your entry point to fetch and sources data
 [tool.poetry.scripts]
 heorot = "beodata.cli:run"
 model_dump = "beodata.cli:model_dump"

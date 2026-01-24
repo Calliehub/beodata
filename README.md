@@ -37,7 +37,7 @@ To process the Beowulf text and generate all output formats:
 ```shell
 poetry run heorot
 # or more directly:
-poetry run python -m beodata.parse.heorot
+poetry run python -m beodata.sources.heorot
 ```
 
 This will:

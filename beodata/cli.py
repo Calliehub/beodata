@@ -1,8 +1,8 @@
 """Command-line entry points for beodata."""
 
 from beodata.logging_config import get_logger
-from beodata.parse.fetch import DATA_DIR, HEOROT_URL, fetch_and_store
-from beodata.parse.parser import parse
+from beodata.sources.fetch import DATA_DIR, HEOROT_URL, fetch_and_store
+from beodata.sources.parser import parse
 from beodata.text.models import dict_data_to_beowulf_lines
 from beodata.writers import get_all_writers
 
