@@ -8,9 +8,6 @@ from beodata.logging_config import get_logger
 
 logger = get_logger()
 
-# URL of our Beowulf text (messy HTML)
-HEOROT_URL = "https://heorot.dk/beowulf-rede-text.html"
-
 # Define the data directory relative to this file (for test and output data)
 DATA_DIR = Path(__file__).parent.parent.parent / "tests" / "data" / "fitts"
 
