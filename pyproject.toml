@@ -21,6 +21,7 @@ pytest = ">=8.4.1,<9.0.0"
 pytest-cov = "^4.0.0"
 types-requests = "^2.32.0"
 pre-commit = "^4.2.0"
+mcp = "^1.14.0"
 
 [tool.black]
 line-length = 88
@@ -89,3 +90,4 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.scripts]
 heorot = "beodata.parse.heorot:run"
 model_dump = "beodata.parse.heorot:model_dump"
+server = "mcp_server:run_server"

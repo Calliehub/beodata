@@ -5,7 +5,9 @@
       "Bash(poetry run isort:*)",
       "Bash(poetry run mypy:*)",
       "Bash(poetry run flake8:*)",
-      "Bash(poetry run pytest:*)"
+      "Bash(poetry run pytest:*)",
+      "Bash(poetry run:*)",
+      "Bash(timeout 3 poetry run server)"
     ],
     "deny": [],
     "ask": []

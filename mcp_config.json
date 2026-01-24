@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "beowulf": {
+      "command": "python",
+      "args": ["/Users/chris/dev/beodata/mcp_server.py"],
+      "env": {
+        "PYTHONPATH": "/Users/chris/dev/beodata"
+      }
+    }
+  }
+}

@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="717fc3ec-52f4-4ddf-b5a8-7c90f29a9cfc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/beodata.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/beodata.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp_probe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/settings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/settings.local.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,8 +176,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-PY-251.26927.90" />
-        <option value="bundled-python-sdk-41e8cd69c857-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.90" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-PY-251.29188.22" />
+        <option value="bundled-python-sdk-1f1b7bcced7d-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.29188.22" />
       </set>
     </attachedChunks>
   </component>
@@ -185,6 +190,11 @@
       <updated>1752974465856</updated>
       <workItem from="1752974466903" duration="13608000" />
       <workItem from="1754925417075" duration="375000" />
+      <workItem from="1763155886463" duration="330000" />
+      <workItem from="1763960489239" duration="296000" />
+      <workItem from="1769211935544" duration="46000" />
+      <workItem from="1769213823380" duration="788000" />
+      <workItem from="1769214890575" duration="2914000" />
     </task>
     <servers />
   </component>
@@ -193,6 +203,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/beodata$test_fitts.coverage" NAME="test_fitts Coverage Results" MODIFIED="1752975771332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/beodata$.coverage" NAME=" Coverage Results" MODIFIED="1753209959491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/beodata$.coverage" NAME=" Coverage Results" MODIFIED="1769217054081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
 </project>
