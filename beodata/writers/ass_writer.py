@@ -5,6 +5,7 @@ from typing import Any, Dict, Final, List
 
 import pysubs2
 
+from beodata.assets import get_asset_path
 from beodata.text.models import BeowulfLine, dict_data_to_beowulf_lines
 from beodata.text.numbering import FITT_BOUNDARIES
 from beodata.writers.base_writer import BaseWriter
@@ -12,19 +13,16 @@ from beodata.writers.base_writer import BaseWriter
 # Timing constants
 SECONDS_PER_LINE: Final[int] = 4
 
-# Define subtitle and blank template paths relative to this file
+# Output directory for generated subtitles
 SUBTITLE_DIR = Path(__file__).parent.parent.parent / "tests" / "data" / "subtitles"
-BLANK_ASS_PATH = Path(__file__).parent.parent.parent / "tests" / "data" / "blank.ass"
 
-# ASS subtitle parameters
-ASS_PARAMS: Final[Dict[str, str]] = {
+# ASS subtitle style names
+ASS_STYLES: Final[Dict[str, str]] = {
     "original_style": "Old English",
     "modern_style": "Modern English",
     "big_number_style": "Big Numbers",
     "all_number_style": "All Numbers",
     "fitt_heading_style": "Fitt Headings",
-    "blank_template": str(BLANK_ASS_PATH),
-    "output_file": str(SUBTITLE_DIR / "fitt_{fitt_id}.ass"),
 }
 
 # Line number markers for special display
@@ -78,7 +76,7 @@ def make_sub(
     subtitle = pysubs2.SSAEvent(
         start=pysubs2.make_time(s=start_time),
         end=pysubs2.make_time(s=end_time),
-        style=ASS_PARAMS[style],
+        style=ASS_STYLES[style],
     )
     subtitle.name = style
     subtitle.text = text
@@ -140,7 +138,7 @@ class AssWriter(BaseWriter):
         self, fitt_id: int, fitt: List[BeowulfLine]
     ) -> pysubs2.SSAFile:
         """Create subtitle file for a single fitt."""
-        blank_template_path = Path(ASS_PARAMS["blank_template"])
+        blank_template_path = get_asset_path("blank.ass")
         subs = pysubs2.load(str(blank_template_path), encoding="UTF-8")
         subs.clear()
         subs.info["Fitt"] = str(fitt_id)

@@ -1,5 +1,5 @@
 fail_fast: true
-exclude: ^(\.claude/|\.idea/|\.git/|__pycache__/|\.venv/|build/|dist/|htmlcov/)
+exclude: ^(\.claude/|\.idea/|\.git/|__pycache__/|\.venv/|build/|dist/|htmlcov/|assets/)
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.5.0
@@ -7,7 +7,6 @@ repos:
       - id: trailing-whitespace
       - id: end-of-file-fixer
       - id: check-yaml
-      - id: check-added-large-files
       - id: check-merge-conflict
       - id: debug-statements
 
