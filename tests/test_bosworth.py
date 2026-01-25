@@ -79,7 +79,7 @@ class TestBosworthToller:
     def test_get_columns(self, bt_with_data: BosworthToller) -> None:
         """Should return correct column names."""
         columns = bt_with_data.get_columns()
-        assert columns == ["headword", "definition", "references"]
+        assert columns == ["headword", "definition", "references", "cleaned_definition"]
 
     def test_lookup_exact_match(self, bt_with_data: BosworthToller) -> None:
         """Lookup should find exact headword matches."""
@@ -138,6 +138,16 @@ class TestBosworthToller:
         """Search with column specified should only search that column."""
         results = bt_with_data.search("Beowulf", column="references")
         assert len(results) == 5  # All entries have Beowulf references
+
+    def test_cleaned_definition_exists(self, bt_with_data: BosworthToller) -> None:
+        """Should have cleaned_definition column without HTML."""
+        results = bt_with_data.lookup("cyning")
+        assert len(results) == 1
+        # Original definition keeps HTML for display
+        assert "king, ruler" in results[0]["definition"]
+        # cleaned_definition has no HTML tags
+        assert "<" not in results[0]["cleaned_definition"]
+        assert ">" not in results[0]["cleaned_definition"]
 
     def test_context_manager(self, tmp_path: Path) -> None:
         """Context manager should properly close connection."""

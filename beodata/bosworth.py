@@ -113,6 +113,19 @@ class BosworthToller:
             """
             )
 
+        # Add cleaned_definition column with HTML stripped (for searching)
+        self.conn.execute(
+            """
+            ALTER TABLE bosworth ADD COLUMN cleaned_definition VARCHAR
+        """
+        )
+        self.conn.execute(
+            """
+            UPDATE bosworth
+            SET cleaned_definition = regexp_replace(definition, '<[^>]+>', '', 'g')
+        """
+        )
+
         row_count = self.count()
         schema = self._get_schema()
         logger.info(
@@ -201,20 +214,30 @@ class BosworthToller:
         if not columns:
             return []
 
+        # Use cleaned_definition for searching instead of definition (which has HTML)
+        # Exclude cleaned_definition from the list since we're substituting it for definition
+        search_columns = [
+            "cleaned_definition" if col == "definition" else col
+            for col in columns
+            if col != "cleaned_definition"
+        ]
+
         if column and column in columns:
-            quoted_col = _quote_identifier(column)
+            search_col = "cleaned_definition" if column == "definition" else column
+            quoted_col = _quote_identifier(search_col)
             where_clause = f"LOWER({quoted_col}) LIKE LOWER(?)"
             logger.info("Searching in column", column=column, where_clause=where_clause)
         else:
-            # Search all columns
+            # Search all columns (using cleaned_definition instead of definition)
             conditions = [
-                f"LOWER({_quote_identifier(col)}) LIKE LOWER(?)" for col in columns
+                f"LOWER({_quote_identifier(col)}) LIKE LOWER(?)"
+                for col in search_columns
             ]
             where_clause = " OR ".join(conditions)
             logger.info("Searching all columns", where_clause=where_clause)
 
         search_pattern = f"%{term}%"
-        params = [search_pattern] if column else [search_pattern] * len(columns)
+        params = [search_pattern] if column else [search_pattern] * len(search_columns)
 
         result = self.conn.execute(
             f"SELECT * FROM bosworth WHERE {where_clause}", params
