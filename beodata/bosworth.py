@@ -367,6 +367,22 @@ def search(term: str, column: Optional[str] = None) -> List[dict]:
     return get_bt().search(term, column)
 
 
+def lookup_abbreviation(pattern: str) -> List[dict]:
+    """Look up abbreviations ."""
+    return get_bt().lookup_abbreviation(pattern)
+
+
 def load_dictionary(force: bool = False) -> int:
     """Load the dictionary from CSV into DuckDB."""
     return get_bt().load_from_csv(force)
+
+
+def load_abbreviations(force: bool = False) -> int:
+    """Load the abbvs from XML into DuckDB."""
+    return get_bt().load_abbreviations(force)
+
+
+def load_all(force: bool = False) -> None:
+    """Load the dictionary and abbreviations from CSV and XML into DuckDB."""
+    load_dictionary(force)
+    load_abbreviations(force)

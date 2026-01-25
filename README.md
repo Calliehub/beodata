@@ -36,8 +36,6 @@ To process the Beowulf text and generate all output formats:
 
 ```shell
 poetry run heorot
-# or more directly:
-poetry run python -m beodata.sources.heorot
 ```
 
 This will:
@@ -91,6 +89,7 @@ After running the script, you'll find:
   - Exon. Th. = Codex Exoniensis, edited by Thorpe
   - Chr. Erl. = Two of the Saxon Chronicles parallel with supplementary extracts...
 
+  Get a BosworthToller instance and call its lookup_
 
 ## Sources Used
   - [Heorot.dk](https://heorot.dk/beo-ru.html) - dual-language text of Beowulf
