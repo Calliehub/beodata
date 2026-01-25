@@ -124,12 +124,12 @@ class AssWriter(BaseWriter):
 
             subs = self._create_fitt_subtitles(fitt_id, fitt)
             subs.save(str(fitt_output_path), encoding="UTF-8")
-            total_subs += len(subs)
+            total_subs += 1
 
-            self.logger.info(
+            self.logger.debug(
                 "Subtitles saved",
                 output_file_path=str(fitt_output_path),
-                sub_count=len(subs),
+                sub_count=total_subs,
             )
 
         self._log_write_complete(output_path, total_subs)

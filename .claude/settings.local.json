@@ -19,7 +19,8 @@
       "Bash(ls:*)",
       "WebFetch(domain:www.germanic-lexicon-project.org)",
       "WebFetch(domain:bosworth.ff.cuni.cz)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(gh repo view:*)"
     ],
     "deny": [],
     "ask": []

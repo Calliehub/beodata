@@ -1,5 +1,6 @@
 """Command-line entry points for beodata."""
-
+from beodata.bosworth import BosworthToller
+from beodata.db import DEFAULT_DB_PATH
 from beodata.logging_config import get_logger
 from beodata.sources.fetch import DATA_DIR, fetch_and_store
 from beodata.sources.heorot import HEOROT_URL, parse
@@ -53,5 +54,24 @@ def model_dump() -> None:
 
 
 def run() -> None:
-    """Main function to process the Beowulf text."""
+    """Main function to process and load the Beowulf text from heorot.dk."""
     fetch_store_parse_and_write("maintext", HEOROT_URL)
+
+
+def run_bosworth() -> None:
+    """Main function to process and load the Bosworth-Toller dictionary from csv."""
+    bt = BosworthToller(DEFAULT_DB_PATH)
+    bt.load_from_csv(force=True)
+
+
+def run_abbreviations() -> None:
+    """Main function to process and load the abbreviation dictionary from XML."""
+    bt = BosworthToller(DEFAULT_DB_PATH)
+    bt.load_abbreviations(force=True)
+
+
+def run_all() -> None:
+    """Run all processing steps."""
+    run()
+    run_bosworth()
+    run_abbreviations()
