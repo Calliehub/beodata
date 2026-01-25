@@ -16,7 +16,10 @@
       "Bash(curl:*)",
       "Bash(python:*)",
       "Bash(poetry update:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "WebFetch(domain:www.germanic-lexicon-project.org)",
+      "WebFetch(domain:bosworth.ff.cuni.cz)",
+      "WebSearch"
     ],
     "deny": [],
     "ask": []

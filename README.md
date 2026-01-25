@@ -84,6 +84,19 @@ After running the script, you'll find:
 - `tests/data/fitts/` - Output directory for generated files
 - `tests/data/subtitles/` - Output directory for ASS subtitle files
 
+## Abbreviations
+
+  You can decode the cryptic references often found in dictionary entries:
+  - Beo. Th. = The Anglo-Saxon Poem of Beowulf, edited by Benjamin Thorpe, Oxford, 1855
+  - Exon. Th. = Codex Exoniensis, edited by Thorpe
+  - Chr. Erl. = Two of the Saxon Chronicles parallel with supplementary extracts...
+
+
+## Sources Used
+  - [Heorot.dk](https://heorot.dk/beo-ru.html) - dual-language text of Beowulf
+  - [Germanic Lexicon Project](https://www.germanic-lexicon-project.org/texts/oe_bosworthtoller_about.html) - XML abbreviation file
+  - [Bosworth-Toller Old English Dictionary](https://bosworthtoller.com/) - Old English dictionary site
+
 ## Copyright
 
 This work is copyright 2025-2026 by Callie Tweney, and licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1).

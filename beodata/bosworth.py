@@ -1,6 +1,7 @@
 """Bosworth-Toller Old English Dictionary interface backed by DuckDB."""
 
 import re
+import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import Any, List, Optional
 
@@ -24,8 +25,9 @@ def _quote_identifier(name: str) -> str:
 # Default database path (in assets directory)
 DEFAULT_DB_PATH = Path(__file__).parent / "assets" / "beodb.duckdb"
 
-# CSV asset filename
+# Asset filenames
 BT_CSV_ASSET = "oe_bt.csv"
+BT_ABBREVIATIONS_XML = "bt_abbreviations.xml"
 
 
 class BosworthToller:
@@ -133,13 +135,105 @@ class BosworthToller:
         )
         return row_count
 
-    def _get_schema(self) -> dict[str, str]:
-        """Get the schema of the bosworth table as {column_name: data_type}."""
+    def _get_schema(self, table_name: str = "bosworth") -> dict[str, str]:
+        """Get the schema of a table as {column_name: data_type}."""
         result = self.conn.execute(
             "SELECT column_name, data_type FROM information_schema.columns "
-            "WHERE table_name = 'bosworth' ORDER BY ordinal_position"
+            f"WHERE table_name = '{table_name}' ORDER BY ordinal_position"
         ).fetchall()
         return {row[0]: row[1] for row in result}
+
+    def abbreviations_table_exists(self) -> bool:
+        """Check if the abbreviations table exists."""
+        result = self.conn.execute(
+            "SELECT COUNT(*) FROM information_schema.tables "
+            "WHERE table_name = 'abbreviations'"
+        ).fetchone()
+        return result is not None and result[0] > 0
+
+    def load_abbreviations(self, force: bool = False) -> int:
+        """
+        Load the Bosworth-Toller abbreviations from XML into DuckDB.
+
+        Args:
+            force: If True, drop and recreate the table even if it exists.
+
+        Returns:
+            Number of abbreviations loaded.
+        """
+        if self.abbreviations_table_exists():
+            if not force:
+                logger.info("abbreviations table already exists, skipping load")
+                return self.abbreviations_count()
+            logger.info("Dropping existing abbreviations table")
+            self.conn.execute("DROP TABLE abbreviations")
+
+        xml_path = get_asset_path(BT_ABBREVIATIONS_XML)
+        logger.info("Loading abbreviations from XML", xml_path=str(xml_path))
+
+        # Parse the XML
+        tree = ET.parse(xml_path)
+        root = tree.getroot()
+
+        # Create the table
+        self.conn.execute(
+            """
+            CREATE TABLE abbreviations (
+                abbreviation VARCHAR,
+                expansion VARCHAR,
+                description VARCHAR
+            )
+        """
+        )
+
+        # Extract and insert abbreviations
+        for source in root.findall("source"):
+            spellout = source.find("spellout")
+            heading = source.find("heading")
+            body = source.find("body")
+
+            abbrev = (
+                spellout.text.strip() if spellout is not None and spellout.text else ""
+            )
+            expansion = (
+                heading.text.strip() if heading is not None and heading.text else ""
+            )
+            desc = body.text.strip() if body is not None and body.text else ""
+
+            # Clean up whitespace in description
+            desc = re.sub(r"\s+", " ", desc)
+
+            self.conn.execute(
+                "INSERT INTO abbreviations VALUES (?, ?, ?)", [abbrev, expansion, desc]
+            )
+
+        row_count = self.abbreviations_count()
+        schema = self._get_schema("abbreviations")
+        logger.info("Loaded abbreviations", row_count=row_count, schema=schema)
+        return row_count
+
+    def abbreviations_count(self) -> int:
+        """Return the number of abbreviations."""
+        result = self.conn.execute("SELECT COUNT(*) FROM abbreviations").fetchone()
+        return result[0] if result else 0
+
+    def lookup_abbreviation(self, abbrev: str) -> List[dict]:
+        """
+        Look up an abbreviation.
+
+        Args:
+            abbrev: The abbreviation to look up (e.g., 'Beo. Th.')
+
+        Returns:
+            List of matching abbreviation entries.
+        """
+        result = self.conn.execute(
+            "SELECT * FROM abbreviations WHERE abbreviation LIKE ?", [f"%{abbrev}%"]
+        ).fetchall()
+        return [
+            {"abbreviation": row[0], "expansion": row[1], "description": row[2]}
+            for row in result
+        ]
 
     def count(self) -> int:
         """Return the number of entries in the dictionary."""

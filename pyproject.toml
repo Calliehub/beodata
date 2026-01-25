@@ -13,6 +13,7 @@ include = [
     "beodata/assets/*.csv",
     "beodata/assets/*.duckdb",
     "beodata/assets/*.json",
+    "beodata/assets/*.xml",
 ]
 
 [tool.poetry.dependencies]
