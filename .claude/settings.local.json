@@ -15,7 +15,8 @@
       "Bash(poetry search:*)",
       "Bash(curl:*)",
       "Bash(python:*)",
-      "Bash(poetry update:*)"
+      "Bash(poetry update:*)",
+      "Bash(ls:*)"
     ],
     "deny": [],
     "ask": []

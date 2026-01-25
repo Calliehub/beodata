@@ -1,4 +1,5 @@
 # app data
+*.duckdb
 
 # IntelliJ configs
 .idea/
