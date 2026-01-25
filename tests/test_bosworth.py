@@ -12,11 +12,10 @@ from beodata.bosworth import BosworthToller, _quote_identifier
 
 @pytest.fixture
 def sample_csv(tmp_path: Path) -> Path:
-    """Create a sample CSV file for testing with @ delimiter."""
+    """Create a sample CSV file for testing with @ delimiter, no header."""
     csv_path = tmp_path / "oe_bt.csv"
     with csv_path.open("w", newline="", encoding="utf-8") as f:
-        # Use @ as delimiter since definitions contain commas
-        f.write("headword@definition@references\n")
+        # Use @ as delimiter since definitions contain commas, no header row
         f.write("<b>cyning</b>@king, ruler@Beowulf 11\n")
         f.write("<i>cynn</i>@kin, race, family@Beowulf 98\n")
         f.write("cyne-rīce@kingdom@Beowulf 466\n")

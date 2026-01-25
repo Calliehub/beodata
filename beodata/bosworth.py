@@ -89,11 +89,16 @@ class BosworthToller:
         csv_path = get_asset_path(BT_CSV_ASSET)
         logger.info("Loading Bosworth-Toller from CSV", csv_path=str(csv_path))
 
-        # Load CSV with @ delimiter, then strip HTML tags from headword column
+        # Load CSV with @ delimiter, no header row, explicit column names and types
         self.conn.execute(
             f"""
             CREATE TABLE bosworth AS
-            SELECT * FROM read_csv_auto('{csv_path}', header=true, delim='@')
+            SELECT * FROM read_csv(
+                '{csv_path}',
+                header=false,
+                delim='@',
+                columns={{'headword': 'VARCHAR', 'definition': 'VARCHAR', 'references': 'VARCHAR'}}
+            )
         """
         )
 
@@ -109,8 +114,19 @@ class BosworthToller:
             )
 
         row_count = self.count()
-        logger.info("Loaded Bosworth-Toller dictionary", row_count=row_count)
+        schema = self._get_schema()
+        logger.info(
+            "Loaded Bosworth-Toller dictionary", row_count=row_count, schema=schema
+        )
         return row_count
+
+    def _get_schema(self) -> dict[str, str]:
+        """Get the schema of the bosworth table as {column_name: data_type}."""
+        result = self.conn.execute(
+            "SELECT column_name, data_type FROM information_schema.columns "
+            "WHERE table_name = 'bosworth' ORDER BY ordinal_position"
+        ).fetchall()
+        return {row[0]: row[1] for row in result}
 
     def count(self) -> int:
         """Return the number of entries in the dictionary."""
@@ -178,6 +194,9 @@ class BosworthToller:
         Returns:
             List of matching dictionary entries as dictionaries.
         """
+        logger.info(
+            "Searching dictionary", term=term, column=column, schema=self._get_schema()
+        )
         columns = self.get_columns()
         if not columns:
             return []
@@ -185,12 +204,14 @@ class BosworthToller:
         if column and column in columns:
             quoted_col = _quote_identifier(column)
             where_clause = f"LOWER({quoted_col}) LIKE LOWER(?)"
+            logger.info("Searching in column", column=column, where_clause=where_clause)
         else:
             # Search all columns
             conditions = [
                 f"LOWER({_quote_identifier(col)}) LIKE LOWER(?)" for col in columns
             ]
             where_clause = " OR ".join(conditions)
+            logger.info("Searching all columns", where_clause=where_clause)
 
         search_pattern = f"%{term}%"
         params = [search_pattern] if column else [search_pattern] * len(columns)
