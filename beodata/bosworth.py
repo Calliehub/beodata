@@ -1,0 +1,234 @@
+"""Bosworth-Toller Old English Dictionary interface backed by DuckDB."""
+
+import re
+from pathlib import Path
+from typing import Any, List, Optional
+
+import duckdb
+
+from beodata.assets import get_asset_path
+from beodata.logging_config import get_logger
+
+# Regex to strip HTML tags
+_HTML_TAG_RE = re.compile(r"<[^>]+>")
+
+logger = get_logger()
+
+
+def _quote_identifier(name: str) -> str:
+    """Safely quote a SQL identifier to prevent injection."""
+    # Double any internal double quotes, then wrap in double quotes
+    return '"' + name.replace('"', '""') + '"'
+
+
+# Default database path (in assets directory)
+DEFAULT_DB_PATH = Path(__file__).parent / "assets" / "beodb.duckdb"
+
+# CSV asset filename
+BT_CSV_ASSET = "oe_bt.csv"
+
+
+class BosworthToller:
+    """Interface to the Bosworth-Toller Old English Dictionary."""
+
+    def __init__(self, db_path: Optional[Path] = None) -> None:
+        """
+        Initialize the dictionary interface.
+
+        Args:
+            db_path: Path to the DuckDB database file. Defaults to beodb.duckdb
+                    in the project root.
+        """
+        self.db_path = db_path or DEFAULT_DB_PATH
+        self._conn: Optional[duckdb.DuckDBPyConnection] = None
+
+    @property
+    def conn(self) -> duckdb.DuckDBPyConnection:
+        """Get or create database connection."""
+        if self._conn is None:
+            self._conn = duckdb.connect(str(self.db_path))
+        return self._conn
+
+    def close(self) -> None:
+        """Close the database connection."""
+        if self._conn is not None:
+            self._conn.close()
+            self._conn = None
+
+    def __enter__(self) -> "BosworthToller":
+        return self
+
+    def __exit__(self, exc_type: Any, exc_val: Any, exc_tb: Any) -> None:
+        self.close()
+
+    def table_exists(self) -> bool:
+        """Check if the bosworth table exists."""
+        result = self.conn.execute(
+            "SELECT COUNT(*) FROM information_schema.tables "
+            "WHERE table_name = 'bosworth'"
+        ).fetchone()
+        return result is not None and result[0] > 0
+
+    def load_from_csv(self, force: bool = False) -> int:
+        """
+        Load the Bosworth-Toller dictionary from CSV into DuckDB.
+
+        Args:
+            force: If True, drop and recreate the table even if it exists.
+
+        Returns:
+            Number of rows loaded.
+        """
+        if self.table_exists():
+            if not force:
+                logger.info("bosworth table already exists, skipping load")
+                return self.count()
+            logger.info("Dropping existing bosworth table")
+            self.conn.execute("DROP TABLE bosworth")
+
+        csv_path = get_asset_path(BT_CSV_ASSET)
+        logger.info("Loading Bosworth-Toller from CSV", csv_path=str(csv_path))
+
+        # Load CSV with @ delimiter, then strip HTML tags from headword column
+        self.conn.execute(
+            f"""
+            CREATE TABLE bosworth AS
+            SELECT * FROM read_csv_auto('{csv_path}', header=true, delim='@')
+        """
+        )
+
+        # Strip HTML tags from the headword (first column)
+        columns = self.get_columns()
+        if columns:
+            first_col = _quote_identifier(columns[0])
+            self.conn.execute(
+                f"""
+                UPDATE bosworth
+                SET {first_col} = regexp_replace({first_col}, '<[^>]+>', '', 'g')
+            """
+            )
+
+        row_count = self.count()
+        logger.info("Loaded Bosworth-Toller dictionary", row_count=row_count)
+        return row_count
+
+    def count(self) -> int:
+        """Return the number of entries in the dictionary."""
+        result = self.conn.execute("SELECT COUNT(*) FROM bosworth").fetchone()
+        return result[0] if result else 0
+
+    def get_columns(self) -> List[str]:
+        """Get the column names of the bosworth table."""
+        result = self.conn.execute(
+            "SELECT column_name FROM information_schema.columns "
+            "WHERE table_name = 'bosworth' ORDER BY ordinal_position"
+        ).fetchall()
+        return [row[0] for row in result]
+
+    def lookup(self, word: str) -> List[dict]:
+        """
+        Look up a word in the dictionary by the first column (headword).
+
+        Args:
+            word: The Old English word to look up.
+
+        Returns:
+            List of matching dictionary entries as dictionaries.
+        """
+        columns = self.get_columns()
+        if not columns:
+            return []
+
+        first_col = _quote_identifier(columns[0])
+        result = self.conn.execute(
+            f"SELECT * FROM bosworth WHERE {first_col} = ?", [word]
+        ).fetchall()
+
+        return [dict(zip(columns, row)) for row in result]
+
+    def lookup_like(self, pattern: str) -> List[dict]:
+        """
+        Look up words matching a SQL LIKE pattern.
+
+        Args:
+            pattern: SQL LIKE pattern (e.g., 'burg%' for words starting with 'burg').
+
+        Returns:
+            List of matching dictionary entries as dictionaries.
+        """
+        columns = self.get_columns()
+        if not columns:
+            return []
+
+        first_col = _quote_identifier(columns[0])
+        result = self.conn.execute(
+            f"SELECT * FROM bosworth WHERE {first_col} LIKE ?", [pattern]
+        ).fetchall()
+
+        return [dict(zip(columns, row)) for row in result]
+
+    def search(self, term: str, column: Optional[str] = None) -> List[dict]:
+        """
+        Search for a term anywhere in the dictionary entries.
+
+        Args:
+            term: The term to search for (case-insensitive contains).
+            column: Specific column to search, or None for all columns.
+
+        Returns:
+            List of matching dictionary entries as dictionaries.
+        """
+        columns = self.get_columns()
+        if not columns:
+            return []
+
+        if column and column in columns:
+            quoted_col = _quote_identifier(column)
+            where_clause = f"LOWER({quoted_col}) LIKE LOWER(?)"
+        else:
+            # Search all columns
+            conditions = [
+                f"LOWER({_quote_identifier(col)}) LIKE LOWER(?)" for col in columns
+            ]
+            where_clause = " OR ".join(conditions)
+
+        search_pattern = f"%{term}%"
+        params = [search_pattern] if column else [search_pattern] * len(columns)
+
+        result = self.conn.execute(
+            f"SELECT * FROM bosworth WHERE {where_clause}", params
+        ).fetchall()
+
+        return [dict(zip(columns, row)) for row in result]
+
+
+# Module-level convenience functions
+_default_bt: Optional[BosworthToller] = None
+
+
+def get_bt() -> BosworthToller:
+    """Get the default BosworthToller instance."""
+    global _default_bt
+    if _default_bt is None:
+        _default_bt = BosworthToller()
+    return _default_bt
+
+
+def lookup(word: str) -> List[dict]:
+    """Look up a word in the Bosworth-Toller dictionary."""
+    return get_bt().lookup(word)
+
+
+def lookup_like(pattern: str) -> List[dict]:
+    """Look up words matching a SQL LIKE pattern."""
+    return get_bt().lookup_like(pattern)
+
+
+def search(term: str, column: Optional[str] = None) -> List[dict]:
+    """Search for a term in the dictionary."""
+    return get_bt().search(term, column)
+
+
+def load_dictionary(force: bool = False) -> int:
+    """Load the dictionary from CSV into DuckDB."""
+    return get_bt().load_from_csv(force)
