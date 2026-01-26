@@ -23,7 +23,7 @@ def _quote_identifier(name: str) -> str:
 
 
 # Default database path (in assets directory)
-DEFAULT_DB_PATH = Path(__file__).parent / "assets" / "beodb.duckdb"
+DEFAULT_DB_PATH = Path(__file__).parent.parent / "assets" / "beodb.duckdb"
 
 # Asset filenames
 BT_CSV_ASSET = "oe_bt.csv"

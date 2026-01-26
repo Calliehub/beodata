@@ -1,7 +1,7 @@
 """Command-line entry points for beodata."""
-from beodata.bosworth import BosworthToller
 from beodata.db import DEFAULT_DB_PATH
 from beodata.logging_config import get_logger
+from beodata.sources.bosworth import BosworthToller
 from beodata.sources.fetch import DATA_DIR, fetch_and_store
 from beodata.sources.heorot import HEOROT_URL, parse
 from beodata.text.models import dict_data_to_beowulf_lines
