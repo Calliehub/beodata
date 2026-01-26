@@ -5,7 +5,8 @@ from typing import Generator
 
 import pytest
 
-from beodata.sources.bosworth import BosworthToller, _quote_identifier
+from beodata.db import _quote_identifier
+from beodata.sources.bosworth import TABLE_NAME, BosworthToller
 
 
 @pytest.fixture
@@ -37,7 +38,7 @@ def bt_with_data(
     bt = BosworthToller(db_path=db_path)
     bt.load_from_csv()
     yield bt
-    bt.close()
+    bt.db.close()
 
 
 class TestBosworthToller:
@@ -47,18 +48,18 @@ class TestBosworthToller:
         """Table should not exist before loading."""
         db_path = tmp_path / "empty.duckdb"
         with BosworthToller(db_path=db_path) as bt:
-            assert bt.table_exists() is False
+            assert bt._db.table_exists(TABLE_NAME) is False
 
     def test_load_from_csv(self, bt_with_data: BosworthToller) -> None:
         """Loading CSV should create table with correct row count."""
-        assert bt_with_data.table_exists() is True
-        assert bt_with_data.count() == 5
+        assert bt_with_data._db.table_exists(TABLE_NAME) is True
+        assert bt_with_data._db.count(TABLE_NAME) == 5
 
     def test_load_from_csv_skips_if_exists(self, bt_with_data: BosworthToller) -> None:
         """Loading again without force should skip."""
-        initial_count = bt_with_data.count()
+        initial_count = bt_with_data._db.count(TABLE_NAME)
         bt_with_data.load_from_csv(force=False)
-        assert bt_with_data.count() == initial_count
+        assert bt_with_data._db.count(TABLE_NAME) == initial_count
 
     def test_load_from_csv_force_reloads(
         self, tmp_path: Path, sample_csv: Path, monkeypatch: pytest.MonkeyPatch
@@ -71,14 +72,14 @@ class TestBosworthToller:
 
         with BosworthToller(db_path=db_path) as bt:
             bt.load_from_csv()
-            assert bt.count() == 5
+            assert bt._db.count(TABLE_NAME) == 5
             # Force reload
             count = bt.load_from_csv(force=True)
             assert count == 5
 
     def test_get_columns(self, bt_with_data: BosworthToller) -> None:
         """Should return correct column names."""
-        columns = bt_with_data.get_columns()
+        columns = bt_with_data._db.get_columns(TABLE_NAME)
         assert columns == ["headword", "definition", "references", "cleaned_definition"]
 
     def test_lookup_exact_match(self, bt_with_data: BosworthToller) -> None:
@@ -153,8 +154,8 @@ class TestBosworthToller:
         """Context manager should properly close connection."""
         db_path = tmp_path / "context.duckdb"
         with BosworthToller(db_path=db_path) as bt:
-            assert bt._conn is not None or bt.table_exists() is False
-        assert bt._conn is None
+            assert bt._db._conn is not None or bt._db.table_exists(TABLE_NAME) is False
+        assert bt._db._conn is None
 
 
 class TestQuoteIdentifier:
