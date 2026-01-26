@@ -3,20 +3,19 @@
 import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
-from typing import Any, List, Optional
-
-import duckdb
+from typing import List, Optional
 
 from beodata.assets import get_asset_path
+from beodata.db import BeoDB
 from beodata.logging_config import get_logger
 
 logger = get_logger()
 
-# Default database path (in assets directory)
-DEFAULT_DB_PATH = Path(__file__).parent.parent / "assets" / "beodb.duckdb"
-
 # XML abbv content from https://www.germanic-lexicon-project.org/texts/oe_bosworthtoller_about.html
 BT_ABBREVIATIONS_XML = "bt_abbreviations.xml"
+
+# Table name for this source
+TABLE_NAME = "abbreviations"
 
 
 class Abbreviations:
@@ -30,43 +29,13 @@ class Abbreviations:
             db_path: Path to the DuckDB database file. Defaults to beodb.duckdb
                     in the assets directory.
         """
-        self.db_path = db_path or DEFAULT_DB_PATH
-        self._conn: Optional[duckdb.DuckDBPyConnection] = None
-
-    @property
-    def conn(self) -> duckdb.DuckDBPyConnection:
-        """Get or create database connection."""
-        if self._conn is None:
-            self._conn = duckdb.connect(str(self.db_path))
-        return self._conn
-
-    def close(self) -> None:
-        """Close the database connection."""
-        if self._conn is not None:
-            self._conn.close()
-            self._conn = None
+        self._db = BeoDB(db_path)
 
     def __enter__(self) -> "Abbreviations":
         return self
 
-    def __exit__(self, exc_type: Any, exc_val: Any, exc_tb: Any) -> None:
-        self.close()
-
-    def table_exists(self) -> bool:
-        """Check if the abbreviations table exists."""
-        result = self.conn.execute(
-            "SELECT COUNT(*) FROM information_schema.tables "
-            "WHERE table_name = 'abbreviations'"
-        ).fetchone()
-        return result is not None and result[0] > 0
-
-    def _get_schema(self) -> dict[str, str]:
-        """Get the schema of the abbreviations table as {column_name: data_type}."""
-        result = self.conn.execute(
-            "SELECT column_name, data_type FROM information_schema.columns "
-            "WHERE table_name = 'abbreviations' ORDER BY ordinal_position"
-        ).fetchall()
-        return {row[0]: row[1] for row in result}
+    def __exit__(self, exc_type: object, exc_val: object, exc_tb: object) -> None:
+        self._db.close()
 
     def load_from_xml(self, force: bool = False) -> int:
         """
@@ -78,12 +47,12 @@ class Abbreviations:
         Returns:
             Number of abbreviations loaded.
         """
-        if self.table_exists():
+        if self._db.table_exists(TABLE_NAME):
             if not force:
                 logger.info("abbreviations table already exists, skipping load")
-                return self.count()
+                return self._db.count(TABLE_NAME)
             logger.info("Dropping existing abbreviations table")
-            self.conn.execute("DROP TABLE abbreviations")
+            self._db.drop_table(TABLE_NAME)
 
         xml_path = get_asset_path(BT_ABBREVIATIONS_XML)
         logger.info("Loading abbreviations from XML", xml_path=str(xml_path))
@@ -93,9 +62,9 @@ class Abbreviations:
         root = tree.getroot()
 
         # Create the table
-        self.conn.execute(
-            """
-            CREATE TABLE abbreviations (
+        self._db.conn.execute(
+            f"""
+            CREATE TABLE {TABLE_NAME} (
                 abbreviation VARCHAR,
                 expansion VARCHAR,
                 description VARCHAR
@@ -120,19 +89,15 @@ class Abbreviations:
             # Clean up whitespace in description
             desc = re.sub(r"\s+", " ", desc)
 
-            self.conn.execute(
-                "INSERT INTO abbreviations VALUES (?, ?, ?)", [abbrev, expansion, desc]
+            self._db.conn.execute(
+                f"INSERT INTO {TABLE_NAME} VALUES (?, ?, ?)",
+                [abbrev, expansion, desc],
             )
 
-        row_count = self.count()
-        schema = self._get_schema()
+        row_count = self._db.count(TABLE_NAME)
+        schema = self._db.get_schema(TABLE_NAME)
         logger.info("Loaded abbreviations", row_count=row_count, schema=schema)
         return row_count
-
-    def count(self) -> int:
-        """Return the number of abbreviations."""
-        result = self.conn.execute("SELECT COUNT(*) FROM abbreviations").fetchone()
-        return result[0] if result else 0
 
     def lookup(self, abbrev: str) -> List[dict]:
         """
@@ -144,8 +109,8 @@ class Abbreviations:
         Returns:
             List of matching abbreviation entries.
         """
-        result = self.conn.execute(
-            "SELECT * FROM abbreviations WHERE abbreviation LIKE ?", [f"%{abbrev}%"]
+        result = self._db.conn.execute(
+            f"SELECT * FROM {TABLE_NAME} WHERE abbreviation LIKE ?", [f"%{abbrev}%"]
         ).fetchall()
         return [
             {"abbreviation": row[0], "expansion": row[1], "description": row[2]}
@@ -154,15 +119,15 @@ class Abbreviations:
 
 
 # Module-level convenience functions
-_default_abbr: Optional[Abbreviations] = None
+_default_abbr_instance: Optional[Abbreviations] = None
 
 
 def get_abbreviations() -> Abbreviations:
     """Get the default Abbreviations instance."""
-    global _default_abbr
-    if _default_abbr is None:
-        _default_abbr = Abbreviations()
-    return _default_abbr
+    global _default_abbr_instance
+    if _default_abbr_instance is None:
+        _default_abbr_instance = Abbreviations()
+    return _default_abbr_instance
 
 
 def lookup(pattern: str) -> List[dict]:

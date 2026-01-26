@@ -2,9 +2,7 @@
 
 from pathlib import Path
 
-import pytest
-
-from beodata.sources.abbreviations import Abbreviations
+from beodata.sources.abbreviations import TABLE_NAME, Abbreviations
 
 
 class TestAbbreviations:
@@ -14,7 +12,7 @@ class TestAbbreviations:
         """Table should not exist before loading."""
         db_path = tmp_path / "empty.duckdb"
         with Abbreviations(db_path=db_path) as abbr:
-            assert abbr.table_exists() is False
+            assert abbr._db.table_exists(TABLE_NAME) is False
 
     def test_load_from_xml(self, tmp_path: Path) -> None:
         """Should load abbreviations from XML."""
@@ -22,23 +20,23 @@ class TestAbbreviations:
         with Abbreviations(db_path=db_path) as abbr:
             count = abbr.load_from_xml()
             assert count == 632
-            assert abbr.table_exists()
+            assert abbr._db.table_exists(TABLE_NAME)
 
     def test_load_from_xml_skips_if_exists(self, tmp_path: Path) -> None:
         """Loading again without force should skip."""
         db_path = tmp_path / "abbrev_skip.duckdb"
         with Abbreviations(db_path=db_path) as abbr:
             abbr.load_from_xml()
-            initial_count = abbr.count()
+            initial_count = abbr._db.count(TABLE_NAME)
             abbr.load_from_xml(force=False)
-            assert abbr.count() == initial_count
+            assert abbr._db.count(TABLE_NAME) == initial_count
 
     def test_load_from_xml_force_reloads(self, tmp_path: Path) -> None:
         """Loading with force=True should reload the data."""
         db_path = tmp_path / "abbrev_force.duckdb"
         with Abbreviations(db_path=db_path) as abbr:
             abbr.load_from_xml()
-            assert abbr.count() == 632
+            assert abbr._db.count(TABLE_NAME) == 632
             # Force reload
             count = abbr.load_from_xml(force=True)
             assert count == 632
@@ -68,5 +66,7 @@ class TestAbbreviations:
         """Context manager should properly close connection."""
         db_path = tmp_path / "context.duckdb"
         with Abbreviations(db_path=db_path) as abbr:
-            assert abbr._conn is not None or abbr.table_exists() is False
-        assert abbr._conn is None
+            assert (
+                abbr._db._conn is not None or abbr._db.table_exists(TABLE_NAME) is False
+            )
+        assert abbr._db._conn is None

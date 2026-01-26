@@ -1,4 +1,5 @@
 """Command-line entry points for beodata."""
+
 from pathlib import Path
 
 import requests

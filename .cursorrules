@@ -74,7 +74,7 @@ from .utils import helper_function
 
 ### Logging
 - Use structlog for all logging
-- Don't pass an "extra" object to structlog. Pass interesting variables as named params. 
+- Don't pass an "extra" object to structlog. Pass interesting variables as named params.
 - Use structlog bind_contextvars to set logging contexts for groups of related methods
 
 ## Best Practices
@@ -201,4 +201,4 @@ from .utils import helper_function
 - Consider localization for user-facing text
 - Use appropriate locale settings for formatting
 
-This style guide should be followed for all Python code in the project to ensure consistency, readability, and maintainability. 
+This style guide should be followed for all Python code in the project to ensure consistency, readability, and maintainability.
