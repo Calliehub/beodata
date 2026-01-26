@@ -8,7 +8,7 @@ from beodata.db import DEFAULT_DB_PATH
 from beodata.logging_config import get_logger
 from beodata.sources.abbreviations import Abbreviations
 from beodata.sources.bosworth import BosworthToller
-from beodata.sources.heorot import HEOROT_URL, parse
+from beodata.sources.heorot import HEOROT_URL, Heorot, parse
 from beodata.text.models import dict_data_to_beowulf_lines
 from beodata.writers import get_all_writers
 
@@ -95,7 +95,12 @@ def model_dump() -> None:
 
 def load_heorot() -> None:
     """Main function to process and load the Beowulf text from heorot.dk."""
+    # Write to JSON/CSV/ASS files
     fetch_store_parse_and_write("maintext", HEOROT_URL)
+    # Also persist to DuckDB
+    heorot = Heorot(DEFAULT_DB_PATH)
+    html = fetch_and_store(HEOROT_URL, "maintext.html")
+    heorot.load_from_html(html, force=True)
 
 
 def load_bosworth() -> None:

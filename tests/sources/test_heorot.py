@@ -8,11 +8,12 @@ the quality and consistency of Beowulf text data.
 
 import json
 from pathlib import Path
-from typing import Any, List
+from typing import Any, Generator, List
 
 import pytest
 
 from beodata.cli import load_heorot
+from beodata.sources.heorot import TABLE_NAME, Heorot
 from beodata.text.numbering import FITT_BOUNDARIES
 
 
@@ -98,3 +99,132 @@ def test_line_2229_empty(heorot_text: List[dict[str, Any]]) -> None:
     assert line_2229["line"] == 2229, "Line 2229 should be line 2229"
     assert line_2229["OE"] == "", "Line 2229 OE text should be empty"
     assert line_2229["ME"] == "", "Line 2229 ME text should be empty"
+
+
+# Tests for Heorot class (database persistence)
+
+
+@pytest.fixture
+def sample_html() -> str:
+    """Create minimal HTML for testing."""
+    return """
+    <html>
+    <body>
+    <table class="c15">
+        <tr>
+            <td><span class="c7">Hwæt! We Gardena</span></td>
+            <td><span class="c7">Lo! We of the Spear-Danes</span></td>
+        </tr>
+        <tr>
+            <td><span class="c7">in geardagum,</span></td>
+            <td><span class="c7">in days of yore,</span></td>
+        </tr>
+        <tr>
+            <td><span class="c7">þeodcyninga</span></td>
+            <td><span class="c7">of the folk-kings</span></td>
+        </tr>
+    </table>
+    </body>
+    </html>
+    """
+
+
+@pytest.fixture
+def heorot_with_data(tmp_path: Path, sample_html: str) -> Generator[Heorot, None, None]:
+    """Create a Heorot instance with test data loaded."""
+    db_path = tmp_path / "test_beodb.duckdb"
+    h = Heorot(db_path=db_path)
+    h.load_from_html(sample_html)
+    yield h
+    h._db.close()
+
+
+class TestHeorotClass:
+    """Tests for Heorot class database persistence."""
+
+    def test_table_exists_false_initially(self, tmp_path: Path) -> None:
+        """Table should not exist before loading."""
+        db_path = tmp_path / "empty.duckdb"
+        with Heorot(db_path=db_path) as h:
+            assert h._db.table_exists(TABLE_NAME) is False
+
+    def test_load_from_html(self, heorot_with_data: Heorot) -> None:
+        """Loading HTML should create table with correct row count."""
+        assert heorot_with_data._db.table_exists(TABLE_NAME) is True
+        # 3 lines + line 0 = 4 rows
+        assert heorot_with_data.count() == 4
+
+    def test_load_from_html_skips_if_exists(self, heorot_with_data: Heorot) -> None:
+        """Loading again without force should skip."""
+        initial_count = heorot_with_data.count()
+        heorot_with_data.load_from_html("<html></html>", force=False)
+        assert heorot_with_data.count() == initial_count
+
+    def test_load_from_html_force_reloads(
+        self, tmp_path: Path, sample_html: str
+    ) -> None:
+        """Loading with force=True should reload the data."""
+        db_path = tmp_path / "force_test.duckdb"
+        with Heorot(db_path=db_path) as h:
+            h.load_from_html(sample_html)
+            assert h.count() == 4
+            # Force reload with empty HTML
+            count = h.load_from_html("<html></html>", force=True)
+            assert count == 1  # Just line 0
+
+    def test_get_line(self, heorot_with_data: Heorot) -> None:
+        """Should retrieve a specific line."""
+        line = heorot_with_data.get_line(1)
+        assert line is not None
+        assert line["line"] == 1
+        assert "Hwæt" in line["OE"]
+        assert "Spear-Danes" in line["ME"]
+
+    def test_get_line_not_found(self, heorot_with_data: Heorot) -> None:
+        """Should return None for non-existent line."""
+        line = heorot_with_data.get_line(9999)
+        assert line is None
+
+    def test_get_lines_range(self, heorot_with_data: Heorot) -> None:
+        """Should retrieve a range of lines."""
+        lines = heorot_with_data.get_lines(1, 2)
+        assert len(lines) == 2
+        assert lines[0]["line"] == 1
+        assert lines[1]["line"] == 2
+
+    def test_get_lines_from_start(self, heorot_with_data: Heorot) -> None:
+        """Should retrieve all lines from start."""
+        lines = heorot_with_data.get_lines(2)
+        assert len(lines) == 2  # Lines 2 and 3
+        assert lines[0]["line"] == 2
+        assert lines[1]["line"] == 3
+
+    def test_search_oe(self, heorot_with_data: Heorot) -> None:
+        """Should search in Old English text."""
+        results = heorot_with_data.search_oe("geardagum")
+        assert len(results) == 1
+        assert results[0]["line"] == 2
+
+    def test_search_me(self, heorot_with_data: Heorot) -> None:
+        """Should search in Modern English text."""
+        results = heorot_with_data.search_me("yore")
+        assert len(results) == 1
+        assert results[0]["line"] == 2
+
+    def test_search_both(self, heorot_with_data: Heorot) -> None:
+        """Should search in both OE and ME text."""
+        results = heorot_with_data.search("days")
+        assert len(results) == 1
+        assert results[0]["line"] == 2
+
+    def test_search_case_insensitive(self, heorot_with_data: Heorot) -> None:
+        """Search should be case-insensitive."""
+        results = heorot_with_data.search_oe("GARDENA")
+        assert len(results) == 1
+
+    def test_context_manager(self, tmp_path: Path) -> None:
+        """Context manager should properly close connection."""
+        db_path = tmp_path / "context.duckdb"
+        with Heorot(db_path=db_path) as h:
+            assert h._db._conn is not None or h._db.table_exists(TABLE_NAME) is False
+        assert h._db._conn is None

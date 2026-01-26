@@ -206,7 +206,7 @@ def lookup_like(pattern: str) -> List[dict]:
 
 
 def search(term: str, column: Optional[str] = None) -> List[dict]:
-    """Search for a term in the dictionary."""
+    """Search for a term in the table matching all columns, or a specific list of columns."""
     return get_bt().search(term, column)
 
 
