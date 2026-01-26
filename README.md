@@ -82,6 +82,44 @@ After running the script, you'll find:
 - `tests/data/fitts/` - Output directory for generated files
 - `tests/data/subtitles/` - Output directory for ASS subtitle files
 
+## Old English Texts
+
+The project uses several Old English texts as the basis for its data:
+
+1. [Heorot.dk](https://heorot.dk/beo-ru.html) - dual-language text of Beowulf
+2. [Germanic Lexicon Project](https://www.germanic-lexicon-project.org/texts/oe_bosworthtoller_about.html) - XML abbreviation file
+3. [Bosworth-Toller Old English Dictionary](https://bosworthtoller.com/) - Old English dictionary site
+4. [Brunetti Beowulf Tokenization](beodata/assets/brunetti.txt)
+5. [Brunetti Beowulf Tokenization, With Length](beodata/assets/brunetti-length.txt) - what we use mainly for lemmatization
+
+## Token Structure
+
+Each token is a word-level unit with rich linguistic annotations imported from a pipe-delimited file
+(`assets/brunetti-length.txt`). The Token model stores:
+
+| Field                                    | Purpose                                       |
+|:-----------------------------------------|:----------------------------------------------|
+| `fitt_id`, `para_id`, `line_id`         | Structural position in the poem               |
+| `half_line`                             | 'a' or 'b' half of the Old English verse line |
+| `token_offset`                          | Position within the half-line                 |
+| `caesura_code`                          | Marks metrical pauses                         |
+| `pre_punc`, `post_punc`                 | Surrounding punctuation                       |
+| `text`                                  | The actual Old English word                   |
+| `syntax`, `parse`, `pos`                | Grammatical analysis                          |
+| `lemma`                                 | Dictionary headword                           |
+| `gloss`                                 | Modern English translation                    |
+| `with_length`                           | Text with vowel length markers                |
+
+## Key Design Choices
+
+1. **Pre-annotated corpus** - Tokens come from Brunetti's parsed Beowulf edition, not generated at runtime
+2. **Composite key** - Tokens are uniquely identified by `(fitt_id, para_id, para_first, non_verse, line_id, half_line, token_offset)`
+3. **Half-line aware** - Respects Old English verse structure (each line has an 'a' and 'b' half)
+4. **Lemmatized** - Each token links to its canonical dictionary form (aka "headword") for vocabulary lookups
+
+This is a scholarly tokenization aligned with traditional Old English philological practice rather than
+NLP-style tokenization.
+
 ## Abbreviations
 
   You can decode the cryptic references often found in dictionary entries:
@@ -90,11 +128,6 @@ After running the script, you'll find:
   - Chr. Erl. = Two of the Saxon Chronicles parallel with supplementary extracts...
 
   Get a BosworthToller instance and call its lookup_
-
-## Sources Used
-  - [Heorot.dk](https://heorot.dk/beo-ru.html) - dual-language text of Beowulf
-  - [Germanic Lexicon Project](https://www.germanic-lexicon-project.org/texts/oe_bosworthtoller_about.html) - XML abbreviation file
-  - [Bosworth-Toller Old English Dictionary](https://bosworthtoller.com/) - Old English dictionary site
 
 ## Copyright
 

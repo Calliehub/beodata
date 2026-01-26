@@ -1,0 +1,3182 @@
+1 Hwæt! We Gardena     in geardagum,
+2 þeodcyninga,     þrym gefrunon,
+3 hu ða æþelingas     ellen fremedon.
+4 Oft Scyld Scefing     sceaþena þreatum,
+5 monegum mægþum,     meodosetla ofteah,
+6 egsode eorlas.     Syððan ærest wearð
+7 feasceaft funden,     he þæs frofre gebad,
+8 weox under wolcnum,     weorðmyndum þah,
+9 oðþæt him æghwylc     þara ymbsittendra
+10 ofer hronrade     hyran scolde,
+11 gomban gyldan.     þæt wæs god cyning!
+12 ðæm eafera wæs     æfter cenned,
+13 geong in geardum,     þone god sende
+14 folce to frofre;     fyrenðearfe ongeat
+15 þe hie ær drugon     aldorlease
+16 lange hwile.     Him þæs liffrea,
+17 wuldres wealdend,     woroldare forgeaf;
+18 Beowulf wæs breme     (blæd wide sprang),
+19 Scyldes eafera     Scedelandum in.
+20 Swa sceal geong guma     gode gewyrcean,
+21 fromum feohgiftum     on fæder bearme,
+22 þæt hine on ylde     eft gewunigen
+23 wilgesiþas,     þonne wig cume,
+24 leode gelæsten;     lofdædum sceal
+25 in mægþa gehwære     man geþeon.
+26 Him ða Scyld gewat     to gescæphwile
+27 felahror feran     on frean wære.
+28 Hi hyne þa ætbæron     to brimes faroðe,
+29 swæse gesiþas,     swa he selfa bæd,
+30 þenden wordum weold     wine Scyldinga;
+31 leof landfruma     lange ahte.
+32 þær æt hyðe stod     hringedstefna,
+33 isig ond utfus,     æþelinges fær.
+34 Aledon þa     leofne þeoden,
+35 beaga bryttan,     on bearm scipes,
+36 mærne be mæste.     þær wæs madma fela
+37 of feorwegum,     frætwa, gelæded;
+38 ne hyrde ic cymlicor     ceol gegyrwan
+39 hildewæpnum     ond heaðowædum,
+40 billum ond byrnum;     him on bearme læg
+41 madma mænigo,     þa him mid scoldon
+42 on flodes æht     feor gewitan.
+43 Nalæs hi hine læssan     lacum teodan,
+44 þeodgestreonum,     þon þa dydon
+45 þe hine æt frumsceafte     forð onsendon
+46 ænne ofer yðe     umborwesende.
+47 þa gyt hie him asetton     segen geldenne
+48 heah ofer heafod,     leton holm beran,
+49 geafon on garsecg;     him wæs geomor sefa,
+50 murnende mod.     Men ne cunnon
+51 secgan to soðe,     selerædende,
+52 hæleð under heofenum,     hwa þæm hlæste onfeng.
+53 ða wæs on burgum     Beowulf Scyldinga,
+54 leof leodcyning,     longe þrage
+55 folcum gefræge     (fæder ellor hwearf,
+56 aldor of earde),     oþþæt him eft onwoc
+57 heah Healfdene;     heold þenden lifde,
+58 gamol ond guðreouw,     glæde Scyldingas.
+59 ðæm feower bearn     forð_gerimed
+60 in worold wocun,     weoroda ræswan,
+61 Heorogar ond Hroðgar     ond Halga til;
+62 hyrde ic þæt @     wæs Onelan cwen,
+63 Heaðoscilfingas     healsgebedda.
+64 þa wæs Hroðgare     heresped gyfen,
+65 wiges weorðmynd,     þæt him his winemagas
+66 georne hyrdon,     oðð þæt seo geogoð geweox,
+67 magodriht micel.     Him on mod bearn
+68 þæt healreced     hatan wolde,
+69 medoærn micel,     men gewyrcean
+70 þonne yldo bearn     æfre gefrunon,
+71 ond þær on innan     eall gedælan
+72 geongum ond ealdum,     swylc him god sealde,
+73 buton folcscare     ond feorum gumena.
+74 ða ic wide gefrægn     weorc gebannan
+75 manigre mægþe     geond þisne middangeard,
+76 folcstede frætwan.     Him on fyrste gelomp,
+77 ædre mid yldum,     þæt hit wearð ealgearo,
+78 healærna mæst;     scop him Heort naman
+79 se þe his wordes geweald     wide hæfde.
+80 He beot ne aleh,     beagas dælde,
+81 sinc æt symle.     Sele hlifade,
+82 heah ond horngeap,     heaðowylma bad,
+83 laðan liges;     ne wæs hit lenge þa gen
+84 þæt se ecghete     aþumsweorum
+85 æfter wælniðe     wæcnan scolde.
+86 ða se ellengæst     earfoðlice
+87 þrage geþolode,     se þe in þystrum bad,
+88 þæt he dogora gehwam     dream gehyrde
+89 hludne in healle;     þær wæs hearpan sweg,
+90 swutol sang scopes.     Sægde se þe cuþe
+91 frumsceaft fira     feorran reccan,
+92 cwæð þæt se ælmihtiga     eorðan worhte,
+93 wlitebeorhtne wang,     swa wæter bebugeð,
+94 gesette sigehreþig     sunnan ond monan
+95 leoman to leohte     landbuendum
+96 ond gefrætwade     foldan sceatas
+97 leomum ond leafum,     lif eac gesceop
+98 cynna gehwylcum     þara ðe cwice hwyrfaþ.
+99 Swa ða drihtguman     dreamum lifdon
+100 eadiglice,     oððæt an ongan
+101 fyrene fremman     feond on helle.
+102 Wæs se grimma gæst     Grendel haten,
+103 mære mearcstapa,     se þe moras heold,
+104 fen ond fæsten;     fifelcynnes eard
+105 wonsæli wer     weardode hwile,
+106 siþðan him scyppend     forscrifen hæfde
+107 in Caines cynne.     þone cwealm gewræc
+108 ece drihten,     þæs þe he Abel slog;
+109 ne gefeah he þære fæhðe,     ac he hine feor forwræc,
+110 metod for þy mane,     mancynne fram.
+111 þanon untydras     ealle onwocon,
+112 eotenas ond ylfe     ond orcneas,
+113 swylce gigantas,     þa wið gode wunnon
+114 lange þrage;     he him ðæs lean forgeald.
+115 Gewat ða neosian,     syþðan niht becom,
+116 hean huses,     hu hit Hringdene
+117 æfter beorþege     gebun hæfdon.
+118 Fand þa ðær inne     æþelinga gedriht
+119 swefan æfter symble;     sorge ne cuðon,
+120 wonsceaft wera.     Wiht unhælo,
+121 grim ond grædig,     gearo sona wæs,
+122 reoc ond reþe,     ond on ræste genam
+123 þritig þegna,     þanon eft gewat
+124 huðe hremig     to ham faran,
+125 mid þære wælfylle     wica neosan.
+126 ða wæs on uhtan     mid ærdæge
+127 Grendles guðcræft     gumum undyrne;
+128 þa wæs æfter wiste     wop up ahafen,
+129 micel morgensweg.     Mære þeoden,
+130 æþeling ærgod,     unbliðe sæt,
+131 þolode ðryðswyð,     þegnsorge dreah,
+132 syðþan hie þæs laðan     last sceawedon,
+133 wergan gastes;     wæs þæt gewin to strang,
+134 lað ond longsum.     Næs hit lengra fyrst,
+135 ac ymb ane niht     eft gefremede
+136 morðbeala mare     ond no mearn fore,
+137 fæhðe ond fyrene;     wæs to fæst on þam.
+138 þa wæs eaðfynde     þe him elles hwær
+139 gerumlicor     ræste sohte,
+140 bed æfter burum,     ða him gebeacnod wæs,
+141 gesægd soðlice     sweotolan tacne
+142 healðegnes hete;     heold hyne syðþan
+143 fyr ond fæstor     se þæm feonde ætwand.
+144 Swa rixode     ond wið rihte wan,
+145 ana wið eallum,     oðþæt idel stod
+146 husa selest.     Wæs seo hwil micel;
+147 XII wintra tid     torn geþolode
+148 wine Scyldinga,     weana gehwelcne,
+149 sidra sorga.     Forðam secgum wearð,
+150 ylda bearnum,     undyrne cuð,
+151 gyddum geomore,     þætte Grendel wan
+152 hwile wið Hroþgar,     heteniðas wæg,
+153 fyrene ond fæhðe     fela missera,
+154 singale sæce,     sibbe ne wolde
+155 wið manna hwone     mægenes Deniga,
+156 feorhbealo feorran,     fea þingian,
+157 ne þær nænig witena     wenan þorfte
+158 beorhtre bote     to banan folmum,
+159 ac_se æglæca     ehtende wæs,
+160 deorc deaþscua,     duguþe ond geogoþe,
+161 seomade ond syrede,     sinnihte heold
+162 mistige moras;     men ne cunnon
+163 hwyder helrunan     hwyrftum scriþað.
+164 Swa fela fyrena     feond mancynnes,
+165 atol angengea,     oft gefremede,
+166 heardra hynða.     Heorot eardode,
+167 sincfage sel     sweartum nihtum;
+168 no he þone gifstol     gretan moste,
+169 maþðum for metode,     ne his myne wisse.
+170 þæt wæs wræc micel     wine Scyldinga,
+171 modes brecða.     Monig oft gesæt
+172 rice to rune;     ræd eahtedon
+173 hwæt swiðferhðum     selest wære
+174 wið færgryrum     to gefremmanne.
+175 Hwilum hie geheton     æt hærgtrafum
+176 wigweorþunga,     wordum bædon
+177 þæt him gastbona     geoce gefremede
+178 wið þeodþreaum.     Swylc wæs þeaw hyra,
+179 hæþenra hyht;     helle gemundon
+180 in modsefan,     metod hie ne cuþon,
+181 dæda demend,     ne wiston hie drihten god,
+182 ne hie huru heofena helm     herian ne cuþon,
+183 wuldres waldend.     Wa bið þæm ðe sceal
+184 þurh sliðne nið     sawle bescufan
+185 in fyres fæþm,     frofre ne wenan,
+186 wihte gewendan;     wel bið þæm þe mot
+187 æfter deaðdæge     drihten secean
+188 ond to fæder fæþmum     freoðo wilnian.
+189 Swa ða mælceare     maga Healfdenes
+190 singala seað,     ne mihte snotor hæleð
+191 wean onwendan;     wæs þæt gewin to swyð,
+192 laþ ond longsum,     þe on ða leode becom,
+193 nydwracu niþgrim,     nihtbealwa mæst.
+194 þæt fram ham gefrægn     Higelaces þegn,
+195 god mid Geatum,     Grendles dæda;
+196 se wæs moncynnes     mægenes strengest
+197 on þæm dæge     þysses lifes,
+198 æþele ond eacen.     Het him yðlidan
+199 godne gegyrwan,     cwæð, he guðcyning
+200 ofer swanrade     secean wolde,
+201 mærne þeoden,     þa him wæs manna þearf.
+202 ðone siðfæt him     snotere ceorlas
+203 lythwon logon,     þeah he him leof wære;
+204 hwetton higerofne,     hæl sceawedon.
+205 Hæfde se goda     Geata leoda
+206 cempan gecorone     þara þe he cenoste
+207 findan mihte;     XVna sum
+208 sundwudu sohte;     secg wisade,
+209 lagucræftig mon,     landgemyrcu.
+210 Fyrst forð gewat.     Flota wæs on yðum,
+211 bat under beorge.     Beornas gearwe
+212 on stefn stigon;     streamas wundon,
+213 sund wið sande;     secgas bæron
+214 on bearm nacan     beorhte frætwe,
+215 guðsearo geatolic;     guman ut scufon,
+216 weras on wilsið,     wudu bundenne.
+217 Gewat þa ofer wægholm,     winde gefysed,
+218 flota famiheals     fugle gelicost,
+219 oðþæt ymb antid     oþres dogores
+220 wundenstefna     gewaden hæfde
+221 þæt ða liðende     land gesawon,
+222 brimclifu blican,     beorgas steape,
+223 side sænæssas;     þa wæs sund liden,
+224 eoletes æt ende.     þanon up hraðe
+225 Wedera leode     on wang stigon,
+226 sæwudu sældon     (syrcan hrysedon,
+227 guðgewædo),     gode þancedon
+228 þæs þe him yþlade     eaðe wurdon.
+229 þa of wealle geseah     weard Scildinga,
+230 se þe holmclifu     healdan scolde,
+231 beran ofer bolcan     beorhte randas,
+232 fyrdsearu fuslicu;     hine fyrwyt bræc
+233 modgehygdum,     hwæt þa men wæron.
+234 Gewat him þa to waroðe     wicge ridan
+235 þegn Hroðgares,     þrymmum cwehte
+236 mægenwudu mundum,     meþelwordum frægn:
+237 "Hwæt syndon ge     searohæbbendra,
+238 byrnum werede,     þe þus brontne ceol
+239 ofer lagustræte     lædan cwomon,
+240 hider ofer holmas?     @ @ ...le wæs
+241 endesæta,     ægwearde heold,
+242 þe on land Dena     laðra nænig
+243 mid scipherge     sceðþan ne meahte.
+244 No her cuðlicor     cuman ongunnon
+245 lindhæbbende;     ne ge leafnesword
+246 guðfremmendra     gearwe ne wisson,
+247 maga gemedu.     Næfre ic maran geseah
+248 eorla ofer eorþan     ðonne is eower sum,
+249 secg on searwum;     nis þæt seldguma,
+250 wæpnum geweorðad,     næfne him his wlite leoge,
+251 ænlic ansyn.     Nu ic eower sceal
+252 frumcyn witan,     ær ge fyr heonan,
+253 leassceaweras,     on land Dena
+254 furþur feran.     Nu ge feorbuend,
+255 mereliðende,     minne gehyrað
+256 anfealdne geþoht:     Ofost is selest
+257 to gecyðanne     hwanan eowre cyme syndon."
+258 Him se yldesta     ondswarode,
+259 werodes wisa,     wordhord onleac:
+260 "We synt gumcynnes     Geata leode
+261 ond Higelaces     heorðgeneatas.
+262 Wæs min fæder     folcum gecyþed,
+263 æþele ordfruma,     Ecgþeow haten.
+264 Gebad wintra worn,     ær he on weg hwurfe,
+265 gamol of geardum;     hine gearwe geman
+266 witena welhwylc     wide geond eorþan.
+267 We þurh holdne hige     hlaford þinne,
+268 sunu Healfdenes,     secean cwomon,
+269 leodgebyrgean;     wes þu us larena god.
+270 Habbað we to þæm mæran     micel ærende,
+271 Deniga frean,     ne sceal þær dyrne sum
+272 wesan, þæs ic wene.     þu wast (gif hit is
+273 swa we soþlice     secgan hyrdon)
+274 þæt mid Scyldingum     sceaðona ic nat hwylc,
+275 deogol dædhata,     deorcum nihtum
+276 eaweð þurh egsan     uncuðne nið,
+277 hynðu ond hrafyl.     Ic þæs Hroðgar mæg
+278 þurh rumne sefan     ræd gelæran,
+279 hu he frod ond god     feond oferswyðeþ,
+280 gyf him edwendan     æfre scolde
+281 bealuwa bisigu,     bot eft cuman,
+282 ond þa cearwylmas     colran wurðaþ;
+283 oððe a syþðan     earfoðþrage,
+284 þreanyd þolað,     þenden þær wunað
+285 on heahstede     husa selest."
+286 Weard maþelode,     ðær on wicge sæt,
+287 ombeht unforht:     "æghwæþres sceal
+288 scearp scyldwiga     gescad witan,
+289 worda ond worca,     se þe wel þenceð.
+290 Ic þæt gehyre,     þæt þis is hold weorod
+291 frean Scyldinga.     Gewitaþ forð beran
+292 wæpen ond gewædu;     ic eow wisige.
+293 Swylce ic maguþegnas     mine hate
+294 wið feonda gehwone     flotan eowerne,
+295 niwtyrwydne     nacan on sande
+296 arum healdan,     oþðæt eft byreð
+297 ofer lagustreamas     leofne mannan
+298 wudu wundenhals     to Wedermearce,
+299 godfremmendra     swylcum gifeþe bið
+300 þæt þone hilderæs     hal gedigeð."
+301 Gewiton him þa feran.     Flota stille bad,
+302 seomode on sale     sidfæþmed scip,
+303 on ancre fæst.     Eoforlic scionon
+304 ofer hleorberan     gehroden golde,
+305 fah ond fyrheard;     ferhwearde heold
+306 guþmod grimmon.     Guman onetton,
+307 sigon ætsomne,     oþþæt hy sæl_timbred,
+308 geatolic ond goldfah,     ongyton mihton;
+309 þæt wæs foremærost     foldbuendum
+310 receda under roderum,     on þæm se rica bad;
+311 lixte se leoma     ofer landa fela.
+312 Him þa hildedeor     hof modigra
+313 torht getæhte,     þæt hie him to mihton
+314 gegnum gangan;     guðbeorna sum
+315 wicg gewende,     word æfter cwæð:
+316 "Mæl is me to feran;     fæder alwalda
+317 mid arstafum     eowic gehealde
+318 siða gesunde.     Ic to sæ wille
+319 wið wrað werod     wearde healdan."
+320 Stræt wæs stanfah,     stig wisode
+321 gumum ætgædere.     Guðbyrne scan
+322 heard hondlocen,     hringiren scir
+323 song in searwum,     þa hie to sele furðum
+324 in hyra gryregeatwum     gangan cwomon.
+325 Setton sæmeþe     side scyldas,
+326 rondas regnhearde,     wið þæs recedes weal,
+327 bugon þa to bence.     Byrnan hringdon,
+328 guðsearo gumena;     garas stodon,
+329 sæmanna searo,     samod ætgædere,
+330 æscholt ufan græg;     wæs se irenþreat
+331 wæpnum gewurþad.     þa ðær wlonc hæleð
+332 oretmecgas     æfter æþelum frægn:
+333 "Hwanon ferigeað ge     fætte scyldas,
+334 græge syrcan     ond grimhelmas,
+335 heresceafta heap?     Ic eom Hroðgares
+336 ar ond ombiht.     Ne seah ic elþeodige
+337 þus manige men     modiglicran.
+338 Wen ic þæt ge for wlenco,     nalles for wræcsiðum,
+339 ac for higeþrymmum     Hroðgar sohton."
+340 Him þa ellenrof     andswarode,
+341 wlanc Wedera leod,     word æfter spræc,
+342 heard under helme:     "We synt Higelaces
+343 beodgeneatas;     Beowulf is min nama.
+344 Wille ic asecgan     sunu Healfdenes,
+345 mærum þeodne,     min ærende,
+346 aldre þinum,     gif he us geunnan wile
+347 þæt we hine swa godne     gretan moton."
+348 Wulfgar maþelode     (þæt wæs Wendla leod;
+349 wæs his modsefa     manegum gecyðed,
+350 wig ond wisdom):     "Ic þæs wine Deniga,
+351 frean Scildinga,     frinan wille,
+352 beaga bryttan,     swa þu bena eart,
+353 þeoden mærne,     ymb þinne sið,
+354 ond þe þa ondsware     ædre gecyðan
+355 ðe me se goda     agifan þenceð."
+356 Hwearf þa hrædlice     þær Hroðgar sæt
+357 eald ond anhar     mid his eorla gedriht;
+358 eode ellenrof,     þæt he for eaxlum gestod
+359 Deniga frean;     cuþe he duguðe þeaw.
+360 Wulfgar maðelode     to his winedrihtne:
+361 "Her syndon geferede,     feorran cumene
+362 ofer geofenes begang     Geata leode;
+363 þone yldestan     oretmecgas
+364 Beowulf nemnað.     Hy benan synt
+365 þæt hie, þeoden min,     wið þe moton
+366 wordum wrixlan.     No ðu him wearne geteoh
+367 ðinra gegncwida,     glædman Hroðgar.
+368 Hy on wiggetawum     wyrðe þinceað
+369 eorla geæhtlan;     huru se aldor deah,
+370 se þæm heaðorincum     hider wisade."
+371 Hroðgar maþelode,     helm Scyldinga:
+372 "Ic hine cuðe     cnihtwesende.
+373 Wæs his ealdfæder     Ecgþeo haten,
+374 ðæm to ham forgeaf     Hreþel Geata
+375 angan dohtor;     is his eafora nu
+376 heard her cumen,     sohte holdne wine.
+377 ðonne sægdon þæt     sæliþende,
+378 þa ðe gifsceattas     Geata fyredon
+379 þyder to þance,     þæt he XXXtiges
+380 manna mægencræft     on his mundgripe
+381 heaþorof hæbbe.     Hine halig god
+382 for arstafum     us onsende,
+383 to Westdenum,     þæs ic wen hæbbe,
+384 wið Grendles gryre.     Ic þæm godan sceal
+385 for his modþræce     madmas beodan.
+386 Beo ðu on ofeste,     hat in gan
+387 seon sibbegedriht     samod ætgædere;
+388 gesaga him eac wordum     þæt hie sint wilcuman
+389 Deniga leodum."     @ @ @ @
+390 @ @     word inne abead:
+391 "Eow het secgan     sigedrihten min,
+392 aldor Eastdena,     þæt he eower æþelu can,
+393 ond ge him syndon     ofer sæwylmas
+394 heardhicgende     hider wilcuman.
+395 Nu ge moton gangan     in eowrum guðgeatawum
+396 under heregriman     Hroðgar geseon;
+397 lætað hildebord     her onbidan,
+398 wudu,_wælsceaftas,     worda geþinges."
+399 Aras þa se rica,     ymb hine rinc manig,
+400 þryðlic þegna heap;     sume þær bidon,
+401 heaðoreaf heoldon,     swa him se hearda bebead.
+402 Snyredon ætsomne,     þa secg wisode,
+403 under Heorotes hrof     @ @
+404 heard under helme,     þæt he on heoðe gestod.
+405 Beowulf maðelode     (on him byrne scan,
+406 searonet seowed     smiþes orþancum):
+407 "Wæs þu, Hroðgar, hal!     Ic eom Higelaces
+408 mæg ond magoðegn;     hæbbe ic mærða fela
+409 ongunnen on geogoþe.     Me wearð Grendles þing
+410 on minre eþeltyrf     undyrne cuð;
+411 secgað sæliðend     þæt þæs sele stande,
+412 reced selesta,     rinca gehwylcum
+413 idel ond unnyt,     siððan æfenleoht
+414 under heofenes hador     beholen weorþeð.
+415 þa me þæt gelærdon     leode mine
+416 þa selestan,     snotere ceorlas,
+417 þeoden Hroðgar,     þæt ic þe sohte,
+418 forþan hie mægenes cræft     minne cuþon,
+419 selfe ofersawon,     ða ic of searwum cwom,
+420 fah from feondum,     þær ic fife geband,
+421 yðde eotena cyn     ond on yðum slog
+422 niceras nihtes,     nearoþearfe dreah,
+423 wræc Wedera nið     (wean ahsodon),
+424 forgrand gramum,     ond nu wið Grendel sceal,
+425 wið þam aglæcan,     ana gehegan
+426 ðing wið þyrse.     Ic þe nu ða,
+427 brego Beorhtdena,     biddan wille,
+428 eodor Scyldinga,     anre bene,
+429 þæt ðu me ne forwyrne,     wigendra hleo,
+430 freowine folca,     nu ic þus feorran com,
+431 þæt ic mote ana     ond minra eorla gedryht,
+432 @ þes hearda heap,     Heorot fælsian.
+433 Hæbbe ic eac geahsod     þæt se æglæca
+434 for his wonhydum     wæpna ne recceð.
+435 Ic þæt þonne forhicge     (swa me Higelac sie,
+436 min mondrihten,     modes bliðe),
+437 þæt ic sweord bere     oþðe sidne scyld,
+438 geolorand to guþe,     ac ic mid grape sceal
+439 fon wið feonde     ond ymb feorh sacan,
+440 lað wið laþum;     ðær gelyfan sceal
+441 dryhtnes dome     se þe hine deað nimeð.
+442 Wen ic þæt he wille,     gif he wealdan mot,
+443 in þæm guðsele     Geotena leode
+444 etan unforhte,     swa he oft dyde,
+445 mægen_Hreðmanna.     Na þu minne þearft
+446 hafalan hydan,     ac he me habban wile
+447 dreore fahne,     gif mec deað nimeð.
+448 Byreð blodig wæl,     byrgean þenceð,
+449 eteð angenga     unmurnlice,
+450 mearcað morhopu;     no ðu ymb mines ne þearft
+451 lices feorme     leng sorgian.
+452 Onsend Higelace,     gif mec hild nime,
+453 beaduscruda betst,     þæt mine breost wereð,
+454 hrægla selest;     þæt is Hrædlan laf,
+455 Welandes geweorc.     Gæð a wyrd swa hio scel."
+456 Hroðgar maþelode,     helm Scyldinga:
+457 "For gewyrhtum þu,     wine min Beowulf,
+458 ond for arstafum     usic sohtest.
+459 Gesloh þin fæder     fæhðe mæste;
+460 wearþ he Heaþolafe     to handbonan
+461 mid Wilfingum;     ða hine Wedera cyn
+462 for herebrogan     habban ne mihte.
+463 þanon he gesohte     Suðdena folc
+464 ofer yða gewealc,     Arscyldinga.
+465 ða ic furþum weold     folce Deniga
+466 ond on geogoðe heold     ginne_rice,
+467 hordburh hæleþa;     ða wæs Heregar dead,
+468 min yldra mæg     unlifigende,
+469 bearn Healfdenes;     se wæs betera ðonne ic.
+470 Siððan þa fæhðe     feo þingode;
+471 sende ic Wylfingum     ofer wæteres hrycg
+472 ealde madmas;     he me aþas swor.
+473 Sorh is me to secganne     on sefan minum
+474 gumena ængum     hwæt me Grendel hafað
+475 hynðo on Heorote     mid his heteþancum,
+476 færniða gefremed.     Is min fletwerod,
+477 wigheap gewanod;     hie wyrd forsweop
+478 on Grendles gryre.     God eaþe mæg
+479 þone dolsceaðan     dæda getwæfan.
+480 Ful oft gebeotedon     beore druncne
+481 ofer ealowæge     oretmecgas
+482 þæt hie in beorsele     bidan woldon
+483 Grendles guþe     mid gryrum ecga.
+484 ðonne wæs þeos medoheal     on morgentid,
+485 drihtsele dreorfah,     þonne dæg lixte,
+486 eal bencþelu     blode bestymed,
+487 heall heorudreore;     ahte ic holdra þy læs,
+488 deorre duguðe,     þe þa deað fornam.
+489 Site nu to symle     ond onsæl meoto,
+490 sigehreð secgum,     swa þin sefa hwette."
+491 þa wæs Geatmæcgum     geador ætsomne
+492 on beorsele     benc gerymed;
+493 þær swiðferhþe     sittan eodon,
+494 þryðum dealle.     þegn nytte beheold,
+495 se þe on handa bær     hroden ealowæge,
+496 scencte scir wered.     Scop hwilum sang
+497 hador on Heorote.     þær wæs hæleða dream,
+498 duguð unlytel     Dena ond Wedera.
+499 Unferð maþelode,     Ecglafes bearn,
+500 þe æt fotum sæt     frean Scyldinga,
+501 onband beadurune     (wæs him Beowulfes sið,
+502 modges merefaran,     micel æfþunca,
+503 forþon þe he ne uþe     þæt ænig oðer man
+504 æfre mærða þon ma     middangeardes
+505 gehedde under heofenum     þonne he sylfa):
+506 "Eart þu se Beowulf,     se þe wið Brecan wunne,
+507 on sidne sæ     ymb sund flite,
+508 ðær git for wlence     wada cunnedon
+509 ond for dolgilpe     on deop wæter
+510 aldrum neþdon?     Ne inc ænig mon,
+511 ne leof ne lað,     belean mihte
+512 sorhfullne sið,     þa git on sund reon.
+513 þær git eagorstream     earmum þehton,
+514 mæton merestræta,     mundum brugdon,
+515 glidon ofer garsecg;     geofon yþum weol,
+516 @ wintrys wylmum.     Git on wæteres æht
+517 seofon niht swuncon;     he þe æt sunde oferflat,
+518 hæfde mare mægen.     þa hine on morgentid
+519 on Heaþoræmas     holm up ætbær;
+520 ðonon he gesohte     swæsne ᛟ,
+521 leof his leodum,     lond Brondinga,
+522 freoðoburh fægere,     þær he folc ahte,
+523 burh ond beagas.     Beot eal wið þe
+524 sunu Beanstanes     soðe gelæste.
+525 ðonne wene ic to þe     wyrsan geþingea,
+526 ðeah þu heaðoræsa     gehwær dohte,
+527 grimre guðe,     gif þu Grendles dearst
+528 nihtlongne fyrst     nean bidan."
+529 Beowulf maþelode,     bearn Ecgþeowes:
+530 "Hwæt! þu worn fela,     wine min Unferð,
+531 beore druncen     ymb Brecan spræce,
+532 sægdest from his siðe.     Soð ic talige,
+533 þæt ic merestrengo     maran ahte,
+534 earfeþo on yþum,     ðonne ænig oþer man.
+535 Wit þæt gecwædon     cnihtwesende
+536 ond gebeotedon     (wæron begen þa git
+537 on geogoðfeore)     þæt wit on garsecg ut
+538 aldrum neðdon,     ond þæt geæfndon swa.
+539 Hæfdon swurd nacod,     þa wit on sund reon,
+540 heard on handa;     wit unc wið hronfixas
+541 werian þohton.     No he wiht fram me
+542 flodyþum feor     fleotan meahte,
+543 hraþor on holme;     no ic fram him wolde.
+544 ða wit ætsomne     on sæ wæron
+545 fif nihta fyrst,     oþþæt unc flod todraf,
+546 wado weallende,     wedera cealdost,
+547 nipende niht,     ond norþanwind
+548 heaðogrim ondhwearf;     hreo wæron yþa.
+549 Wæs merefixa     mod onhrered;
+550 þær me wið laðum     licsyrce min,
+551 heard, hondlocen,     helpe gefremede,
+552 beadohrægl broden     on breostum læg
+553 golde gegyrwed.     Me to grunde teah
+554 fah feondscaða,     fæste hæfde
+555 grim on grape;     hwæþre me gyfeþe wearð
+556 þæt ic aglæcan     orde geræhte,
+557 hildebille;     heaþoræs fornam
+558 mihtig meredeor     þurh mine hand.
+559 Swa mec gelome     laðgeteonan
+560 þreatedon þearle.     Ic him þenode
+561 deoran sweorde,     swa hit gedefe wæs.
+562 Næs hie ðære fylle     gefean hæfdon,
+563 manfordædlan,     þæt hie me þegon,
+564 symbel ymbsæton     sægrunde neah;
+565 ac on mergenne     mecum wunde
+566 be yðlafe     uppe lægon,
+567 sweordum aswefede,     þæt syðþan na
+568 ymb brontne ford     brimliðende
+569 lade ne letton.     Leoht eastan com,
+570 beorht beacen godes;     brimu swaþredon,
+571 þæt ic sænæssas     geseon mihte,
+572 windige weallas.     Wyrd oft nereð
+573 unfægne eorl,     þonne his ellen deah.
+574 Hwæþere me gesælde     þæt ic mid sweorde ofsloh
+575 niceras nigene.     No ic on niht gefrægn
+576 under heofones hwealf     heardran feohtan,
+577 ne on egstreamum     earmran mannon;
+578 hwaþere ic fara feng     feore gedigde,
+579 siþes werig.     ða mec sæ oþbær,
+580 flod æfter faroðe     on Finna land,
+581 wadu weallendu.     No ic wiht fram þe
+582 swylcra searoniða     secgan hyrde,
+583 billa brogan.     Breca næfre git
+584 æt heaðolace,     ne gehwæþer incer,
+585 swa deorlice     dæd gefremede
+586 fagum sweordum     (no ic þæs fela gylpe),
+587 þeah ðu þinum broðrum     to banan wurde,
+588 heafodmægum;     þæs þu in helle scealt
+589 werhðo dreogan,     þeah þin wit duge.
+590 Secge ic þe to soðe,     sunu Ecglafes,
+591 þæt næfre Grendel swa fela     gryra gefremede,
+592 atol æglæca,     ealdre þinum,
+593 hynðo on Heorote,     gif þin hige wære,
+594 sefa swa searogrim,     swa þu self talast.
+595 Ac he hafað onfunden     þæt he þa fæhðe ne þearf,
+596 atole ecgþræce     eower leode
+597 swiðe onsittan,     Sigescyldinga;
+598 nymeð nydbade,     nænegum arað
+599 leode Deniga,     ac he lust wigeð,
+600 swefeð ond sendeþ,     secce ne weneþ
+601 to Gardenum.     Ac ic him Geata sceal
+602 eafoð ond ellen     ungeara nu,
+603 guþe gebeodan.     Gæþ eft se þe mot
+604 to medo modig,     siþþan morgenleoht
+605 ofer ylda bearn     oþres dogores,
+606 sunne sweglwered     suþan scineð."
+607 þa wæs on salum     sinces brytta,
+608 gamolfeax ond guðrof;     geoce gelyfde
+609 brego Beorhtdena,     gehyrde on Beowulfe
+610 folces hyrde     fæstrædne geþoht.
+611 ðær wæs hæleþa hleahtor,     hlyn swynsode,
+612 word wæron wynsume.     Eode Wealhþeow forð,
+613 cwen Hroðgares,     cynna gemyndig,
+614 grette goldhroden     guman on healle,
+615 ond þa freolic wif     ful gesealde
+616 ærest Eastdena     eþelwearde,
+617 bæd hine bliðne     æt þære beorþege,
+618 leodum leofne.     He on lust geþeah
+619 symbel ond seleful,     sigerof kyning.
+620 Ymbeode þa     ides Helminga
+621 duguþe ond geogoþe     dæl æghwylcne,
+622 sincfato sealde,     oþþæt sæl alamp
+623 þæt hio Beowulfe,     beaghroden cwen
+624 mode geþungen,     medoful ætbær;
+625 grette Geata leod,     gode þancode
+626 wisfæst wordum     þæs ðe hire se willa gelamp
+627 þæt heo on ænigne     eorl gelyfde
+628 fyrena frofre.     He þæt ful geþeah,
+629 wælreow wiga,     æt Wealhþeon,
+630 ond þa gyddode     guþe gefysed;
+631 Beowulf maþelode,     bearn Ecgþeowes:
+632 "Ic þæt hogode,     þa ic on holm gestah,
+633 sæbat gesæt     mid minra secga gedriht,
+634 þæt ic anunga     eowra leoda
+635 willan geworhte     oþðe on wæl crunge,
+636 feondgrapum fæst.     Ic gefremman sceal
+637 eorlic ellen,     oþðe endedæg
+638 on þisse meoduhealle     minne gebidan."
+639 ðam wife þa word     wel licodon,
+640 gilpcwide Geates;     eode goldhroden
+641 freolicu folccwen     to hire frean sittan.
+642 þa wæs eft swa ær     inne on healle
+643 þryðword sprecen,     ðeod on sælum,
+644 sigefolca sweg,     oþþæt semninga
+645 sunu Healfdenes     secean wolde
+646 æfenræste;     wiste þæm ahlæcan
+647 to þæm heahsele     hilde geþinged,
+648 siððan hie sunnan leoht     geseon ne meahton,
+649 oþðe_nipende     niht ofer ealle,
+650 scaduhelma gesceapu     scriðan cwoman,
+651 wan under wolcnum.     Werod eall aras.
+652 Gegrette þa @     guma oþerne,
+653 Hroðgar Beowulf,     ond him hæl abead,
+654 winærnes geweald,     ond þæt word acwæð:
+655 "Næfre ic ænegum men     ær alyfde,
+656 siþðan ic hond ond rond     hebban mihte,
+657 ðryþærn Dena     buton þe nu ða.
+658 Hafa nu ond geheald     husa selest,
+659 gemyne mærþo,     mægenellen cyð,
+660 waca wið wraþum.     Ne bið þe wilna gad,
+661 gif þu þæt ellenweorc     aldre gedigest."
+662 ða him Hroþgar gewat     mid his hæleþa gedryht,
+663 eodur Scyldinga,     ut of healle;
+664 wolde wigfruma     Wealhþeo secan,
+665 cwen to gebeddan.     Hæfde kyningwuldor
+666 Grendle togeanes,     swa guman gefrungon,
+667 seleweard aseted;     sundornytte beheold
+668 ymb aldor Dena,     eotonweard abead.
+669 Huru Geata leod     georne truwode
+670 modgan mægnes,     metodes hyldo.
+671 ða he him of dyde     isernbyrnan,
+672 helm of hafelan,     sealde his hyrsted sweord,
+673 irena cyst,     ombihtþegne,
+674 ond gehealdan het     hildegeatwe.
+675 Gespræc þa se goda     gylpworda sum,
+676 Beowulf Geata,     ær he on bed stige:
+677 "No ic me an herewæsmun     hnagran talige,
+678 guþgeweorca,     þonne Grendel hine;
+679 forþan ic hine sweorde     swebban nelle,
+680 aldre beneotan,     þeah ic eal mæge.
+681 Nat he þara goda     þæt he me ongean slea,
+682 rand geheawe,     þeah ðe he rof sie
+683 niþgeweorca;     ac wit on niht sculon
+684 secge ofersittan,     gif he gesecean dear
+685 wig ofer wæpen,     ond siþðan witig god
+686 on swa hwæþere hond,     halig dryhten,
+687 mærðo deme,     swa him gemet þince."
+688 Hylde hine þa heaþodeor,     hleorbolster onfeng
+689 eorles andwlitan,     ond hine ymb monig
+690 snellic særinc     selereste gebeah.
+691 Nænig heora þohte     þæt he þanon scolde
+692 eft eardlufan     æfre gesecean,
+693 folc oþðe freoburh,     þær he afeded wæs;
+694 ac hie hæfdon gefrunen     þæt hie ær to fela micles
+695 in þæm winsele     wældeað fornam,
+696 Denigea leode.     Ac him dryhten forgeaf
+697 wigspeda gewiofu,     Wedera leodum,
+698 frofor ond fultum,     þæt hie feond heora
+699 ðurh anes cræft     ealle ofercomon,
+700 selfes mihtum.     Soð is gecyþed
+701 þæt mihtig god     manna cynnes
+702 weold wideferhð.     Com on wanre niht
+703 scriðan sceadugenga.     Sceotend swæfon,
+704 þa þæt hornreced     healdan scoldon,
+705 ealle buton anum.     þæt wæs yldum cuþ
+706 þæt hie ne moste,     þa metod nolde,
+707 se scynscaþa     under sceadu bregdan;
+708 ac he wæccende     wraþum on andan
+709 bad bolgenmod     beadwa geþinges.
+710 ða com of more     under misthleoþum
+711 Grendel gongan,     godes yrre bær;
+712 mynte se manscaða     manna cynnes
+713 sumne besyrwan     in sele þam hean.
+714 Wod under wolcnum     to þæs þe he winreced,
+715 goldsele gumena,     gearwost wisse,
+716 fættum fahne.     Ne wæs þæt forma sið
+717 þæt he Hroþgares     ham gesohte;
+718 næfre he on aldordagum     ær ne siþðan
+719 heardran hæle,     healðegnas fand.
+720 Com þa to recede     rinc siðian,
+721 dreamum bedæled.     Duru sona onarn,
+722 fyrbendum fæst,     syþðan he hire folmum æthran;
+723 onbræd þa bealohydig,     ða he gebolgen wæs,
+724 recedes muþan.     Raþe æfter þon
+725 on fagne flor     feond treddode,
+726 eode yrremod;     him of eagum stod
+727 ligge gelicost     leoht unfæger.
+728 Geseah he in recede     rinca manige,
+729 swefan sibbegedriht     samod ætgædere,
+730 magorinca heap.     þa his mod ahlog;
+731 mynte þæt he gedælde,     ærþon dæg cwome,
+732 atol aglæca,     anra gehwylces
+733 lif wið lice,     þa him alumpen wæs
+734 wistfylle wen.     Ne wæs þæt wyrd þa gen
+735 þæt he ma moste     manna cynnes
+736 ðicgean ofer þa niht.     þryðswyð beheold
+737 mæg Higelaces,     hu se manscaða
+738 under færgripum     gefaran wolde.
+739 Ne þæt se aglæca     yldan þohte,
+740 ac he gefeng hraðe     forman siðe
+741 slæpendne rinc,     slat unwearnum,
+742 bat banlocan,     blod edrum dranc,
+743 synsnædum swealh;     sona hæfde
+744 unlyfigendes     eal_gefeormod,
+745 fet ond folma.     Forð near ætstop,
+746 nam þa mid handa     higeþihtigne
+747 rinc on ræste,     ræhte ongean
+748 feond mid folme;     he onfeng hraþe
+749 inwitþancum     ond wið earm gesæt.
+750 Sona þæt onfunde     fyrena hyrde
+751 þæt he ne mette     middangeardes,
+752 eorþan sceata,     on elran men
+753 mundgripe maran.     He on mode wearð
+754 forht on ferhðe;     no þy ær fram meahte.
+755 Hyge wæs him hinfus,     wolde on heolster fleon,
+756 secan deofla gedræg;     ne wæs his drohtoð þær
+757 swylce he on ealderdagum     ær gemette.
+758 Gemunde þa se goda,     mæg Higelaces,
+759 æfenspræce,     uplang astod
+760 ond him fæste wiðfeng;     fingras burston.
+761 Eoten wæs utweard;     eorl furþur stop.
+762 Mynte se mæra,     þær he meahte swa,
+763 widre gewindan     ond on weg þanon
+764 fleon on fenhopu;     wiste his fingra geweald
+765 on grames grapum.     þæt @ wæs geocor_sið
+766 þæt se hearmscaþa     to Heorute ateah.
+767 Dryhtsele dynede;     Denum eallum wearð,
+768 ceasterbuendum,     cenra gehwylcum,
+769 eorlum ealuscerwen.     Yrre wæron begen,
+770 reþe renweardas.     Reced hlynsode.
+771 þa wæs wundor micel     þæt se winsele
+772 wiðhæfde heaþodeorum,     þæt he on hrusan ne feol,
+773 fæger foldbold;     ac he þæs fæste wæs
+774 innan ond utan     irenbendum
+775 searoþoncum besmiþod.     þær fram sylle abeag
+776 medubenc monig,     mine gefræge,
+777 golde geregnad,     þær þa graman wunnon.
+778 þæs ne wendon ær     witan Scyldinga
+779 þæt hit a mid gemete     manna ænig,
+780 betlic ond banfag,     tobrecan meahte,
+781 listum tolucan,     nymþe liges fæþm
+782 swulge on swaþule.     Sweg up astag
+783 niwe geneahhe;     Norðdenum stod
+784 atelic egesa,     anra gehwylcum
+785 þara þe of wealle     wop gehyrdon,
+786 gryreleoð galan     godes ondsacan,
+787 sigeleasne sang,     sar wanigean
+788 helle hæfton.     Heold hine fæste
+789 se þe manna wæs     mægene strengest
+790 on þæm dæge     þysses lifes.
+791 Nolde eorla hleo     ænige þinga
+792 þone cwealmcuman     cwicne forlætan,
+793 ne his lifdagas     leoda ænigum
+794 nytte tealde.     þær genehost brægd
+795 eorl Beowulfes     ealde lafe,
+796 wolde freadrihtnes     feorh ealgian,
+797 mæres þeodnes,     ðær hie meahton swa.
+798 Hie þæt ne wiston,     þa hie gewin drugon,
+799 heardhicgende     hildemecgas,
+800 ond on healfa gehwone     heawan þohton,
+801 sawle secan,     þone synscaðan
+802 ænig ofer eorþan     irenna cyst,
+803 guðbilla nan,     gretan nolde,
+804 ac he sigewæpnum     forsworen hæfde,
+805 ecga gehwylcre.     Scolde his aldorgedal
+806 on ðæm dæge     þysses lifes
+807 earmlic wurðan,     ond se ellorgast
+808 on feonda geweald     feor siðian.
+809 ða þæt onfunde     se þe fela æror
+810 modes myrðe     manna cynne,
+811 fyrene gefremede     (he wæs fag wið god),
+812 þæt him se lichoma     læstan nolde,
+813 ac hine se modega     mæg Hygelaces
+814 hæfde be honda;     wæs gehwæþer oðrum
+815 lifigende lað.     Licsar gebad
+816 atol æglæca;     him on eaxle wearð
+817 syndolh sweotol,     seonowe onsprungon,
+818 burston banlocan.     Beowulfe wearð
+819 guðhreð gyfeþe;     scolde Grendel þonan
+820 feorhseoc fleon     under fenhleoðu,
+821 secean wynleas wic;     wiste þe geornor
+822 þæt his aldres wæs     ende gegongen,
+823 dogera dægrim.     Denum eallum wearð
+824 æfter þam wælræse     willa gelumpen.
+825 Hæfde þa gefælsod     se þe ær feorran com,
+826 snotor ond swyðferhð,     sele Hroðgares,
+827 genered wið niðe;     nihtweorce gefeh,
+828 ellenmærþum.     Hæfde Eastdenum
+829 Geatmecga leod     gilp gelæsted,
+830 swylce oncyþðe     ealle gebette,
+831 inwidsorge,     þe hie ær drugon
+832 ond for þreanydum     þolian scoldon,
+833 torn unlytel.     þæt wæs tacen sweotol,
+834 syþðan hildedeor     hond alegde,
+835 earm ond eaxle     (þær wæs eal geador
+836 Grendles grape)     under geapne hrof.
+837 ða wæs on morgen     mine gefræge
+838 ymb þa gifhealle     guðrinc monig;
+839 ferdon folctogan     feorran ond nean
+840 geond widwegas     wundor sceawian,
+841 laþes lastas.     No his lifgedal
+842 sarlic þuhte     secga ænegum
+843 þara þe tirleases     trode sceawode,
+844 hu he werigmod     on weg þanon,
+845 niða ofercumen,     on nicera mere
+846 fæge ond geflymed     feorhlastas bær.
+847 ðær wæs on blode     brim weallende,
+848 atol yða geswing     eal gemenged
+849 haton heolfre,     heorodreore weol.
+850 Deaðfæge deog,     siððan dreama leas
+851 in fenfreoðo     feorh alegde,
+852 hæþene sawle;     þær him hel onfeng.
+853 þanon eft gewiton     ealdgesiðas,
+854 swylce geong manig     of gomenwaþe
+855 fram mere modge     mearum ridan,
+856 beornas on blancum.     ðær wæs Beowulfes
+857 mærðo mæned;     monig oft gecwæð
+858 þætte suð ne norð     be sæm tweonum
+859 ofer eormengrund     oþer nænig
+860 under swegles begong     selra nære
+861 rondhæbbendra,     rices wyrðra.
+862 Ne hie huru winedrihten     wiht ne logon,
+863 glædne Hroðgar,     ac þæt wæs god cyning.
+864 Hwilum heaþorofe     hleapan leton,
+865 on geflit faran     fealwe mearas
+866 ðær him foldwegas     fægere þuhton,
+867 cystum cuðe.     Hwilum cyninges þegn,
+868 guma gilphlæden,     gidda gemyndig,
+869 se ðe ealfela     ealdgesegena
+870 worn gemunde,     word oþer fand
+871 soðe gebunden;     secg eft ongan
+872 sið Beowulfes     snyttrum styrian
+873 ond on sped wrecan     spel gerade,
+874 wordum wrixlan.     Welhwylc gecwæð
+875 þæt he fram Sigemundes     secgan hyrde
+876 ellendædum,     uncuþes fela,
+877 Wælsinges gewin,     wide siðas,
+878 þara þe gumena bearn     gearwe ne wiston,
+879 fæhðe ond fyrena,     buton Fitela mid hine,
+880 þonne he swulces hwæt     secgan wolde,
+881 eam his nefan,     swa hie a wæron
+882 æt niða gehwam     nydgesteallan;
+883 hæfdon ealfela     eotena cynnes
+884 sweordum gesæged.     Sigemunde gesprong
+885 æfter deaðdæge     dom unlytel,
+886 syþðan wiges heard     wyrm acwealde,
+887 hordes hyrde.     He under harne stan,
+888 æþelinges bearn,     ana geneðde
+889 frecne dæde,     ne wæs him Fitela mid.
+890 Hwæþre him gesælde     ðæt þæt swurd þurhwod
+891 wrætlicne wyrm,     þæt hit on wealle ætstod,
+892 dryhtlic iren;     draca morðre swealt.
+893 Hæfde aglæca     elne gegongen
+894 þæt he beahhordes     brucan moste
+895 selfes dome;     sæbat gehleod,
+896 bær on bearm scipes     beorhte frætwa,
+897 Wælses eafera.     Wyrm hat gemealt.
+898 Se wæs wreccena     wide mærost
+899 ofer werþeode,     wigendra hleo,
+900 ellendædum     (he þæs ær onðah),
+901 siððan Heremodes     hild sweðrode,
+902 eafoð ond ellen.     He mid Eotenum wearð
+903 on feonda geweald     forð forlacen,
+904 snude forsended.     Hine sorhwylmas
+905 lemede to lange;     he his leodum wearð,
+906 eallum æþellingum     to aldorceare;
+907 swylce oft bemearn     ærran mælum
+908 swiðferhþes sið     snotor ceorl monig,
+909 se þe him bealwa to     bote gelyfde,
+910 þæt þæt ðeodnes bearn     geþeon scolde,
+911 fæderæþelum onfon,     folc gehealdan,
+912 hord ond hleoburh,     hæleþa rice,
+913 ᛟ Scyldinga.     He þær eallum wearð,
+914 mæg Higelaces,     manna cynne,
+915 freondum gefægra;     hine fyren onwod.
+916 Hwilum flitende     fealwe stræte
+917 mearum mæton.     ða wæs morgenleoht
+918 scofen ond scynded.     Eode scealc monig
+919 swiðhicgende     to sele þam hean
+920 searowundor seon;     swylce self cyning
+921 of brydbure,     beahhorda weard,
+922 tryddode tirfæst     getrume micle,
+923 cystum gecyþed,     ond his cwen mid him
+924 medostigge mæt     mægþa hose.
+925 Hroðgar maþelode     (he to healle geong,
+926 stod on stapole,     geseah steapne hrof,
+927 golde fahne,     ond Grendles hond):
+928 "ðisse ansyne     alwealdan þanc
+929 lungre gelimpe!     Fela ic laþes gebad,
+930 grynna æt Grendle;     a mæg god wyrcan
+931 wunder æfter wundre,     wuldres hyrde.
+932 ðæt wæs ungeara     þæt ic ænigra me
+933 weana ne wende     to widan feore
+934 bote gebidan,     þonne blode fah
+935 husa selest     heorodreorig stod,
+936 wea widscofen     witena gehwylcum
+937 ðara þe ne wendon     þæt hie wideferhð
+938 leoda landgeweorc     laþum beweredon
+939 scuccum ond scinnum.     Nu scealc hafað
+940 þurh drihtnes miht     dæd gefremede
+941 ðe we ealle     ær ne meahton
+942 snyttrum besyrwan.     Hwæt, þæt secgan mæg
+943 efne swa hwylc mægþa     swa ðone magan cende
+944 æfter gumcynnum,     gyf heo gyt lyfað,
+945 þæt hyre ealdmetod     este wære
+946 bearngebyrdo.     Nu ic, Beowulf, þec,
+947 secg betsta,     me for sunu wylle
+948 freogan on ferhþe;     heald forð tela
+949 niwe sibbe.     Ne bið þe nænigra gad
+950 worolde wilna,     þe ic geweald hæbbe.
+951 Ful oft ic for læssan     lean teohhode,
+952 hordweorþunge     hnahran rince,
+953 sæmran æt sæcce.     þu þe self hafast
+954 dædum gefremed     þæt þin dom lyfað
+955 awa to aldre.     Alwalda þec
+956 gode forgylde,     swa he nu gyt dyde!"
+957 Beowulf maþelode,     bearn Ecþeowes:
+958 "We þæt ellenweorc     estum miclum,
+959 feohtan fremedon,     frecne geneðdon
+960 eafoð uncuþes.     Uþe ic swiþor
+961 þæt ðu hine selfne     geseon moste,
+962 feond on frætewum     fylwerigne.
+963 Ic hine hrædlice     heardan clammum
+964 on wælbedde     wriþan þohte,
+965 þæt he for mundgripe     minum scolde
+966 licgean lifbysig,     butan his lic swice.
+967 Ic hine ne mihte,     þa metod nolde,
+968 ganges getwæman,     no ic him þæs georne ætfealh,
+969 feorhgeniðlan;     wæs to foremihtig
+970 feond on feþe.     Hwæþere he his folme forlet
+971 to lifwraþe     last weardian,
+972 earm ond eaxle.     No þær ænige swa þeah
+973 feasceaft guma     frofre gebohte;
+974 no þy leng leofað     laðgeteona,
+975 synnum geswenced,     ac hyne sar hafað
+976 mid nydgripe     nearwe befongen,
+977 balwon bendum.     ðær abidan sceal
+978 maga mane fah     miclan domes,
+979 hu him scir metod     scrifan wille."
+980 ða wæs swigra secg,     sunu Eclafes,
+981 on gylpspræce     guðgeweorca,
+982 siþðan æþelingas     eorles cræfte
+983 ofer heanne hrof     hand sceawedon,
+984 feondes fingras.     Foran æghwylc wæs,
+985 stiðra nægla gehwylc,     style gelicost,
+986 hæþenes handsporu     hilderinces,
+987 egl, unheoru.     æghwylc gecwæð
+988 þæt him heardra nan     hrinan wolde
+989 iren ærgod,     þæt ðæs ahlæcan
+990 blodge beadufolme     onberan wolde.
+991 ða wæs haten hreþe     Heort innanweard
+992 folmum gefrætwod.     Fela þæra wæs,
+993 wera ond wifa,     þe þæt winreced,
+994 gestsele gyredon.     Goldfag scinon
+995 web æfter wagum,     wundorsiona fela
+996 secga gehwylcum     þara þe on swylc starað.
+997 Wæs þæt beorhte bold     tobrocen swiðe,
+998 eal inneweard     irenbendum fæst,
+999 heorras tohlidene.     Hrof ana genæs,
+1000 ealles ansund,     þe se aglæca,
+1001 fyrendædum fag,     on fleam gewand,
+1002 aldres orwena.     No þæt yðe byð
+1003 to befleonne,     fremme se þe wille,
+1004 ac gesecan sceal     sawlberendra,
+1005 nyde genydde,     niþða bearna,
+1006 grundbuendra     gearwe stowe,
+1007 þær his lichoma     legerbedde fæst
+1008 swefeþ æfter symle.     þa wæs sæl ond mæl
+1009 þæt to healle gang     Healfdenes sunu;
+1010 wolde self cyning     symbel þicgan.
+1011 Ne gefrægen ic þa mægþe     maran weorode
+1012 ymb hyra sincgyfan     sel gebæran.
+1013 Bugon þa to bence     blædagande,
+1014 fylle gefægon;     fægere geþægon
+1015 medoful manig     magas þara
+1016 swiðhicgende     on sele þam hean,
+1017 Hroðgar ond Hroþulf.     Heorot innan wæs
+1018 freondum afylled;     nalles facenstafas
+1019 þeodscyldingas     þenden fremedon.
+1020 Forgeaf þa Beowulfe     bearn Healfdenes
+1021 segen gyldenne     sigores to leane;
+1022 hroden hildecumbor,     helm ond byrnan,
+1023 mære maðþumsweord     manige gesawon
+1024 beforan beorn beran.     Beowulf geþah
+1025 ful on flette;     no he þære feohgyfte
+1026 for sceotendum     scamigan ðorfte.
+1027 Ne gefrægn ic freondlicor     feower madmas
+1028 golde gegyrede     gummanna fela
+1029 in ealobence     oðrum gesellan.
+1030 Ymb þæs helmes hrof     heafodbeorge
+1031 wirum bewunden     walu utan heold,
+1032 þæt him fela laf     frecne ne meahton
+1033 scurheard sceþðan,     þonne scyldfreca
+1034 ongean gramum     gangan scolde.
+1035 Heht ða eorla hleo     eahta mearas
+1036 fætedhleore     on flet teon,
+1037 in under eoderas.     þara anum stod
+1038 sadol searwum fah,     since gewurþad;
+1039 þæt wæs hildesetl     heahcyninges,
+1040 ðonne sweorda gelac     sunu Healfdenes
+1041 efnan wolde.     Næfre on ore læg
+1042 widcuþes wig,     ðonne walu feollon.
+1043 Ond ða Beowulfe     bega gehwæþres
+1044 eodor Ingwina     onweald geteah,
+1045 wicga ond wæpna,     het hine wel brucan.
+1046 Swa manlice     mære þeoden,
+1047 hordweard hæleþa,     heaþoræsas geald
+1048 mearum ond madmum,     swa hy næfre man lyhð,
+1049 se þe secgan wile     soð æfter rihte.
+1050 ða gyt æghwylcum     eorla drihten
+1051 þara þe mid Beowulfe     brimlade teah
+1052 on þære medubence     maþðum gesealde,
+1053 yrfelafe,     ond þone ænne heht
+1054 golde forgyldan,     þone ðe Grendel ær
+1055 mane acwealde,     swa he hyra ma wolde,
+1056 nefne him witig god     wyrd forstode
+1057 ond ðæs mannes mod.     Metod eallum weold
+1058 gumena cynnes,     swa he nu git deð.
+1059 Forþan bið andgit     æghwær selest,
+1060 ferhðes foreþanc.     Fela sceal gebidan
+1061 leofes ond laþes     se þe longe her
+1062 on ðyssum windagum     worolde bruceð.
+1063 þær wæs sang ond sweg     samod ætgædere
+1064 fore Healfdenes     hildewisan,
+1065 gomenwudu greted,     gid oft wrecen,
+1066 ðonne healgamen     Hroþgares scop
+1067 æfter medobence     mænan scolde
+1068 be Finnes eaferum,     ða hie se fær begeat,
+1069 hæleð Healfdena,     Hnæf Scyldinga,
+1070 in Freswæle     feallan scolde.
+1071 Ne huru Hildeburh     herian þorfte
+1072 Eotena treowe;     unsynnum wearð
+1073 beloren leofum     æt þam lindplegan,
+1074 bearnum ond broðrum;     hie on gebyrd hruron,
+1075 gare wunde.     þæt wæs geomuru ides!
+1076 Nalles holinga     Hoces dohtor
+1077 meotodsceaft bemearn,     syþðan morgen com,
+1078 ða heo under swegle     geseon meahte
+1079 morþorbealo maga,     þær heo ær mæste heold
+1080 worolde wynne.     Wig ealle fornam
+1081 Finnes þegnas     nemne feaum anum,
+1082 þæt he ne mehte     on þæm meðelstede
+1083 wig Hengeste     wiht gefeohtan,
+1084 ne þa wealafe     wige forþringan
+1085 þeodnes ðegna;     ac hig him geþingo budon,
+1086 þæt hie him oðer flet     eal gerymdon,
+1087 healle ond heahsetl,     þæt hie healfre geweald
+1088 wið Eotena bearn     agan moston,
+1089 ond æt feohgyftum     Folcwaldan sunu
+1090 dogra gehwylce     Dene weorþode,
+1091 Hengestes heap     hringum wenede
+1092 efne swa swiðe     sincgestreonum
+1093 fættan goldes,     swa he Fresena cyn
+1094 on beorsele     byldan wolde.
+1095 ða hie getruwedon     on twa healfa
+1096 fæste frioðuwære.     Fin Hengeste
+1097 elne, unflitme     aðum benemde
+1098 þæt he þa wealafe     weotena dome
+1099 arum heolde,     þæt ðær ænig mon
+1100 wordum ne worcum     wære ne bræce,
+1101 ne þurh inwitsearo     æfre gemænden
+1102 ðeah hie hira beaggyfan     banan folgedon
+1103 ðeodenlease,     þa him swa geþearfod wæs;
+1104 gyf þonne Frysna hwylc     frecnan spræce
+1105 ðæs morþorhetes     myndgiend wære,
+1106 þonne hit sweordes ecg     seðan scolde.
+1107 Ad wæs geæfned     ond icge gold
+1108 ahæfen of horde.     Herescyldinga
+1109 betst beadorinca     wæs on bæl gearu.
+1110 æt þæm ade wæs     eþgesyne
+1111 swatfah syrce,     swyn ealgylden,
+1112 eofer irenheard,     æþeling manig
+1113 wundum awyrded;     sume on wæle crungon.
+1114 Het ða Hildeburh     æt Hnæfes ade
+1115 hire selfre sunu     sweoloðe befæstan,
+1116 banfatu bærnan     ond on bæl don
+1117 eame on eaxle.     Ides gnornode,
+1118 geomrode giddum.     Guðrinc astah.
+1119 Wand to wolcnum     wælfyra mæst,
+1120 hlynode for hlawe;     hafelan multon,
+1121 bengeato burston,     ðonne blod ætspranc,
+1122 laðbite lices.     Lig ealle forswealg,
+1123 gæsta gifrost,     þara ðe þær guð fornam
+1124 bega folces;     wæs hira blæd scacen.
+1125 Gewiton him ða wigend     wica neosian,
+1126 freondum befeallen,     Frysland geseon,
+1127 hamas ond heaburh.     Hengest ða gyt
+1128 wælfagne winter     wunode mid Finne
+1129 eal unhlitme.     Eard gemunde,
+1130 þeah þe he ne meahte     on mere drifan
+1131 hringedstefnan;     holm storme weol,
+1132 won wið winde,     winter yþe beleac
+1133 isgebinde,     oþðæt oþer com
+1134 gear in geardas,     swa nu gyt deð,
+1135 þa ðe syngales     sele bewitiað,
+1136 wuldortorhtan weder.     ða wæs winter scacen,
+1137 fæger foldan bearm.     Fundode wrecca,
+1138 gist of geardum;     he to gyrnwræce
+1139 swiðor þohte     þonne to sælade,
+1140 gif he torngemot     þurhteon mihte
+1141 þæt he Eotena bearn     inne gemunde.
+1142 Swa he ne forwyrnde     woroldrædenne,
+1143 þonne him Hunlafing     hildeleoman,
+1144 billa selest,     on bearm dyde,
+1145 þæs wæron mid Eotenum     ecge cuðe.
+1146 Swylce ferhðfrecan     Fin eft begeat
+1147 sweordbealo sliðen     æt his selfes ham,
+1148 siþðan grimne gripe     Guðlaf ond Oslaf
+1149 æfter sæsiðe,     sorge, mændon,
+1150 ætwiton weana dæl;     ne meahte wæfre mod
+1151 forhabban in hreþre.     ða wæs heal roden
+1152 feonda feorum,     swilce Fin slægen,
+1153 cyning on corþre,     ond seo cwen numen.
+1154 Sceotend Scyldinga     to scypon feredon
+1155 eal ingesteald     eorðcyninges,
+1156 swylce hie æt Finnes ham     findan meahton
+1157 sigla, searogimma.     Hie on sælade
+1158 drihtlice wif     to Denum feredon,
+1159 læddon to leodum.     Leoð wæs asungen,
+1160 gleomannes gyd.     Gamen eft astah,
+1161 beorhtode bencsweg;     byrelas sealdon
+1162 win of wunderfatum.     þa cwom Wealhþeo forð
+1163 gan under gyldnum beage,     þær þa godan twegen
+1164 sæton suhtergefæderan;     þa gyt wæs hiera sib ætgædere,
+1165 æghwylc oðrum trywe.     Swylce þær Unferþ þyle
+1166 æt fotum sæt frean Scyldinga;     gehwylc hiora his ferhþe treowde,
+1167 þæt he hæfde mod micel,     þeah þe he his magum nære
+1168 arfæst æt ecga gelacum.     Spræc ða ides Scyldinga:
+1169 "Onfoh þissum fulle,     freodrihten min,
+1170 sinces brytta!     þu on sælum wes,
+1171 goldwine gumena,     ond to Geatum spræc
+1172 mildum wordum,     swa sceal man don.
+1173 Beo wið Geatas glæd,     geofena gemyndig,
+1174 nean ond feorran     þu nu hafast.
+1175 Me man sægde     þæt þu ðe for sunu wolde
+1176 hererinc habban.     Heorot is gefælsod,
+1177 beahsele beorhta;     bruc þenden þu mote
+1178 manigra medo,     ond þinum magum læf
+1179 folc ond rice,     þonne ðu forð scyle
+1180 metodsceaft seon.     Ic minne can
+1181 glædne Hroþulf,     þæt he þa geogoðe wile
+1182 arum healdan,     gyf þu ær þonne he,
+1183 wine Scildinga,     worold oflætest;
+1184 wene ic þæt he mid gode     gyldan wille
+1185 uncran eaferan,     gif he þæt eal gemon,
+1186 hwæt wit to willan     ond to worðmyndum
+1187 umborwesendum ær     arna gefremedon."
+1188 Hwearf þa bi bence     þær hyre byre wæron,
+1189 Hreðric ond Hroðmund,     ond hæleþa bearn,
+1190 giogoð ætgædere;     þær se goda sæt,
+1191 Beowulf Geata,     be þæm gebroðrum twæm.
+1192 Him wæs ful boren     ond freondlaþu
+1193 wordum bewægned,     ond wunden_gold
+1194 estum geeawed,     earmreade twa,
+1195 hrægl ond hringas,     healsbeaga mæst
+1196 þara þe ic on foldan     gefrægen hæbbe.
+1197 Nænigne ic under swegle     selran hyrde
+1198 hordmaððum hæleþa,     syþðan Hama ætwæg
+1199 to þære_byrhtan byrig     Brosinga mene,
+1200 sigle ond sincfæt;     searoniðas fleah
+1201 Eormenrices,     geceas ecne ræd.
+1202 þone hring hæfde     Higelac Geata,
+1203 nefa Swertinges,     nyhstan siðe,
+1204 siðþan he under segne     sinc ealgode,
+1205 wælreaf werede;     hyne wyrd fornam,
+1206 syþðan he for wlenco     wean ahsode,
+1207 fæhðe to Frysum.     He þa frætwe wæg,
+1208 eorclanstanas     ofer yða ful,
+1209 rice þeoden;     he under rande gecranc.
+1210 Gehwearf þa in Francna fæþm     feorh cyninges,
+1211 breostgewædu     ond se beah somod;
+1212 wyrsan wigfrecan     wæl reafedon
+1213 æfter guðsceare,     Geata leode,
+1214 hreawic heoldon.     Heal swege onfeng.
+1215 Wealhðeo maþelode,     heo fore þæm werede spræc:
+1216 "Bruc ðisses beages,     Beowulf leofa,
+1217 hyse, mid hæle,     ond þisses hrægles neot,
+1218 þeodgestreona,     ond geþeoh tela,
+1219 cen þec mid cræfte     ond þyssum cnyhtum wes
+1220 lara liðe;     ic þe þæs lean geman.
+1221 Hafast þu gefered     þæt ðe feor ond neah
+1222 ealne wideferhþ     weras ehtigað,
+1223 efne swa side     swa sæ bebugeð,
+1224 windgeard, weallas.     Wes þenden þu lifige,
+1225 æþeling, eadig.     Ic þe an tela
+1226 sincgestreona.     Beo þu suna minum
+1227 dædum gedefe,     dreamhealdende.
+1228 Her is æghwylc eorl     oþrum getrywe,
+1229 modes milde,     mandrihtne hold;
+1230 þegnas syndon geþwære,     þeod ealgearo,
+1231 druncne dryhtguman     doð swa ic bidde."
+1232 Eode þa to setle.     þær wæs symbla cyst;
+1233 druncon win weras.     Wyrd ne cuþon,
+1234 geosceaft grimme,     swa hit agangen wearð
+1235 eorla manegum,     syþðan æfen cwom
+1236 ond him Hroþgar gewat     to hofe sinum,
+1237 rice to ræste.     Reced weardode
+1238 unrim eorla,     swa hie oft ær dydon.
+1239 Bencþelu beredon;     hit geondbræded wearð
+1240 beddum ond bolstrum.     Beorscealca sum
+1241 fus ond fæge     fletræste gebeag.
+1242 Setton him to heafdon     hilderandas,
+1243 bordwudu beorhtan;     þær on bence wæs
+1244 ofer æþelinge     yþgesene
+1245 heaþosteapa helm,     hringed byrne,
+1246 þrecwudu þrymlic.     Wæs þeaw hyra
+1247 þæt hie oft wæron     an wig gearwe,
+1248 ge æt ham ge on herge,     ge gehwæþer þara,
+1249 efne swylce mæla     swylce hira mandryhtne
+1250 þearf gesælde;     wæs seo þeod tilu.
+1251 Sigon þa to slæpe.     Sum sare angeald
+1252 æfenræste,     swa him ful oft gelamp,
+1253 siþðan goldsele     Grendel warode,
+1254 unriht æfnde,     oþþæt ende becwom,
+1255 swylt æfter synnum.     þæt gesyne wearþ,
+1256 widcuþ werum,     þætte wrecend þa gyt
+1257 lifde æfter laþum,     lange þrage,
+1258 æfter guðceare.     Grendles modor,
+1259 ides, aglæcwif,     yrmþe gemunde,
+1260 se þe wæteregesan     wunian scolde,
+1261 cealde streamas,     siþðan Cain wearð
+1262 to ecgbanan     angan breþer,
+1263 fæderenmæge;     he þa fag gewat,
+1264 morþre gemearcod,     mandream fleon,
+1265 westen warode.     þanon woc fela
+1266 geosceaftgasta;     wæs þæra Grendel sum,
+1267 heorowearh hetelic,     se æt Heorote fand
+1268 wæccendne wer     wiges bidan.
+1269 þær him aglæca     ætgræpe wearð;
+1270 hwæþre he gemunde     mægenes strenge,
+1271 gimfæste gife     ðe him god sealde,
+1272 ond him to anwaldan     are gelyfde,
+1273 frofre ond fultum;     ðy he þone feond ofercwom,
+1274 gehnægde helle gast.     þa he hean gewat,
+1275 dreame bedæled,     deaþwic seon,
+1276 mancynnes feond,     ond his modor þa gyt,
+1277 gifre ond galgmod,     gegan wolde
+1278 sorhfulne sið,     sunu deað wrecan.
+1279 Com þa to Heorote,     ðær Hringdene
+1280 geond þæt sæld swæfun.     þa ðær sona wearð
+1281 edhwyrft eorlum,     siþðan inne fealh
+1282 Grendles modor.     Wæs se gryre læssa
+1283 efne swa micle     swa bið mægþa cræft,
+1284 wiggryre wifes,     be_wæpnedmen,
+1285 þonne heoru bunden,     hamere geþuren,
+1286 sweord swate fah     swin ofer helme
+1287 ecgum dyhttig     andweard scireð.
+1288 þa wæs on healle     heardecg togen
+1289 sweord ofer setlum,     sidrand manig
+1290 hafen handa fæst;     helm ne gemunde,
+1291 byrnan side,     þa hine se broga angeat.
+1292 Heo wæs on ofste,     wolde ut þanon,
+1293 feore beorgan,     þa heo onfunden wæs.
+1294 Hraðe heo æþelinga     anne hæfde
+1295 fæste befangen,     þa heo to fenne gang.
+1296 Se wæs Hroþgare     hæleþa leofost
+1297 on gesiðes had     be sæm tweonum,
+1298 rice randwiga,     þone ðe heo on ræste abreat,
+1299 blædfæstne beorn.     Næs Beowulf ðær,
+1300 ac wæs oþer in     ær geteohhod
+1301 æfter maþðumgife     mærum Geate.
+1302 Hream wearð in Heorote;     heo under heolfre genam
+1303 cuþe folme;     cearu wæs geniwod,
+1304 geworden in wicun.     Ne wæs þæt gewrixle til,
+1305 þæt hie on ba healfa     bicgan scoldon
+1306 freonda feorum.     þa wæs frod cyning,
+1307 har hilderinc,     on hreon_mode,
+1308 syðþan he aldorþegn     unlyfigendne,
+1309 þone deorestan     deadne wisse.
+1310 Hraþe wæs to bure     Beowulf fetod,
+1311 sigoreadig secg.     Samod ærdæge
+1312 eode eorla sum,     æþele cempa
+1313 self mid gesiðum     þær se snotera bad,
+1314 hwæþer him alwalda     æfre wille
+1315 æfter weaspelle     wyrpe gefremman.
+1316 Gang ða æfter flore     fyrdwyrðe man
+1317 mid his handscale     (healwudu dynede),
+1318 þæt he þone wisan     wordum nægde
+1319 frean Ingwina,     frægn gif him wære
+1320 æfter neodlaðum     niht getæse.
+1321 Hroðgar maþelode,     helm Scyldinga:
+1322 "Ne frin þu æfter sælum!     Sorh is geniwod
+1323 Denigea leodum.     Dead is æschere,
+1324 Yrmenlafes     yldra broþor,
+1325 min runwita     ond min rædbora,
+1326 eaxlgestealla,     ðonne we on orlege
+1327 hafelan weredon,     þonne hniton feþan,
+1328 eoferas cnysedan.     Swylc scolde_eorl wesan,
+1329 æþeling ærgod,     swylc æschere wæs!
+1330 Wearð him on Heorote     to handbanan
+1331 wælgæst wæfre;     ic ne wat hwæder
+1332 atol æse wlanc     eftsiðas teah,
+1333 fylle gefægnod.     Heo þa fæhðe wræc
+1334 þe þu gystran niht     Grendel cwealdest
+1335 þurh hæstne had     heardum clammum,
+1336 forþan he to lange     leode mine
+1337 wanode ond wyrde.     He æt wige gecrang
+1338 ealdres scyldig,     ond nu oþer cwom
+1339 mihtig manscaða,     wolde hyre mæg wrecan,
+1340 ge feor hafað     fæhðe gestæled
+1341 (þæs þe þincean mæg     þegne monegum,
+1342 se þe æfter sincgyfan     on sefan greoteþ),
+1343 hreþerbealo hearde;     nu seo hand ligeð,
+1344 se þe eow welhwylcra     wilna dohte.
+1345 Ic þæt londbuend,     leode mine,
+1346 selerædende,     secgan hyrde
+1347 þæt hie gesawon     swylce twegen
+1348 micle mearcstapan     moras healdan,
+1349 ellorgæstas.     ðæra oðer wæs,
+1350 þæs þe hie gewislicost     gewitan meahton,
+1351 idese onlicnæs;     oðer earmsceapen
+1352 on weres wæstmum     wræclastas træd,
+1353 næfne he wæs mara     þonne ænig man oðer;
+1354 þone on geardagum     Grendel nemdon
+1355 foldbuende.     No hie fæder cunnon,
+1356 hwæþer him ænig wæs     ær acenned
+1357 dyrnra gasta.     Hie dygel lond
+1358 warigeað, wulfhleoþu,     windige næssas,
+1359 frecne fengelad,     ðær fyrgenstream
+1360 under næssa genipu     niþer gewiteð,
+1361 flod under foldan.     Nis þæt feor heonon
+1362 milgemearces     þæt se mere standeð;
+1363 ofer þæm hongiað     hrinde bearwas,
+1364 wudu wyrtum fæst     wæter oferhelmað.
+1365 þær mæg nihta gehwæm     niðwundor seon,
+1366 fyr on flode.     No þæs frod leofað
+1367 gumena bearna,     þæt þone grund wite;
+1368 ðeah þe hæðstapa     hundum geswenced,
+1369 heorot hornum trum,     holtwudu sece,
+1370 feorran geflymed,     ær he feorh seleð,
+1371 aldor on ofre,     ær he in wille
+1372 hafelan hydan.     Nis þæt heoru stow!
+1373 þonon yðgeblond     up astigeð
+1374 won to wolcnum,     þonne wind styreþ,
+1375 lað gewidru,     oðþæt lyft drysmaþ,
+1376 roderas reotað.     Nu is se ræd gelang
+1377 eft æt þe anum.     Eard git ne const,
+1378 frecne stowe,     ðær þu findan miht
+1379 felasinnigne secg;     sec gif þu dyrre.
+1380 Ic þe þa fæhðe     feo leanige,
+1381 ealdgestreonum,     swa ic ær dyde,
+1382 wundnum_golde,     gyf þu on weg cymest."
+1383 Beowulf maþelode,     bearn Ecgþeowes:
+1384 "Ne sorga, snotor guma;     selre bið æghwæm
+1385 þæt he his freond wrece,     þonne he fela murne.
+1386 Ure æghwylc sceal     ende gebidan
+1387 worolde lifes;     wyrce se þe mote
+1388 domes ær deaþe;     þæt bið drihtguman
+1389 unlifgendum     æfter selest.
+1390 Aris, rices weard,     uton raþe feran
+1391 Grendles magan     gang sceawigan.
+1392 Ic hit þe gehate,     no he on helm losaþ,
+1393 ne on foldan fæþm,     ne on fyrgenholt,
+1394 ne on gyfenes grund,     ga þær he wille.
+1395 ðys dogor þu     geþyld hafa
+1396 weana gehwylces,     swa ic þe wene to."
+1397 Ahleop ða se gomela,     gode þancode,
+1398 mihtigan drihtne,     þæs se man gespræc.
+1399 þa wæs Hroðgare     hors gebæted,
+1400 wicg wundenfeax.     Wisa fengel
+1401 geatolic gende;     gumfeþa stop
+1402 lindhæbbendra.     Lastas wæron
+1403 æfter waldswaþum     wide gesyne,
+1404 gang ofer grundas,     þær heo gegnum for
+1405 ofer myrcan mor,     magoþegna bær
+1406 þone selestan     sawolleasne
+1407 þara þe mid Hroðgare     ham eahtode.
+1408 Ofereode þa     æþelinga bearn
+1409 steap stanhliðo,     stige nearwe,
+1410 enge anpaðas,     uncuð gelad,
+1411 neowle næssas,     nicorhusa fela.
+1412 He feara sum     beforan gengde
+1413 wisra monna     wong sceawian,
+1414 oþþæt he færinga     fyrgenbeamas
+1415 ofer harne stan     hleonian funde,
+1416 wynleasne wudu;     wæter under stod
+1417 dreorig ond gedrefed.     Denum eallum wæs,
+1418 winum Scyldinga,     weorce on mode
+1419 to geþolianne,     ðegne monegum,
+1420 oncyð eorla gehwæm,     syðþan æscheres
+1421 on þam holmclife     hafelan metton.
+1422 Flod blode weol     (folc to sægon),
+1423 hatan heolfre.     Horn stundum song
+1424 fuslic fyrdleoð.     Feþa eal gesæt.
+1425 Gesawon ða æfter wætere     wyrmcynnes fela,
+1426 sellice sædracan,     sund cunnian,
+1427 swylce on næshleoðum     nicras licgean,
+1428 ða on undernmæl     oft bewitigað
+1429 sorhfulne sið     on seglrade,
+1430 wyrmas ond wildeor;     hie on weg hruron,
+1431 bitere ond gebolgne,     bearhtm ongeaton,
+1432 guðhorn galan.     Sumne Geata leod
+1433 of flanbogan     feores getwæfde,
+1434 yðgewinnes,     þæt him on aldre stod
+1435 herestræl hearda;     he on holme wæs
+1436 sundes þe sænra,     ðe hyne swylt fornam.
+1437 Hræþe wearð on yðum     mid eoferspreotum
+1438 heorohocyhtum     hearde genearwod,
+1439 niða genæged,     ond on næs togen,
+1440 wundorlic wægbora;     weras sceawedon
+1441 gryrelicne gist.     Gyrede hine Beowulf
+1442 eorlgewædum,     nalles for ealdre mearn.
+1443 Scolde herebyrne     hondum gebroden,
+1444 sid ond searofah,     sund cunnian,
+1445 seo ðe bancofan     beorgan cuþe,
+1446 þæt him hildegrap     hreþre ne mihte,
+1447 eorres inwitfeng,     aldre gesceþðan;
+1448 ac se hwita helm     hafelan werede,
+1449 se þe meregrundas     mengan scolde,
+1450 secan sundgebland     since geweorðad,
+1451 befongen freawrasnum,     swa hine fyrndagum
+1452 worhte wæpna smið,     wundrum teode,
+1453 besette swinlicum,     þæt hine syðþan no
+1454 brond ne beadomecas     bitan ne meahton.
+1455 Næs þæt þonne mætost     mægenfultuma
+1456 þæt him on ðearfe lah     ðyle Hroðgares;
+1457 wæs þæm hæftmece     Hrunting nama.
+1458 þæt wæs an foran     ealdgestreona;
+1459 ecg wæs iren,     atertanum fah,
+1460 ahyrded heaþoswate;     næfre hit æt hilde ne swac
+1461 manna ængum     þara þe hit mid mundum bewand,
+1462 se ðe gryresiðas     gegan dorste,
+1463 folcstede fara;     næs þæt forma sið
+1464 þæt hit ellenweorc     æfnan scolde.
+1465 Huru ne gemunde     mago Ecglafes,
+1466 eafoþes cræftig,     þæt he ær gespræc
+1467 wine druncen,     þa he þæs wæpnes onlah
+1468 selran sweordfrecan.     Selfa ne dorste
+1469 under yða gewin     aldre geneþan,
+1470 drihtscype dreogan;     þær he dome forleas,
+1471 ellenmærðum.     Ne wæs þæm oðrum swa,
+1472 syðþan he hine to guðe     gegyred hæfde.
+1473 Beowulf maðelode,     bearn Ecgþeowes:
+1474 "Geþenc nu, se mæra     maga Healfdenes,
+1475 snottra fengel,     nu ic eom siðes fus,
+1476 goldwine gumena,     hwæt wit geo spræcon,
+1477 gif ic æt þearfe     þinre scolde
+1478 aldre linnan,     þæt ðu me a wære
+1479 forðgewitenum     on fæder stæle.
+1480 Wes þu mundbora     minum magoþegnum,
+1481 hondgesellum,     gif mec hild nime;
+1482 swylce þu ða madmas     þe þu me sealdest,
+1483 Hroðgar leofa,     Higelace onsend.
+1484 Mæg þonne on þæm golde ongitan     Geata dryhten,
+1485 geseon sunu Hrædles,     þonne he on þæt sinc starað,
+1486 þæt ic gumcystum     godne funde
+1487 beaga bryttan,     breac þonne moste.
+1488 Ond þu Unferð læt     ealde lafe,
+1489 wrætlic wægsweord,     widcuðne man
+1490 heardecg habban;     ic me mid Hruntinge
+1491 dom gewyrce,     oþðe mec deað nimeð."
+1492 æfter þæm wordum     Wedergeata leod
+1493 efste mid elne,     nalas ondsware
+1494 bidan wolde;     brimwylm onfeng
+1495 hilderince.     ða wæs hwil dæges
+1496 ær he þone grundwong     ongytan mehte.
+1497 Sona þæt onfunde     se ðe floda begong
+1498 heorogifre beheold     hund missera,
+1499 grim ond grædig,     þæt þær gumena sum
+1500 ælwihta eard     ufan cunnode.
+1501 Grap þa togeanes,     guðrinc gefeng
+1502 atolan clommum.     No þy ær in gescod
+1503 halan lice;     hring utan ymbbearh,
+1504 þæt heo þone fyrdhom     ðurhfon ne mihte,
+1505 locene leoðosyrcan     laþan fingrum.
+1506 Bær þa seo brimwylf,     þa heo to botme com,
+1507 hringa þengel     to hofe sinum,
+1508 swa he ne mihte,     no he þæs modig wæs,
+1509 wæpna gewealdan,     ac hine wundra þæs fela
+1510 swencte on sunde,     sædeor monig
+1511 hildetuxum     heresyrcan bræc,
+1512 ehton aglæcan.     ða se eorl ongeat
+1513 þæt he in niðsele     nathwylcum wæs,
+1514 þær him nænig wæter     wihte ne sceþede,
+1515 ne him for hrofsele     hrinan ne mehte
+1516 færgripe flodes;     fyrleoht geseah,
+1517 blacne leoman,     beorhte scinan.
+1518 Ongeat þa se goda     grundwyrgenne,
+1519 merewif mihtig;     mægenræs forgeaf
+1520 hildebille,     hond_sweng ne ofteah,
+1521 þæt hire on hafelan     hringmæl agol
+1522 grædig guðleoð.     ða se gist onfand
+1523 þæt se beadoleoma     bitan nolde,
+1524 aldre sceþðan,     ac seo ecg geswac
+1525 ðeodne æt þearfe;     ðolode ær fela
+1526 hondgemota,     helm oft gescær,
+1527 fæges fyrdhrægl;     ða wæs forma sið
+1528 deorum madme,     þæt his dom alæg.
+1529 Eft wæs anræd,     nalas elnes læt,
+1530 mærða gemyndig     mæg Hylaces.
+1531 Wearp ða wundenmæl     wrættum gebunden
+1532 yrre oretta,     þæt hit on eorðan læg,
+1533 stið ond stylecg;     strenge getruwode,
+1534 mundgripe mægenes.     Swa sceal man don,
+1535 þonne he æt guðe     gegan þenceð
+1536 longsumne lof,     na ymb his lif cearað.
+1537 Gefeng þa be eaxle     (nalas for fæhðe mearn)
+1538 Guðgeata leod     Grendles modor;
+1539 brægd þa beadwe heard,     þa he gebolgen wæs,
+1540 feorhgeniðlan,     þæt heo on flet gebeah.
+1541 Heo him eft hraþe     andlean forgeald
+1542 grimman grapum     ond him togeanes feng;
+1543 oferwearp þa werigmod     wigena strengest,
+1544 feþecempa,     þæt he on fylle wearð.
+1545 Ofsæt þa þone selegyst     ond hyre seax geteah,
+1546 brad ond brunecg,     wolde hire bearn wrecan,
+1547 angan eaferan.     Him on eaxle læg
+1548 breostnet broden;     þæt gebearh feore,
+1549 wið ord ond wið ecge     ingang forstod.
+1550 Hæfde ða forsiðod     sunu Ecgþeowes
+1551 under gynne grund,     Geata cempa,
+1552 nemne him heaðobyrne     helpe gefremede,
+1553 herenet hearde,     ond halig god
+1554 geweold wigsigor;     witig drihten,
+1555 rodera rædend,     hit on ryht gesced
+1556 yðelice,     syþðan he eft astod.
+1557 Geseah ða on searwum     sigeeadig bil,
+1558 eald_sweord eotenisc,     ecgum þyhtig,
+1559 wigena weorðmynd;     þæt wæs wæpna cyst,
+1560 buton hit wæs mare     ðonne ænig mon oðer
+1561 to beadulace     ætberan meahte,
+1562 god ond geatolic,     giganta geweorc.
+1563 He gefeng þa fetelhilt,     freca Scyldinga
+1564 hreoh ond heorogrim     hringmæl gebrægd,
+1565 aldres orwena,     yrringa sloh,
+1566 þæt hire wið halse     heard grapode,
+1567 banhringas bræc.     Bil eal ðurhwod
+1568 fægne flæschoman;     heo on flet gecrong.
+1569 Sweord wæs swatig,     secg weorce gefeh.
+1570 Lixte se leoma,     leoht inne stod,
+1571 efne swa of hefene     hadre scineð
+1572 rodores candel.     He æfter recede wlat;
+1573 hwearf þa be wealle,     wæpen hafenade
+1574 heard be hiltum     Higelaces ðegn,
+1575 yrre ond anræd.     Næs seo ecg fracod
+1576 hilderince,     ac he hraþe wolde
+1577 Grendle forgyldan     guðræsa fela
+1578 ðara þe he geworhte     to Westdenum
+1579 oftor micle     ðonne on ænne sið,
+1580 þonne he Hroðgares     heorðgeneatas
+1581 sloh on sweofote,     slæpende fræt
+1582 folces Denigea     fyftyne men
+1583 ond oðer swylc     ut offerede,
+1584 laðlicu lac.     He him þæs lean forgeald,
+1585 reþe cempa,     to ðæs þe he on ræste geseah
+1586 guðwerigne     Grendel licgan
+1587 aldorleasne,     swa him ær gescod
+1588 hild æt Heorote.     Hra wide sprong,
+1589 syþðan he æfter deaðe     drepe þrowade,
+1590 heorosweng heardne,     ond hine þa heafde becearf.
+1591 Sona þæt gesawon     snottre ceorlas,
+1592 þa ðe mid Hroðgare     on holm wliton,
+1593 þæt wæs yðgeblond     eal gemenged,
+1594 brim blode fah.     Blondenfeaxe,
+1595 gomele ymb godne,     ongeador spræcon
+1596 þæt hig þæs æðelinges     eft ne wendon
+1597 þæt he sigehreðig     secean come
+1598 mærne þeoden;     þa ðæs monige gewearð
+1599 þæt hine seo brimwylf     abroten hæfde.
+1600 ða com non dæges.     Næs ofgeafon
+1601 hwate Scyldingas;     gewat him ham þonon
+1602 goldwine gumena.     Gistas setan
+1603 modes seoce     ond on mere staredon,
+1604 wiston ond ne wendon     þæt hie heora winedrihten
+1605 selfne gesawon.     þa þæt sweord ongan
+1606 æfter heaþoswate     hildegicelum,
+1607 wigbil wanian.     þæt wæs wundra sum,
+1608 þæt hit eal gemealt     ise gelicost,
+1609 ðonne forstes bend     fæder onlæteð,
+1610 onwindeð wælrapas,     se geweald hafað
+1611 sæla ond mæla;     þæt is soð metod.
+1612 Ne nom he in þæm wicum,     Wedergeata leod,
+1613 maðmæhta ma,     þeh he þær monige geseah,
+1614 buton þone hafelan     ond þa hilt somod
+1615 since fage.     Sweord ær gemealt,
+1616 forbarn brodenmæl;     wæs þæt blod to þæs hat,
+1617 ættren ellorgæst     se þær_inne swealt.
+1618 Sona wæs on sunde     se þe ær æt sæcce gebad
+1619 wighryre wraðra,     wæter up þurhdeaf.
+1620 Wæron yðgebland     eal gefælsod,
+1621 eacne eardas,     þa se ellorgast
+1622 oflet lifdagas     ond þas lænan gesceaft.
+1623 Com þa to lande     lidmanna helm
+1624 swiðmod swymman;     sælace gefeah,
+1625 mægenbyrþenne     þara þe he him mid hæfde.
+1626 Eodon him þa togeanes,     gode þancodon,
+1627 ðryðlic þegna heap,     þeodnes gefegon,
+1628 þæs þe hi hyne gesundne     geseon moston.
+1629 ða wæs of þæm hroran     helm ond byrne
+1630 lungre alysed.     Lagu drusade,
+1631 wæter under wolcnum,     wældreore fag.
+1632 Ferdon forð þonon     feþelastum
+1633 ferhþum fægne,     foldweg mæton,
+1634 cuþe stræte.     Cyningbalde men
+1635 from þæm holmclife     hafelan bæron
+1636 earfoðlice     heora æghwæþrum,
+1637 felamodigra;     feower scoldon
+1638 on þæm wælstenge     weorcum geferian
+1639 to þæm goldsele     Grendles heafod,
+1640 oþðæt semninga     to sele comon
+1641 frome fyrdhwate     feowertyne
+1642 Geata gongan;     gumdryhten mid
+1643 modig on gemonge     meodowongas træd.
+1644 ða com in gan     ealdor ðegna,
+1645 dædcene mon     dome gewurþad,
+1646 hæle hildedeor,     Hroðgar gretan.
+1647 þa wæs be feaxe     on flet boren
+1648 Grendles heafod,     þær guman druncon,
+1649 egeslic for eorlum     ond þære idese mid,
+1650 wliteseon wrætlic;     weras on_sawon.
+1651 Beowulf maþelode,     bearn Ecgþeowes:
+1652 "Hwæt! we þe þas sælac,     sunu Healfdenes,
+1653 leod Scyldinga,     lustum brohton
+1654 tires to tacne,     þe þu her to locast.
+1655 Ic þæt unsofte     ealdre gedigde
+1656 wigge under wætere,     weorc geneþde
+1657 earfoðlice;     ætrihte wæs
+1658 guð getwæfed,     nymðe mec god scylde.
+1659 Ne meahte ic æt hilde     mid Hruntinge
+1660 wiht gewyrcan,     þeah þæt wæpen duge;
+1661 ac me geuðe     ylda waldend
+1662 þæt ic on wage geseah     wlitig hangian
+1663 eald_sweord eacen     (oftost wisode
+1664 winigea leasum),     þæt ic ðy wæpne gebræd.
+1665 Ofsloh ða æt þære sæcce,     þa me sæl ageald,
+1666 huses hyrdas.     þa þæt hildebil
+1667 forbarn brogdenmæl,     swa þæt blod gesprang,
+1668 hatost heaþoswata.     Ic þæt hilt þanan
+1669 feondum ætferede,     fyrendæda wræc,
+1670 deaðcwealm Denigea,     swa hit gedefe wæs.
+1671 Ic hit þe þonne gehate,     þæt þu on Heorote most
+1672 sorhleas swefan     mid þinra secga gedryht
+1673 ond þegna gehwylc     þinra leoda,
+1674 duguðe ond iogoþe,     þæt þu him ondrædan ne þearft,
+1675 þeoden Scyldinga,     on þa healfe,
+1676 aldorbealu eorlum,     swa þu ær dydest."
+1677 ða wæs gylden_hilt     gamelum rince,
+1678 harum hildfruman,     on hand gyfen,
+1679 enta ærgeweorc;     hit on æht gehwearf
+1680 æfter deofla hryre     Denigea frean,
+1681 wundorsmiþa geweorc,     ond þa þas worold ofgeaf
+1682 gromheort guma,     godes ondsaca,
+1683 morðres scyldig,     ond his modor eac,
+1684 on geweald gehwearf     woroldcyninga
+1685 ðæm selestan     be sæm tweonum
+1686 ðara þe on Scedenigge     sceattas dælde.
+1687 Hroðgar maðelode,     hylt sceawode,
+1688 ealde lafe,     on ðæm wæs or writen
+1689 fyrngewinnes,     syðþan flod ofsloh,
+1690 gifen geotende,     giganta cyn
+1691 (frecne geferdon);     þæt wæs fremde þeod
+1692 ecean dryhtne;     him þæs endelean
+1693 þurh wæteres wylm     waldend sealde.
+1694 Swa wæs on ðæm scennum     sciran goldes
+1695 þurh runstafas     rihte gemearcod,
+1696 geseted ond gesæd     hwam þæt sweord geworht,
+1697 irena cyst,     ærest wære,
+1698 wreoþenhilt ond wyrmfah.     ða se wisa spræc
+1699 sunu Healfdenes     (swigedon ealle):
+1700 "þæt, la, mæg secgan     se þe soð ond riht
+1701 fremeð on folce,     feor eal gemon,
+1702 eald ᛟweard,     þæt ðes eorl wære
+1703 geboren betera!     Blæd is aræred
+1704 geond widwegas,     wine min Beowulf,
+1705 ðin ofer þeoda gehwylce.     Eal þu hit geþyldum healdest,
+1706 mægen mid modes snyttrum.     Ic þe sceal mine gelæstan
+1707 freode, swa wit furðum spræcon.     ðu scealt to frofre weorþan
+1708 eal langtwidig     leodum þinum,
+1709 hæleðum to helpe.     Ne wearð Heremod swa
+1710 eaforum Ecgwelan,     Arscyldingum;
+1711 ne geweox he him to willan,     ac to wælfealle
+1712 ond to deaðcwalum     Deniga leodum;
+1713 breat bolgenmod     beodgeneatas,
+1714 eaxlgesteallan,     oþþæt he ana hwearf,
+1715 mære þeoden,     mondreamum from.
+1716 ðeah þe hine mihtig god     mægenes wynnum,
+1717 eafeþum stepte,     ofer ealle men
+1718 forð gefremede,     hwæþere him on ferhþe greow
+1719 breosthord blodreow.     Nallas beagas geaf
+1720 Denum æfter dome;     dreamleas gebad
+1721 þæt he þæs gewinnes     weorc þrowade,
+1722 leodbealo longsum.     ðu þe lær be þon,
+1723 gumcyste ongit;     ic þis gid be þe
+1724 awræc wintrum frod.     Wundor is to secganne
+1725 hu mihtig god     manna cynne
+1726 þurh sidne sefan     snyttru bryttað,
+1727 eard ond eorlscipe;     he ah ealra geweald.
+1728 Hwilum he on lufan     læteð hworfan
+1729 monnes modgeþonc     mæran cynnes,
+1730 seleð him on eþle     eorþan wynne
+1731 to healdanne,     hleoburh wera,
+1732 gedeð him swa gewealdene     worolde dælas,
+1733 side rice,     þæt he his selfa ne mæg
+1734 for his unsnyttrum     ende geþencean.
+1735 Wunað he on wiste;     no hine wiht dweleð
+1736 adl ne yldo,     ne him inwitsorh
+1737 on sefan sweorceð,     ne gesacu ohwær
+1738 ecghete eoweð,     ac him eal worold
+1739 wendeð on willan     (he þæt wyrse ne con),
+1740 oðþæt him on innan     oferhygda dæl
+1741 weaxeð ond wridað.     þonne se weard swefeð,
+1742 sawele hyrde;     bið se slæp to fæst,
+1743 bisgum gebunden,     bona swiðe neah,
+1744 se þe of flanbogan     fyrenum sceoteð.
+1745 þonne bið on hreþre     under helm drepen
+1746 biteran stræle     (him bebeorgan ne con),
+1747 wom wundorbebodum     wergan gastes;
+1748 þinceð him to lytel     þæt he @ lange heold,
+1749 gytsað gromhydig,     nallas on gylp seleð
+1750 fædde beagas,     ond he þa forðgesceaft
+1751 forgyteð ond forgymeð,     þæs þe him ær god sealde,
+1752 wuldres waldend,     weorðmynda dæl.
+1753 Hit on endestæf     eft gelimpeð
+1754 þæt se lichoma     læne gedreoseð,
+1755 fæge gefealleð;     fehð oþer to,
+1756 se þe unmurnlice     madmas dæleþ,
+1757 eorles ærgestreon,     egesan ne gymeð.
+1758 Bebeorh þe ðone bealonið,     Beowulf leofa,
+1759 secg betsta,     ond þe þæt selre geceos,
+1760 ece rædas;     oferhyda ne gym,
+1761 mære cempa.     Nu is þines mægnes blæd
+1762 ane hwile.     Eft sona bið
+1763 þæt þec adl oððe ecg     eafoþes getwæfeð,
+1764 oððe fyres feng,     oððe flodes wylm,
+1765 oððe gripe meces,     oððe gares fliht,
+1766 oððe atol yldo;     oððe eagena bearhtm
+1767 forsiteð ond forsworceð;     semninga bið
+1768 þæt ðec, dryhtguma,     deað oferswyðeð.
+1769 Swa ic Hringdena     hund missera
+1770 weold under wolcnum     ond hig wigge beleac
+1771 manigum mægþa     geond þysne middangeard,
+1772 æscum ond ecgum,     þæt ic me ænigne
+1773 under swegles begong     gesacan ne tealde.
+1774 Hwæt, me þæs on eþle     edwenden cwom,
+1775 gyrn æfter gomene,     seoþðan Grendel wearð,
+1776 ealdgewinna,     ingenga min;
+1777 ic þære socne     singales wæg
+1778 modceare micle.     þæs sig metode þanc,
+1779 ecean dryhtne,     þæs ðe ic on aldre gebad
+1780 þæt ic on þone hafelan     heorodreorigne
+1781 ofer ealdgewin     eagum starige!
+1782 Ga nu to setle,     symbelwynne dreoh
+1783 wigge_weorþad;     unc sceal worn fela
+1784 maþma gemænra,     siþðan morgen bið."
+1785 Geat wæs glædmod,     geong sona to
+1786 setles neosan,     swa se snottra heht.
+1787 þa wæs eft swa ær     ellenrofum
+1788 fletsittendum     fægere gereorded
+1789 niowan stefne.     Nihthelm geswearc
+1790 deorc ofer dryhtgumum.     Duguð eal aras.
+1791 Wolde blondenfeax     beddes neosan,
+1792 gamela Scylding.     Geat unigmetes wel,
+1793 rofne randwigan,     restan lyste;
+1794 sona him seleþegn     siðes wergum,
+1795 feorrancundum,     forð wisade,
+1796 se for andrysnum     ealle beweotede
+1797 þegnes þearfe,     swylce þy dogore
+1798 heaþoliðende     habban scoldon.
+1799 Reste hine þa rumheort;     reced hliuade
+1800 geap ond goldfah;     gæst inne swæf
+1801 oþþæt hrefn blaca     heofones wynne
+1802 bliðheort bodode.     ða com beorht scacan
+1803 @ @ @     scaþan onetton,
+1804 wæron æþelingas     eft to leodum
+1805 fuse to farenne;     wolde feor þanon
+1806 cuma collenferhð     ceoles neosan.
+1807 Heht þa se hearda     Hrunting beran
+1808 sunu Ecglafes,     heht his sweord niman,
+1809 leoflic iren;     sægde him þæs leanes þanc,
+1810 cwæð, he þone guðwine     godne tealde,
+1811 wigcræftigne,     nales wordum log
+1812 meces ecge;     þæt wæs modig secg.
+1813 Ond þa siðfrome,     searwum gearwe
+1814 wigend wæron;     eode weorð Denum
+1815 æþeling to yppan,     þær se oþer wæs,
+1816 hæle hildedeor     Hroðgar grette.
+1817 Beowulf maþelode,     bearn Ecgþeowes:
+1818 "Nu we sæliðend     secgan wyllað,
+1819 feorran cumene,     þæt we fundiaþ
+1820 Higelac secan.     Wæron her tela
+1821 willum bewenede;     þu us wel dohtest.
+1822 Gif ic þonne on eorþan     owihte mæg
+1823 þinre modlufan     maran tilian,
+1824 gumena dryhten,     ðonne ic gyt dyde,
+1825 guðgeweorca,     ic beo gearo sona.
+1826 Gif ic þæt gefricge     ofer floda begang,
+1827 þæt þec ymbsittend     egesan þywað,
+1828 swa þec hetende     hwilum dydon,
+1829 ic ðe þusenda     þegna bringe,
+1830 hæleþa to helpe.     Ic on Higelac wat,
+1831 Geata dryhten,     þeah ðe he geong sy,
+1832 folces hyrde,     þæt he mec fremman wile
+1833 wordum ond worcum,     þæt ic þe wel herige
+1834 ond þe to geoce     garholt bere,
+1835 mægenes fultum,     þær ðe bið manna þearf.
+1836 Gif him þonne Hreþric     to hofum Geata
+1837 geþingeð, þeodnes bearn,     he mæg þær fela
+1838 freonda findan;     feorcyþðe beoð
+1839 selran gesohte     þæm þe him selfa deah."
+1840 Hroðgar maþelode     him on ondsware:
+1841 "þe þa wordcwydas     wigtig drihten
+1842 on sefan sende;     ne hyrde ic snotorlicor
+1843 on swa geongum feore     guman þingian.
+1844 þu eart mægenes strang     ond on mode frod,
+1845 wis wordcwida.     Wen ic talige,
+1846 gif þæt gegangeð,     þæt ðe gar nymeð,
+1847 hild heorugrimme,     Hreþles eaferan,
+1848 adl oþðe iren     ealdor ðinne,
+1849 folces hyrde,     ond þu þin feorh hafast,
+1850 þæt þe Sægeatas     selran næbben
+1851 to geceosenne     cyning ænigne,
+1852 hordweard hæleþa,     gyf þu healdan wylt
+1853 maga rice.     Me þin modsefa
+1854 licað leng swa wel,     leofa Beowulf.
+1855 Hafast þu gefered     þæt þam folcum sceal,
+1856 Geata leodum     ond Gardenum,
+1857 sib gemæne,     ond sacu restan,
+1858 inwitniþas,     þe hie ær drugon,
+1859 wesan, þenden ic wealde     widan rices,
+1860 maþmas gemæne,     manig oþerne
+1861 godum gegretan     ofer ganotes bæð;
+1862 sceal hringnaca     ofer heafu bringan
+1863 lac ond luftacen.     Ic þa leode wat
+1864 ge wið feond ge wið freond     fæste geworhte,
+1865 æghwæs untæle     ealde wisan."
+1866 ða git him eorla hleo     inne gesealde,
+1867 mago Healfdenes,     maþmas XII;
+1868 het hine mid þæm lacum     leode swæse
+1869 secean on gesyntum,     snude eft cuman.
+1870 Gecyste þa     cyning æþelum god,
+1871 þeoden Scyldinga,     ðegn betstan
+1872 ond be healse genam;     hruron him tearas,
+1873 blondenfeaxum.     Him wæs bega wen,
+1874 ealdum infrodum,     oþres swiðor,
+1875 þæt hie seoððan no     geseon moston,
+1876 modige on meþle.     Wæs him se man to þon leof
+1877 þæt he þone breostwylm     forberan ne mehte,
+1878 ac him on hreþre     hygebendum fæst
+1879 æfter deorum men     dyrne langað
+1880 beorn wið blode.     Him Beowulf þanan,
+1881 guðrinc goldwlanc,     græsmoldan træd
+1882 since hremig;     sægenga bad
+1883 agendfrean,     se þe on ancre rad.
+1884 þa wæs on gange     gifu Hroðgares
+1885 oft geæhted;     þæt wæs an cyning,
+1886 æghwæs orleahtre,     oþþæt hine yldo benam
+1887 mægenes wynnum,     se þe oft manegum scod.
+1888 Cwom þa to flode     felamodigra,
+1889 hægstealdra heap,     hringnet bæron,
+1890 locene leoðosyrcan.     Landweard onfand
+1891 eftsið eorla,     swa he ær dyde;
+1892 no he mid hearme     of hliðes nosan
+1893 gæstas grette,     ac him togeanes rad,
+1894 cwæð þæt wilcuman     Wedera leodum
+1895 scaþan scirhame     to scipe foron.
+1896 þa wæs on sande     sægeap naca
+1897 hladen herewædum,     hringedstefna,
+1898 mearum ond maðmum;     mæst hlifade
+1899 ofer Hroðgares     hordgestreonum.
+1900 He þæm batwearde     bunden golde
+1901 swurd gesealde,     þæt he syðþan wæs
+1902 on meodubence     maþme þy weorþra,
+1903 yrfelafe.     Gewat him on naca
+1904 drefan deop wæter,     Dena land ofgeaf.
+1905 þa wæs be mæste     merehrægla sum,
+1906 segl sale fæst;     sundwudu þunede.
+1907 No þær wegflotan     wind ofer yðum
+1908 siðes getwæfde;     sægenga for,
+1909 fleat famigheals     forð ofer yðe,
+1910 bundenstefna     ofer brimstreamas,
+1911 þæt hie Geata clifu     ongitan meahton,
+1912 cuþe næssas.     Ceol up geþrang
+1913 lyftgeswenced,     on lande stod.
+1914 Hraþe wæs æt holme     hyðweard geara,
+1915 se þe ær lange tid     leofra manna
+1916 fus æt faroðe     feor wlatode;
+1917 sælde to sande     sidfæþme scip,
+1918 oncerbendum fæst,     þy læs hym yþa ðrym
+1919 wudu wynsuman     forwrecan meahte.
+1920 Het þa up beran     æþelinga gestreon,
+1921 frætwe ond fætgold;     næs him feor þanon
+1922 to gesecanne     sinces bryttan,
+1923 Higelac Hreþling,     þær æt ham wunað
+1924 selfa mid gesiðum     sæwealle neah.
+1925 Bold wæs betlic,     bregorof cyning,
+1926 heah_in_healle,     Hygd swiðe geong,
+1927 wis, welþungen,     þeah ðe wintra lyt
+1928 under burhlocan     gebiden hæbbe,
+1929 Hæreþes dohtor;     næs hio hnah swa þeah,
+1930 ne to gneað gifa     Geata leodum,
+1931 maþmgestreona.     Mod_þryðo wæg,
+1932 fremu folces cwen,     firen ondrysne.
+1933 Nænig þæt dorste     deor geneþan
+1934 swæsra gesiða,     nefne sinfrea,
+1935 þæt hire an dæges     eagum starede,
+1936 ac him wælbende     weotode tealde
+1937 handgewriþene;     hraþe seoþðan wæs
+1938 æfter mundgripe     mece geþinged,
+1939 þæt hit sceadenmæl     scyran moste,
+1940 cwealmbealu cyðan.     Ne bið swylc cwenlic þeaw
+1941 idese to efnanne,     þeah ðe hio ænlicu sy,
+1942 þætte freoðuwebbe     feores onsæce
+1943 æfter ligetorne     leofne mannan.
+1944 Huru þæt onhohsnode     Hemminges mæg;
+1945 ealodrincende     oðer sædan,
+1946 þæt hio leodbealewa     læs gefremede,
+1947 inwitniða,     syððan ærest wearð
+1948 gyfen goldhroden     geongum cempan,
+1949 æðelum diore,     syððan hio Offan flet
+1950 ofer fealone flod     be fæder lare
+1951 siðe gesohte;     ðær hio syððan well
+1952 in gumstole,     gode, mære,
+1953 lifgesceafta     lifigende breac,
+1954 hiold heahlufan     wið hæleþa brego,
+1955 ealles moncynnes     mine gefræge
+1956 þone selestan     bi sæm tweonum,
+1957 eormencynnes.     Forðam Offa wæs
+1958 geofum ond guðum,     garcene man,
+1959 wide geweorðod,     wisdome heold
+1960 eðel sinne;     þonon Eomer woc
+1961 hæleðum to helpe,     Hemminges mæg,
+1962 nefa Garmundes,     niða cræftig.
+1963 Gewat him ða se hearda     mid his hondscole
+1964 sylf æfter sande     sæwong tredan,
+1965 wide waroðas.     Woruldcandel scan,
+1966 sigel suðan fus.     Hi sið drugon,
+1967 elne geeodon,     to ðæs ðe eorla hleo,
+1968 bonan Ongenþeoes     burgum in innan,
+1969 geongne guðcyning     godne gefrunon
+1970 hringas dælan.     Higelace wæs
+1971 sið Beowulfes     snude gecyðed,
+1972 þæt ðær on worðig     wigendra hleo,
+1973 lindgestealla,     lifigende cwom,
+1974 heaðolaces hal     to hofe gongan.
+1975 Hraðe wæs gerymed,     swa se rica bebead,
+1976 feðegestum     flet innanweard.
+1977 Gesæt þa wið sylfne     se ða sæcce genæs,
+1978 mæg wið mæge,     syððan mandryhten
+1979 þurh hleoðorcwyde     holdne gegrette,
+1980 meaglum wordum.     Meoduscencum hwearf
+1981 geond þæt healreced     Hæreðes dohtor,
+1982 lufode ða leode,     liðwæge bær
+1983 hæleðum to handa.     Higelac ongan
+1984 sinne geseldan     in sele þam hean
+1985 fægre fricgcean     (hyne fyrwet bræc,
+1986 hwylce Sægeata     siðas wæron):
+1987 "Hu lomp eow on lade,     leofa Biowulf,
+1988 þa ðu færinga     feorr gehogodest
+1989 sæcce secean     ofer sealt wæter,
+1990 hilde to Hiorote?     Ac ðu Hroðgare
+1991 widcuðne wean     wihte gebettest,
+1992 mærum ðeodne?     Ic ðæs modceare
+1993 sorhwylmum seað,     siðe ne truwode
+1994 leofes mannes;     ic ðe lange bæd
+1995 þæt ðu þone wælgæst     wihte ne grette,
+1996 lete Suðdene     sylfe geweorðan
+1997 guðe wið Grendel.     Gode ic þanc secge
+1998 þæs ðe ic ðe gesundne     geseon moste."
+1999 Biowulf maðelode,     bearn Ecgðioes:
+2000 "þæt is undyrne,     dryhten Higelac,
+2001 micel gemeting,     monegum fira,
+2002 hwylc orleghwil     uncer Grendles
+2003 wearð on ðam wange,     þær he worna fela
+2004 Sigescyldingum     sorge gefremede,
+2005 yrmðe to aldre.     Ic ðæt eall gewræc,
+2006 swa begylpan ne þearf     Grendeles maga
+2007 ænig ofer eorðan     uhthlem þone,
+2008 se ðe lengest leofað     laðan cynnes,
+2009 facne bifongen.     Ic ðær furðum cwom
+2010 to ðam hringsele     Hroðgar gretan;
+2011 sona me se mæra     mago Healfdenes,
+2012 syððan he modsefan     minne cuðe,
+2013 wið his sylfes sunu     setl getæhte.
+2014 Weorod wæs on wynne;     ne seah ic widan feorh
+2015 under heofones hwealf     healsittendra
+2016 medudream maran.     Hwilum mæru cwen,
+2017 friðusibb folca,     flet eall geondhwearf,
+2018 bædde byre geonge;     oft hio beahwriðan
+2019 secge sealde,     ær hie to setle geong.
+2020 Hwilum for duguðe     dohtor Hroðgares
+2021 eorlum on ende     ealuwæge bær;
+2022 þa ic Freaware     fletsittende
+2023 nemnan hyrde,     þær hio nægled sinc
+2024 hæleðum sealde.     Sio gehaten is,
+2025 geong, goldhroden,     gladum suna Frodan;
+2026 hafað þæs geworden     wine Scyldinga,
+2027 rices hyrde,     ond þæt ræd talað,
+2028 þæt he mid ðy wife     wælfæhða dæl,
+2029 sæcca gesette.     Oft seldan hwær
+2030 æfter leodhryre     lytle hwile
+2031 bongar bugeð,     þeah seo bryd duge!
+2032 Mæg þæs þonne ofþyncan     ðeodne Heaðobeardna
+2033 ond þegna gehwam     þara leoda,
+2034 þonne he mid fæmnan     on flett gæð,
+2035 dryhtbearn Dena,     duguða biwenede;
+2036 on him gladiað     gomelra lafe,
+2037 heard ond hringmæl     Heaðabeardna gestreon
+2038 þenden hie ðam wæpnum     wealdan moston,
+2039 oððæt hie forlæddan     to ðam lindplegan
+2040 swæse gesiðas     ond hyra sylfra feorh.
+2041 þonne cwið æt beore     se ðe beah_gesyhð,
+2042 eald æscwiga,     se ðe eall geman,
+2043 garcwealm gumena     (him bið grim sefa),
+2044 onginneð geomormod     geongum cempan
+2045 þurh hreðra gehygd     higes cunnian,
+2046 wigbealu weccean,     ond þæt word acwyð:
+2047 'Meaht ðu, min wine,     mece gecnawan
+2048 þone þin fæder     to gefeohte bær
+2049 under heregriman     hindeman siðe,
+2050 dyre iren,     þær hyne Dene slogon,
+2051 weoldon wælstowe,     syððan Wiðergyld læg,
+2052 æfter hæleþa hryre,     hwate Scyldungas?
+2053 Nu her þara banena     byre nathwylces
+2054 frætwum hremig     on flet gæð,
+2055 morðres gylpeð,     ond þone maðþum byreð,
+2056 þone þe ðu mid rihte     rædan sceoldest.'
+2057 Manað swa ond myndgað     mæla gehwylce
+2058 sarum wordum,     oððæt sæl cymeð
+2059 þæt se fæmnan þegn     fore fæder dædum
+2060 æfter billes bite     blodfag swefeð,
+2061 ealdres scyldig;     him se oðer þonan
+2062 losað lifigende,     con him land geare.
+2063 þonne bioð abrocene     on ba healfe
+2064 aðsweord eorla;     syððan Ingelde
+2065 weallað wælniðas,     ond him wiflufan
+2066 æfter cearwælmum     colran weorðað.
+2067 þy ic Heaðobeardna     hyldo ne telge,
+2068 dryhtsibbe dæl     Denum unfæcne,
+2069 freondscipe fæstne.     Ic sceal forð sprecan
+2070 gen ymbe Grendel,     þæt ðu geare cunne,
+2071 sinces brytta,     to hwan syððan wearð
+2072 hondræs hæleða.     Syððan heofones gim
+2073 glad ofer grundas,     gæst yrre cwom,
+2074 eatol, æfengrom,     user neosan,
+2075 ðær we gesunde     sæl weardodon.
+2076 þær wæs Hondscio     hild onsæge,
+2077 feorhbealu fægum;     he fyrmest læg,
+2078 gyrded cempa;     him Grendel wearð,
+2079 mærum maguþegne     to muðbonan,
+2080 leofes mannes     lic eall forswealg.
+2081 No ðy ær ut ða gen     idelhende
+2082 bona blodigtoð,     bealewa gemyndig,
+2083 of ðam goldsele     gongan wolde,
+2084 ac he mægnes rof     min costode,
+2085 grapode gearofolm.     Glof hangode
+2086 sid ond syllic,     searobendum fæst;
+2087 sio wæs orðoncum     eall gegyrwed
+2088 deofles cræftum     ond dracan fellum.
+2089 He mec þær on innan     unsynnigne,
+2090 dior dædfruma,     gedon wolde
+2091 manigra sumne;     hyt ne mihte swa,
+2092 syððan ic on yrre     uppriht astod.
+2093 To lang ys to reccenne     hu ic ðam leodsceaðan
+2094 yfla gehwylces     ondlean forgeald;
+2095 þær ic, þeoden min,     þine leode
+2096 weorðode weorcum.     He on weg losade,
+2097 lytle hwile     lifwynna breac;
+2098 hwæþre him sio swiðre     swaðe weardade
+2099 hand on Hiorte,     ond he hean ðonan
+2100 modes geomor     meregrund gefeoll.
+2101 Me þone wælræs     wine Scildunga
+2102 fættan golde     fela leanode,
+2103 manegum maðmum,     syððan mergen com
+2104 ond we to symble     geseten hæfdon.
+2105 þær wæs gidd ond gleo.     Gomela Scilding,
+2106 felafricgende,     feorran rehte;
+2107 hwilum hildedeor     hearpan wynne,
+2108 gomenwudu grette,     hwilum gyd awræc
+2109 soð ond sarlic,     hwilum syllic spell
+2110 rehte æfter rihte     rumheort cyning.
+2111 Hwilum eft ongan,     eldo gebunden,
+2112 gomel guðwiga     gioguðe cwiðan,
+2113 hildestrengo;     hreðer inne weoll,
+2114 þonne he wintrum frod     worn gemunde.
+2115 Swa we þær_inne     ondlangne dæg
+2116 niode naman,     oððæt niht becwom
+2117 oðer to yldum.     þa wæs eft hraðe
+2118 gearo gyrnwræce     Grendeles modor,
+2119 siðode sorhfull;     sunu deað fornam,
+2120 wighete Wedra.     Wif unhyre
+2121 hyre bearn gewræc,     beorn acwealde
+2122 ellenlice;     þær wæs æschere,
+2123 frodan fyrnwitan,     feorh uðgenge.
+2124 Noðer hy hine ne moston,     syððan mergen cwom,
+2125 deaðwerigne,     Denia leode,
+2126 bronde forbærnan,     ne on bel hladan
+2127 leofne mannan;     hio þæt lic ætbær
+2128 feondes fæðmum     under firgenstream.
+2129 þæt wæs Hroðgare     hreowa tornost
+2130 þara þe leodfruman     lange begeate.
+2131 þa se ðeoden mec     ðine life
+2132 healsode hreohmod,     þæt ic on holma geþring
+2133 eorlscipe efnde,     ealdre geneðde,
+2134 mærðo fremede;     he me mede gehet.
+2135 Ic ða ðæs wælmes,     þe is wide cuð,
+2136 grimne gryrelicne     grundhyrde fond;
+2137 þær unc hwile wæs     hand gemæne,
+2138 holm heolfre weoll,     ond ic heafde becearf
+2139 in ðam guðsele     Grendeles modor
+2140 eacnum ecgum,     unsofte þonan
+2141 feorh oðferede.     Næs ic fæge þa gyt,
+2142 ac me eorla hleo     eft gesealde
+2143 maðma menigeo,     maga Healfdenes.
+2144 Swa se ðeodkyning     þeawum lyfde.
+2145 Nealles ic ðam leanum     forloren hæfde,
+2146 mægnes mede,     ac he me maðmas geaf,
+2147 sunu Healfdenes,     on minne sylfes dom;
+2148 ða ic ðe, beorncyning,     bringan wylle,
+2149 estum geywan.     Gen is eall æt ðe
+2150 @ lissa gelong;     ic lyt hafo
+2151 heafodmaga     nefne, Hygelac, ðec."
+2152 Het ða in beran     eaforheafodsegn,
+2153 heaðosteapne helm,     hare byrnan,
+2154 guðsweord geatolic,     gyd æfter wræc:
+2155 "Me ðis hildesceorp     Hroðgar sealde,
+2156 snotra fengel,     sume worde het
+2157 þæt ic his ærest ðe     est gesægde;
+2158 cwæð þæt hyt hæfde     Hiorogar cyning,
+2159 leod Scyldunga     lange hwile;
+2160 no ðy ær suna sinum     syllan wolde,
+2161 hwatum Heorowearde,     þeah he him hold wære,
+2162 breostgewædu.     Bruc ealles well!"
+2163 Hyrde ic þæt þam frætwum     feower mearas
+2164 lungre, gelice,     last weardode,
+2165 æppelfealuwe;     he him est geteah
+2166 meara ond maðma.     Swa sceal mæg don,
+2167 nealles inwitnet     oðrum bregdon
+2168 dyrnum cræfte,     deað renian
+2169 hondgesteallan.     Hygelace wæs,
+2170 niða heardum,     nefa swyðe hold,
+2171 ond gehwæðer oðrum     hroþra gemyndig.
+2172 Hyrde ic þæt he ðone healsbeah     Hygde gesealde,
+2173 wrætlicne wundurmaððum,     ðone þe him Wealhðeo geaf,
+2174 ðeodnes dohtor,     þrio wicg somod
+2175 swancor ond sadolbeorht;     hyre syððan wæs
+2176 æfter beahðege     breost geweorðod.
+2177 Swa bealdode     bearn Ecgðeowes,
+2178 guma guðum cuð,     godum dædum,
+2179 dreah æfter dome,     nealles druncne slog
+2180 heorðgeneatas;     næs him hreoh sefa,
+2181 ac he mancynnes     mæste cræfte
+2182 ginfæstan gife,     þe him god sealde,
+2183 heold hildedeor.     Hean wæs lange,
+2184 swa hyne Geata bearn     godne ne tealdon,
+2185 ne hyne on medobence     micles wyrðne
+2186 drihten Wedera     gedon wolde;
+2187 swyðe wendon     þæt he sleac wære,
+2188 æðeling unfrom.     Edwenden cwom
+2189 tireadigum menn     torna gehwylces.
+2190 Het ða eorla hleo     in gefetian,
+2191 heaðorof cyning,     Hreðles lafe
+2192 golde gegyrede;     næs mid Geatum ða
+2193 sincmaðþum selra     on sweordes had;
+2194 þæt he on Biowulfes     bearm alegde
+2195 ond him gesealde     seofan þusendo,
+2196 bold ond bregostol.     Him wæs bam samod
+2197 on ðam leodscipe     lond gecynde,
+2198 eard, eðelriht,     oðrum swiðor
+2199 side rice     þam ðær selra wæs.
+2200 Eft þæt geiode     ufaran dogrum
+2201 hildehlæmmum,     syððan Hygelac læg
+2202 ond Heardrede     hildemeceas
+2203 under bordhreoðan     to bonan wurdon,
+2204 ða hyne gesohtan     on sigeþeode
+2205 hearde hildefrecan,     Heaðoscilfingas,
+2206 niða genægdan     nefan Hererices,
+2207 @ syððan Beowulfe     brade rice
+2208 on hand gehwearf;     he geheold tela
+2209 fiftig wintra     (wæs ða frod cyning,
+2210 eald eþelweard),     oððæt an ongan
+2211 deorcum nihtum     draca ricsian,
+2212 se ðe on heaum_hofe     hord beweotode,
+2213 stanbeorh steapne;     stig under læg,
+2214 eldum uncuð.     þær on innan giong
+2215 niða nathwylc,     se_ðe neh gefeng
+2216 hæðnum horde,     hond ......,
+2217 @ since fahne.     @ He þæt syððan ......,
+2218 þeah ðe he slæpende     besyred wurde
+2219 þeofes cræfte;     þæt sie ðiod onfand,
+2220 bufolc beorna,     þæt he gebolgen wæs.
+2221 Nealles mid gewealdum     wyrmhord abræc
+2222 sylfes willum,     se ðe him sare gesceod,
+2223 ac for þreanedlan     þeow nathwylces
+2224 hæleða bearna     heteswengeas fleah,
+2225 ærnes_þearfa,     ond ðær inne fealh,
+2226 secg synbysig,     sona onfunde
+2227 þæt þær ðam gyste     gryrebroga stod;
+2228 hwæðre earmsceapen     @
+2229 @     ...sceapen
+2230 @     þa hyne se fær begeat.
+2231 Sincfæt ......;     þær wæs swylcra fela
+2232 in ðam eorðhuse     ærgestreona,
+2233 swa hy on geardagum     gumena nathwylc,
+2234 eormenlafe     æþelan cynnes,
+2235 þanchycgende     þær gehydde,
+2236 deore maðmas.     Ealle hie deað fornam
+2237 ærran mælum,     ond se an ða gen
+2238 leoda duguðe,     se ðær lengest hwearf,
+2239 weard winegeomor,     wende þæs ylcan,
+2240 þæt he lytel fæc     longgestreona
+2241 brucan moste.     Beorh eallgearo
+2242 wunode on wonge     wæteryðum neah,
+2243 niwe be næsse,     nearocræftum fæst.
+2244 þær on innan bær     eorlgestreona
+2245 hringa hyrde     hordwyrðne dæl,
+2246 fættan goldes,     fea worda cwæð:
+2247 "Heald þu nu, hruse,     nu hæleð ne moston,
+2248 eorla æhte!     Hwæt, hyt ær on ðe
+2249 gode begeaton.     Guðdeað fornam,
+2250 feorhbealo frecne,     fyra gehwylcne
+2251 leoda minra,     þara ðe þis lif ofgeaf,
+2252 gesawon seledream.     Ic nah hwa sweord wege
+2253 oððe feormie     fæted wæge,
+2254 dryncfæt deore;     duguð ellor sceoc.
+2255 Sceal se hearda helm     hyrsted_golde
+2256 fætum befeallen;     feormynd swefað,
+2257 þa ðe beadogriman     bywan sceoldon,
+2258 ge swylce seo herepad,     sio æt hilde gebad
+2259 ofer borda gebræc     bite irena,
+2260 brosnað æfter beorne.     Ne mæg byrnan hring
+2261 æfter wigfruman     wide feran,
+2262 hæleðum be healfe.     Næs hearpan wyn,
+2263 gomen gleobeames,     ne god hafoc
+2264 geond sæl swingeð,     ne se swifta mearh
+2265 burhstede beateð.     Bealocwealm hafað
+2266 fela feorhcynna     forð onsended!"
+2267 Swa giomormod     giohðo mænde
+2268 an æfter eallum,     unbliðe hwearf
+2269 dæges ond nihtes,     oððæt deaðes wylm
+2270 hran æt heortan.     Hordwynne fond
+2271 eald uhtsceaða     opene standan,
+2272 se ðe byrnende     biorgas seceð,
+2273 nacod niðdraca,     nihtes fleogeð
+2274 fyre befangen;     hyne foldbuend
+2275 swiðe ondrædað.     He gesecean sceall
+2276 hord on hrusan,     þær he hæðen gold
+2277 warað wintrum frod,     ne byð him wihte ðy sel.
+2278 Swa se ðeodsceaða     þreo hund wintra
+2279 heold on hrusan     hordærna sum,
+2280 eacencræftig,     oððæt hyne an abealch
+2281 mon on mode;     mandryhtne bær
+2282 fæted wæge,     frioðowære bæd
+2283 hlaford sinne.     ða wæs hord rasod,
+2284 onboren beaga hord,     bene getiðad
+2285 feasceaftum men.     Frea sceawode
+2286 fira fyrngeweorc     forman siðe.
+2287 þa se wyrm onwoc,     wroht wæs geniwad;
+2288 stonc ða æfter stane,     stearcheort onfand
+2289 feondes fotlast;     he to forð gestop
+2290 dyrnan cræfte     dracan heafde neah.
+2291 Swa mæg unfæge     eaðe gedigan
+2292 wean ond wræcsið,     se ðe waldendes
+2293 hyldo gehealdeþ!     Hordweard sohte
+2294 georne æfter grunde,     wolde guman findan,
+2295 þone þe him on sweofote     sare geteode,
+2296 hat ond hreohmod     hlæw oft ymbehwearf
+2297 ealne utanweardne,     ne ðær ænig mon
+2298 on þære westenne;     hwæðre wiges gefeh,
+2299 beaduwe_weorces,     hwilum on beorh æthwearf,
+2300 sincfæt sohte.     He þæt sona onfand
+2301 ðæt hæfde gumena sum     goldes gefandod,
+2302 heahgestreona.     Hordweard onbad
+2303 earfoðlice     oððæt æfen cwom;
+2304 wæs ða gebolgen     beorges hyrde,
+2305 wolde se laða     lige forgyldan
+2306 drincfæt dyre.     þa wæs dæg sceacen
+2307 wyrme on willan;     no on wealle læg,
+2308 bidan wolde,     ac mid bæle for,
+2309 fyre gefysed.     Wæs se fruma egeslic
+2310 leodum on lande,     swa hyt lungre wearð
+2311 on hyra sincgifan     sare geendod.
+2312 ða se gæst ongan     gledum spiwan,
+2313 beorht hofu bærnan;     bryneleoma stod
+2314 eldum on andan.     No ðær aht cwices
+2315 lað lyftfloga     læfan wolde.
+2316 Wæs þæs wyrmes wig     wide gesyne,
+2317 nearofages nið     nean ond feorran,
+2318 hu se guðsceaða     Geata leode
+2319 hatode ond hynde;     hord eft gesceat,
+2320 dryhtsele dyrnne,     ær dæges hwile.
+2321 Hæfde landwara     lige befangen,
+2322 bæle ond bronde,     beorges getruwode,
+2323 wiges ond wealles;     him seo wen geleah.
+2324 þa wæs Biowulfe     broga gecyðed
+2325 snude to soðe,     þæt his sylfes ham,
+2326 bolda selest,     brynewylmum mealt,
+2327 gifstol Geata.     þæt ðam godan wæs
+2328 hreow on hreðre,     hygesorga mæst;
+2329 wende se wisa     þæt he wealdende
+2330 ofer ealde riht,     ecean dryhtne,
+2331 bitre gebulge.     Breost innan weoll
+2332 þeostrum geþoncum,     swa him geþywe ne wæs.
+2333 Hæfde ligdraca     leoda fæsten,
+2334 ealond utan,     eorðweard ðone
+2335 gledum forgrunden;     him ðæs guðkyning,
+2336 Wedera þioden,     wræce leornode.
+2337 Heht him þa gewyrcean     wigendra hleo
+2338 eallirenne,     eorla dryhten,
+2339 wigbord wrætlic;     wisse he gearwe
+2340 þæt him holtwudu     helpan ne meahte,
+2341 lind wið lige.     Sceolde lændaga
+2342 æþeling ærgod     ende gebidan,
+2343 worulde lifes,     ond se wyrm somod,
+2344 þeah ðe hordwelan     heolde lange.
+2345 Oferhogode ða     hringa fengel
+2346 þæt he þone widflogan     weorode gesohte,
+2347 sidan herge;     no he him þa sæcce ondred,
+2348 ne him þæs wyrmes wig     for wiht dyde,
+2349 eafoð ond ellen,     forðon he ær fela
+2350 nearo neðende     niða gedigde,
+2351 hildehlemma,     syððan he Hroðgares,
+2352 sigoreadig secg,     sele fælsode
+2353 ond æt guðe forgrap     Grendeles mægum
+2354 laðan cynnes.     No þæt læsest wæs
+2355 hondgemota,     þær mon Hygelac sloh,
+2356 syððan Geata cyning     guðe ræsum,
+2357 freawine folca     Freslondum on,
+2358 Hreðles eafora     hiorodryncum swealt,
+2359 bille gebeaten.     þonan Biowulf com
+2360 sylfes cræfte,     sundnytte dreah;
+2361 hæfde him on earme     ana XXX
+2362 hildegeatwa,     þa he to holme beag.
+2363 Nealles Hetware     hremge þorfton
+2364 feðewiges,     þe him foran ongean
+2365 linde bæron;     lyt eft becwom
+2366 fram þam hildfrecan     hames niosan.
+2367 Oferswam ða sioleða bigong     sunu Ecgðeowes,
+2368 earm anhaga,     eft to leodum;
+2369 þær him Hygd gebead     hord ond rice,
+2370 beagas ond bregostol,     bearne ne truwode
+2371 þæt he wið ælfylcum     eþelstolas
+2372 healdan cuðe,     ða wæs Hygelac dead.
+2373 No ðy ær feasceafte     findan meahton
+2374 æt ðam æðelinge     ænige ðinga,
+2375 þæt he Heardrede     hlaford wære
+2376 oððe þone cynedom     ciosan wolde;
+2377 hwæðre he him on folce     freondlarum heold,
+2378 estum mid are,     oððæt he yldra wearð,
+2379 Wedergeatum weold.     Hyne wræcmæcgas
+2380 ofer sæ sohtan,     suna Ohteres;
+2381 hæfdon hy forhealden     helm Scylfinga,
+2382 þone selestan     sæcyninga
+2383 þara ðe in Swiorice     sinc brytnade,
+2384 mærne þeoden.     Him þæt to mearce wearð;
+2385 he þær for_feorme     feorhwunde hleat
+2386 sweordes swengum,     sunu Hygelaces,
+2387 ond him eft gewat     Ongenðioes bearn
+2388 hames niosan,     syððan Heardred læg,
+2389 let ðone bregostol     Biowulf healdan,
+2390 Geatum wealdan.     þæt wæs god cyning!
+2391 Se ðæs leodhryres     lean gemunde
+2392 uferan dogrum,     Eadgilse wearð
+2393 feasceaftum freond,     folce gestepte
+2394 ofer sæ side     sunu Ohteres,
+2395 wigum ond wæpnum;     @ he gewræc syððan
+2396 cealdum cearsiðum,     cyning ealdre bineat.
+2397 Swa he niða gehwane     genesen hæfde,
+2398 sliðra geslyhta,     sunu Ecgðiowes,
+2399 ellenweorca,     oð ðone anne dæg
+2400 þe he wið þam wyrme     gewegan sceolde.
+2401 Gewat þa XIIa sum     torne gebolgen
+2402 dryhten Geata     dracan sceawian.
+2403 Hæfde þa gefrunen     hwanan sio fæhð aras,
+2404 bealonið biorna;     him to bearme cwom
+2405 maðþumfæt mære     þurh ðæs meldan hond.
+2406 Se wæs on ðam ðreate     þreotteoða secg,
+2407 se ðæs orleges     or onstealde,
+2408 hæft hygegiomor,     sceolde hean ðonon
+2409 wong wisian.     He ofer willan giong
+2410 to ðæs ðe he eorðsele     anne wisse,
+2411 hlæw under hrusan     holmwylme neh,
+2412 yðgewinne;     se wæs innan full
+2413 wrætta ond wira.     Weard unhiore,
+2414 gearo guðfreca,     goldmaðmas heold,
+2415 eald under eorðan.     Næs þæt yðe ceap
+2416 to gegangenne     gumena ænigum!
+2417 Gesæt ða on næsse     niðheard cyning,
+2418 þenden hælo abead     heorðgeneatum,
+2419 goldwine Geata.     Him wæs geomor sefa,
+2420 wæfre ond wælfus,     wyrd ungemete neah,
+2421 se ðone gomelan     gretan sceolde,
+2422 secean sawle hord,     sundur gedælan
+2423 lif wið lice,     no þon lange wæs
+2424 feorh æþelinges     flæsce bewunden.
+2425 Biowulf maþelade,     bearn Ecgðeowes:
+2426 "Fela ic on giogoðe     guðræsa genæs,
+2427 orleghwila;     ic þæt eall gemon.
+2428 Ic wæs syfanwintre,     þa mec sinca baldor,
+2429 freawine folca,     æt minum fæder genam;
+2430 heold mec ond hæfde     Hreðel cyning,
+2431 geaf me sinc ond symbel,     sibbe gemunde.
+2432 Næs ic him to life     laðra owihte,
+2433 beorn in burgum,     þonne his bearna hwylc,
+2434 Herebeald ond Hæðcyn     oððe Hygelac min.
+2435 Wæs þam yldestan     ungedefelice
+2436 mæges dædum     morþorbed stred,
+2437 syððan hyne Hæðcyn     of hornbogan,
+2438 his freawine,     flane geswencte,
+2439 miste mercelses     ond his mæg ofscet,
+2440 broðor oðerne     blodigan gare.
+2441 þæt wæs feohleas gefeoht,     fyrenum gesyngad,
+2442 hreðre hygemeðe;     sceolde hwæðre swa þeah
+2443 æðeling unwrecen     ealdres linnan.
+2444 Swa bið geomorlic     gomelum ceorle
+2445 to gebidanne,     þæt his byre ride
+2446 giong on galgan,     þonne he gyd wrece,
+2447 sarigne sang,     þonne his sunu hangað
+2448 hrefne to hroðre,     ond he him helpe ne mæg,
+2449 eald ond infrod,     ænige gefremman.
+2450 Symble bið gemyndgad     morna gehwylce
+2451 eaforan ellorsið;     oðres ne gymeð
+2452 to gebidanne     burgum in innan
+2453 yrfeweardas,     þonne se an hafað
+2454 þurh deaðes nyd     dæda gefondad.
+2455 Gesyhð sorhcearig     on his suna bure
+2456 winsele westne,     windge reste
+2457 reote berofene.     Ridend swefað,
+2458 hæleð in hoðman;     nis þær hearpan sweg,
+2459 gomen in geardum,     swylce ðær iu wæron.
+2460 Gewiteð þonne on sealman,     sorhleoð gæleð
+2461 an æfter anum;     þuhte him eall to rum,
+2462 wongas ond wicstede.     Swa Wedra helm
+2463 æfter Herebealde     heortan sorge
+2464 weallende wæg.     Wihte ne meahte
+2465 on ðam feorhbonan     fæghðe gebetan;
+2466 no ðy ær he þone heaðorinc     hatian ne meahte
+2467 laðum dædum,     þeah him leof ne wæs.
+2468 He ða mid þære sorhge,     þe him swa sar belamp,
+2469 gumdream ofgeaf,     godes leoht geceas,
+2470 eaferum læfde,     swa deð eadig mon,
+2471 lond ond leodbyrig,     þa he of life gewat.
+2472 þa wæs synn ond sacu     Sweona ond Geata
+2473 ofer wid wæter,     wroht gemæne,
+2474 herenið hearda,     syððan Hreðel swealt,
+2475 oððe him Ongenðeowes     eaferan wæran
+2476 frome, fyrdhwate,     freode ne woldon
+2477 ofer heafo healdan,     ac ymb Hreosnabeorh
+2478 eatolne inwitscear     oft gefremedon.
+2479 þæt mægwine     mine gewræcan,
+2480 fæhðe ond fyrene,     swa hyt gefræge wæs,
+2481 þeah ðe oðer his     ealdre gebohte,
+2482 heardan ceape;     Hæðcynne wearð,
+2483 Geata dryhtne,     guð onsæge.
+2484 þa ic on morgne gefrægn     mæg oðerne
+2485 billes ecgum     on bonan stælan,
+2486 þær Ongenþeow     Eofores niosað.
+2487 Guðhelm toglad,     gomela Scylfing
+2488 hreas hildeblac;     hond gemunde
+2489 fæhðo genoge,     feorhsweng ne ofteah.
+2490 Ic him þa maðmas,     þe he me sealde,
+2491 geald æt guðe,     swa me gifeðe wæs,
+2492 leohtan sweorde;     he me lond forgeaf,
+2493 eard, eðelwyn.     Næs him ænig þearf
+2494 þæt he to Gifðum     oððe to Gardenum
+2495 oððe in Swiorice     secean þurfe
+2496 wyrsan wigfrecan,     weorðe gecypan.
+2497 Symle ic him on feðan     beforan wolde,
+2498 ana on orde,     ond swa to aldre sceall
+2499 sæcce fremman,     þenden þis sweord þolað,
+2500 þæt mec ær ond sið     oft gelæste.
+2501 Syððan ic for dugeðum     Dæghrefne wearð
+2502 to handbonan,     Huga cempan;
+2503 nalles he ða frætwe     Frescyninge,
+2504 breostweorðunge,     bringan moste,
+2505 ac in compe gecrong     cumbles hyrde,
+2506 æþeling on elne;     ne wæs ecg bona,
+2507 ac him hildegrap     heortan wylmas,
+2508 banhus gebræc.     Nu sceall billes ecg,
+2509 hond ond heard sweord,     ymb hord wigan."
+2510 Beowulf maðelode,     beotwordum spræc
+2511 niehstan siðe:     "Ic geneðde fela
+2512 guða on geogoðe;     gyt ic wylle,
+2513 frod folces weard,     fæhðe secan,
+2514 mærðu fremman,     gif mec se mansceaða
+2515 of eorðsele     ut geseceð."
+2516 Gegrette ða     gumena gehwylcne,
+2517 hwate helmberend,     hindeman siðe,
+2518 swæse gesiðas:     "Nolde ic sweord beran,
+2519 wæpen to wyrme,     gif ic wiste hu
+2520 wið ðam aglæcean     elles meahte
+2521 gylpe wiðgripan,     swa ic gio wið Grendle dyde.
+2522 Ac ic ðær heaðufyres     hates wene,
+2523 oreðes ond attres;     forðon ic me on hafu
+2524 bord ond byrnan.     Nelle ic beorges weard
+2525 forfleon fotes trem,     ac unc furður sceal
+2526 weorðan æt wealle,     swa unc wyrd geteoð,
+2527 metod manna gehwæs.     Ic eom on mode from
+2528 þæt ic wið þone guðflogan     gylp ofersitte.
+2529 Gebide ge on beorge     byrnum werede,
+2530 secgas on searwum,     hwæðer sel mæge
+2531 æfter wælræse     wunde gedygan
+2532 uncer twega.     Nis þæt eower sið
+2533 ne gemet mannes,     nefne min anes,
+2534 þæt he wið aglæcean     eofoðo dæle,
+2535 eorlscype efne.     Ic mid elne sceall
+2536 gold gegangan,     oððe guð nimeð,
+2537 feorhbealu frecne,     frean eowerne!"
+2538 Aras ða bi ronde     rof oretta,
+2539 heard under helme,     hiorosercean bær
+2540 under stancleofu,     strengo getruwode
+2541 anes mannes.     Ne bið swylc earges sið!
+2542 Geseah ða be wealle     se ðe worna fela,
+2543 gumcystum god,     guða gedigde,
+2544 hildehlemma,     þonne hnitan feðan,
+2545 stondan stanbogan,     stream ut þonan
+2546 brecan of beorge.     Wæs þære burnan wælm
+2547 heaðofyrum hat;     ne meahte horde neah
+2548 unbyrnende     ænige hwile
+2549 deop gedygan     for dracan lege.
+2550 Let ða of breostum,     ða he gebolgen wæs,
+2551 Wedergeata leod     word ut faran,
+2552 stearcheort styrmde;     stefn in becom
+2553 heaðotorht hlynnan     under harne stan.
+2554 Hete wæs onhrered,     hordweard oncniow
+2555 mannes reorde;     næs ðær mara fyrst
+2556 freode to friclan.     From ærest cwom
+2557 oruð aglæcean     ut of stane,
+2558 hat hildeswat.     Hruse dynede.
+2559 Biorn under beorge     bordrand onswaf
+2560 wið ðam gryregieste,     Geata dryhten;
+2561 ða wæs hringbogan     heorte gefysed
+2562 sæcce to seceanne.     Sweord ær gebræd
+2563 god guðcyning,     gomele lafe,
+2564 ecgum unslaw;     æghwæðrum wæs
+2565 bealohycgendra     broga fram oðrum.
+2566 Stiðmod gestod     wið steapne rond
+2567 winia bealdor,     ða se wyrm gebeah
+2568 snude tosomne;     he on searwum bad.
+2569 Gewat ða byrnende     gebogen scriðan,
+2570 to gescipe scyndan.     Scyld wel gebearg
+2571 life ond lice     læssan hwile
+2572 mærum þeodne     þonne his myne sohte,
+2573 ðær he þy fyrste,     forman dogore
+2574 wealdan moste     swa him wyrd ne gescraf
+2575 hreð æt hilde.     Hond up abræd
+2576 Geata dryhten,     gryrefahne sloh
+2577 incgelafe,     þæt sio ecg gewac
+2578 brun on bane,     bat unswiðor
+2579 þonne his ðiodcyning     þearfe hæfde,
+2580 bysigum gebæded.     þa wæs beorges weard
+2581 æfter heaðuswenge     on hreoum mode,
+2582 wearp wælfyre;     wide sprungon
+2583 hildeleoman.     Hreðsigora ne gealp
+2584 goldwine Geata;     guðbill geswac,
+2585 nacod æt niðe,     swa hyt no sceolde,
+2586 iren ærgod.     Ne wæs þæt eðe sið,
+2587 þæt se mæra     maga Ecgðeowes
+2588 grundwong þone     ofgyfan wolde;
+2589 sceolde ofer willan     wic eardian
+2590 elles hwergen,     swa sceal æghwylc mon
+2591 alætan lændagas.     Næs ða long to ðon
+2592 þæt ða aglæcean hy     eft gemetton.
+2593 Hyrte hyne hordweard     (hreðer æðme weoll)
+2594 niwan stefne;     nearo ðrowode,
+2595 fyre befongen,     se ðe ær folce weold.
+2596 Nealles him on heape     handgesteallan,
+2597 æðelinga bearn,     ymbe gestodon
+2598 hildecystum,     ac hy on holt bugon,
+2599 ealdre burgan.     Hiora in anum weoll
+2600 sefa wið sorgum;     sibb æfre ne mæg
+2601 wiht onwendan     þam ðe wel þenceð.
+2602 Wiglaf wæs haten     Weoxstanes sunu,
+2603 leoflic lindwiga,     leod Scylfinga,
+2604 mæg ælfheres;     geseah his mondryhten
+2605 under heregriman     hat þrowian.
+2606 Gemunde ða ða are     þe he him ær forgeaf,
+2607 wicstede weligne     Wægmundinga,
+2608 folcrihta gehwylc,     swa his fæder ahte.
+2609 Ne mihte ða forhabban;     hond rond gefeng,
+2610 geolwe linde,     gomel_swyrd geteah,
+2611 þæt wæs mid eldum     Eanmundes laf,
+2612 suna Ohteres.     þam æt sæcce wearð,
+2613 wræccan wineleasum,     Weohstan @ bana
+2614 meces ecgum,     ond his magum ætbær
+2615 brunfagne helm,     hringde byrnan,
+2616 eald_sweord etonisc;     þæt him Onela forgeaf,
+2617 his gædelinges     guðgewædu,
+2618 fyrdsearo fuslic,     no ymbe ða fæhðe spræc,
+2619 þeah ðe he his broðor bearn     abredwade.
+2620 He @ frætwe geheold     fela missera,
+2621 bill ond byrnan,     oððæt his byre mihte
+2622 eorlscipe efnan     swa his ærfæder;
+2623 geaf him ða mid Geatum     guðgewæda,
+2624 æghwæs unrim,     þa he of ealdre gewat,
+2625 frod on forðweg.     þa wæs forma sið
+2626 geongan cempan,     þæt he guðe ræs
+2627 mid his freodryhtne     fremman sceolde.
+2628 Ne gemealt him se modsefa,     ne his mæges laf
+2629 gewac æt wige;     þæt se wyrm onfand,
+2630 syððan hie togædre     gegan hæfdon.
+2631 Wiglaf maðelode,     wordrihta fela
+2632 sægde gesiðum     (him wæs sefa geomor):
+2633 "Ic ðæt mæl geman,     þær we medu þegun,
+2634 þonne we geheton     ussum hlaforde
+2635 in biorsele,     ðe us ðas beagas geaf,
+2636 þæt we him ða guðgetawa     gyldan woldon
+2637 gif him þyslicu     þearf gelumpe,
+2638 helmas ond heard sweord.     ðe he usic on herge geceas
+2639 to ðyssum siðfate     sylfes willum,
+2640 onmunde usic mærða,     ond me þas maðmas geaf,
+2641 þe he usic garwigend     gode tealde,
+2642 hwate helmberend,     þeah ðe hlaford us
+2643 þis ellenweorc     ana aðohte
+2644 to gefremmanne,     folces hyrde,
+2645 for_ðam he manna mæst     mærða gefremede,
+2646 dæda dollicra.     Nu is se dæg cumen
+2647 þæt ure mandryhten     mægenes behofað,
+2648 godra guðrinca;     wutun gongan to,
+2649 helpan hildfruman,     þenden hyt sy,
+2650 gledegesa grim.     God wat on mec
+2651 þæt me is micle leofre     þæt minne lichaman
+2652 mid minne goldgyfan     gled fæðmie.
+2653 Ne þynceð me gerysne     þæt we rondas beren
+2654 eft to earde,     nemne we æror mægen
+2655 fane gefyllan,     feorh ealgian
+2656 Wedra ðeodnes.     Ic wat geare
+2657 þæt næron ealdgewyrht,     þæt he ana scyle
+2658 Geata duguðe     gnorn þrowian,
+2659 gesigan æt sæcce;     urum sceal sweord ond helm,
+2660 byrne ond beaduscrud,     bam gemæne."
+2661 Wod þa þurh þone wælrec,     wigheafolan bær
+2662 frean on fultum,     fea worda cwæð:
+2663 "Leofa Biowulf,     læst eall tela,
+2664 swa ðu on geoguðfeore     geara gecwæde
+2665 þæt ðu ne alæte     be ðe lifigendum
+2666 dom gedreosan.     Scealt nu dædum rof,
+2667 æðeling anhydig,     ealle mægene
+2668 feorh ealgian;     ic ðe fullæstu."
+2669 æfter ðam wordum     wyrm yrre cwom,
+2670 atol inwitgæst,     oðre siðe
+2671 fyrwylmum fah     fionda niosian,
+2672 laðra manna;     ligyðum for.
+2673 Born bord wið rond,     byrne ne meahte
+2674 geongum garwigan     geoce gefremman,
+2675 ac se maga geonga     under his mæges scyld
+2676 elne geeode,     þa his agen wæs
+2677 gledum forgrunden.     þa gen guðcyning
+2678 mærða gemunde,     mægenstrengo sloh
+2679 hildebille,     þæt hyt on heafolan stod
+2680 niþe genyded;     Nægling forbærst,
+2681 geswac æt sæcce     sweord Biowulfes,
+2682 gomol ond grægmæl.     Him þæt gifeðe ne wæs
+2683 þæt him irenna     ecge mihton
+2684 helpan æt hilde;     wæs sio hond to strong,
+2685 se ðe meca gehwane,     mine gefræge,
+2686 swenge ofersohte,     þonne he to sæcce bær
+2687 wæpen wundrum heard;     næs him wihte ðe sel.
+2688 þa wæs þeodsceaða     þriddan siðe,
+2689 frecne fyrdraca,     fæhða gemyndig,
+2690 ræsde on ðone rofan,     þa him rum ageald,
+2691 hat ond heaðogrim,     heals ealne ymbefeng
+2692 biteran banum;     he geblodegod wearð
+2693 sawuldriore,     swat yðum weoll.
+2694 ða ic æt þearfe gefrægn     þeodcyninges
+2695 andlongne eorl     ellen cyðan,
+2696 cræft ond cenðu,     swa him gecynde wæs.
+2697 Ne hedde he þæs heafolan,     ac sio hand gebarn
+2698 modiges mannes,     þær he his mæges healp,
+2699 þæt he þone niðgæst     nioðor hwene sloh,
+2700 secg on searwum,     þæt ðæt sweord gedeaf,
+2701 fah ond fæted,     þæt ðæt fyr ongon
+2702 sweðrian syððan.     þa gen sylf cyning
+2703 geweold his gewitte,     wællseaxe gebræd
+2704 biter ond beaduscearp,     þæt he on byrnan wæg;
+2705 forwrat Wedra helm     wyrm on middan.
+2706 Feond gefyldan     (ferh ellen wræc),
+2707 ond hi hyne þa begen     abroten hæfdon,
+2708 sibæðelingas.     Swylc sceolde secg wesan,
+2709 þegn æt ðearfe!     þæt ðam þeodne wæs
+2710 siðast sigehwila     sylfes dædum,
+2711 worlde geweorces.     ða sio wund ongon,
+2712 þe him se eorðdraca     ær geworhte,
+2713 swelan ond swellan;     he þæt sona onfand,
+2714 þæt him on breostum     bealoniðe weoll
+2715 attor on innan.     ða se æðeling giong
+2716 þæt he bi wealle     wishycgende
+2717 gesæt on sesse;     seah on enta geweorc,
+2718 hu ða stanbogan     stapulum fæste
+2719 ece eorðreced     innan healde.
+2720 Hyne þa mid handa     heorodreorigne,
+2721 þeoden mærne,     þegn ungemete till
+2722 winedryhten his     wætere gelafede,
+2723 hilde sædne,     ond his helm onspeon.
+2724 Biowulf maþelode     (he ofer benne spræc,
+2725 wunde wælbleate;     wisse he gearwe
+2726 þæt he dæghwila     gedrogen hæfde,
+2727 eorðan wynne;     ða wæs eall sceacen
+2728 dogorgerimes,     deað ungemete neah):
+2729 "Nu ic suna minum     syllan wolde
+2730 guðgewædu,     þær me gifeðe swa
+2731 ænig yrfeweard     æfter wurde
+2732 lice gelenge.     Ic ðas leode heold
+2733 fiftig wintra;     næs se folccyning,
+2734 ymbesittendra     ænig ðara,
+2735 þe mec guðwinum     gretan dorste,
+2736 egesan ðeon.     Ic on earde bad
+2737 mælgesceafta,     heold min tela,
+2738 ne sohte searoniðas,     ne me swor fela
+2739 aða on unriht.     Ic ðæs ealles mæg
+2740 feorhbennum seoc     gefean habban;
+2741 for_ðam me witan ne ðearf     waldend fira
+2742 morðorbealo maga,     þonne min sceaceð
+2743 lif of lice.     Nu ðu lungre geong
+2744 hord sceawian     under harne stan,
+2745 Wiglaf leofa,     nu se wyrm ligeð,
+2746 swefeð sare wund,     since bereafod.
+2747 Bio nu on ofoste,     þæt ic ærwelan,
+2748 goldæht ongite,     gearo sceawige
+2749 swegle searogimmas,     þæt ic ðy seft mæge
+2750 æfter maððumwelan     min alætan
+2751 lif ond leodscipe,     þone ic longe heold."
+2752 ða ic snude gefrægn     sunu Wihstanes
+2753 æfter wordcwydum     wundum dryhtne
+2754 hyran heaðosiocum,     hringnet beran,
+2755 brogdne beadusercean     under beorges hrof.
+2756 Geseah ða sigehreðig,     þa he bi sesse geong,
+2757 magoþegn_modig     maððumsigla fealo,
+2758 gold glitinian     grunde getenge,
+2759 wundur on wealle,     ond þæs wyrmes denn,
+2760 ealdes uhtflogan,     orcas stondan,
+2761 fyrnmanna fatu     feormendlease,
+2762 hyrstum behrorene;     þær wæs helm monig
+2763 eald ond omig,     earmbeaga fela
+2764 searwum gesæled.     Sinc eaðe mæg,
+2765 gold on grunde,     gumcynnes gehwone
+2766 oferhigian,     hyde se ðe wylle.
+2767 Swylce he siomian geseah     segn eallgylden
+2768 heah ofer horde,     hondwundra mæst,
+2769 gelocen leoðocræftum;     of ðam leoma stod,
+2770 þæt he þone grundwong     ongitan meahte,
+2771 wræte giondwlitan.     Næs ðæs wyrmes þær
+2772 onsyn ænig,     ac hyne ecg fornam.
+2773 ða ic on hlæwe gefrægn     hord reafian,
+2774 eald enta geweorc,     anne mannan,
+2775 him on bearm hladon     bunan ond discas
+2776 sylfes dome;     segn eac genom,
+2777 beacna beorhtost.     Bill ær gescod
+2778 (ecg wæs iren)     ealdhlafordes
+2779 þam ðara maðma     mundbora wæs
+2780 longe hwile,     ligegesan wæg
+2781 hatne for horde,     hioroweallende
+2782 middelnihtum,     oðþæt he morðre swealt.
+2783 Ar wæs on ofoste,     eftsiðes georn,
+2784 frætwum gefyrðred;     hyne fyrwet bræc,
+2785 hwæðer collenferð     cwicne gemette
+2786 in ðam wongstede     Wedra þeoden
+2787 ellensiocne,     þær he hine ær forlet.
+2788 He ða mid þam maðmum     mærne þioden,
+2789 dryhten sinne,     driorigne fand
+2790 ealdres æt ende;     he hine eft ongon
+2791 wæteres weorpan,     oðþæt wordes ord
+2792 breosthord þurhbræc.     @ @
+2793 gomel on giohðe     (gold sceawode):
+2794 "Ic ðara frætwa     frean ealles ðanc,
+2795 wuldurcyninge,     wordum secge,
+2796 ecum dryhtne,     þe ic her on starie,
+2797 þæs ðe ic moste     minum leodum
+2798 ær swyltdæge     swylc gestrynan.
+2799 Nu ic on maðma hord     mine bebohte
+2800 frode feorhlege,     fremmað gena
+2801 leoda þearfe;     ne mæg ic her leng wesan.
+2802 Hatað heaðomære     hlæw gewyrcean
+2803 beorhtne æfter bæle     æt brimes nosan;
+2804 se scel to gemyndum     minum leodum
+2805 heah hlifian     on Hronesnæsse,
+2806 þæt hit sæliðend     syððan hatan
+2807 Biowulfes biorh,     ða ðe brentingas
+2808 ofer floda genipu     feorran drifað."
+2809 Dyde him of healse     hring gyldenne
+2810 þioden þristhydig,     þegne gesealde,
+2811 geongum garwigan,     goldfahne helm,
+2812 beah ond byrnan,     het hyne brucan well:
+2813 "þu eart endelaf     usses cynnes,
+2814 Wægmundinga.     Ealle wyrd forsweop
+2815 mine magas     to metodsceafte,
+2816 eorlas on elne;     ic him æfter sceal."
+2817 þæt wæs þam gomelan     gingæste word
+2818 breostgehygdum,     ær he bæl cure,
+2819 hate heaðowylmas;     him of hreðre gewat
+2820 sawol secean     soðfæstra dom.
+2821 ða wæs gegongen     guman unfrodum
+2822 earfoðlice,     þæt he on eorðan geseah
+2823 þone leofestan     lifes æt ende
+2824 bleate gebæran.     Bona swylce læg,
+2825 egeslic eorðdraca     ealdre bereafod,
+2826 bealwe gebæded.     Beahhordum leng
+2827 wyrm wohbogen     wealdan ne moste,
+2828 ac hine irenna     ecga fornamon,
+2829 hearde, heaðoscearde     homera lafe,
+2830 þæt se widfloga     wundum stille
+2831 hreas on hrusan     hordærne neah.
+2832 Nalles æfter lyfte     lacende hwearf
+2833 middelnihtum,     maðmæhta wlonc
+2834 ansyn ywde,     ac he eorðan gefeoll
+2835 for ðæs hildfruman     hondgeweorce.
+2836 Huru þæt on lande     lyt manna ðah,
+2837 mægenagendra,     mine gefræge,
+2838 þeah ðe he dæda gehwæs     dyrstig wære,
+2839 þæt he wið attorsceaðan     oreðe geræsde,
+2840 oððe hringsele     hondum styrede,
+2841 gif he wæccende     weard onfunde
+2842 buon on beorge.     Biowulfe wearð
+2843 dryhtmaðma dæl     deaðe forgolden;
+2844 hæfde æghwæðer     ende gefered
+2845 lænan lifes.     Næs ða lang to ðon
+2846 þæt ða hildlatan     holt ofgefan,
+2847 tydre treowlogan     tyne ætsomne.
+2848 ða ne dorston ær     dareðum lacan
+2849 on hyra mandryhtnes     miclan þearfe,
+2850 ac hy scamiende     scyldas bæran,
+2851 guðgewædu,     þær se gomela læg,
+2852 wlitan on Wilaf.     He gewergad sæt,
+2853 feðecempa,     frean eaxlum neah,
+2854 wehte hyne wætre;     him wiht ne speow.
+2855 Ne meahte he on eorðan,     ðeah he uðe wel,
+2856 on ðam frumgare     feorh gehealdan,
+2857 ne ðæs wealdendes     wiht oncirran;
+2858 wolde dom godes     dædum rædan
+2859 gumena gehwylcum,     swa he nu gen deð.
+2860 þa wæs æt ðam geongan     grim ondswaru
+2861 eðbegete     þam ðe ær his elne forleas.
+2862 Wiglaf maðelode,     Weohstanes sunu,
+2863 sec, sarigferð     (seah on unleofe):
+2864 "þæt, la, mæg secgan     se ðe wyle soð specan
+2865 þæt se mondryhten     se eow ða maðmas geaf,
+2866 eoredgeatwe,     þe ge þær on standað,
+2867 þonne he on ealubence     oft gesealde
+2868 healsittendum     helm ond byrnan,
+2869 þeoden his þegnum,     swylce he þrydlicost
+2870 ower feor oððe neah     findan meahte,
+2871 þæt he genunga     guðgewædu
+2872 wraðe forwurpe,     ða hyne wig beget.
+2873 Nealles folccyning     fyrdgesteallum
+2874 gylpan þorfte;     hwæðre him god uðe,
+2875 sigora waldend,     þæt he hyne sylfne gewræc
+2876 ana mid ecge,     þa him wæs elnes þearf.
+2877 Ic him lifwraðe     lytle meahte
+2878 ætgifan æt guðe,     ond ongan swa þeah
+2879 ofer min gemet     mæges helpan;
+2880 symle wæs þy sæmra,     þonne ic sweorde drep
+2881 ferhðgeniðlan,     fyr unswiðor
+2882 weoll of gewitte.     Wergendra to lyt
+2883 þrong ymbe þeoden,     þa hyne sio þrag becwom.
+2884 Nu sceal sincþego     ond swyrdgifu,
+2885 eall eðelwyn     eowrum cynne,
+2886 lufen alicgean;     londrihtes mot
+2887 þære mægburge     monna æghwylc
+2888 idel hweorfan,     syððan æðelingas
+2889 feorran gefricgean     fleam eowerne,
+2890 domleasan dæd.     Deað bið sella
+2891 eorla gehwylcum     þonne edwitlif!"
+2892 Heht ða þæt heaðoweorc     to hagan biodan
+2893 up ofer ecgclif,     þær þæt eorlweorod
+2894 morgenlongne dæg     modgiomor sæt,
+2895 bordhæbbende,     bega on wenum,
+2896 endedogores     ond eftcymes
+2897 leofes monnes.     Lyt swigode
+2898 niwra spella     se ðe næs gerad,
+2899 ac he soðlice     sægde ofer ealle:
+2900 "Nu is wilgeofa     Wedra leoda,
+2901 dryhten Geata,     deaðbedde fæst,
+2902 wunað wælreste     wyrmes dædum.
+2903 Him on_efn ligeð     ealdorgewinna
+2904 sexbennum seoc;     sweorde ne meahte
+2905 on ðam aglæcean     ænige þinga
+2906 wunde gewyrcean.     Wiglaf siteð
+2907 ofer Biowulfe,     byre Wihstanes,
+2908 eorl ofer oðrum     unlifigendum,
+2909 healdeð higemæðum     heafodwearde
+2910 leofes ond laðes.     Nu ys leodum wen
+2911 orleghwile,     syððan underne
+2912 Froncum ond Frysum     fyll cyninges
+2913 wide weorðeð.     Wæs sio wroht scepen
+2914 heard wið Hugas,     syððan Higelac cwom
+2915 faran flotherge     on Fresna land,
+2916 þær hyne Hetware     hilde genægdon,
+2917 elne geeodon     mid ofermægene,
+2918 þæt se byrnwiga     bugan sceolde,
+2919 feoll on feðan,     nalles frætwe geaf
+2920 ealdor dugoðe.     Us wæs a syððan
+2921 Merewioingas     milts ungyfeðe.
+2922 Ne ic to Sweoðeode     sibbe oððe treowe
+2923 wihte ne wene,     ac wæs wide cuð
+2924 þætte Ongenðio     ealdre besnyðede
+2925 Hæðcen Hreþling     wið Hrefnawudu,
+2926 þa for onmedlan     ærest gesohton
+2927 Geata leode     Guðscilfingas.
+2928 Sona him se froda     fæder Ohtheres,
+2929 eald ond egesfull,     ondslyht ageaf,
+2930 abreot brimwisan,     bryd ahredde,
+2931 gomela iomeowlan     golde berofene,
+2932 Onelan modor     ond Ohtheres,
+2933 ond ða folgode     feorhgeniðlan,
+2934 oððæt hi oðeodon     earfoðlice
+2935 in Hrefnesholt     hlafordlease.
+2936 Besæt ða sinherge     sweorda lafe,
+2937 wundum werge,     wean oft gehet
+2938 earmre teohhe     ondlonge niht,
+2939 cwæð, he on mergenne     meces ecgum
+2940 getan wolde,     sum on galgtreowum
+2941 fuglum to gamene.     Frofor eft gelamp
+2942 sarigmodum     somod ærdæge,
+2943 syððan hie Hygelaces     horn ond byman,
+2944 gealdor ongeaton,     þa se goda com
+2945 leoda dugoðe     on last faran.
+2946 Wæs sio swatswaðu     Sweona ond Geata,
+2947 wælræs weora     wide gesyne,
+2948 hu ða folc mid him     fæhðe towehton.
+2949 Gewat him ða se goda     mid his gædelingum,
+2950 frod, felageomor,     fæsten secean,
+2951 eorl Ongenþio,     ufor oncirde;
+2952 hæfde Higelaces     hilde gefrunen,
+2953 wlonces wigcræft,     wiðres ne truwode,
+2954 þæt he sæmannum     onsacan mihte,
+2955 heaðoliðendum     hord forstandan,
+2956 bearn ond bryde;     beah eft þonan
+2957 eald under eorðweall.     þa wæs æht boden
+2958 Sweona leodum,     segn Higelaces
+2959 freoðowong þone     forð ofereodon,
+2960 syððan Hreðlingas     to hagan þrungon.
+2961 þær wearð Ongenðiow     ecgum sweorda,
+2962 blondenfexa,     on bid wrecen,
+2963 þæt se þeodcyning     ðafian sceolde
+2964 Eafores anne dom.     Hyne yrringa
+2965 Wulf Wonreding     wæpne geræhte,
+2966 þæt him for swenge     swat ædrum sprong
+2967 forð under fexe.     Næs he forht swa ðeh,
+2968 gomela Scilfing,     ac forgeald hraðe
+2969 wyrsan wrixle     wælhlem þone,
+2970 syððan ðeodcyning     þyder oncirde.
+2971 Ne meahte se snella     sunu Wonredes
+2972 ealdum ceorle     ondslyht giofan,
+2973 ac he him on heafde     helm ær gescer,
+2974 þæt he blode fah     bugan sceolde,
+2975 feoll on foldan;     næs he fæge þa git,
+2976 ac he hyne gewyrpte,     þeah ðe him wund hrine.
+2977 Let se hearda     Higelaces þegn
+2978 bradne mece,     þa his broðor læg,
+2979 eald_sweord eotonisc,     entiscne helm
+2980 brecan ofer bordweal;     ða gebeah cyning,
+2981 folces hyrde,     wæs in feorh dropen.
+2982 ða wæron monige     þe his mæg wriðon,
+2983 ricone arærdon,     ða him gerymed wearð
+2984 þæt hie wælstowe     wealdan moston.
+2985 þenden reafode     rinc oðerne,
+2986 nam on Ongenðio     irenbyrnan,
+2987 heard swyrd hilted     ond his helm somod,
+2988 hares hyrste     Higelace bær.
+2989 He ðam frætwum feng     ond him fægre gehet
+2990 leana mid leodum,     ond gelæste swa;
+2991 geald þone guðræs     Geata dryhten,
+2992 Hreðles eafora,     þa he to ham becom,
+2993 Iofore ond Wulfe     mid ofermaðmum,
+2994 sealde hiora gehwæðrum     hund þusenda
+2995 landes ond locenra beaga     (ne ðorfte him ða lean oðwitan
+2996 mon on middangearde),     syððan hie ða @ mærða geslogon,
+2997 ond ða Iofore forgeaf     angan dohtor,
+2998 hamweorðunge,     hyldo to wedde.
+2999 þæt ys sio fæhðo     ond se feondscipe,
+3000 wælnið wera,     ðæs ðe ic wen hafo,
+3001 þe us seceað to     Sweona leoda,
+3002 syððan hie gefricgeað     frean userne
+3003 ealdorleasne,     þone ðe ær geheold
+3004 wið hettendum     hord ond rice
+3005 æfter hæleða hryre,     hwate Scildingas,
+3006 folcred fremede     oððe furður gen
+3007 eorlscipe efnde.     Nu is ofost betost
+3008 þæt we þeodcyning     þær sceawian
+3009 ond þone gebringan,     þe us beagas geaf,
+3010 on adfære.     Ne scel anes hwæt
+3011 meltan mid þam modigan,     ac þær is maðma hord,
+3012 gold unrime     grimme geceapod,
+3013 ond nu æt siðestan     sylfes feore
+3014 beagas gebohte.     þa sceall brond fretan,
+3015 æled þeccean,     nalles eorl wegan
+3016 maððum to gemyndum,     ne mægð scyne
+3017 habban on healse     hringweorðunge,
+3018 ac sceal geomormod,     golde bereafod,
+3019 oft nalles æne     elland tredan,
+3020 nu se herewisa     hleahtor alegde,
+3021 gamen ond gleodream.     Forðon sceall gar wesan
+3022 monig, morgenceald,     mundum bewunden,
+3023 hæfen on handa,     nalles hearpan sweg
+3024 wigend weccean,     ac se wonna hrefn
+3025 fus ofer fægum     fela reordian,
+3026 earne secgan     hu him æt æte speow,
+3027 þenden he wið wulf     wæl reafode."
+3028 Swa se secg hwata     secggende wæs
+3029 laðra spella;     he ne leag fela
+3030 wyrda ne worda.     Weorod eall aras;
+3031 eodon unbliðe     under Earnanæs,
+3032 wollenteare     wundur sceawian.
+3033 Fundon ða on sande     sawulleasne
+3034 hlimbed healdan     þone þe him hringas geaf
+3035 ærran mælum;     þa wæs endedæg
+3036 godum gegongen,     þæt se guðcyning,
+3037 Wedra þeoden,     wundordeaðe swealt.
+3038 ær hi þær gesegan     syllicran wiht,
+3039 wyrm on wonge     wiðerræhtes þær
+3040 laðne licgean;     wæs se legdraca
+3041 grimlic, gryrefah,     gledum beswæled.
+3042 Se wæs fiftiges     fotgemearces
+3043 lang on legere,     lyftwynne heold
+3044 nihtes hwilum,     nyðer eft gewat
+3045 dennes niosian;     wæs ða deaðe fæst,
+3046 hæfde eorðscrafa     ende genyttod.
+3047 Him big stodan     bunan ond orcas,
+3048 discas lagon     ond dyre swyrd,
+3049 omige, þurhetone,     swa hie wið eorðan fæðm
+3050 þusend wintra     þær eardodon.
+3051 þonne wæs þæt yrfe,     eacencræftig,
+3052 iumonna gold     galdre bewunden,
+3053 þæt ðam hringsele     hrinan ne moste
+3054 gumena ænig,     nefne god sylfa,
+3055 sigora soðcyning,     sealde þam ðe he wolde
+3056 (he is manna gehyld)     hord openian,
+3057 efne swa hwylcum manna     swa him gemet ðuhte.
+3058 þa wæs gesyne     þæt se sið ne ðah
+3059 þam ðe unrihte     inne gehydde
+3060 wræte under wealle.     Weard ær ofsloh
+3061 feara sumne;     þa sio fæhð gewearð
+3062 gewrecen wraðlice.     Wundur hwar þonne
+3063 eorl ellenrof     ende gefere
+3064 lifgesceafta,     þonne leng ne mæg
+3065 mon mid his magum     meduseld buan.
+3066 Swa wæs Biowulfe,     þa he biorges weard
+3067 sohte, searoniðas;     seolfa ne cuðe
+3068 þurh hwæt his worulde gedal     weorðan sceolde.
+3069 Swa hit oð domes dæg     diope benemdon
+3070 þeodnas mære,     þa ðæt þær dydon,
+3071 þæt se secg wære     synnum scildig,
+3072 hergum geheaðerod,     hellbendum fæst,
+3073 wommum gewitnad,     se ðone wong strude,
+3074 næs he goldhwæte     gearwor hæfde
+3075 agendes est     ær gesceawod.
+3076 Wiglaf maðelode,     Wihstanes sunu:
+3077 "Oft sceall eorl monig     anes willan
+3078 wræc adreogan,     swa us geworden is.
+3079 Ne meahton we gelæran     leofne þeoden,
+3080 rices hyrde,     ræd ænigne,
+3081 þæt he ne grette     goldweard þone,
+3082 lete hyne licgean     þær he longe wæs,
+3083 wicum wunian     oð woruldende;
+3084 heold_on heahgesceap.     Hord ys gesceawod,
+3085 grimme gegongen;     wæs þæt gifeðe @ to swið
+3086 þe ðone þeodcyning     þyder ontyhte.
+3087 Ic wæs þær_inne     ond þæt eall geondseh,
+3088 recedes geatwa,     þa me gerymed wæs,
+3089 nealles swæslice     sið alyfed
+3090 inn under eorðweall.     Ic on ofoste gefeng
+3091 micle mid mundum     mægenbyrðenne
+3092 hordgestreona,     hider ut ætbær
+3093 cyninge minum.     Cwico wæs þa gena,
+3094 wis ond gewittig;     worn eall gespræc
+3095 gomol on gehðo     ond eowic gretan het,
+3096 bæd þæt ge geworhton     æfter wines dædum
+3097 in bælstede     beorh þone hean,
+3098 micelne ond mærne,     swa he manna wæs
+3099 wigend weorðfullost     wide geond eorðan,
+3100 þenden he burhwelan     brucan moste.
+3101 Uton nu efstan     oðre siðe,
+3102 seon ond secean     searogimma geþræc,
+3103 wundur under wealle;     ic eow wisige,
+3104 þæt ge genoge     neon sceawiað
+3105 beagas ond brad gold.     Sie sio bær gearo,
+3106 ædre geæfned,     þonne we ut cymen,
+3107 ond þonne geferian     frean userne,
+3108 leofne mannan,     þær he longe sceal
+3109 on ðæs waldendes     wære geþolian."
+3110 Het ða gebeodan     byre Wihstanes,
+3111 hæle hildedior,     hæleða monegum,
+3112 boldagendra,     þæt hie bælwudu
+3113 feorran feredon,     folcagende,
+3114 godum togenes:     "Nu sceal gled fretan,
+3115 weaxan wonna leg     wigena strengel,
+3116 þone ðe oft gebad     isernscure,
+3117 þonne stræla storm     strengum gebæded
+3118 scoc ofer scildweall,     sceft nytte heold,
+3119 feðergearwum fus     flane fulleode."
+3120 Huru se snotra     sunu Wihstanes
+3121 acigde of corðre     cyninges þegnas
+3122 syfone tosomne,     þa selestan,
+3123 eode eahta sum     under inwithrof
+3124 hilderinca;     sum on handa bær
+3125 æledleoman,     se ðe on orde geong.
+3126 Næs ða on hlytme     hwa þæt hord strude,
+3127 syððan orwearde     ænigne dæl
+3128 secgas gesegon     on sele wunian,
+3129 læne licgan;     lyt ænig mearn
+3130 þæt hi ofostlice     ut geferedon
+3131 dyre maðmas.     Dracan ec scufun,
+3132 wyrm ofer weallclif,     leton weg niman,
+3133 flod fæðmian     frætwa hyrde.
+3134 þa wæs wunden_gold     on wæn hladen,
+3135 æghwæs unrim,     æþeling boren,
+3136 har hilderinc     to Hronesnæsse.
+3137 Him ða gegiredan     Geata leode
+3138 ad on eorðan     unwaclicne,
+3139 helmum behongen,     hildebordum,
+3140 beorhtum byrnum,     swa he bena wæs;
+3141 alegdon ða tomiddes     mærne þeoden
+3142 hæleð hiofende,     hlaford_leofne.
+3143 Ongunnon þa on beorge     bælfyra mæst
+3144 wigend weccan;     wudurec astah,
+3145 sweart ofer swioðole,     swogende leg
+3146 wope bewunden     (windblond gelæg),
+3147 oðþæt he ða banhus     gebrocen hæfde,
+3148 hat on hreðre.     Higum unrote
+3149 modceare mændon,     mondryhtnes cwealm;
+3150 swylce giomorgyd     Geatisc meowle
+3151 @ @     bundenheorde
+3152 song sorgcearig     swiðe geneahhe
+3153 þæt hio hyre heofungdagas     hearde ondrede,
+3154 wælfylla worn,     werudes egesan,
+3155 hynðo ond hæftnyd.     Heofon rece swealg.
+3156 Geworhton ða     Wedra leode
+3157 hleo on hoe,     se wæs heah ond brad,
+3158 wægliðendum     wide gesyne,
+3159 ond betimbredon     on tyn dagum
+3160 beadurofes becn,     bronda lafe
+3161 wealle beworhton,     swa hyt weorðlicost
+3162 foresnotre men     findan mihton.
+3163 Hi on beorg dydon     beg ond siglu,
+3164 eall swylce hyrsta,     swylce on horde ær
+3165 niðhedige men     genumen hæfdon,
+3166 forleton eorla gestreon     eorðan healdan,
+3167 gold on greote,     þær hit nu gen lifað
+3168 eldum swa unnyt     swa hit æror wæs.
+3169 þa ymbe hlæw riodan     hildediore,
+3170 æþelinga bearn,     ealra twelfe,
+3171 woldon ceare cwiðan     ond kyning mænan,
+3172 wordgyd wrecan     ond ymb wer sprecan;
+3173 eahtodan eorlscipe     ond his ellenweorc
+3174 duguðum demdon,     swa hit gedefe bið
+3175 þæt mon his winedryhten     wordum herge,
+3176 ferhðum freoge,     þonne he forð scile
+3177 of lichaman     læded weorðan.
+3178 Swa begnornodon     Geata leode
+3179 hlafordes hryre,     heorðgeneatas,
+3180 cwædon þæt he wære     wyruldcyninga
+3181 manna mildust     ond monðwærust,
+3182 leodum liðost     ond lofgeornost.
