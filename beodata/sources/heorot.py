@@ -10,8 +10,6 @@ from typing import Any, Dict, List
 from bs4 import BeautifulSoup, Tag
 
 from beodata.logging_config import get_logger
-from beodata.sources.fetch import DATA_DIR, fetch_and_store
-from beodata.writers.ass_writer import get_fitt, make_sub, write_ass
 
 # URL of our Beowulf text (messy HTML)
 HEOROT_URL = "https://heorot.dk/beowulf-rede-text.html"

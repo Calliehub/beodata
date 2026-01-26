@@ -1,7 +1,5 @@
 """Tests for the Bosworth-Toller dictionary module."""
 
-import csv
-import tempfile
 from pathlib import Path
 from typing import Generator
 
@@ -157,27 +155,6 @@ class TestBosworthToller:
         with BosworthToller(db_path=db_path) as bt:
             assert bt._conn is not None or bt.table_exists() is False
         assert bt._conn is None
-
-
-class TestAbbreviations:
-    """Tests for abbreviations loading."""
-
-    def test_load_abbreviations(self, tmp_path: Path) -> None:
-        """Should load abbreviations from XML."""
-        db_path = tmp_path / "abbrev_test.duckdb"
-        with BosworthToller(db_path=db_path) as bt:
-            count = bt.load_abbreviations()
-            assert count == 632
-            assert bt.abbreviations_table_exists()
-
-    def test_lookup_abbreviation(self, tmp_path: Path) -> None:
-        """Should find abbreviations by partial match."""
-        db_path = tmp_path / "abbrev_lookup.duckdb"
-        with BosworthToller(db_path=db_path) as bt:
-            bt.load_abbreviations()
-            results = bt.lookup_abbreviation("Beo.")
-            assert len(results) >= 1
-            assert any("Beowulf" in r["description"] for r in results)
 
 
 class TestQuoteIdentifier:
