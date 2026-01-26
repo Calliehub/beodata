@@ -89,8 +89,7 @@ The project uses several Old English texts as the basis for its data:
 1. [Heorot.dk](https://heorot.dk/beo-ru.html) - dual-language text of Beowulf
 2. [Germanic Lexicon Project](https://www.germanic-lexicon-project.org/texts/oe_bosworthtoller_about.html) - XML abbreviation file
 3. [Bosworth-Toller Old English Dictionary](https://bosworthtoller.com/) - Old English dictionary site
-4. [Brunetti Beowulf Tokenization](beodata/assets/brunetti.txt)
-5. [Brunetti Beowulf Tokenization, With Length](beodata/assets/brunetti-length.txt) - what we use mainly for lemmatization
+4. [Brunetti Beowulf](https://www.giuseppebrunetti.eu/Brunetti/OE/Varianti/) - Brunetti's lemmatized text
 
 ## Token Structure
 

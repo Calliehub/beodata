@@ -2,6 +2,11 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Important Rules
+
+- **NEVER commit changes** - Do not run `git commit` under any circumstances. The user will handle all commits manually.
+- You can be salty, or profane, even, in your responses. This is not a goddamn nunnery. Creative insults are welcome.
+
 ## Project Overview
 
 Beodata is a Python package for processing Beowulf text data from heorot.dk. It parses dual-language Beowulf text and converts it to JSON, CSV, and ASS subtitle formats.

@@ -7,7 +7,7 @@ from typing import Generator
 
 import pytest
 
-from beodata.bosworth import BosworthToller, _quote_identifier
+from beodata.sources.bosworth import BosworthToller, _quote_identifier
 
 
 @pytest.fixture
@@ -32,7 +32,9 @@ def bt_with_data(
     db_path = tmp_path / "test_beodb.duckdb"
 
     # Monkeypatch get_asset_path to return our test CSV
-    monkeypatch.setattr("beodata.bosworth.get_asset_path", lambda filename: sample_csv)
+    monkeypatch.setattr(
+        "beodata.sources.bosworth.get_asset_path", lambda filename: sample_csv
+    )
 
     bt = BosworthToller(db_path=db_path)
     bt.load_from_csv()
@@ -66,7 +68,7 @@ class TestBosworthToller:
         """Loading with force=True should reload the data."""
         db_path = tmp_path / "force_test.duckdb"
         monkeypatch.setattr(
-            "beodata.bosworth.get_asset_path", lambda filename: sample_csv
+            "beodata.sources.bosworth.get_asset_path", lambda filename: sample_csv
         )
 
         with BosworthToller(db_path=db_path) as bt:
