@@ -1,0 +1,898 @@
+á-léogan|II|áléh|pret. 3 sg.|80
+á-settan|w1.|áseted|pp.|667
+á-settan|w1.|ásetton|pret. 3 pl.|47
+aédre|adv.|aédre|-|77,354
+aéfre|adv.|aéfre|-|70,280,504,692
+æfter/I|prep.|æfter|-|85,117,119,128,140,187,332,580,724,824,931,944,995
+æfter/II|adv.|æfter|-|12,315,341
+aég-hwylc|pron.|aéghwylc|nsm.|9,984,987
+aég-hwylc|pron.|aéghwylcne|asm.|621
+aéht|f. -i.|aéht|as.|42,516
+æl-mihtig|adj.|ælmihtiga|-|92
+aér/I|adv.|aér|-|15,642,655,694,718,754,757,778,825,831,941,809
+aér/I|adv.|aérest|supl.|6
+æt-bearn|IV|ætbær|3 sg.|519,624
+æt-bearn|IV|ætbaéron|3 pl.|28
+æt|prep.|æt|-|32,45,81,175,224,500,517,584,617,629,882,930,953
+æþeling|m.|æþeling|ns.|130
+æþeling|m.|æþelinga|gp.|118
+æþeling|m.|æþelingas|np.|3,982
+æþeling|m.|æþelinges|gs.|33,888
+æþeling|m.|æþellingum|dp.|906
+ágan|prp.|áhte|3 sg.|31,522
+ágan|prp.|áhte|pret. 1 sg.|533
+aldor-léas|adj.|aldorléase|npm.|15
+án|num. adj. and subst.|aénne|?|46
+án|num.|án|nsm.|100
+án|num.|ána|nsm.|145,425,431,888,999
+án|num.|áne|asf.|135
+án|num.|ánes|gsm.|699
+án|num.|ánra|gpm.|732,784
+án|num.|ánre|gsf.|428
+án|num.|ánum|dsm.|705
+áþum-swéoras|m.p.|áþumswéoran|dp.|84
+be-búgan|II|bebúgeð|pres. 3 sg.|93
+be-irnan|III|bearn|pret. 3 sg.|67
+be|prep.|be|?|36,566,814,858
+béag|m.|béaga|gp.|35,352
+béag|m.|béagas|ap.|80,523
+bearm|m.|bearm|as.|35,214,896
+bearm|m.|bearme|ds.|21,40
+bearn|n.|bearn|np.|59,70,878
+bearn|n.|bearn|ns.|469,499,529,631,888,910,957
+bearn|n.|bearnum|dp.|150
+béot|n.|béot|as.|80,523
+Béowulf|m.|Béowulf|as.|364,653
+Béowulf|m.|Béowulf|ns.|18, 53
+Béowulf|m.|Béowulf|ns.|343,405,457,506,529,631,676,957
+Béowulf|m.|Béowulf|ns.|53
+Béowulf|m.|Béowulf|vs.|946
+Béowulf|m.|Béowulfe|ds.|609,623,818
+Béowulf|m.|Béowulfes|gs.|501,795,856,872
+beran|IV|bær|pret. 3 sg.|495,711,846,896
+beran|IV|baéron|3 pl.|213
+beran|IV|beran|?|48,231,291
+beran|IV|bere|pres. opt. 1 sg.|437
+beran|IV|byreð|pres. 3 sg.|296
+bídan|I|bád|3 sg.|82,709
+bídan|I|bád|pret. 3 sg.|87,301,310
+bídan|I|bídan|inf.|482,528
+bídan|I|bidon|3 pl.|400
+biddan|V|bæd|pret. 3 sg.|29,617
+biddan|V|baédon|3 pl.|176
+biddan|V|biddan|inf.|427
+bill|n.|billa|gp.|583
+bill|n.|billum|dp.|40
+blaéd|m.|blaéd|?|18
+bréme|adj. -ja.|?|?|18
+brim|n.|brim|?|847
+brim|n.|brimes|gs.|28
+brim|n.|brimu|np.|570
+brytta|wk.m.|brytta|?|607
+brytta|wk.m.|bryttan|as.|35,352
+burh|f. -c.|burgum|dp.|53
+burh|f. -c.|burh|as.|523
+búton/I|prep.|búton|-|73,705
+búton/II|conj.|bútan|-|966
+búton/II|conj.|búton|-|657,879
+byrne|wk.f.|byrnan|np.|327
+byrne|wk.f.|byrne|?|405
+byrne|wk.f.|byrnum|dp.|40,238
+cennan|w1.|cende|pret. 3 sg.|943
+cennan|w1.|cenned|pp.|12
+céol|m.|céol|as.|38,238
+cuman|IV|cóm|3 sg.|569,702,710,720,825
+cuman|IV|cóm|pret. 1 sg.|430
+cuman|IV|cuman|inf.|244,281
+cuman|IV|cume|opt. 3 sg.|23
+cuman|IV|cumen|pp.|376
+cuman|IV|cumene|pp.|361
+cuman|IV|cwóm|pret. 1 sg.|419
+cuman|IV|cwóman|3 pl.|650
+cuman|IV|cwóme|opt. 3 sg.|731
+cuman|IV|cwómon|1 pl.|268
+cuman|IV|cwómon|2 pl.|239
+cuman|IV|cwómon|3 pl.|324
+cunnan|pret-pres.|cúðe|pret. 1 sg.|372
+cunnan|pret-pres.|cúðon|3 pl.|119
+cunnan|pret-pres.|cunnon|3 pl.|50,162
+cunnan|pret-pres.|cúþe|3 sg.|359
+cunnan|pret-pres.|cúþe|pret. 3 sg.|90
+cunnan|pret-pres.|cúþon|3 pl.|180,182,418
+cweðan|V|cwæð|?|92
+cweðan|V|cwæð|pret. 3 sg.|199
+cweðan|V|cwæð|pret. 3 sg.|315
+cwén|f. -i.|cwén|?|62,613,623,923
+cwén|f. -i.|cwén|as.|665
+cwic|adj. -u.|cwice|npn.|98
+cwic|adj. -u.|cwicne|asm.|792
+cým-líce|adv.|cýmlícor|comp.|38
+cyning|m.|cyning|?|11,863,920
+cyning|m.|cyninges|gs.|867
+cyning|m.|kyning|?|619
+cynn|(adj. &) n. -ja.|cynna|gp.|613
+cynn|n. -ja.|cyn|?|461
+cynn|n. -ja.|cynna|gp.|98
+cynn|n. -ja.|cynne|ds.|107,810,914
+cynn|n. -ja.|cynnes|gs.|701,712,735,883
+daélan|w1.|daélde|pret. 3 sg.|80
+dógor|n.|dógora|gp.|88,823
+dógor|n.|dógores|gs.|219,605
+dón|anv.|dyde|3 sg.|444,956
+dón|anv.|dyde|pret. 3 sg.|671
+dón|anv.|dydon|3 pl.|44
+dréam|m.|dréam|?|497
+dréam|m.|dréam|as.|88
+dréam|m.|dréama|gp.|850
+dréam|m.|dréamum|dp.|99,721
+ðréat|m.|þréatum|dp.|4
+dréogan|II|dréah|3 sg.|131
+dréogan|II|dréah|pret. 1 sg.|422
+dréogan|II|dreogan|inf.|589
+dréogan|II|drugon|3 pl.|15,798,831
+dryht-guma|wk.m.|drihtguman|np.|99
+ðrym|m. -ja.(?)|þrym|as.|2
+ðrymm|m. -ja.(?)|þrymmum|dp.|235
+éac|adv., conj.|éac|-|97,388,433
+eafera|wk.m.|eaforan|?|375
+eafora|wk.m.|eafera|?|12,19,897
+eal-gearo|adj. -wa.|ealgearo|nsn.|77
+eal|adj.|eal|asn.|523
+eal|adj.|eal|npn.|486
+eal|adj.|eal|nsn.|848,998
+eal|adv.|eal|-|680
+eald|adj.|eald|nsm.|357
+eald|adj.|ealde|af.|795
+eald|adj.|ealde|apm.|472
+eald|adj.|ealdum|dpm.|72
+eald|adj.|yldesta|supl.|258
+eald|adj.|yldestan|spl. asm.|363
+eald|adj.|yldra|comp.|468
+ealdor|m.|aldor|?|369
+ealdor|m.|aldor|?|392
+ealdor|m.|aldor|?|56
+ealdor|m.|aldor|as.|668
+ealdor|m.|aldre|ds.|346,661,680
+ealdor|m.|ealdre|ds.|592
+ealdor|n.|aldre|ds.|955
+ealdor|n.|aldres|gs.|822
+ealdor|n.|aldrum|dp.|510,538
+eall|adj.|eall|asn.|71
+eall|adj.|eall|nsn.|651
+eall|adj.|ealle|apm.|649
+eall|adj.|ealle|asf.|830
+eall|adj.|ealle|npm.|111,699,705,941
+eall|adj.|ealles|gsn.|1000
+eall|adj.|eallum|dpm.|145,767,823,906
+eall|adj.|eallum|dsn.|913
+eard|m.|eard|as.|104
+eard|m.|earde|ds.|56
+earfoð-líce|adv.|earfoðlíce|-|86
+eft|-|eft|?|22,56,123,281,296,603,642,692,853,871
+egsian|w2.|egsode|pret. 3 sg.|6
+ellen-gaést|m. -i.|ellengaést|?|86
+ellen|n.|ellen|-|573,902
+ellen|n.|ellen|as.|3,602,637
+ellen|n.|elne|ds.|893
+eom|anv.|béo|imp. sg.|386
+eom|anv.|bið|3 sg.|183,186,299,660,949
+eom|anv.|eart|2 sg.|352,506
+eom|anv.|eom|1 sg.|335,407
+eom|anv.|is|3 sg.|248,256,272,290,316,343,375,454,473,476,700
+eom|anv.|nis|negat. 3 sg.|249
+eom|anv.|síe|opt. 3 sg.|435
+eom|anv.|síe|opt. 3 sg.|682
+eom|anv.|syndon|2 pl.|237,393
+eom|anv.|syndon|3 pl.|257,361
+eom|anv.|synt|1 pl.|260,342
+eom|anv.|synt|3 pl.|364
+eom|anv.|waére|?|945
+eom|anv.|waére|3 sg.|173,203,593
+eom|anv.|waéron|?|769,881
+eom|anv.|waéron|1 pl.|536,544
+eom|anv.|waéron|3 pl.|233,548,612
+eom|anv.|wæs|?|12,36,62,64,83,89,102,121,128,133,137,138,146,159,170,178,191,196,201,210,223,241,262,309,320,330,348,349,373,467,469,484,491,497,501,549,561,607,611,642,693,705,716,723,733,734,755,756,761,765,771,773,789,814,822,833,835,837,847,856,863,898,932,969,980,984,991,992,997
+eom|anv.|wæs|3 sg.|11,18,49,53,126,140
+eom|anv.|wes|imp. sg.|269
+eom|anv.|wesan|inf.|272
+eorðe|wk.f.|eorðan|as.|92
+eorðe|wk.f.|eorþan|as.|266,802
+eorðe|wk.f.|eorþan|gs.|752
+Eorle|m. -i p.|Eorle|?|6
+fæder|m. -c.|fæder|?|55,262,316,459
+fæder|m. -c.|fæder|gs.|21,188
+fær|n.|fær|?|33
+faroð|m. or n.|faroðe|ds. -e|28,580
+féa-sceaft|adj.|féasceaft|?|7,973
+fela-hrór|adj.|felahrór|?|27
+fela|n. -u., (indecl.)|fela|?|36,992,995
+fela|n. -u., (indecl.)|fela|as.|153,164,311,408,530,591,694,809,876,929
+feoh-gift|f. -i.|feohgiftum|dp.|21
+feor-weg|m.|feorwegum|dp.|37
+feor|adv.|feor|-|42,109,542,808
+feor|adv.|fyr|comp.|143,252
+feorh|m.n.|féore|ds.|578,933
+feorh|m.n.|feorh|as.|439,796,851
+feorh|m.n.|feorum|dp.|73
+feorran|adv.|feorran|-|91,361,430,825,839
+feorran|w1.|feorran|?|156
+féower|num.|féower|?|59
+findan|III|fand|3 sg.|719,870
+findan|III|fand|pret. 3 sg.|118
+findan|III|findan|?|207
+findan|III|funden|pp.|7
+fíras|m. -ja.p.|fíra|gp.|91
+flód|m.|flód|?|545,580
+flód|m.|flódes|gs.|42
+flór|m.|flór|as.|725
+folc-scaru|f.|folcscare|ds.|73
+folc-stede|m. -i.|folcstede|as.|76
+folc|n.|folc|as.|463,522,693,911
+folc|n.|folca|gp.|430
+folc|n.|folce|ds.|14
+folc|n.|folce|ds.|465
+folc|n.|folces|gs.|610
+folc|n.|folcum|dp.|55,262
+folde|wk.f.|foldan|gs. foldan|96
+for-gifan|V|forgeaf|pret. 3 sg.|17,374,696
+forð-gerímed|w1.|forðgerímed|npn.|59
+forð|adv.|forð|-|45,210,291,612,745,903,948
+frætwan|w1.|frætwan|?|76
+frætwe|f. -wó.p.|frætewum|dp.|962
+frætwe|f. -wó.p.|frætwa|ap.|896
+frætwe|f. -wó.p.|frætwa|gp.|37
+frætwe|f. -wó.p.|frætwe|ap.|214
+fréa|wk.m.|fréan|as.|351
+fréa|wk.m.|fréän|ds.|271
+fréa|wk.m.|fréan|ds.|291,641
+fréa|wk.m.|fréan|gs. or ds.|500
+fréa|wk.m.|fréan|gs.|27
+fremman|w1.|fremedon|1 pl.|959
+fremman|w1.|fremedon|3 pl.|3
+frófor|f.|frófor|gs. frófre, |698
+frófor|f.|frófre|gs.|7,628,973
+from|adj.|fromum|dpf.|21
+frum-sceaft|f. -i. (m.?)|frumsceaft|as.|91
+frum-sceaft|f. -i. (m.?)|frumsceafte|ds.|45
+fyren-ðearf|f.|fyrenðearfe|as.|14
+fyrst|m. -i.|fyrst|?|134,210
+fyrst|m. -i.|fyrst|as.|528,545
+fyrst|m. -i.|fyrste|ds.|76
+gamol|adj.|gamol|?|58,265
+Gár-Dene|?|Gár-Denum|dp.|601
+Gár-Dene|?|Gárdena|gp.|1
+gár-secg|m. -ja.|gársecg|as.|49,515,537
+ge-bannan|redup.|gebannan|?|74
+ge-bídan|I|gebád|3 sg.|7,264,815
+ge-bídan|I|gebád|pret. 1 sg.|929
+ge-bídan|I|gebídan|inf.|638,934
+ge-búan|redup.|gebún|pp.|117
+ge-daélan|w1.|gedaélan|?|71
+ge-daélan|w1.|gedaélde|pret. opt. 3 sg.|731
+ge-fraége|n. -ja.|gefraége|?|776,837
+ge-frignan|III|gefrægn|3 sg.|194
+ge-frignan|III|gefrægn|pret. 1 sg.|575
+ge-frignan|III|gefrægn|pret. 1 sg.|74
+ge-frignan|III|gefrúnen|pp.|694
+ge-frignan|III|gefrungon|3 pl.|666
+ge-frignan|III|gefrúnon|1 pl.|2
+ge-frignan|III|gefrúnon|3 pl.|70
+ge-gyrwan|w1.|gegyrwan|?|38,199
+ge-hwá|pron.|gehwaére|dsf.|25
+ge-hwá|pron.|gehwám|dsm.|882
+ge-hwá|pron.|gehwám|dsn.|88
+ge-hwá|pron.|gehwone|asm.|294,800
+ge-hwylc|pron.|gehwelcne|asm.|148
+ge-hwylc|pron.|gehwylc|?|985
+ge-hwylc|pron.|gehwylces|gsm.|732
+ge-hwylc|pron.|gehwylcne|isn.|936
+ge-hwylc|pron.|gehwylcre|dsf.|805
+ge-hwylc|pron.|gehwylcum|dsm.|412,768,784996
+ge-hwylc|pron.|gehwylcum|dsn.|98
+ge-hýran|w1.|gehýrað|imp. pl.|255
+ge-hýran|w1.|gehýrde|pret. 3 sg.|88,609
+ge-hýran|w1.|gehýrdon|pret. 3 pl.|785
+ge-hýran|w1.|gehýre|pres. 1 sg.|290
+ge-limpan|III|gelamp|pret. 3 sg.|626
+ge-limpan|III|gelimpe!|opt. 3 sg.|929
+ge-limpan|III|gelomp|pret. 3 sg.|76
+ge-limpan|III|gelumpen|pp.|824
+ge-scæp-hwíl|f.|gescæphwíle|ds. -e|26
+ge-sceap|n.|gesceapu|np.|650
+ge-scyppan|VI|gesceóp|pret. 3 sg.|97
+ge-settan|w1.|gesette|pret. 3 sg.|94
+ge-síð|m.|gesíþas|np.|29
+ge-weald|n.|geweald|as.|79,654,764,808,903,950
+ge-weaxan|redup.|gewéox|pret. 3 sg.|66
+ge-wítan|I|gewát|pret. 3 sg.|26,115,123,210,217,234,662
+ge-wítan|I|gewítan|?|42
+ge-wítan|I|gewítaþ|imp. pl.|291
+ge-wítan|I|gewiton|3 pl.|301,853
+ge-wunian|w2.|gewunigen|pres. opt. 3 pl.|22
+ge-wyrcan|w1.|geworhte|opt. 1 sg.|635
+ge-wyrcan|w1.|gewyrcean|?|69
+ge-wyrcan|w1.|gewyrcean|inf.|20
+ge-þéon|I|geþéön|?|25
+ge-þéon|I|geþéon|?|910
+ge-þolian|w2.|geþolode|pret. 3 sg. geþolode, |87,147
+géar-dagas|m.p.|géardagum|dp.|1
+geard|m.|geardum|dp.|13,265
+gén|adj.|gén|?|83,734
+geogoð|f.|geogoð|ns.|66
+geogoð|f.|geogoðe|ds.|466
+geogoð|f.|geogoþe|ds.|409
+geogoð|f.|geogoþe|gs.|160,621
+geómor|adj.|geómor|?|49
+geond|prep.|geond|?|75,266,840
+geong|adj.|geong|?|13
+geong|adj.|geong|?|854
+geong|adj.|geongum|dpm.|72
+georne|adv.|georne|-|66,669,968
+georne|adv.|geornor|comp.|821
+gifan|V|géafon|3 pl.|49
+gifan|V|gyfen|pp.|64
+glæd|adj.|glæde|apm.|58
+glæd|adj.|glædne|asm.|863
+gód|adj.|gód|?|11,195,269,279,863
+gód|adj.|góda|nsm.wk.|205,355,675,758
+gód|adj.|gódan|dsm.wk.|384
+gód|adj.|gódne|asm.|199,347
+gód|adj.|sélest|supl. asn.|454,658
+gód|adj.|sélest|supl. nsf.|256
+gód|adj.|sélest|supl. nsn.|146,173,285,935
+gód|adj.|sélestan|npm.wk.|416
+gód|adj.|sélra|comp.|860
+god|m.|god|?|13,72,381,478,685,701,930
+god|m.|god|as.|181,811
+god|m.|gode|ds.|113,227,625
+god|m.|godes|gs.|570,711,786
+gód|n.|góda|gp.|681
+gód|n.|góde|ds.|20,956
+gombe|(wk.f.?)|gomban|as.|11
+gúð-réow|adj.|gúðréouw|?|58
+guma|wk.m.|guma|?|20,652,868,973
+guma|wk.m.|guman|ap.|614
+guma|wk.m.|guman|np.|215,306,666
+guma|wk.m.|gumena|gp.|73,328,474,715,878
+guma|wk.m.|gumum|dp.|127,321
+gyddian|III|gyldan|?|11
+gýt, gít|adv.|gít|-|583
+gýt, gít|adv.|gýt|-|47,944,956
+habban|w3.|habbað|1 pl.|270
+habban|w3.|habban|?|446,462
+habban|w3.|hæbbe|opt. 3 sg.|381
+habban|w3.|hæbbe|pres. 1 sg.|383,950
+habban|w3.|hæfde|3 sg.|106,220,665,743,804,825,828,893
+habban|w3.|hæfde|pret. 3 sg.|79,518,554,814
+habban|w3.|hæfdon|1 pl.|539
+habban|w3.|hæfdon|3 pl.|117,694,883
+habban|w3.|hæfdon|3 pl.|562
+habban|w3.|hafa|imp. sg.|658
+habban|w3.|hafað|pres. 1 sg.|474,595,975
+hæleð|m. -c.|hæleð|?|190
+hæleð|m. -c.|hæleð|?|331
+hæleð|m. -c.|hæleð|np.|52
+hæleð|m. -c.|hæleða|gp.|497
+hæleð|m. -c.|hæleþa|gp.|467,611,662,912
+Hálga|wk.m.|Hálga|?|61
+hátan|redup.|hát|imp. sg.|386
+hátan|redup.|hátan|inf.|68
+hátan|redup.|háte|pres. 1 sg.|293
+hátan|redup.|háten|pp.|102,263,373
+hátan|redup.|háten|pp.|991
+hátan|redup.|hét|?|198
+hátan|redup.|hét|pret. 3 sg.|674
+hé, héo, hit|pers. pron.|hé|?|7,29,80
+hé, héo, hit|pers. pron.|heora|gp.|691,698
+hé, héo, hit|pers. pron.|hí|np.|28,43
+hé, héo, hit|pers. pron.|híe|ap.|477,694,706
+hé, héo, hit|pers. pron.|him|dp.|301
+hé, héo, hit|pers. pron.|him|dsm.|26,234,662
+hé, héo, hit|pers. pron.|him|dsn.|78,313
+hé, héo, hit|pers. pron.|hire|dsf.|626
+hé, héo, hit|pers. pron.|hire|gsf.|722
+hé, héo, hit|pers. pron.|hire|poss.|641
+hé, héo, hit|pers. pron.|hý|np.|307,364,368
+hé, héo, hit|pers. pron.|hyra|gp.|178,324
+hé, héo, hit|pers. pron.|hyre|dsf.|945
+heaðo-waéd|f.|heaðowaédum|dp.|39
+heaðo-wylm|m. -i.|heaðowylma|gp.|82
+héafod|n.|héafod|as.|48
+héah|adj.|héah|?|57
+héah|adj.|héah|?|82
+héah|adj.|héah|asn.|48
+héah|adj.|héan|dsm.wk.|713,919
+héah|adj.|héän|gsn.wk.|116
+héah|adj.|héanne|asm.|983
+heal-ærn|n.|healærna|gp.|78
+heal-reced|n.|healreced|as.|68
+healdan|redup.|heald|imp. sg.|948
+healdan|redup.|healdan|?|230,296,319,704
+healdan|redup.|héold|3 sg.|57,103,142,161,305,788
+healdan|redup.|héold|pret. 1 sg.|241,466
+healdan|redup.|héoldon|3 pl.|401
+Healf-Dene|m. -i.|Healfdene|?|57
+Healf-Dene|m. -i.|Healfdenes|gs.|189,268,344,469,645
+heall|f.|heall|?|487
+heall|f.|healle|ds.|89,614,642,663
+heall|f.|héalle|ds.|925
+heals-gebedda|wk.m.f.|healsgebedda|?|63
+hearpe|wk.f.|hearpan|gs.|89
+heofon|m.|heofena|gp.|182
+heofon|m.|heofenes|gs.|414
+heofon|m.|heofenum|dp.|505
+heofon|m.|heofenum|dp.|52
+heofon|m.|heofones|gs.|576
+Heoro-gár|m.|Heorogár|?|61
+Heoro-gár|m.|Heregár|?|467
+Heorot|m.|Heorot|as.|166,432
+Heorot|m.|Heorote|ds.|475,497,593
+Heorot|m.|Heorotes|gs.|403
+Heorot|m.|Heort|?|991
+Heorot|m.|Heort|as.|78
+Heorot|m.|Heorute|ds.|766
+here-spéd|f. -i.|herespéd|?|64
+hilde-waépen|n.|hildewaépnum|dp.|39
+hlæst|m. (or n.)|hlæste|ds.|52
+hlífian|w2.|hlífade|pret. 3 sg.|81
+hlúd|adj.|hlúdne|asm.|89
+holm|m.|holm|?|519
+holm|m.|holm|as.|48,632
+holm|m.|holmas|ap.|240
+holm|m.|holme|ds.|543
+horn-géap|adj.|horngéap|?|82
+hringed-stefna|wk.m.|hringedstefna|?|32
+Hróð-gár|m.|Hróðgár|?|61,356,367,371,407,417,456,653,925
+Hróð-gár|m.|Hróðgár|as.|277,339,396,863
+Hróð-gár|m.|Hróðgáre|ds.|64
+Hróð-gár|m.|Hróðgáres|gs.|235,335,613,826
+Hróð-gár|m.|Hróþgár|?|662
+Hróð-gár|m.|Hróþgár|as.|152
+Hróð-gár|m.|Hróþgáres|gs.|717
+hron-rád|f.|hronráde|as.|10
+hú|adv., conj.|hú|-|3,116,279,737,844,979
+hwá|pron. indef.|hwæt|asn.|880
+hwá|pron. indef.|hwone|asm.|155
+hwá|pron. interr.|hwá|?|52
+hwá|pron. interr.|hwæt|?|173,233,237
+hwá|pron. interr.|hwæt|asn.|474
+hwæt|interj.|Hwæt|-|1,530,942
+hweorfan|III|hwearf|pret. 3 sg.|55
+hweorfan|III|hwurfe|opt. 3 sg.|264
+hwíl|f.|hwíl|?|146
+hwíl|f.|hwíle|as.|16,105,152
+hwíl|f.|hwílum|dp./adv.|175,496,864,916
+hwyrfan|w1.|hwyrfaþ|pres. 3 pl.|98
+hýð|f.|hýðe|ds.|32
+hýran|w1.|hýran|inf.|10
+hýran|w1.|hyrde|3 sg.|875
+hýran|w1.|hýrde|pret. 1 sg.|38,582
+hýran|w1.|hýrde|pret. 1 sg.|62
+hýran|w1.|hýrdon|1 pl.|273
+hýran|w1.|hýrdon|pret. 3 pl.|66
+ic|pers. pron.|mé|as.|415,446,553,563,677
+ic|pers. pron.|unc|ad.|540,545
+ic|pers. pron.|úsic|ap.|458
+in/I|prep.|in|-|1,13,19,25,60,87,89,107,180,185,323,324,395,443,482,588,695,713,728,851,976
+innan|adv.|innan|-|71,774
+ísig|adj.|ísig|?|33
+lác|n.|lácum|dp. lácum|43
+láð|adj.|láð|?|440,511,815
+láð|adj.|láð|nsn.|134,192
+láð|adj.|láðan|gsm.wk.|83,132
+láð|adj.|láðra|gpm.|242
+láð|adj.|láðum|dpm.|550
+láð|adj.|láþes|gsn.|929
+láð|adj.|láþum|dpm.|938
+láð|adj.|láþum|dsm.|440
+lád|f.|láde|gs. -e|569
+laédan|w1.|gelaéded|pp.|37
+laédan|w1.|laédan|?|239
+laéstan|w1.|gelaéste|pret. 3 sg.|524
+laéstan|w1.|gelaésted|pp.|829
+laéstan|w1.|gelaésten|pres. opt. 3 pl.|24
+laétan|redup.|laétað|pl. |397
+laétan|redup.|léton|3 pl.|48,864
+land-búend|m. -c. [pl.]|land-búendum|dp.|95
+land-fruma|wk.m.|landfruma|?|31
+léaf|n.|léafum|dp.|97
+lenge|adj. -ja.|lenge|nsn.|83
+léod-cyning|m.|léodcyning|?|54
+léod|m. -i.|léod|?|341,348,669,829
+léod|m. -i.|léod|as.|625
+léod|m. -i.|léoda|gp.|205,634,793,938
+léod|m. -i.|léode|ap.|192,443,696
+léod|m. -i.|léode|gs.|596,599
+léod|m. -i.|léode|np.|24,225,260,362,415
+léod|m. -i.|léodum|dp.|389,521,618,697,905
+léof|adj.|léof|?|31,54,203,511,521
+léof|adj.|léofne|asm.|34,297,618
+léoht|n.|léoht|?|569,727
+léoht|n.|léoht|as.|648
+léoht|n.|léohte|ds.|95
+léoma|wk.m.|léoma|?|311
+léoma|wk.m.|léoman|ap.|95
+libban, lifgan|w3.|leofað|pres. 3 sg.|974
+libban, lifgan|w3.|lifde|pret. 3 sg.|57
+libban, lifgan|w3.|lifdon|3 pl.|99
+libban, lifgan|w3.|lifigende|pres. ptc.|815
+libban, lifgan|w3.|lyfað|pres. 3 sg.|944,954
+licgan|V|læg|pret. 3 sg.|40,552
+licgan|V|laégon|pret. 3 pl.|566
+licgan|V|licgean|?|966
+lícian|w2.|lícodon|pret. 3 pl.|639
+líf-fréa|wk.m.|líffréä|?|16
+líf|n.|líf|as.|97,733
+líf|n.|lífes|gs.|197,790,806
+líg|m. -i.|líges|gs.es|83,781
+líg|m. -i.|ligge|ds.|727
+lim|n.|leomum|dp.|97
+lof-daéd|f. -i.|lofdaédum|dp.|24
+long|adj.|lange|asf.|16,114
+long|adj.|lengra|comp.|134
+long|adj.|longe|asf.|54
+longe|adv.|lange|-|31,905
+longe|adv.|leng|comp.|451,974
+lýtel|adj.|laéssan|dpn.|43
+lýtel|adj.|laéssan|dsn.|951
+maégþ|f.|maégþa|gp.|25
+maégþ|f.|maégþe|ds.|75
+maégþ|f.|maégþum|dp.|5
+maére|adj. -ja.|maéra|nsm.wk.|204
+maére|adj. -ja.|maéra|nsm.wk.|762
+maére|adj. -ja.|maéran|dsm.wk.|270
+maére|adj. -ja.|maére|?|129
+maére|adj. -ja.|maére|nsm.|103
+maére|adj. -ja.|maéres|gsm.|797
+maére|adj. -ja.|maérne|asm.|36,201,353
+maére|adj. -ja.|maérost|supl.|898
+maére|adj. -ja.|maérum|dsm.|345
+mæst|m.|mæste|ds.|36
+mago-driht|f. -i.|magodriht|?|67
+medo-ærn|n.|medoærn|as.|69
+menigeo|wk.f.|mænigo|wk.f.|41
+micel|adj.|maést|supl. nsn.|78,193
+micel|adj.|maéste|supl. asf.|459
+micel|adj.|máran|comp. asf.|533
+micel|adj.|máran|comp. asm.|247,753
+micel|adj.|máre|comp. asn.|136,518
+micel|adj.|micel|?|129,502
+micel|adj.|micel|asn.|69,270
+micel|adj.|micel|nsf.|67,146
+micel|adj.|micel|nsn.|170,771
+micel|adj.|miclan|gsm.wk.|978
+micel|adj.|micle|isn.|922
+micel|adj.|micles|gsn./adv.|694
+micel|adj.|miclum|dpf.|958
+mid/I|prep.|mid|-|41,77,125,126,195,243,274,317,357,438,461,475,483,574,633,662,746,748,779,879,889,902,923
+middan-geard|m.|middangeard|as.|75
+middan-geard|m.|middangeardes|gs.|504,751
+mód|n.|mód|?|50,549,730
+mód|n.|mód|as.|67
+mód|n.|móde|ds.|624,753
+mód|n.|módes|gs.|171,436,810
+mon|m.|man|?|25,503,534
+mon|m.|manna|gp.|155,201,380,701,712,735,779,789,810,914
+mon|m.|mannan|as.|297
+mon|m.|mannon|as.|577
+mon|m.|men|ap.|69,337
+mon|m.|men|ds.|655,752
+mon|m.|men|np.|162
+mon|m.|men|np.|233
+mon|m.|men|np.|50
+mon|m.|mon|?|209,510
+móna|wk.m.|mónan|as.|94
+monig|adj.|manegum|dpm.|349
+monig|adj.|manig|nsm.|399,854
+monig|adj.|manige|apm.|337
+monig|adj.|manige|apm.|728
+monig|adj.|manigre|dsf.|75
+monig|adj.|monegum|dpf.|5
+monig|adj.|monig|?|689,838,908,918
+monig|adj.|monig|nsf.|776
+monig|adj.|monig|nsm.|857,171
+nama|wk.n.|nama|?|343
+nama|wk.n.|naman|as.|78
+ne|adv.|ne|-|38,50,80,83,109,119,154,162,180
+ne|conj.|né|-|157,169,182,245,511,511,577,584,718,793,858,862
+nealles|adv.|nalæs|-|43
+nealles|adv.|nalles|-|338
+oð|prep.|oðð|-|66
+oððe|conj.|oððe|-|283,437,635,637,693
+óðer|adj.|óðer|?|503,534,859
+óðer|adj.|óðrum|dsm.|814
+óðer|adj.|óþer|apn.|870
+óðer|adj.|óþerne|asm.|652
+óðer|adj.|óþres|gsn.|219,605
+oðþæt|prep.|oððæt|-|100
+oðþæt|prep.|oðþæt|-|9,145,219,296
+oðþæt|prep.|oþþæt|-|56,307,545,622,644
+of-sléan|VI|ofslóh|pret. 1 sg.|574
+of-téon|I (II)|oftéah|pret. 3 sg.|5
+of|prep.|of|-|37,56,229,265,419,663,671,672,710,726,785,854,921
+ofer|prep.|ofer|-|10,46,48,200,217,231,239,240,248,297,304,311,362,393,464,471,481,515,605,649,685,736,802,859,899,983
+ofost|f.|ofeste|ds.|386
+ofost|f.|ofost|?|256
+oft|adv.|oft|-|4,165,171,444,480,572,857,907,951
+on-fón|redup.|onféng|pret. 3 sg.|52,688,748,852
+on-fón|redup.|onfón|?|911
+on-gitan|V|ongeat|pret. 3 sg. ongeat|14
+on-gitan|V|ongyton|?|308
+on-sendan|w1.|onsende|imp. sg.|382
+on-sendan|w1.|onsendon|3 pl.|45
+on-wæcnan|VI, w1.|onwóc|pret. 3 sg.|56
+on-wæcnan|VI, w1.|onwócon|3 pl.|111
+on|prep.|an|-|677
+on|prep.|on|-|21,22,27,35,40,42,49,53,67,71,76,101,122,126,137,192,197,210,212,214,216,242,249,253,264,285,286,295,302,303,310,368,380,386,404,405,409,410,421,466,473,475,478,484,492,495,497,507,509,512,516,518,519,534,537,537,539,540,543,544,552,555,565,575,577,580,593,607,609,614,618,627,632,635,638,642,643,676,683,686,702,708,718,725,747,752,753,754,755,757,763,764,765,772,782,790,800,806,808,816,837,844,845,847,856,865,873,891,896,903,926,948,962,964,970,981,996
+ond|?|ond|?|33,39,58,61,61,71,72,73,82,94,96,97,104,112,112,121,134,136,137,144,153,160,161,188,192,198,261,277,282,289,292,305,308,334,336,350,354,357,393,408,413,421,424,432,458,466,489,498,509,523,536,538,547,600,602,608,615,619,621,630,653,654,658,674,685,689,745,749,760,763,774,780,807,826,832,835,839,846,879,902,912,918,923,927,939,972,993
+reccan/I|w1.|reccan|?|91
+reccan/II|w1.|recceð|pres. 3 sg.|434
+sang|m.|sang|?|90
+sang|m.|sang|as.|787
+scéat|m.|scéatas|ap.|96
+scéat|m.|scéatta|gp.|752
+sceaþa|wk.m.|sceaðona|gp.|274
+sceaþa|wk.m.|sceaþena|gp.|4
+Scede-land|n.|Scedelandum|dp.|19
+Scéfing|m.|Scéfing|?|4
+scip|n.|scip|?|302
+scip|n.|scipes|gs.|35,896
+scop|m.|scop|?|496
+scop|m.|scopes|gs.|90
+sculan|pret-pres.|sceal|3 sg.|20,183,271,287,440,977
+sculan|pret-pres.|sceal|pres. 1 sg.|251,384,424,438,601,636
+sculan|pret-pres.|sceal|pres. 3 sg.|24
+sculan|pret-pres.|scealt|2 sg.|588
+sculan|pret-pres.|scel|3 sg.|455
+sculan|pret-pres.|scolde|3 sg.|10,85,280,691,805,819,910
+sculan|pret-pres.|scolde|opt. 3 sg.|965
+sculan|pret-pres.|scolde|pret. 3 sg.|230
+sculan|pret-pres.|scoldon|3 pl.|41,704,832
+sculan|pret-pres.|sculon|1 pl.|683
+Scyld|m.|Scyld|?|4,26
+scyld|m.|scyld|as.|437
+scyld|m.|scyldas|ap. -as|325,333
+Scyld|m.|Scyldes|gs.|19
+Scyldingas|m.p.|Scyldinga|?|30,148,170,291,351,371,428,456,500,663,778
+Scyldingas|m.p.|Scyldinga|gp.|53,229,913
+Scyldingas|m.p.|Scyldingas|ap.|58
+Scyldingas|m.p.|Scyldingum|dp.|274
+scyppan|VI|scóp|pret. 3 sg.|78
+sé, séo, þæt|dem. pron.|ðá|ap.|
+sé, séo, þæt|dem. pron.|ðá|npm.|
+sé, séo, þæt|dem. pron.|ðaém|dp.|
+sé, séo, þæt|dem. pron.|ðaém|dsm.|
+sé, séo, þæt|dem. pron.|ðaém|dsn.|
+sé, séo, þæt|dem. pron.|ðaére|gsf.|562
+sé, séo, þæt|dem. pron.|ðæs|gsm.|
+sé, séo, þæt|dem. pron.|ðám|dp.|
+sé, séo, þæt|dem. pron.|ðám|dsm.|
+sé, séo, þæt|dem. pron.|ðám|dsn.|639
+sé, séo, þæt|dem. pron.|ðára|gp.|937
+sé, séo, þæt|dem. pron.|sé|nsm.|196,469,898
+sé, séo, þæt|dem. pron.|sé|nsm.|441
+sé, séo, þæt|dem. pron.|sé|nsm.|79,87,90,103,230,289
+sé, séo, þæt|dem. pron.|se|nsm.|84,86,92,102,205,258
+sé, séo, þæt|dem. pron.|séo|nsf.|66,146
+sé, séo, þæt|dem. pron.|þá|ap.|
+sé, séo, þæt|dem. pron.|þá|asf.|189,354,470
+sé, séo, þæt|dem. pron.|þá|npm.|
+sé, séo, þæt|dem. pron.|þaém|dp.|
+sé, séo, þæt|dem. pron.|þaém|dsm.|
+sé, séo, þæt|dem. pron.|þaém|dsn.|
+sé, séo, þæt|dem. pron.|þaéra|gp.|992
+sé, séo, þæt|dem. pron.|þaére|dsf.|
+sé, séo, þæt|dem. pron.|þaére|gsf.|132,989
+sé, séo, þæt|dem. pron.|þæs|gsm.|
+sé, séo, þæt|dem. pron.|þæs|gsn.|7,16,108,114,228,272,277,350,383,586,588,627,773,778,900,968
+sé, séo, þæt|dem. pron.|þæt|asn.|194,290,628,653,776
+sé, séo, þæt|dem. pron.|þæt|nsn.|11,170,249,309,453,454,716,734
+sé, séo, þæt|dem. pron.|þæt|nsn.|15,133,191,890
+sé, séo, þæt|dem. pron.|þám|dp.|
+sé, séo, þæt|dem. pron.|þám|dsm.|
+sé, séo, þæt|dem. pron.|þám|dsn.|137
+sé, séo, þæt|dem. pron.|þára|gp.|206,878
+sé, séo, þæt|dem. pron.|þone|asm.|12,107,168,202
+sé, séo, þæt|dem. pron.|þý|ism.|110,487,504,724,731,821,821,974
+secgan|w3.|gesægd|cp. pp.|141
+secgan|w3.|sægde|pret. 3 sg.|90
+secgan|w3.|sægdest|pret. 2 sg.|532
+secgan|w3.|sægdon|pret. 3 pl.|377
+secgan|w3.|secgað|3 pl.|411
+secgan|w3.|secgan|?|273
+secgan|w3.|secgan|inf.|51,390,582,875,880
+secgan|w3.|secgan|inf.|942
+secgan|w3.|secganne|ger.|473
+secgan|w3.|secge|pres. 1 sg.|590
+sefa|wk.m.|sefa|?|49,490,594
+sefa|wk.m.|sefan|as.|278
+sefa|wk.m.|sefan|ds.|473
+segn|m.n.|segen|as.|47
+sele-raédend|m. -c.|seleraédenne|np.|51
+sele-rest|f. -jó.(?)|selereste|as.|690
+sele-weard|m.|seleweard|as.|667
+sele|m. -i.|Sele|?|81,411
+sele|m. -i.|sele|as.|826
+sele|m. -i.|sele|ds.|323,713,919
+self|pron.|self|?|594,920
+self|pron.|self|?|953
+self|pron.|selfa|nsm.|29
+self|pron.|selfe|npm.|419
+self|pron.|selfes|gsm.|700,895
+self|pron.|selfne|asm.|961
+self|pron.|sylfa|nsm.|505
+sendan|w1.|sende|3 sg.|13
+sendan|w1.|sende|pret. 1 sg.|471
+sendan|w1.|sendeþ|pres. 3 sg.|600
+siððan/I|adv.|siððan|-|470
+siððan/I|adv.|siþðan|-|685,718
+siððan/I|adv.|syðþan|-|142,567
+siððan/I|adv.|syþðan|-|283
+siððan/II|conj.|siððan|-|413,648,850,901
+siððan/II|conj.|siþðan|-|106,656,982,604
+siððan/II|conj.|syððan|-|6
+siððan/II|conj.|syðþan|-|132
+siððan/II|conj.|syþðan|-|115,722,834,886
+sige-hréþig|adj.|sigehréþig|?|94
+sinc|n.|sinc|as.|81
+sinc|n.|sinces|gs.|607
+sóð|n.|sóð|?|700
+sóð|n.|sóð|as.|532
+sóð|n.|sóðe|?|51,590
+springan|III|sprang|pret. 3 sg.|18
+standan|VI|stande|opt. 3 sg.|411
+standan|VI|stód|pret. 3 sg.|32,145,726,783,926,935
+standan|VI|stódon|3 pl.|328
+sunne|wk.f.|sunnan|as.|94
+sunne|wk.f.|sunnan|gs.|648
+sunne|wk.f.|sunne|?|606
+swá/I|adv.|swá|-|20,99,144,164,189,347,538,559,585,591,762,797,972
+swá/II|conj.|swá|-|29,93,273,352,401,444,455,490,561,594,642,666,686,881,943,,956
+swaés|adj.|swaése|npm.|29
+swaés|adj.|swaésne|asm.|520
+swég|m. -i.|swég|?|89,644,782
+sweotol|adj.|sweotol|nsn.|817,833
+sweotol|adj.|sweotolan|dsn.wk.|141
+sweotol|adj.|swutol|nsm.|90
+swylc|pron.|swulces|gsn.|880
+swylc|pron.|swylc|?|178
+swylc|pron.|swylc|asn.|72,996
+swylc|pron.|swylcra|gpm.|582
+swylc|pron.|swylcum|dsm.|299
+symbel|n.|symbel|as.|564,619
+symbel|n.|symble|ds.|119
+symbel|n.|symle|ds.|81,489
+téon/I|II|téah|pret. 3 sg.|553
+téon/II|w2.|téodan|pret. 3 pl.|43
+til|adj.|til|?|61
+tó/I|prep.|tó|-|14,95,379,665,971,460,587,906,51,590,26,933,955,714,316,174,257,473
+tó/I|prep.|tó|-|172,489,158,188,525,601,647,909
+tó/I|prep.|tó|-|28,124,234,270,298,313,318,323,327,360,374,383,438,553,604,641,919
+tó/I|prep.|to|-|720,766,925
+tó/II|adv.|tó|-|133,137,191,905,969,694
+umbor-wesende|adj.|umborwesende|asm.|46
+under/I|prep.|under|-|8,52,211,310,342,396,403,404,414,505,576,651,707,710,714,738,820,836,860,887
+út-fús|adj.|útfús|?|33
+wæcnan|VI, w1.|wæcnan|?|85
+wæcnan|VI, w1.|wócun|3 pl.|60
+wæl-níð|m.|wælníðe|ds.|85
+waér|f.|waére|as.|27
+wæter|n.|wæter|?|93
+wæter|n.|wæter|as.|509
+wæter|n.|wæteres|gs.|471,516
+wealdend|m. -c.|waldend|as.|183
+wealdend|m. -c.|wealdend|ns.|17
+weorc|n.|weorc|as.|74
+weorc|n.|worca|gp.|289
+weorð-mynd|f.n.(m.) -i.|weorðmynd|?|65
+weorð-mynd|f.n.(m.) -i.|weorðmyndum|dp.|8
+weorðan/I|III|wearð|pret. 3 sg.|767
+weorðan/I|III|wearð|pret. 3 sg.|77,149,409,555,753,816,818,913
+weorðan/I|III|wearþ|3 sg.|460,905
+weorðan/I|III|wurðan|inf.|807
+weorðan/I|III|wurðaþ|3 pl.|282
+weorðan/I|III|wurde|opt. 2 sg.|587
+weorðan/I|III|wurdon|3 pl.|228
+weorðan/II|III|wearð|pret. 3 sg.|6,902
+weorðan/II|III|wearð|pret. 3 sg.|823
+weorðan/II|III|weorþeð|pres. 3 sg.|414
+werod|n.|weorod|?|290
+werod|n.|weoroda|gp.|60
+werod|n.|werod|?|651
+werod|n.|werod|as. (or ap.)|319
+werod|n.|werodes|gs.|259
+wíde|adj.|wíde|?|74,79,898,266,18
+wíg|n. (or m.)|wíg|?|23
+wíg|n. (or m.)|wíg|as.|685
+wíg|n. (or m.)|wíg|ns.|350
+wíg|n. (or m.)|wíges|gs.|65,886
+wil-gesíþ|m.|wilgesíþas|np.|23
+willa|wk.m.|willa|ns.|626,824
+willa|wk.m.|willan|as.|635
+willa|wk.m.|wilna|gp.|660,950
+willan|anv.|wile|pres. 3 sg.|346,446
+willan|anv.|wille|pres. 1 sg.|318
+willan|anv.|wille|pres. 1 sg.|344,351,427
+willan|anv.|wille|pres. 3 sg.|442,979
+willan|anv.|wolde|pret. 1 sg.|543
+willan|anv.|wolde|pret. 3 sg.|68,154,200,645,664,738,755,796,880,988,990
+willan|anv.|woldon|pret. 3 pl.|482
+willan|anv.|wylle|pres. 1 sg.|947
+wine-maég|m.|winemágas|np.|65
+wine|m. -i.|wine|?|30,148
+wine|m. -i.|wine|as.|350,376
+wine|m. -i.|wine|ds.|170
+wine|m. -i.|wine|vs.|457,530
+wlite-beorht|adj.|wlitebeorhtne|asm.|93
+wolcen|n.|wolcnum|dp.|8,651,714
+wong|m.|wang|as.|93,225
+word|n.|word|ap.|870
+word|n.|word|as.|315,341,390,654
+word|n.|word|np.|612,639
+word|n.|worda|gp.|289,398
+word|n.|wordes|gs.|79
+word|n.|wordum|dp.|30,176,366,387,626,874
+worold-ár|f.|woroldáre|as.|17
+worold|f.|worold|as.|60
+worold|f.|worolde|gs.|950
+wuldor|n.|wuldres|gs. wuldres|17,183,931
+ýð|f. -jó.|ýða|gp.|464,848
+ýð|f. -jó.|ýðe|ap.|46
+ýð|f. -jó.|ýðum|dp.|210,421
+ýð|f. -jó.|ýþa|np.|548
+ýð|f. -jó.|ýþum|dp.|515,534
+ylde|m. -i.p.|ylda|gp.|150,605
+ylde|m. -i.p.|yldo|gp.|70
+ylde|m. -i.p.|yldum|dp.|77,705
+yldo|wk.f.|ylde|ds.|22
+ymb(e)-sittend|m.-c.p.|ymbsittendra|gp.|9
+þá/I|adv.|ðá|-|615,630,426,657
+þá/I|adv.|þá|-|26,28,312,340
+þá/I|adv.|þá|-|34,115,118,217,234,301,327
+þá/I|adv.|þá|-|53,64,126,128,138,223,467,491,607
+þá/I|adv.|þá|-|86,331,461,465,518
+þá/II|conj.|þá|-|140,201,323,402,419,512,539,632,706,723,733,798,978
+þaér/I|dem. adv.|þaér|-|32,157,271,284,331,400,440,493,513,550,775,794,852,913,972,977
+þaér/I|dem. adv.|þaér|-|36,89,497,611,835,847,856
+þaér/I|dem. adv.|þaér|-|756
+þaér/II|rel.|þaér|-|286,420,508,522,693,777,866
+þaér/II|rel.|þaér|-|356
+þaér/II|rel.|þaér|-|797
+þé, þe|conj.|þé|-|99,242,488
+þé, þe|rel. particle|þé|-|45,138,192,238,355,500,831,841,950,993
+þenden/I|conj.|þenden|-|30,57,284
+þéod-cyning|m.|þéodcyninga|gp.|2
+þéod-gestréon|n.|þéodgestréonum|dp.|44
+þéoden|m.|ðéodnes|gs.|910
+þéoden|m.|þéoden|?|129
+þéoden|m.|þéoden|as.|34,201,353
+þéoden|m.|þéoden|vs.|365,417
+þéoden|m.|þéodne|ds.|345
+þéoden|m.|þéodnes|gs.|797
+þéon|I|geþungen|pp. nsf.|624
+þéon|I|þáh|pret. 3 sg.|8
+þés, þéos, þis|dem. pron.|ðisse|gsf.|928
+þés, þéos, þis|dem. pron.|þæs|?|411
+þés, þéos, þis|dem. pron.|þéos|nsf.|484
+þés, þéos, þis|dem. pron.|þes|?|432
+þés, þéos, þis|dem. pron.|þis|nsn.|290
+þés, þéos, þis|dem. pron.|þisne|asm.|75
+þés, þéos, þis|dem. pron.|þisse|dsf.|638
+þés, þéos, þis|dem. pron.|þysses|gsn.|197,790,806
+þonne/I|adv.|ðonne|-|377,484,525
+þonne/I|adv.|þonne|-|435
+þonne/II|conj.|ðonne|-|469,534,248
+þonne/II|conj.|þonne|-|23,485,573,880,934,505,678
+þrág|f.|þráge|as.|54,114,87
+þú|pers. pron.|ðú|?|
+þú|pers. pron.|éow|dp.|292,390
+þú|pers. pron.|éower|gp.|248,392,596
+þú|pers. pron.|éowic|ap.|317
+þú|pers. pron.|gé|plur.|237,245,252,254,333,338,393,395
+þú|pers. pron.|git|dual|508,512,513,516
+þú|pers. pron.|inc|d.|510
+þú|pers. pron.|incer|g.|584
+þú|pers. pron.|þé|?|417,426,517
+þú|pers. pron.|þec|as.|946,955
+þú|pers. pron.|þú|?|
+þýstru|wk.f.|þýstrum|dp.|87

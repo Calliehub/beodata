@@ -20,7 +20,8 @@
       "WebFetch(domain:www.germanic-lexicon-project.org)",
       "WebFetch(domain:bosworth.ff.cuni.cz)",
       "WebSearch",
-      "Bash(gh repo view:*)"
+      "Bash(gh repo view:*)",
+      "Bash(gh api:*)"
     ],
     "deny": [],
     "ask": []
