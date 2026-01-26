@@ -104,8 +104,9 @@ build-backend = "poetry.core.masonry.api"
 
 # handy run target definitions: here is your entry point to fetch and sources data
 [tool.poetry.scripts]
-heorot = "beodata.cli:run"
-bosworth = "beodata.cli:run_bosworth"
-all = "beodata.cli:run_all"
+heorot = "beodata.cli:load_heorot"
+bosworth = "beodata.cli:load_bosworth"
+abbreviations = "beodata.cli:load_abbreviations"
+all = "beodata.cli:load_all"
 model_dump = "beodata.cli:model_dump"
 server = "beowulf_mcp.server:run_server"
