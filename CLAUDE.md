@@ -65,8 +65,10 @@ The project uses a flat package layout with these top-level packages:
 - Line numbering follows heorot.dk system
 
 ### Output Structure
-- **`tests/data/fitts/`** - JSON/CSV output and cached HTML
-- **`tests/data/subtitles/`** - ASS subtitle files (fitt_0.ass through fitt_43.ass, except 24)
+- **`./output/*.json`** - JSON output
+- **`./output/*.csv`** - CSV output
+- **`./output/*.html`** - HTML output
+- **`./output/*.ass`** - ASS subtitle files (fitt_0.ass through fitt_43.ass, except 24)
 - **`assets/blank.ass`** - Required template for subtitle generation
 
 ## MCP Server Tools
