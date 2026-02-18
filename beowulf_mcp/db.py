@@ -15,7 +15,7 @@ logger = get_logger()
 
 # Database path: override with DB_PATH env var or .env file
 DEFAULT_DB_PATH = Path(
-    os.environ.get("DB_PATH", Path(__file__).parent / "output" / "beodb.duckdb")
+    os.environ.get("DB_PATH", Path(__file__).parents[1] / "output" / "beodb.duckdb")
 )
 
 

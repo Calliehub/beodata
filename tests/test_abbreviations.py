@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-from db import BeoDB
+from beowulf_mcp.db import BeoDB
 from sources.abbreviations import TABLE_NAME, Abbreviations
 
 

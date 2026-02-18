@@ -17,7 +17,7 @@ from mcp.server.stdio import stdio_server
 from mcp.types import CallToolResult, Resource, ServerCapabilities, TextContent, Tool
 from pydantic import AnyUrl
 
-from cli import fetch_store_and_parse
+from beowulf_mcp.cli import fetch_store_and_parse
 from sources import abbreviations, bosworth
 from sources.heorot import HEOROT_URL
 from text.models import BeowulfLine, dict_data_to_beowulf_lines

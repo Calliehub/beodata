@@ -3,7 +3,7 @@
 from typing import List, Optional
 
 from assets import get_asset_path
-from db import BeoDB, _quote_identifier
+from beowulf_mcp.db import BeoDB, _quote_identifier
 from logging_config import get_logger
 
 logger = get_logger()
