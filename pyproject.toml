@@ -5,15 +5,18 @@ description = ""
 authors = ["Callie Tweney <cat@pobox.com>"]
 readme = "README.md"
 packages = [
-    {"include" = "beodata"},
-    {"include" = "beowulf_mcp"}
+    {"include" = "beowulf_mcp"},
+    {"include" = "assets"},
+    {"include" = "sources"},
+    {"include" = "text"},
+    {"include" = "writers"},
 ]
 include = [
-    "beodata/assets/*.ass",
-    "beodata/assets/*.csv",
-    "beodata/assets/*.duckdb",
-    "beodata/assets/*.json",
-    "beodata/assets/*.xml",
+    "assets/*.ass",
+    "assets/*.csv",
+    "assets/*.duckdb",
+    "assets/*.json",
+    "assets/*.xml",
 ]
 
 [tool.poetry.dependencies]
@@ -80,6 +83,7 @@ warn_unreachable = true
 strict_equality = true
 
 [tool.pytest.ini_options]
+pythonpath = ["."]
 testpaths = ["tests"]
 python_files = ["test_*.py"]
 python_classes = ["Test*"]
@@ -90,6 +94,10 @@ addopts = [
     "--strict-markers",
     "--strict-config",
     "--cov=beodata",
+    "--cov=sources",
+    "--cov=text",
+    "--cov=writers",
+    "--cov=assets",
     "--cov-report=term-missing",
     "--cov-report=html",
 ]
@@ -104,9 +112,9 @@ build-backend = "poetry.core.masonry.api"
 
 # handy run target definitions: here is your entry point to fetch and sources data
 [tool.poetry.scripts]
-heorot = "beodata.cli:load_heorot"
-bosworth = "beodata.cli:load_bosworth"
-abbreviations = "beodata.cli:load_abbreviations"
-all = "beodata.cli:load_all"
-model_dump = "beodata.cli:model_dump"
+heorot = "cli:load_heorot"
+bosworth = "cli:load_bosworth"
+abbreviations = "cli:load_abbreviations"
+all = "cli:load_all"
+model_dump = "cli:model_dump"
 server = "beowulf_mcp.server:run_server"

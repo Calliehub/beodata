@@ -4,16 +4,16 @@ from pathlib import Path
 
 import requests
 
-from beodata.db import DEFAULT_DB_PATH
-from beodata.logging_config import get_logger
-from beodata.sources.abbreviations import Abbreviations
-from beodata.sources.bosworth import BosworthToller
-from beodata.sources.heorot import HEOROT_URL, Heorot, parse
-from beodata.text.models import dict_data_to_beowulf_lines
-from beodata.writers import get_all_writers
+from db import DEFAULT_DB_PATH
+from logging_config import get_logger
+from sources.abbreviations import Abbreviations
+from sources.bosworth import BosworthToller
+from sources.heorot import HEOROT_URL, Heorot, parse
+from text.models import dict_data_to_beowulf_lines
+from writers import get_all_writers
 
 # Define the data directory relative to this file (for test and output data)
-DATA_DIR = Path(__file__).parent.parent / "tests" / "data" / "fitts"
+DATA_DIR = Path(__file__).parent / "output"
 
 logger = get_logger()
 

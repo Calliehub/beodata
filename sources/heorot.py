@@ -11,8 +11,8 @@ from typing import Any, Dict, List, Optional
 import requests
 from bs4 import BeautifulSoup, Tag
 
-from beodata.db import BeoDB
-from beodata.logging_config import get_logger
+from db import BeoDB
+from logging_config import get_logger
 
 # URL of our Beowulf text (messy HTML)
 HEOROT_URL = "https://heorot.dk/beowulf-rede-text.html"

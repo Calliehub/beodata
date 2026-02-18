@@ -8,32 +8,18 @@ as BeowulfLine objects in JSON format.
 
 import asyncio
 import json
-import sys
 from typing import Any, Dict, List
 
 from mcp.server import Server
 from mcp.server.lowlevel.helper_types import ReadResourceContents
 from mcp.server.models import InitializationOptions
 from mcp.server.stdio import stdio_server
-from mcp.types import (
-    CallToolRequest,
-    CallToolResult,
-    ListResourcesRequest,
-    ListResourcesResult,
-    ListToolsRequest,
-    ListToolsResult,
-    ReadResourceRequest,
-    ReadResourceResult,
-    Resource,
-    ServerCapabilities,
-    TextContent,
-    Tool,
-)
+from mcp.types import CallToolResult, Resource, ServerCapabilities, TextContent, Tool
 from pydantic import AnyUrl
 
-from beodata.cli import fetch_store_and_parse
-from beodata.sources.heorot import HEOROT_URL
-from beodata.text.models import BeowulfLine, dict_data_to_beowulf_lines
+from cli import fetch_store_and_parse
+from sources.heorot import HEOROT_URL
+from text.models import BeowulfLine, dict_data_to_beowulf_lines
 
 # Initialize the MCP server
 server = Server("beowulf-mcp-server")
@@ -211,7 +197,7 @@ async def call_tool(tool_name: str, tool_args: dict[str, Any]) -> CallToolResult
         raw_lines = fetch_store_and_parse("maintext", HEOROT_URL)
         beowulf_lines = dict_data_to_beowulf_lines(raw_lines)
 
-        from beodata.text.numbering import FITT_BOUNDARIES
+        from text.numbering import FITT_BOUNDARIES
 
         start_line = FITT_BOUNDARIES[fitt_number][0]
         end_line = FITT_BOUNDARIES[fitt_number][1]

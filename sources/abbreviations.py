@@ -5,9 +5,9 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import List, Optional
 
-from beodata.assets import get_asset_path
-from beodata.db import BeoDB
-from beodata.logging_config import get_logger
+from assets import get_asset_path
+from db import BeoDB
+from logging_config import get_logger
 
 logger = get_logger()
 

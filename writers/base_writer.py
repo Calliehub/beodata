@@ -4,7 +4,7 @@ from abc import ABC, abstractmethod
 from pathlib import Path
 from typing import Any, Dict, List
 
-from beodata.logging_config import get_logger
+from logging_config import get_logger
 
 
 class BaseWriter(ABC):

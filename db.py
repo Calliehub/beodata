@@ -5,12 +5,12 @@ from typing import Optional
 
 import duckdb
 
-from beodata.logging_config import get_logger
+from logging_config import get_logger
 
 logger = get_logger()
 
 # Default database path (in assets directory)
-DEFAULT_DB_PATH = Path(__file__).parent / "assets" / "beodb.duckdb"
+DEFAULT_DB_PATH = Path(__file__).parent / "output" / "beodb.duckdb"
 
 
 class BeoDB:

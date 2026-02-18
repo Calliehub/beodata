@@ -21,7 +21,8 @@
       "WebFetch(domain:bosworth.ff.cuni.cz)",
       "WebSearch",
       "Bash(gh repo view:*)",
-      "Bash(gh api:*)"
+      "Bash(gh api:*)",
+      "Bash(poetry install:*)"
     ],
     "deny": [],
     "ask": []
