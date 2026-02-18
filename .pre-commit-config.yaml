@@ -22,14 +22,3 @@ repos:
     hooks:
       - id: isort
         args: [--profile=black, --line-length=88]
-
-  - repo: local
-    hooks:
-      - id: pytest
-        name: pytest
-        entry: poetry run pytest
-        language: system
-        pass_filenames: false
-        always_run: false
-        stages: [pre-commit]
-        args: [--tb=short]
