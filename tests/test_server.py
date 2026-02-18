@@ -30,12 +30,12 @@ async def _get_session_and_run(test_func):
 class TestListTools:
     """Tests for listing available tools."""
 
-    async def test_list_tools_returns_three_tools(self) -> None:
-        """Server exposes exactly three tools."""
+    async def test_list_tools_returns_six_tools(self) -> None:
+        """Server exposes exactly six tools."""
 
         async def check(session: ClientSession):
             tools = await session.list_tools()
-            assert len(tools.tools) == 3
+            assert len(tools.tools) == 6
 
         await _get_session_and_run(check)
 
@@ -273,5 +273,120 @@ class TestCallTools:
 
             assert data["count"] == 1
             assert data["lines"][0]["line_number"] == 1757
+
+        await _get_session_and_run(check)
+
+
+class TestBosworthTools:
+    """Tests for Bosworth-Toller dictionary tools."""
+
+    async def test_bt_lookup_tool_exists(self) -> None:
+        """bt_lookup tool is available."""
+
+        async def check(session: ClientSession):
+            tools = await session.list_tools()
+            tool_names = [t.name for t in tools.tools]
+            assert "bt_lookup" in tool_names
+
+        await _get_session_and_run(check)
+
+    async def test_bt_lookup_like_tool_exists(self) -> None:
+        """bt_lookup_like tool is available."""
+
+        async def check(session: ClientSession):
+            tools = await session.list_tools()
+            tool_names = [t.name for t in tools.tools]
+            assert "bt_lookup_like" in tool_names
+
+        await _get_session_and_run(check)
+
+    async def test_bt_search_tool_exists(self) -> None:
+        """bt_search tool is available."""
+
+        async def check(session: ClientSession):
+            tools = await session.list_tools()
+            tool_names = [t.name for t in tools.tools]
+            assert "bt_search" in tool_names
+
+        await _get_session_and_run(check)
+
+    async def test_bt_lookup_finds_word(self) -> None:
+        """bt_lookup returns results with expected keys for a known OE word."""
+
+        async def check(session: ClientSession):
+            result = await session.call_tool(
+                name="bt_lookup", arguments={"word": "cyning"}
+            )
+            content = result.content[0]
+            text = content.text if hasattr(content, "text") else str(content)
+            data = json.loads(text)
+
+            assert data["count"] >= 1
+            entry = data["results"][0]
+            assert "headword" in entry
+            assert "definition" in entry
+            assert "references" in entry
+
+        await _get_session_and_run(check)
+
+    async def test_bt_lookup_no_match(self) -> None:
+        """bt_lookup returns empty results for gibberish."""
+
+        async def check(session: ClientSession):
+            result = await session.call_tool(
+                name="bt_lookup", arguments={"word": "xyzzyplugh"}
+            )
+            content = result.content[0]
+            text = content.text if hasattr(content, "text") else str(content)
+            data = json.loads(text)
+
+            assert data["count"] == 0
+            assert data["results"] == []
+
+        await _get_session_and_run(check)
+
+    async def test_bt_lookup_like_prefix(self) -> None:
+        """bt_lookup_like with a prefix pattern returns multiple results."""
+
+        async def check(session: ClientSession):
+            result = await session.call_tool(
+                name="bt_lookup_like", arguments={"pattern": "cyn%"}
+            )
+            content = result.content[0]
+            text = content.text if hasattr(content, "text") else str(content)
+            data = json.loads(text)
+
+            assert data["count"] > 1
+
+        await _get_session_and_run(check)
+
+    async def test_bt_search_in_definition(self) -> None:
+        """bt_search finds results matching a term."""
+
+        async def check(session: ClientSession):
+            result = await session.call_tool(
+                name="bt_search", arguments={"term": "warrior"}
+            )
+            content = result.content[0]
+            text = content.text if hasattr(content, "text") else str(content)
+            data = json.loads(text)
+
+            assert data["count"] >= 1
+
+        await _get_session_and_run(check)
+
+    async def test_bt_search_with_column(self) -> None:
+        """bt_search with column param restricts search to that column."""
+
+        async def check(session: ClientSession):
+            result = await session.call_tool(
+                name="bt_search",
+                arguments={"term": "king", "column": "definition"},
+            )
+            content = result.content[0]
+            text = content.text if hasattr(content, "text") else str(content)
+            data = json.loads(text)
+
+            assert data["count"] >= 1
 
         await _get_session_and_run(check)
