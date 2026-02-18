@@ -4,7 +4,6 @@ from pathlib import Path
 
 import requests
 
-from db import DEFAULT_DB_PATH
 from logging_config import get_logger
 from sources.abbreviations import Abbreviations
 from sources.bosworth import BosworthToller
@@ -98,20 +97,20 @@ def load_heorot() -> None:
     # Write to JSON/CSV/ASS files
     fetch_store_parse_and_write("maintext", HEOROT_URL)
     # Also persist to DuckDB
-    heorot = Heorot(DEFAULT_DB_PATH)
+    heorot = Heorot()
     html = fetch_and_store(HEOROT_URL, "maintext.html")
     heorot.load_from_html(html, force=True)
 
 
 def load_bosworth() -> None:
     """Main function to process and load the Bosworth-Toller dictionary from csv."""
-    bt = BosworthToller(DEFAULT_DB_PATH)
+    bt = BosworthToller()
     bt.load_from_csv(force=True)
 
 
 def load_abbreviations() -> None:
     """Main function to process and load the abbreviation dictionary from XML."""
-    abbr = Abbreviations(DEFAULT_DB_PATH)
+    abbr = Abbreviations()
     abbr.load_from_xml(force=True)
 
 

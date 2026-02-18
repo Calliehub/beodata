@@ -148,7 +148,7 @@ You can decode the cryptic references often found in dictionary entries:
 
 ```python
 from sources.abbreviations import Abbreviations
-with Abbreviations(db_path=db_path) as abbv:
+with Abbreviations() as abbv:
     abbv.lookup("Chr. Erl")
 ```
 
@@ -158,7 +158,7 @@ There's a full Old English dictionary represented here, derived from [./assets/o
 
 ```python
 from sources.bosworth import BosworthToller
-with BosworthToller(db_path=db_path) as bt:
+with BosworthToller() as bt:
     bt.lookup("cyning")
 ```
 

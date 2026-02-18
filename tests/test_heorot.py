@@ -13,6 +13,7 @@ from typing import Any, Generator, List
 import pytest
 
 from cli import load_heorot
+from db import BeoDB
 from sources.heorot import TABLE_NAME, Heorot
 from text.numbering import FITT_BOUNDARIES
 
@@ -132,8 +133,7 @@ def sample_html() -> str:
 @pytest.fixture
 def heorot_with_data(tmp_path: Path, sample_html: str) -> Generator[Heorot, None, None]:
     """Create a Heorot instance with test data loaded."""
-    db_path = tmp_path / "test_beodb.duckdb"
-    h = Heorot(db_path=db_path)
+    h = Heorot(db=BeoDB(tmp_path / "test_beodb.duckdb"))
     h.load_from_html(sample_html)
     yield h
     h._db.close()
@@ -144,8 +144,7 @@ class TestHeorotClass:
 
     def test_table_exists_false_initially(self, tmp_path: Path) -> None:
         """Table should not exist before loading."""
-        db_path = tmp_path / "empty.duckdb"
-        with Heorot(db_path=db_path) as h:
+        with Heorot(db=BeoDB(tmp_path / "empty.duckdb")) as h:
             assert h._db.table_exists(TABLE_NAME) is False
 
     def test_load_from_html(self, heorot_with_data: Heorot) -> None:
@@ -164,8 +163,7 @@ class TestHeorotClass:
         self, tmp_path: Path, sample_html: str
     ) -> None:
         """Loading with force=True should reload the data."""
-        db_path = tmp_path / "force_test.duckdb"
-        with Heorot(db_path=db_path) as h:
+        with Heorot(db=BeoDB(tmp_path / "force_test.duckdb")) as h:
             h.load_from_html(sample_html)
             assert h.count() == 4
             # Force reload with empty HTML
@@ -224,7 +222,6 @@ class TestHeorotClass:
 
     def test_context_manager(self, tmp_path: Path) -> None:
         """Context manager should properly close connection."""
-        db_path = tmp_path / "context.duckdb"
-        with Heorot(db_path=db_path) as h:
+        with Heorot(db=BeoDB(tmp_path / "context.duckdb")) as h:
             assert h._db._conn is not None or h._db.table_exists(TABLE_NAME) is False
         assert h._db._conn is None

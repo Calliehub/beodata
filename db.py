@@ -1,16 +1,22 @@
 """Database management for beodata DuckDB instance."""
 
+import os
 from pathlib import Path
 from typing import Optional
 
 import duckdb
+from dotenv import load_dotenv
 
 from logging_config import get_logger
 
+load_dotenv()
+
 logger = get_logger()
 
-# Default database path (in assets directory)
-DEFAULT_DB_PATH = Path(__file__).parent / "output" / "beodb.duckdb"
+# Database path: override with DB_PATH env var or .env file
+DEFAULT_DB_PATH = Path(
+    os.environ.get("DB_PATH", Path(__file__).parent / "output" / "beodb.duckdb")
+)
 
 
 class BeoDB:
@@ -116,18 +122,15 @@ def _quote_identifier(name: str) -> str:
 _default_db: Optional[BeoDB] = None
 
 
-def get_db(db_path: Optional[Path] = None) -> BeoDB:
+def get_db() -> BeoDB:
     """Get the default BeoDB instance (singleton pattern).
 
-    Args:
-        db_path: Optional path override. Only used on first call.
-
     Returns:
-        The shared BeoDB instance.
+        The shared BeoDB instance, using the configured DEFAULT_DB_PATH.
     """
     global _default_db
     if _default_db is None:
-        _default_db = BeoDB(db_path)
+        _default_db = BeoDB()
     return _default_db
 
 

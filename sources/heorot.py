@@ -133,15 +133,14 @@ def parse(html: str) -> List[Dict[str, Any]]:
 class Heorot:
     """Interface to the Beowulf text from heorot.dk backed by DuckDB."""
 
-    def __init__(self, db_path: Optional[Path] = None) -> None:
+    def __init__(self, db: Optional[BeoDB] = None) -> None:
         """
         Initialize the Heorot interface.
 
         Args:
-            db_path: Path to the DuckDB database file. Defaults to beodb.duckdb
-                    in the assets directory.
+            db: BeoDB instance. Defaults to BeoDB() using the configured DB_PATH.
         """
-        self._db = BeoDB(db_path)
+        self._db = db or BeoDB()
 
     def __enter__(self) -> "Heorot":
         return self

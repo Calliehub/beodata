@@ -5,7 +5,7 @@ from typing import Generator
 
 import pytest
 
-from db import _quote_identifier
+from db import BeoDB, _quote_identifier
 from sources.bosworth import TABLE_NAME, BosworthToller
 
 
@@ -28,15 +28,13 @@ def bt_with_data(
     tmp_path: Path, sample_csv: Path, monkeypatch: pytest.MonkeyPatch
 ) -> Generator[BosworthToller, None, None]:
     """Create a BosworthToller instance with test data loaded."""
-    db_path = tmp_path / "test_beodb.duckdb"
-
     # Monkeypatch get_asset_path to return our test CSV
     monkeypatch.setattr("sources.bosworth.get_asset_path", lambda filename: sample_csv)
 
-    bt = BosworthToller(db_path=db_path)
+    bt = BosworthToller(db=BeoDB(tmp_path / "test_beodb.duckdb"))
     bt.load_from_csv()
     yield bt
-    bt.db.close()
+    bt._db.close()
 
 
 class TestBosworthToller:
@@ -44,8 +42,7 @@ class TestBosworthToller:
 
     def test_table_exists_false_initially(self, tmp_path: Path) -> None:
         """Table should not exist before loading."""
-        db_path = tmp_path / "empty.duckdb"
-        with BosworthToller(db_path=db_path) as bt:
+        with BosworthToller(db=BeoDB(tmp_path / "empty.duckdb")) as bt:
             assert bt._db.table_exists(TABLE_NAME) is False
 
     def test_load_from_csv(self, bt_with_data: BosworthToller) -> None:
@@ -63,12 +60,11 @@ class TestBosworthToller:
         self, tmp_path: Path, sample_csv: Path, monkeypatch: pytest.MonkeyPatch
     ) -> None:
         """Loading with force=True should reload the data."""
-        db_path = tmp_path / "force_test.duckdb"
         monkeypatch.setattr(
             "sources.bosworth.get_asset_path", lambda filename: sample_csv
         )
 
-        with BosworthToller(db_path=db_path) as bt:
+        with BosworthToller(db=BeoDB(tmp_path / "force_test.duckdb")) as bt:
             bt.load_from_csv()
             assert bt._db.count(TABLE_NAME) == 5
             # Force reload
@@ -150,8 +146,7 @@ class TestBosworthToller:
 
     def test_context_manager(self, tmp_path: Path) -> None:
         """Context manager should properly close connection."""
-        db_path = tmp_path / "context.duckdb"
-        with BosworthToller(db_path=db_path) as bt:
+        with BosworthToller(db=BeoDB(tmp_path / "context.duckdb")) as bt:
             assert bt._db._conn is not None or bt._db.table_exists(TABLE_NAME) is False
         assert bt._db._conn is None
 
