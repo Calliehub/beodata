@@ -1,6 +1,5 @@
 """Bosworth-Toller Old English Dictionary interface backed by DuckDB."""
 
-from pathlib import Path
 from typing import List, Optional
 
 from assets import get_asset_path
@@ -19,15 +18,14 @@ TABLE_NAME = "bosworth"
 class BosworthToller:
     """Interface to the Bosworth-Toller Old English Dictionary."""
 
-    def __init__(self, db_path: Optional[Path] = None) -> None:
+    def __init__(self, db: Optional[BeoDB] = None) -> None:
         """
         Initialize the dictionary interface.
 
         Args:
-            db_path: Path to the DuckDB database file. Defaults to beodb.duckdb
-                    in the assets directory.
+            db: BeoDB instance. Defaults to BeoDB() using the configured DB_PATH.
         """
-        self._db = BeoDB(db_path)
+        self._db = db or BeoDB()
 
     def __enter__(self) -> "BosworthToller":
         return self

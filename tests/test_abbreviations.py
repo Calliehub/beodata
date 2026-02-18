@@ -2,6 +2,7 @@
 
 from pathlib import Path
 
+from db import BeoDB
 from sources.abbreviations import TABLE_NAME, Abbreviations
 
 
@@ -10,22 +11,19 @@ class TestAbbreviations:
 
     def test_table_exists_false_initially(self, tmp_path: Path) -> None:
         """Table should not exist before loading."""
-        db_path = tmp_path / "empty.duckdb"
-        with Abbreviations(db_path=db_path) as abbr:
+        with Abbreviations(db=BeoDB(tmp_path / "empty.duckdb")) as abbr:
             assert abbr._db.table_exists(TABLE_NAME) is False
 
     def test_load_from_xml(self, tmp_path: Path) -> None:
         """Should load abbreviations from XML."""
-        db_path = tmp_path / "abbrev_test.duckdb"
-        with Abbreviations(db_path=db_path) as abbr:
+        with Abbreviations(db=BeoDB(tmp_path / "abbrev_test.duckdb")) as abbr:
             count = abbr.load_from_xml()
             assert count == 632
             assert abbr._db.table_exists(TABLE_NAME)
 
     def test_load_from_xml_skips_if_exists(self, tmp_path: Path) -> None:
         """Loading again without force should skip."""
-        db_path = tmp_path / "abbrev_skip.duckdb"
-        with Abbreviations(db_path=db_path) as abbr:
+        with Abbreviations(db=BeoDB(tmp_path / "abbrev_skip.duckdb")) as abbr:
             abbr.load_from_xml()
             initial_count = abbr._db.count(TABLE_NAME)
             abbr.load_from_xml(force=False)
@@ -33,8 +31,7 @@ class TestAbbreviations:
 
     def test_load_from_xml_force_reloads(self, tmp_path: Path) -> None:
         """Loading with force=True should reload the data."""
-        db_path = tmp_path / "abbrev_force.duckdb"
-        with Abbreviations(db_path=db_path) as abbr:
+        with Abbreviations(db=BeoDB(tmp_path / "abbrev_force.duckdb")) as abbr:
             abbr.load_from_xml()
             assert abbr._db.count(TABLE_NAME) == 632
             # Force reload
@@ -43,8 +40,7 @@ class TestAbbreviations:
 
     def test_lookup(self, tmp_path: Path) -> None:
         """Should find abbreviations by partial match."""
-        db_path = tmp_path / "abbrev_lookup.duckdb"
-        with Abbreviations(db_path=db_path) as abbr:
+        with Abbreviations(db=BeoDB(tmp_path / "abbrev_lookup.duckdb")) as abbr:
             abbr.load_from_xml()
             results = abbr.lookup("Beo.")
             assert len(results) >= 1
@@ -52,8 +48,7 @@ class TestAbbreviations:
 
     def test_lookup_returns_all_fields(self, tmp_path: Path) -> None:
         """Lookup should return abbreviation, expansion, and description."""
-        db_path = tmp_path / "abbrev_fields.duckdb"
-        with Abbreviations(db_path=db_path) as abbr:
+        with Abbreviations(db=BeoDB(tmp_path / "abbrev_fields.duckdb")) as abbr:
             abbr.load_from_xml()
             results = abbr.lookup("Beo.")
             assert len(results) >= 1
@@ -64,8 +59,7 @@ class TestAbbreviations:
 
     def test_context_manager(self, tmp_path: Path) -> None:
         """Context manager should properly close connection."""
-        db_path = tmp_path / "context.duckdb"
-        with Abbreviations(db_path=db_path) as abbr:
+        with Abbreviations(db=BeoDB(tmp_path / "context.duckdb")) as abbr:
             assert (
                 abbr._db._conn is not None or abbr._db.table_exists(TABLE_NAME) is False
             )
