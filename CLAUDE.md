@@ -69,6 +69,26 @@ The project uses a flat package layout with these top-level packages:
 - **`tests/data/subtitles/`** - ASS subtitle files (fitt_0.ass through fitt_43.ass, except 24)
 - **`assets/blank.ass`** - Required template for subtitle generation
 
+## MCP Server Tools
+
+The `beowulf_mcp` server exposes 7 tools for working with Beowulf text and the Bosworth-Toller Old English dictionary. When analyzing or discussing Beowulf, prefer these tools over reading raw source files or any outside Internet resource or LLM's training data.
+
+### Beowulf Text Tools
+- **`get_beowulf_lines`** — Retrieve lines by line number range (`from`/`to` inclusive). Use for quoting or examining specific passages.
+- **`get_beowulf_summary`** — Quick stats: total lines, title lines, empty lines, sample lines. Use to orient before diving in.
+- **`get_fitt_lines`** — Retrieve all lines for a fitt by number (0-43, no 24). Use when working with a whole section.
+
+### Bosworth-Toller Dictionary Tools
+- **`bt_lookup`** — Exact headword match. Try this first when you know the OE word (e.g. `cyning`).
+- **`bt_lookup_like`** — SQL LIKE pattern on headwords (e.g. `cyn%`). Use when unsure of the exact form or exploring a word family.
+- **`bt_search`** — Full-text search across headword, definition, and references. Optional `column` param to restrict to one. Use when searching by meaning rather than headword.
+- **`bt_abbreviation`** — Look up Bosworth-Toller abbreviations (e.g. `Beo.`). Dictionary entries use terse abbreviations for source references; use this tool to decode them.
+
+### Typical Workflows
+- **Translating a passage**: `get_beowulf_lines` or `get_fitt_lines` to get the OE text, then `bt_lookup` / `bt_lookup_like` for individual words.
+- **Finding where a concept appears**: `bt_search` with an English term (e.g. "warrior"), then cross-reference the `references` field against Beowulf line numbers.
+- **Decoding a dictionary citation**: `bt_abbreviation` to expand the source abbreviation, then look up the referenced line.
+
 ## Code Style
 
 The project uses comprehensive Python style guidelines defined in `.cursorrules`:
