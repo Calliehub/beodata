@@ -3,10 +3,10 @@
 from typing import List
 
 # Import all writer modules to register subclasses
-from beodata.writers.ass_writer import AssWriter, write_ass  # noqa: F401
-from beodata.writers.base_writer import BaseWriter
-from beodata.writers.csv_writer import CsvWriter, write_csv  # noqa: F401
-from beodata.writers.json_writer import JsonWriter, write_json  # noqa: F401
+from writers.ass_writer import AssWriter, write_ass  # noqa: F401
+from writers.base_writer import BaseWriter
+from writers.csv_writer import CsvWriter, write_csv  # noqa: F401
+from writers.json_writer import JsonWriter, write_json  # noqa: F401
 
 
 def get_all_writers() -> List[BaseWriter]:

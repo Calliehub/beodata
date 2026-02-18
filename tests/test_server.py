@@ -11,7 +11,7 @@ from mcp.client.stdio import stdio_client
 logging.getLogger("mcp.server.lowlevel.server").setLevel(logging.WARNING)
 
 # we need a path to proj root to use as working dir for server
-PROJECT_ROOT = Path(__file__).parents[2]
+PROJECT_ROOT = Path(__file__).parents[1]
 
 
 async def _get_session_and_run(test_func):

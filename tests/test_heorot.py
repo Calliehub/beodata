@@ -12,16 +12,16 @@ from typing import Any, Generator, List
 
 import pytest
 
-from beodata.cli import load_heorot
-from beodata.sources.heorot import TABLE_NAME, Heorot
-from beodata.text.numbering import FITT_BOUNDARIES
+from cli import load_heorot
+from sources.heorot import TABLE_NAME, Heorot
+from text.numbering import FITT_BOUNDARIES
 
 
 # all tests use 1 fetch of the text
 @pytest.fixture(scope="session")
 def heorot_text() -> List[dict[str, Any]]:
     load_heorot()
-    path = Path(__file__).parent.parent / "data" / "fitts" / "maintext.json"
+    path = Path(__file__).parent.parent / "output" / "maintext.json"
     with path.open("r", encoding="utf-8") as f:
         return json.load(f)
 

@@ -5,16 +5,16 @@ from typing import Any, Dict, Final, List
 
 import pysubs2
 
-from beodata.assets import get_asset_path
-from beodata.text.models import BeowulfLine, dict_data_to_beowulf_lines
-from beodata.text.numbering import FITT_BOUNDARIES
-from beodata.writers.base_writer import BaseWriter
+from assets import get_asset_path
+from text.models import BeowulfLine, dict_data_to_beowulf_lines
+from text.numbering import FITT_BOUNDARIES
+from writers.base_writer import BaseWriter
 
 # Timing constants
 SECONDS_PER_LINE: Final[int] = 4
 
 # Output directory for generated subtitles
-SUBTITLE_DIR = Path(__file__).parent.parent.parent / "tests" / "data" / "subtitles"
+SUBTITLE_DIR = Path(__file__).parents[1] / "output"
 
 # ASS subtitle style names
 ASS_STYLES: Final[Dict[str, str]] = {
@@ -108,6 +108,7 @@ class AssWriter(BaseWriter):
         """
         beowulf_lines = dict_data_to_beowulf_lines(lines)
         total_subs = 0
+        output_path.mkdir(parents=True, exist_ok=True)
 
         for fitt_id, fitt_bounds in enumerate(FITT_BOUNDARIES):
             if fitt_id == 24:
@@ -116,10 +117,11 @@ class AssWriter(BaseWriter):
             fitt = get_fitt(fitt_id, beowulf_lines)
             fitt_output_path = output_path / f"fitt_{fitt_id}.ass"
 
-            self.logger.debug(
+            self.logger.info(
                 "Writing .ass file for fitt",
                 fitt_id=fitt_id,
                 fitt_bounds=fitt_bounds,
+                output_path=output_path,
             )
 
             subs = self._create_fitt_subtitles(fitt_id, fitt)

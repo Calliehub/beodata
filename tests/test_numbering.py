@@ -1,4 +1,4 @@
-from beodata.text.numbering import FITT_BOUNDARIES
+from text.numbering import FITT_BOUNDARIES
 
 
 def test_fitt_coverage_complete() -> None:

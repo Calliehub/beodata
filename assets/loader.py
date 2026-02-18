@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import Iterator
 
 # Reference to the assets package
-_ASSETS = files("beodata.assets")
+_ASSETS = files("assets")
 
 
 def get_asset_path(filename: str) -> Path:

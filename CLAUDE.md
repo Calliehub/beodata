@@ -26,8 +26,6 @@ pre-commit install
 ```bash
 # Main entry point - processes Beowulf text and generates all formats
 poetry run heorot
-# Alternative:
-poetry run python -m beodata.sources.heorot
 ```
 
 ### Testing and Quality Checks
@@ -36,7 +34,7 @@ poetry run python -m beodata.sources.heorot
 poetry run pytest
 
 # Run specific test file
-poetry run pytest tests/sources/test_heorot.py
+poetry run pytest tests/test_sources/test_heorot.py
 
 # Code formatting and linting (these run automatically via pre-commit)
 poetry run black .
@@ -47,10 +45,19 @@ poetry run mypy .
 
 ## Project Architecture
 
+### Package Structure
+The project uses a flat package layout with these top-level packages:
+- **`beodata/`** - Core package with CLI, DB, and logging modules
+- **`sources/`** - Data source parsers (heorot.py, bosworth.py, abbreviations.py)
+- **`text/`** - Text models and numbering constants
+- **`writers/`** - Output writers (JSON, CSV, ASS subtitle formats)
+- **`assets/`** - Static data files and asset loader
+- **`beowulf_mcp/`** - MCP server for Beowulf data
+
 ### Core Modules
-- **`beodata/parse/heorot.py`** - Main parsing logic for heorot.dk HTML content
-- **`beodata/text/numbering.py`** - Fitt boundaries and line numbering constants
-- **`beodata/subtitle/constants.py`** - ASS subtitle generation constants
+- **`sources/heorot.py`** - Main parsing logic for heorot.dk HTML content
+- **`text/numbering.py`** - Fitt boundaries and line numbering constants
+- **`writers/ass_writer.py`** - ASS subtitle generation
 
 ### Key Data Structures
 - **FITT_BOUNDARIES** - Tuples defining (start_line, end_line, fitt_name) for each section
@@ -60,7 +67,7 @@ poetry run mypy .
 ### Output Structure
 - **`tests/data/fitts/`** - JSON/CSV output and cached HTML
 - **`tests/data/subtitles/`** - ASS subtitle files (fitt_0.ass through fitt_43.ass, except 24)
-- **`tests/data/blank.ass`** - Required template for subtitle generation
+- **`assets/blank.ass`** - Required template for subtitle generation
 
 ## Code Style
 

@@ -9,7 +9,7 @@ from typing import Any, Dict, List
 
 import pytest
 
-from beodata.text.models import BeowulfLine, dict_data_to_beowulf_lines
+from text.models import BeowulfLine, dict_data_to_beowulf_lines
 
 
 class TestBeowulfLine:

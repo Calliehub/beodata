@@ -4,7 +4,7 @@ import csv
 from pathlib import Path
 from typing import Any, Dict, List
 
-from beodata.writers.base_writer import BaseWriter
+from writers.base_writer import BaseWriter
 
 
 class CsvWriter(BaseWriter):

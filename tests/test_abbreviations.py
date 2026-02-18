@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-from beodata.sources.abbreviations import TABLE_NAME, Abbreviations
+from sources.abbreviations import TABLE_NAME, Abbreviations
 
 
 class TestAbbreviations:
