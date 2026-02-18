@@ -49,8 +49,8 @@ This will:
 
 1. Fetch the HTML content from heorot.dk (if not already cached)
 2. Parse the dual-language text
-3. Generate JSON and CSV files in `tests/data/fitts/`
-4. Create ASS subtitle files for each fitt in `tests/data/subtitles/`
+3. Generate JSON and CSV files in `./output`
+4. Create ASS subtitle files for each fitt in `./output`
 
 To run the MCP server:
 
@@ -68,30 +68,36 @@ poetry run pytest
 
 The parsing script requires a blank ASS template file:
 
-- `tests/data/blank.ass` - Template file for ASS subtitle formatting
+- `./assets/blank.ass` - Template file for ASS subtitle formatting
 
 ### Output Files
 
 After running the script, you'll find:
 
-**In `tests/data/fitts/`:**
+**In `./output/`:**
 
 - `maintext.json` - Complete text data in JSON format
 - `maintext.csv` - Complete text data in CSV format
 - `maintext.html` - Cached HTML from heorot.dk
 
-**In `tests/data/subtitles/`:**
+**In `./output/`:**
 
 - `fitt_0.ass` through `fitt_43.ass` - ASS subtitle files for each fitt (except fitt 24, which doesn't exist)
 
 ## Project Structure
 
-- `beodata/parse/heorot.py` - Main parsing and processing logic for Heorot.DK HTML text
-- `beodata/text/models.py` - Model classes for BeowulfLine objects
-- `beodata/text/numbering.py` - Fitt boundaries and text structure constants
-- `beodata/subtitle/constants.py` - Subtitle generation constants
-- `tests/data/fitts/` - Output directory for generated files
-- `tests/data/subtitles/` - Output directory for ASS subtitle files
+Reader, please note: "Sources" here means "Sources of Old English text" not "Source code".
+
+- `sources/heorot.py` - Main parsing and processing logic for Heorot.DK HTML text
+- `sources/bosworth.py` - Bosworth-Toller Old English dictionary loader
+- `sources/abbreviations.py` - Dictionary abbreviation loader
+- `text/models.py` - Model classes for BeowulfLine objects
+- `text/numbering.py` - Fitt boundaries and text structure constants
+- `writers/` - Output writers (JSON, CSV, ASS subtitle formats)
+- `beowulf_mcp/` - MCP server for Beowulf data
+- `assets/` - Static data files (blank.ass template, oe_bt.csv, abbreviations XML)
+- `findings/` - Callie's attempts to put the MCP server to use in a Claude session
+- `output/` - Generated output (JSON, CSV, HTML, ASS subtitle files, DuckDB)
 
 ## Old English Texts
 
