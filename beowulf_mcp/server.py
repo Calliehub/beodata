@@ -18,7 +18,7 @@ from mcp.types import CallToolResult, Resource, ServerCapabilities, TextContent,
 from pydantic import AnyUrl
 
 from cli import fetch_store_and_parse
-from sources import bosworth
+from sources import abbreviations, bosworth
 from sources.heorot import HEOROT_URL
 from text.models import BeowulfLine, dict_data_to_beowulf_lines
 
@@ -174,6 +174,20 @@ async def list_tools() -> List:
                     },
                 },
                 "required": ["term"],
+            },
+        ),
+        Tool(
+            name="bt_abbreviation",
+            description="Look up a Bosworth-Toller abbreviation by partial match (e.g. 'Beo.' to find Beowulf references)",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "abbrev": {
+                        "type": "string",
+                        "description": "The abbreviation to look up (partial match supported)",
+                    },
+                },
+                "required": ["abbrev"],
             },
         ),
     ]
@@ -334,6 +348,19 @@ async def call_tool(tool_name: str, tool_args: dict[str, Any]) -> CallToolResult
         bosworth.load()
         column = tool_args.get("column")
         results = bosworth.search(tool_args["term"], column=column)
+        result = {"results": results, "count": len(results)}
+        return CallToolResult(
+            content=[
+                TextContent(
+                    type="text",
+                    text=json.dumps(result, indent=2, ensure_ascii=False),
+                )
+            ]
+        )
+
+    elif tool_name == "bt_abbreviation":
+        abbreviations.load()
+        results = abbreviations.lookup(tool_args["abbrev"])
         result = {"results": results, "count": len(results)}
         return CallToolResult(
             content=[

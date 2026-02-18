@@ -30,12 +30,12 @@ async def _get_session_and_run(test_func):
 class TestListTools:
     """Tests for listing available tools."""
 
-    async def test_list_tools_returns_six_tools(self) -> None:
-        """Server exposes exactly six tools."""
+    async def test_list_tools_returns_seven_tools(self) -> None:
+        """Server exposes exactly seven tools."""
 
         async def check(session: ClientSession):
             tools = await session.list_tools()
-            assert len(tools.tools) == 6
+            assert len(tools.tools) == 7
 
         await _get_session_and_run(check)
 
@@ -388,5 +388,69 @@ class TestBosworthTools:
             data = json.loads(text)
 
             assert data["count"] >= 1
+
+        await _get_session_and_run(check)
+
+
+class TestAbbreviationTools:
+    """Tests for Bosworth-Toller abbreviation tools."""
+
+    async def test_bt_abbreviation_tool_exists(self) -> None:
+        """bt_abbreviation tool is available."""
+
+        async def check(session: ClientSession):
+            tools = await session.list_tools()
+            tool_names = [t.name for t in tools.tools]
+            assert "bt_abbreviation" in tool_names
+
+        await _get_session_and_run(check)
+
+    async def test_bt_abbreviation_finds_match(self) -> None:
+        """bt_abbreviation returns results for a known abbreviation."""
+
+        async def check(session: ClientSession):
+            result = await session.call_tool(
+                name="bt_abbreviation", arguments={"abbrev": "Beo."}
+            )
+            content = result.content[0]
+            text = content.text if hasattr(content, "text") else str(content)
+            data = json.loads(text)
+
+            assert data["count"] >= 1
+            entry = data["results"][0]
+            assert "abbreviation" in entry
+            assert "expansion" in entry
+            assert "description" in entry
+
+        await _get_session_and_run(check)
+
+    async def test_bt_abbreviation_no_match(self) -> None:
+        """bt_abbreviation returns empty results for gibberish."""
+
+        async def check(session: ClientSession):
+            result = await session.call_tool(
+                name="bt_abbreviation", arguments={"abbrev": "xyzzyplugh"}
+            )
+            content = result.content[0]
+            text = content.text if hasattr(content, "text") else str(content)
+            data = json.loads(text)
+
+            assert data["count"] == 0
+            assert data["results"] == []
+
+        await _get_session_and_run(check)
+
+    async def test_bt_abbreviation_returns_description(self) -> None:
+        """bt_abbreviation results for 'Beo.' mention Beowulf in description."""
+
+        async def check(session: ClientSession):
+            result = await session.call_tool(
+                name="bt_abbreviation", arguments={"abbrev": "Beo."}
+            )
+            content = result.content[0]
+            text = content.text if hasattr(content, "text") else str(content)
+            data = json.loads(text)
+
+            assert any("Beowulf" in r["description"] for r in data["results"])
 
         await _get_session_and_run(check)
