@@ -52,7 +52,7 @@ class TestListTools:
     ) -> None:
         """Server exposes exactly seven tools."""
         tools = await mcp_session.list_tools()
-        assert len(tools.tools) == 3
+        assert len(tools.tools) == 7
 
     async def test_get_beowulf_lines_tool_exists(
         self, mcp_session: ClientSession
