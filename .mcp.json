@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "beowulf-mcp": {
+      "type": "stdio",
+      "command": "poetry",
+      "args": ["run", "server"],
+      "env": {}
+    }
+  }
+}

@@ -22,7 +22,12 @@
       "WebSearch",
       "Bash(gh repo view:*)",
       "Bash(gh api:*)",
-      "Bash(poetry install:*)"
+      "Bash(poetry install:*)",
+      "mcp__beowulf-mcp__get_beowulf_lines",
+      "Bash(poetry env info:*)",
+      "Bash(find:*)",
+      "mcp__beowulf-mcp__get_beowulf_summary",
+      "Bash(claude mcp list:*)"
     ],
     "deny": [],
     "ask": []

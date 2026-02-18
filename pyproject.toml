@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "beodata"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Callie Tweney <cat@pobox.com>"]
 readme = "README.md"

@@ -30,12 +30,12 @@ async def _get_session_and_run(test_func):
 class TestListTools:
     """Tests for listing available tools."""
 
-    async def test_list_tools_returns_two_tools(self) -> None:
-        """Server exposes exactly two tools."""
+    async def test_list_tools_returns_three_tools(self) -> None:
+        """Server exposes exactly three tools."""
 
         async def check(session: ClientSession):
             tools = await session.list_tools()
-            assert len(tools.tools) == 2
+            assert len(tools.tools) == 3
 
         await _get_session_and_run(check)
 
@@ -46,6 +46,16 @@ class TestListTools:
             tools = await session.list_tools()
             tool_names = [t.name for t in tools.tools]
             assert "get_beowulf_lines" in tool_names
+
+        await _get_session_and_run(check)
+
+    async def test_get_beowulf_summary_tool_exists(self) -> None:
+        """get_beowulf_summary tool is available."""
+
+        async def check(session: ClientSession):
+            tools = await session.list_tools()
+            tool_names = [t.name for t in tools.tools]
+            assert "get_beowulf_summary" in tool_names
 
         await _get_session_and_run(check)
 
@@ -172,13 +182,11 @@ class TestCallTools:
 
         await _get_session_and_run(check)
 
-    async def test_get_beowulf_lines_summary(self) -> None:
-        """get_beowulf_lines with format=summary returns summary data."""
+    async def test_get_beowulf_summary(self) -> None:
+        """get_beowulf_summary returns summary data."""
 
         async def check(session: ClientSession):
-            result = await session.call_tool(
-                name="get_beowulf_lines", arguments={"format": "summary"}
-            )
+            result = await session.call_tool(name="get_beowulf_summary", arguments={})
 
             content = result.content[0]
             text = content.text if hasattr(content, "text") else str(content)
@@ -187,5 +195,83 @@ class TestCallTools:
             assert "total_lines" in data
             assert "sample_lines" in data
             assert len(data["sample_lines"]) == 3
+
+        await _get_session_and_run(check)
+
+    async def test_get_beowulf_lines_from_to(self) -> None:
+        """get_beowulf_lines with from/to returns only lines in that range."""
+
+        async def check(session: ClientSession):
+            result = await session.call_tool(
+                name="get_beowulf_lines",
+                arguments={"from": 10, "to": 20},
+            )
+
+            content = result.content[0]
+            text = content.text if hasattr(content, "text") else str(content)
+            data = json.loads(text)
+
+            assert data["count"] == 11
+            line_numbers = [line["line_number"] for line in data["lines"]]
+            assert min(line_numbers) == 10
+            assert max(line_numbers) == 20
+
+        await _get_session_and_run(check)
+
+    async def test_get_beowulf_lines_from_only(self) -> None:
+        """get_beowulf_lines with only from returns lines from that point to end."""
+
+        async def check(session: ClientSession):
+            result = await session.call_tool(
+                name="get_beowulf_lines",
+                arguments={"from": 3180},
+            )
+
+            content = result.content[0]
+            text = content.text if hasattr(content, "text") else str(content)
+            data = json.loads(text)
+
+            line_numbers = [line["line_number"] for line in data["lines"]]
+            assert min(line_numbers) == 3180
+            assert max(line_numbers) == 3182
+            assert data["count"] == 3
+
+        await _get_session_and_run(check)
+
+    async def test_get_beowulf_lines_to_only(self) -> None:
+        """get_beowulf_lines with only to returns lines from start up to that point."""
+
+        async def check(session: ClientSession):
+            result = await session.call_tool(
+                name="get_beowulf_lines",
+                arguments={"to": 2},
+            )
+
+            content = result.content[0]
+            text = content.text if hasattr(content, "text") else str(content)
+            data = json.loads(text)
+
+            line_numbers = [line["line_number"] for line in data["lines"]]
+            assert min(line_numbers) == 0
+            assert max(line_numbers) == 2
+            assert data["count"] == 3
+
+        await _get_session_and_run(check)
+
+    async def test_get_beowulf_lines_single_line(self) -> None:
+        """get_beowulf_lines with from==to returns exactly one line."""
+
+        async def check(session: ClientSession):
+            result = await session.call_tool(
+                name="get_beowulf_lines",
+                arguments={"from": 1757, "to": 1757},
+            )
+
+            content = result.content[0]
+            text = content.text if hasattr(content, "text") else str(content)
+            data = json.loads(text)
+
+            assert data["count"] == 1
+            assert data["lines"][0]["line_number"] == 1757
 
         await _get_session_and_run(check)

@@ -85,17 +85,31 @@ async def list_tools() -> List:
     return [
         Tool(
             name="get_beowulf_lines",
-            description="Get all Beowulf text lines as JSON",
+            description="Get Beowulf text lines as JSON, optionally filtered by line number range",
             inputSchema={
                 "type": "object",
                 "properties": {
-                    "format": {
-                        "type": "string",
-                        "enum": ["full", "summary"],
-                        "default": "full",
-                        "description": "Format of the response: 'full' for complete data, 'summary' for basic info",
-                    }
+                    "from": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 3182,
+                        "description": "Start line number (inclusive)",
+                    },
+                    "to": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 3182,
+                        "description": "End line number (inclusive)",
+                    },
                 },
+            },
+        ),
+        Tool(
+            name="get_beowulf_summary",
+            description="Get summary statistics about the Beowulf text",
+            inputSchema={
+                "type": "object",
+                "properties": {},
             },
         ),
         Tool(
@@ -152,31 +166,48 @@ async def read_resource(uri: AnyUrl) -> List[ReadResourceContents]:
 async def call_tool(tool_name: str, tool_args: dict[str, Any]) -> CallToolResult:
     """Handle tool calls."""
     if tool_name == "get_beowulf_lines":
-        # Get all Beowulf lines
         raw_lines = fetch_store_and_parse("maintext", HEOROT_URL)
         beowulf_lines = dict_data_to_beowulf_lines(raw_lines)
 
-        format_type = tool_args.get("format", "full")
+        # Apply optional line range filter
+        line_from = tool_args.get("from")
+        line_to = tool_args.get("to")
+        if line_from is not None or line_to is not None:
+            start = line_from if line_from is not None else 0
+            end = line_to if line_to is not None else 3182
+            beowulf_lines = [
+                line for line in beowulf_lines if start <= line.line_number <= end
+            ]
 
-        if format_type == "summary":
-            # Return summary info
-            title_lines = [line for line in beowulf_lines if line.is_title_line]
-            result = {
-                "total_lines": len(beowulf_lines),
-                "title_lines": len(title_lines),
-                "empty_lines": len([line for line in beowulf_lines if line.is_empty]),
-                "sample_lines": [
-                    beowulf_line_to_dict(beowulf_lines[0]),
-                    beowulf_line_to_dict(beowulf_lines[1]),
-                    beowulf_line_to_dict(beowulf_lines[-1]),
-                ],
-            }
-        else:
-            # Return full data
-            result = {
-                "lines": [beowulf_line_to_dict(line) for line in beowulf_lines],
-                "count": len(beowulf_lines),
-            }
+        result = {
+            "lines": [beowulf_line_to_dict(line) for line in beowulf_lines],
+            "count": len(beowulf_lines),
+        }
+
+        return CallToolResult(
+            content=[
+                TextContent(
+                    type="text",
+                    text=json.dumps(result, indent=2, ensure_ascii=False),
+                )
+            ]
+        )
+
+    elif tool_name == "get_beowulf_summary":
+        raw_lines = fetch_store_and_parse("maintext", HEOROT_URL)
+        beowulf_lines = dict_data_to_beowulf_lines(raw_lines)
+
+        title_lines = [line for line in beowulf_lines if line.is_title_line]
+        result = {
+            "total_lines": len(beowulf_lines),
+            "title_lines": len(title_lines),
+            "empty_lines": len([line for line in beowulf_lines if line.is_empty]),
+            "sample_lines": [
+                beowulf_line_to_dict(beowulf_lines[0]),
+                beowulf_line_to_dict(beowulf_lines[1]),
+                beowulf_line_to_dict(beowulf_lines[-1]),
+            ],
+        }
 
         return CallToolResult(
             content=[
