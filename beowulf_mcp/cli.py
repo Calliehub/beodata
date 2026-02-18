@@ -12,7 +12,7 @@ from text.models import dict_data_to_beowulf_lines
 from writers import get_all_writers
 
 # Define the data directory relative to this file (for test and output data)
-DATA_DIR = Path(__file__).parent / "output"
+DATA_DIR = Path(__file__).parents[1] / "output"
 
 logger = get_logger()
 

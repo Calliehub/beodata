@@ -5,13 +5,12 @@ This module handles parsing of the heorot.dk HTML format and persistence to Duck
 """
 
 import re
-from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 import requests
 from bs4 import BeautifulSoup, Tag
 
-from db import BeoDB
+from beowulf_mcp.db import BeoDB
 from logging_config import get_logger
 
 # URL of our Beowulf text (messy HTML)

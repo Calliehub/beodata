@@ -12,8 +12,8 @@ from typing import Any, Generator, List
 
 import pytest
 
-from cli import load_heorot
-from db import BeoDB
+from beowulf_mcp.cli import load_heorot
+from beowulf_mcp.db import BeoDB
 from sources.heorot import TABLE_NAME, Heorot
 from text.numbering import FITT_BOUNDARIES
 

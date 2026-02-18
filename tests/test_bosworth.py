@@ -5,7 +5,7 @@ from typing import Generator
 
 import pytest
 
-from db import BeoDB, _quote_identifier
+from beowulf_mcp.db import BeoDB, _quote_identifier
 from sources.bosworth import TABLE_NAME, BosworthToller
 
 
