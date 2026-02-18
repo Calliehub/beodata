@@ -13,15 +13,12 @@ from mcp.client.stdio import stdio_client
 # Suppress INFO logs from mcp.server
 logging.getLogger("mcp.server.lowlevel.server").setLevel(logging.WARNING)
 
-# we need a path to proj root to use as working dir for server
-PROJECT_ROOT = Path(__file__).parents[1]
-
 
 @pytest_asyncio.fixture(loop_scope="module", scope="module")
-async def mcp_session() -> AsyncGenerator[ClientSession, None]:
+async def mcp_session(project_root: Path) -> AsyncGenerator[ClientSession, None]:
     """Single MCP server session shared by all tests in this module."""
     server_params = StdioServerParameters(
-        cwd=PROJECT_ROOT,
+        cwd=project_root,
         command="poetry",
         args=["run", "python", "beowulf_mcp/server.py"],
     )
