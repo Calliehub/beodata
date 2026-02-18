@@ -18,6 +18,7 @@ from mcp.types import CallToolResult, Resource, ServerCapabilities, TextContent,
 from pydantic import AnyUrl
 
 from cli import fetch_store_and_parse
+from sources import bosworth
 from sources.heorot import HEOROT_URL
 from text.models import BeowulfLine, dict_data_to_beowulf_lines
 
@@ -126,6 +127,53 @@ async def list_tools() -> List:
                     }
                 },
                 "required": ["fitt_number"],
+            },
+        ),
+        Tool(
+            name="bt_lookup",
+            description="Look up an exact Old English headword in the Bosworth-Toller dictionary",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "word": {
+                        "type": "string",
+                        "description": "The Old English word to look up",
+                    },
+                },
+                "required": ["word"],
+            },
+        ),
+        Tool(
+            name="bt_lookup_like",
+            description="Look up Old English headwords matching a SQL LIKE pattern in the Bosworth-Toller dictionary",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "pattern": {
+                        "type": "string",
+                        "description": "SQL LIKE pattern to match headwords (e.g. 'cyn%')",
+                    },
+                },
+                "required": ["pattern"],
+            },
+        ),
+        Tool(
+            name="bt_search",
+            description="Full-text search across Bosworth-Toller dictionary entries",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "term": {
+                        "type": "string",
+                        "description": "The term to search for (case-insensitive)",
+                    },
+                    "column": {
+                        "type": "string",
+                        "description": "Specific column to search: headword, definition, or references. Omit to search all columns.",
+                        "enum": ["headword", "definition", "references"],
+                    },
+                },
+                "required": ["term"],
             },
         ),
     ]
@@ -247,6 +295,46 @@ async def call_tool(tool_name: str, tool_args: dict[str, Any]) -> CallToolResult
             "count": len(fitt_lines),
         }
 
+        return CallToolResult(
+            content=[
+                TextContent(
+                    type="text",
+                    text=json.dumps(result, indent=2, ensure_ascii=False),
+                )
+            ]
+        )
+
+    elif tool_name == "bt_lookup":
+        bosworth.load()
+        results = bosworth.lookup(tool_args["word"])
+        result = {"results": results, "count": len(results)}
+        return CallToolResult(
+            content=[
+                TextContent(
+                    type="text",
+                    text=json.dumps(result, indent=2, ensure_ascii=False),
+                )
+            ]
+        )
+
+    elif tool_name == "bt_lookup_like":
+        bosworth.load()
+        results = bosworth.lookup_like(tool_args["pattern"])
+        result = {"results": results, "count": len(results)}
+        return CallToolResult(
+            content=[
+                TextContent(
+                    type="text",
+                    text=json.dumps(result, indent=2, ensure_ascii=False),
+                )
+            ]
+        )
+
+    elif tool_name == "bt_search":
+        bosworth.load()
+        column = tool_args.get("column")
+        results = bosworth.search(tool_args["term"], column=column)
+        result = {"results": results, "count": len(results)}
         return CallToolResult(
             content=[
                 TextContent(
