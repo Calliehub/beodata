@@ -20,9 +20,9 @@ from text.numbering import FITT_BOUNDARIES
 
 # all tests use 1 fetch of the text
 @pytest.fixture(scope="session")
-def heorot_text() -> List[dict[str, Any]]:
+def heorot_text(project_root: Path) -> List[dict[str, Any]]:
     load_heorot()
-    path = Path(__file__).parent.parent / "output" / "maintext.json"
+    path = project_root / "output" / "maintext.json"
     with path.open("r", encoding="utf-8") as f:
         return json.load(f)
 
