@@ -47,12 +47,12 @@ async def mcp_session(project_root: Path) -> AsyncGenerator[ClientSession, None]
 class TestListTools:
     """Tests for listing available tools."""
 
-    async def test_list_tools_returns_seven_tools(
+    async def test_list_tools_returns_ten_tools(
         self, mcp_session: ClientSession
     ) -> None:
-        """Server exposes exactly seven tools."""
+        """Server exposes exactly ten tools."""
         tools = await mcp_session.list_tools()
-        assert len(tools.tools) == 7
+        assert len(tools.tools) == 10
 
     async def test_get_beowulf_lines_tool_exists(
         self, mcp_session: ClientSession
@@ -382,3 +382,99 @@ class TestAbbreviationTools:
         data = json.loads(text)
 
         assert any("Beowulf" in r["description"] for r in data["results"])
+
+
+@pytest.mark.asyncio(loop_scope="module")
+class TestBrunettiTools:
+    """Tests for Brunetti tokenized Beowulf tools."""
+
+    async def test_brunetti_lookup_tool_exists(
+        self, mcp_session: ClientSession
+    ) -> None:
+        """brunetti_lookup tool is available."""
+        tools = await mcp_session.list_tools()
+        tool_names = [t.name for t in tools.tools]
+        assert "brunetti_lookup" in tool_names
+
+    async def test_brunetti_lookup_like_tool_exists(
+        self, mcp_session: ClientSession
+    ) -> None:
+        """brunetti_lookup_like tool is available."""
+        tools = await mcp_session.list_tools()
+        tool_names = [t.name for t in tools.tools]
+        assert "brunetti_lookup_like" in tool_names
+
+    async def test_brunetti_search_tool_exists(
+        self, mcp_session: ClientSession
+    ) -> None:
+        """brunetti_search tool is available."""
+        tools = await mcp_session.list_tools()
+        tool_names = [t.name for t in tools.tools]
+        assert "brunetti_search" in tool_names
+
+    async def test_brunetti_lookup_finds_lemma(
+        self, mcp_session: ClientSession
+    ) -> None:
+        """brunetti_lookup returns results for a known OE lemma."""
+        result = await mcp_session.call_tool(
+            name="brunetti_lookup", arguments={"lemma": "cyning"}
+        )
+        content = result.content[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert data["count"] >= 1
+        entry = data["results"][0]
+        assert "lemma" in entry
+        assert "text" in entry
+        assert "gloss" in entry
+
+    async def test_brunetti_lookup_no_match(self, mcp_session: ClientSession) -> None:
+        """brunetti_lookup returns empty results for gibberish."""
+        result = await mcp_session.call_tool(
+            name="brunetti_lookup", arguments={"lemma": "xyzzyplugh"}
+        )
+        content = result.content[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert data["count"] == 0
+        assert data["results"] == []
+
+    async def test_brunetti_lookup_like_prefix(
+        self, mcp_session: ClientSession
+    ) -> None:
+        """brunetti_lookup_like with a prefix pattern returns results."""
+        result = await mcp_session.call_tool(
+            name="brunetti_lookup_like", arguments={"pattern": "cyn%"}
+        )
+        content = result.content[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert data["count"] >= 1
+
+    async def test_brunetti_search_in_gloss(self, mcp_session: ClientSession) -> None:
+        """brunetti_search finds results matching a gloss term."""
+        result = await mcp_session.call_tool(
+            name="brunetti_search", arguments={"term": "king"}
+        )
+        content = result.content[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert data["count"] >= 1
+
+    async def test_brunetti_search_with_column(
+        self, mcp_session: ClientSession
+    ) -> None:
+        """brunetti_search with column param restricts search to that column."""
+        result = await mcp_session.call_tool(
+            name="brunetti_search",
+            arguments={"term": "warrior", "column": "gloss"},
+        )
+        content = result.content[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert data["count"] >= 1
