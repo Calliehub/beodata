@@ -7,6 +7,7 @@ import requests
 from logging_config import get_logger
 from sources.abbreviations import Abbreviations
 from sources.bosworth import BosworthToller
+from sources.brunetti import Brunetti
 from sources.heorot import HEOROT_URL, Heorot, parse
 from text.models import dict_data_to_beowulf_lines
 from writers import get_all_writers
@@ -114,8 +115,15 @@ def load_abbreviations() -> None:
     abbr.load_from_xml(force=True)
 
 
+def load_brunetti() -> None:
+    """Main function to process and load Brunetti tokenized Beowulf from txt."""
+    br = Brunetti()
+    br.load_from_txt(force=True)
+
+
 def load_all() -> None:
     """Run all processing steps."""
     load_heorot()
     load_bosworth()
     load_abbreviations()
+    load_brunetti()

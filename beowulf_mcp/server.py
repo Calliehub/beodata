@@ -18,7 +18,7 @@ from mcp.types import CallToolResult, Resource, ServerCapabilities, TextContent,
 from pydantic import AnyUrl
 
 from beowulf_mcp.cli import fetch_store_and_parse
-from sources import abbreviations, bosworth
+from sources import abbreviations, bosworth, brunetti
 from sources.heorot import HEOROT_URL
 from text.models import BeowulfLine, dict_data_to_beowulf_lines
 
@@ -188,6 +188,61 @@ async def list_tools() -> List:
                     },
                 },
                 "required": ["abbrev"],
+            },
+        ),
+        Tool(
+            name="brunetti_lookup",
+            description="Look up an exact Old English lemma in the Brunetti tokenized Beowulf",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "lemma": {
+                        "type": "string",
+                        "description": "The Old English lemma to look up",
+                    },
+                },
+                "required": ["lemma"],
+            },
+        ),
+        Tool(
+            name="brunetti_lookup_like",
+            description="Look up Old English lemmas matching a SQL LIKE pattern in the Brunetti tokenized Beowulf",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "pattern": {
+                        "type": "string",
+                        "description": "SQL LIKE pattern to match lemmas (e.g. 'cyn%')",
+                    },
+                },
+                "required": ["pattern"],
+            },
+        ),
+        Tool(
+            name="brunetti_search",
+            description="Full-text search across Brunetti tokenized Beowulf entries",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "term": {
+                        "type": "string",
+                        "description": "The term to search for (case-insensitive)",
+                    },
+                    "column": {
+                        "type": "string",
+                        "description": "Specific column to search. Omit to search all columns.",
+                        "enum": [
+                            "fitt_id",
+                            "line_id",
+                            "text",
+                            "lemma",
+                            "pos",
+                            "gloss",
+                            "with_length",
+                        ],
+                    },
+                },
+                "required": ["term"],
             },
         ),
     ]
@@ -361,6 +416,46 @@ async def call_tool(tool_name: str, tool_args: dict[str, Any]) -> CallToolResult
     elif tool_name == "bt_abbreviation":
         abbreviations.load()
         results = abbreviations.lookup(tool_args["abbrev"])
+        result = {"results": results, "count": len(results)}
+        return CallToolResult(
+            content=[
+                TextContent(
+                    type="text",
+                    text=json.dumps(result, indent=2, ensure_ascii=False),
+                )
+            ]
+        )
+
+    elif tool_name == "brunetti_lookup":
+        brunetti.load()
+        results = brunetti.lookup(tool_args["lemma"])
+        result = {"results": results, "count": len(results)}
+        return CallToolResult(
+            content=[
+                TextContent(
+                    type="text",
+                    text=json.dumps(result, indent=2, ensure_ascii=False),
+                )
+            ]
+        )
+
+    elif tool_name == "brunetti_lookup_like":
+        brunetti.load()
+        results = brunetti.lookup_like(tool_args["pattern"])
+        result = {"results": results, "count": len(results)}
+        return CallToolResult(
+            content=[
+                TextContent(
+                    type="text",
+                    text=json.dumps(result, indent=2, ensure_ascii=False),
+                )
+            ]
+        )
+
+    elif tool_name == "brunetti_search":
+        brunetti.load()
+        column = tool_args.get("column")
+        results = brunetti.search(tool_args["term"], column=column)
         result = {"results": results, "count": len(results)}
         return CallToolResult(
             content=[
