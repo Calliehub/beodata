@@ -21,7 +21,6 @@ include = [
 
 # handy run target definitions: here is your entry point to fetch and sources data
 [tool.poetry.scripts]
-repl = "beowulf_mcp.__main__:main"
 heorot = "beowulf_mcp.cli:load_heorot"
 bosworth = "beowulf_mcp.cli:load_bosworth"
 abbreviations = "beowulf_mcp.cli:load_abbreviations"
