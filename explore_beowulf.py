@@ -1,4 +1,12 @@
 """
+---------------------------------------------------------------------------
+Callie's Note: This file was written by Claude! (Opus 4.6) against v0.1.2
+of the beodata project.
+
+For the prompt that produced this file, see ./findings/explore_beowulf.md
+---------------------------------------------------------------------------
+Claude's work follows:
+
 Exploratory analysis of the Beowulf text using beodata sources.
 
 Run with: poetry run python -i explore_beowulf.py
