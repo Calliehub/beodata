@@ -12,7 +12,6 @@ from typing import Any, Generator, List
 
 import pytest
 
-from beowulf_mcp.cli import load_heorot
 from beowulf_mcp.db import BeoDB
 from sources.heorot import TABLE_NAME, Heorot
 from text.numbering import FITT_BOUNDARIES
@@ -21,7 +20,12 @@ from text.numbering import FITT_BOUNDARIES
 # all tests use 1 fetch of the text
 @pytest.fixture(scope="session")
 def heorot_text(project_root: Path) -> List[dict[str, Any]]:
-    load_heorot()
+    # Only fetch/parse/write JSON — skip DuckDB persistence so we don't
+    # collide with a running MCP server's lock on output/beodb.duckdb.
+    from beowulf_mcp.cli import fetch_store_parse_and_write
+    from sources.heorot import HEOROT_URL
+
+    fetch_store_parse_and_write("maintext", HEOROT_URL)
     path = project_root / "output" / "maintext.json"
     with path.open("r", encoding="utf-8") as f:
         return json.load(f)
