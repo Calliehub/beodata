@@ -32,7 +32,7 @@ def mit_with_data(
     monkeypatch.setattr("sources.mit.get_asset_path", lambda filename: sample_txt)
 
     m = Mit(db=BeoDB(tmp_path / "test_mit.duckdb"))
-    m.load_from_txt()
+    m.load()
     yield m
     m._db.close()
 
@@ -62,7 +62,7 @@ class TestMit:
         with Mit(db=BeoDB(tmp_path / "empty.duckdb")) as m:
             assert m._db.table_exists(TABLE_NAME) is False
 
-    def test_load_from_txt(self, mit_with_data: Mit) -> None:
+    def test_load(self, mit_with_data: Mit) -> None:
         """Loading TXT should create table with correct row count."""
         assert mit_with_data._db.table_exists(TABLE_NAME) is True
         assert mit_with_data._db.count(TABLE_NAME) == 5
@@ -70,7 +70,7 @@ class TestMit:
     def test_load_skips_if_exists(self, mit_with_data: Mit) -> None:
         """Loading again without force should skip."""
         initial_count = mit_with_data._db.count(TABLE_NAME)
-        mit_with_data.load_from_txt(force=False)
+        mit_with_data.load(force=False)
         assert mit_with_data._db.count(TABLE_NAME) == initial_count
 
     def test_load_force_reloads(
@@ -80,9 +80,9 @@ class TestMit:
         monkeypatch.setattr("sources.mit.get_asset_path", lambda filename: sample_txt)
 
         with Mit(db=BeoDB(tmp_path / "force_test.duckdb")) as m:
-            m.load_from_txt()
+            m.load()
             assert m._db.count(TABLE_NAME) == 5
-            count = m.load_from_txt(force=True)
+            count = m.load(force=True)
             assert count == 5
 
     def test_count(self, mit_with_data: Mit) -> None:

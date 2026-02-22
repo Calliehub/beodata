@@ -57,7 +57,7 @@ class OldEnglishAerobics:
     def __exit__(self, exc_type: object, exc_val: object, exc_tb: object) -> None:
         self._db.close()
 
-    def load_from_txt(self, force: bool = False) -> int:
+    def load(self, force: bool = False) -> int:
         """
         Load Old English Aerobics Beowulf text from the asset file into DuckDB.
 
@@ -191,7 +191,7 @@ def get_oea() -> OldEnglishAerobics:
 
 def load(force: bool = False) -> int:
     """Load the Old English Aerobics Beowulf text into DuckDB."""
-    return get_oea().load_from_txt(force)
+    return get_oea().load(force)
 
 
 def get_line(line_number: int) -> Optional[dict]:

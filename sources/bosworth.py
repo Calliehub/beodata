@@ -33,7 +33,7 @@ class BosworthToller:
     def __exit__(self, exc_type: object, exc_val: object, exc_tb: object) -> None:
         self._db.close()
 
-    def load_from_csv(self, force: bool = False) -> int:
+    def load(self, force: bool = False) -> int:
         """
         Load the Bosworth-Toller dictionary from CSV into DuckDB.
 
@@ -210,4 +210,4 @@ def search(term: str, column: Optional[str] = None) -> List[dict]:
 
 def load(force: bool = False) -> int:
     """Load the dictionary from CSV into DuckDB."""
-    return get_bt().load_from_csv(force)
+    return get_bt().load(force)

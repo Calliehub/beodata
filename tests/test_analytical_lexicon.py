@@ -36,7 +36,7 @@ def lexicon_with_data(
     )
 
     lex = AnalyticalLexicon(db=BeoDB(tmp_path / "test_lexicon.duckdb"))
-    lex.load_from_txt()
+    lex.load()
     yield lex
     lex._db.close()
 
@@ -49,7 +49,7 @@ class TestAnalyticalLexicon:
         with AnalyticalLexicon(db=BeoDB(tmp_path / "empty.duckdb")) as lex:
             assert lex._db.table_exists(TABLE_NAME) is False
 
-    def test_load_from_txt(self, lexicon_with_data: AnalyticalLexicon) -> None:
+    def test_load(self, lexicon_with_data: AnalyticalLexicon) -> None:
         """Loading TXT should create table with correct row count."""
         assert lexicon_with_data._db.table_exists(TABLE_NAME) is True
         assert lexicon_with_data._db.count(TABLE_NAME) == 7
@@ -57,7 +57,7 @@ class TestAnalyticalLexicon:
     def test_load_skips_if_exists(self, lexicon_with_data: AnalyticalLexicon) -> None:
         """Loading again without force should skip."""
         initial_count = lexicon_with_data._db.count(TABLE_NAME)
-        lexicon_with_data.load_from_txt(force=False)
+        lexicon_with_data.load(force=False)
         assert lexicon_with_data._db.count(TABLE_NAME) == initial_count
 
     def test_load_force_reloads(
@@ -70,9 +70,9 @@ class TestAnalyticalLexicon:
         )
 
         with AnalyticalLexicon(db=BeoDB(tmp_path / "force_test.duckdb")) as lex:
-            lex.load_from_txt()
+            lex.load()
             assert lex._db.count(TABLE_NAME) == 7
-            count = lex.load_from_txt(force=True)
+            count = lex.load(force=True)
             assert count == 7
 
     def test_get_columns(self, lexicon_with_data: AnalyticalLexicon) -> None:

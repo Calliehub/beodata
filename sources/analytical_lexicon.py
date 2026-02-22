@@ -42,7 +42,7 @@ class AnalyticalLexicon:
     def __exit__(self, exc_type: object, exc_val: object, exc_tb: object) -> None:
         self._db.close()
 
-    def load_from_txt(self, force: bool = False) -> int:
+    def load(self, force: bool = False) -> int:
         """
         Load the Analytical Lexicon from pipe-delimited text into DuckDB.
 
@@ -191,4 +191,4 @@ def search(term: str, column: Optional[str] = None) -> List[dict]:
 
 def load(force: bool = False) -> int:
     """Load the Analytical Lexicon into DuckDB."""
-    return get_analytical_lexicon().load_from_txt(force)
+    return get_analytical_lexicon().load(force)

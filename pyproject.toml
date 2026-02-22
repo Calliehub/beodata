@@ -19,6 +19,17 @@ include = [
     "assets/*.xml",
 ]
 
+# handy run target definitions: here is your entry point to fetch and sources data
+[tool.poetry.scripts]
+repl = "beowulf_mcp.__main__:main"
+heorot = "beowulf_mcp.cli:load_heorot"
+bosworth = "beowulf_mcp.cli:load_bosworth"
+abbreviations = "beowulf_mcp.cli:load_abbreviations"
+brunetti = "beowulf_mcp.cli:load_brunetti"
+all = "beowulf_mcp.cli:load_all"
+model_dump = "beowulf_mcp.cli:model_dump"
+server = "beowulf_mcp.server:run_server"
+
 [tool.poetry.dependencies]
 python = "^3.13"
 duckdb = "^1.2.0"
@@ -110,13 +121,3 @@ extend-ignore = ["E203", "W503"]
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-# handy run target definitions: here is your entry point to fetch and sources data
-[tool.poetry.scripts]
-heorot = "beowulf_mcp.cli:load_heorot"
-bosworth = "beowulf_mcp.cli:load_bosworth"
-abbreviations = "beowulf_mcp.cli:load_abbreviations"
-brunetti = "beowulf_mcp.cli:load_brunetti"
-all = "beowulf_mcp.cli:load_all"
-model_dump = "beowulf_mcp.cli:model_dump"
-server = "beowulf_mcp.server:run_server"

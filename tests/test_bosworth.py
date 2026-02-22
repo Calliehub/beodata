@@ -32,7 +32,7 @@ def bt_with_data(
     monkeypatch.setattr("sources.bosworth.get_asset_path", lambda filename: sample_csv)
 
     bt = BosworthToller(db=BeoDB(tmp_path / "test_beodb.duckdb"))
-    bt.load_from_csv()
+    bt.load()
     yield bt
     bt._db.close()
 
@@ -45,18 +45,18 @@ class TestBosworthToller:
         with BosworthToller(db=BeoDB(tmp_path / "empty.duckdb")) as bt:
             assert bt._db.table_exists(TABLE_NAME) is False
 
-    def test_load_from_csv(self, bt_with_data: BosworthToller) -> None:
+    def test_load(self, bt_with_data: BosworthToller) -> None:
         """Loading CSV should create table with correct row count."""
         assert bt_with_data._db.table_exists(TABLE_NAME) is True
         assert bt_with_data._db.count(TABLE_NAME) == 5
 
-    def test_load_from_csv_skips_if_exists(self, bt_with_data: BosworthToller) -> None:
+    def test_load_skips_if_exists(self, bt_with_data: BosworthToller) -> None:
         """Loading again without force should skip."""
         initial_count = bt_with_data._db.count(TABLE_NAME)
-        bt_with_data.load_from_csv(force=False)
+        bt_with_data.load(force=False)
         assert bt_with_data._db.count(TABLE_NAME) == initial_count
 
-    def test_load_from_csv_force_reloads(
+    def test_load_force_reloads(
         self, tmp_path: Path, sample_csv: Path, monkeypatch: pytest.MonkeyPatch
     ) -> None:
         """Loading with force=True should reload the data."""
@@ -65,10 +65,10 @@ class TestBosworthToller:
         )
 
         with BosworthToller(db=BeoDB(tmp_path / "force_test.duckdb")) as bt:
-            bt.load_from_csv()
+            bt.load()
             assert bt._db.count(TABLE_NAME) == 5
             # Force reload
-            count = bt.load_from_csv(force=True)
+            count = bt.load(force=True)
             assert count == 5
 
     def test_get_columns(self, bt_with_data: BosworthToller) -> None:

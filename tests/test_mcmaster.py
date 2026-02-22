@@ -32,7 +32,7 @@ def mcmaster_with_data(
     monkeypatch.setattr("sources.mcmaster.get_asset_path", lambda filename: sample_txt)
 
     mc = McMaster(db=BeoDB(tmp_path / "test_mcmaster.duckdb"))
-    mc.load_from_txt()
+    mc.load()
     yield mc
     mc._db.close()
 
@@ -62,7 +62,7 @@ class TestMcMaster:
         with McMaster(db=BeoDB(tmp_path / "empty.duckdb")) as mc:
             assert mc._db.table_exists(TABLE_NAME) is False
 
-    def test_load_from_txt(self, mcmaster_with_data: McMaster) -> None:
+    def test_load(self, mcmaster_with_data: McMaster) -> None:
         """Loading TXT should create table with correct row count."""
         assert mcmaster_with_data._db.table_exists(TABLE_NAME) is True
         assert mcmaster_with_data._db.count(TABLE_NAME) == 5
@@ -70,7 +70,7 @@ class TestMcMaster:
     def test_load_skips_if_exists(self, mcmaster_with_data: McMaster) -> None:
         """Loading again without force should skip."""
         initial_count = mcmaster_with_data._db.count(TABLE_NAME)
-        mcmaster_with_data.load_from_txt(force=False)
+        mcmaster_with_data.load(force=False)
         assert mcmaster_with_data._db.count(TABLE_NAME) == initial_count
 
     def test_load_force_reloads(
@@ -82,9 +82,9 @@ class TestMcMaster:
         )
 
         with McMaster(db=BeoDB(tmp_path / "force_test.duckdb")) as mc:
-            mc.load_from_txt()
+            mc.load()
             assert mc._db.count(TABLE_NAME) == 5
-            count = mc.load_from_txt(force=True)
+            count = mc.load(force=True)
             assert count == 5
 
     def test_count(self, mcmaster_with_data: McMaster) -> None:
