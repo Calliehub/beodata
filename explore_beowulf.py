@@ -3,7 +3,7 @@
 Callie's Note: This file was written by Claude! (Opus 4.6) against v0.1.2
 of the beodata project.
 
-For the prompt that produced this file, see ./findings/explore_beowulf.md
+For the prompt that produced this file, see ./findings/explore_beowulf-0.1.2.md
 ---------------------------------------------------------------------------
 Claude's work follows:
 
