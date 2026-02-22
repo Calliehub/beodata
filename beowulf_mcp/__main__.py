@@ -32,7 +32,7 @@ class Beodata:
             for _, name in SOURCES
             if hasattr(self, name)
         ]
-        return "Beodata namespace:\n" + "\n".join(attrs)
+        return "beodata namespace:\n" + "\n".join(attrs)
 
 
 def repl() -> Beodata:
@@ -42,7 +42,14 @@ def repl() -> Beodata:
         obj = cls()
         obj.load()
         setattr(ns, name, obj)
-    ns.logger.info("Beodata loaded!")
+    print("Beodata loaded! To run repl: ")
+    print("  poetry run python -i repl")
+    print()
+    print(f"Inside that repl you will have the {str(ns)}")
+    print()
+    print("Or, run the MCP server: ")
+    print("  poetry run server")
+
     return ns
 
 
