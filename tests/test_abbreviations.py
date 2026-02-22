@@ -14,34 +14,34 @@ class TestAbbreviations:
         with Abbreviations(db=BeoDB(tmp_path / "empty.duckdb")) as abbr:
             assert abbr._db.table_exists(TABLE_NAME) is False
 
-    def test_load_from_xml(self, tmp_path: Path) -> None:
+    def test_load(self, tmp_path: Path) -> None:
         """Should load abbreviations from XML."""
         with Abbreviations(db=BeoDB(tmp_path / "abbrev_test.duckdb")) as abbr:
-            count = abbr.load_from_xml()
+            count = abbr.load()
             assert count == 632
             assert abbr._db.table_exists(TABLE_NAME)
 
-    def test_load_from_xml_skips_if_exists(self, tmp_path: Path) -> None:
+    def test_load_skips_if_exists(self, tmp_path: Path) -> None:
         """Loading again without force should skip."""
         with Abbreviations(db=BeoDB(tmp_path / "abbrev_skip.duckdb")) as abbr:
-            abbr.load_from_xml()
+            abbr.load()
             initial_count = abbr._db.count(TABLE_NAME)
-            abbr.load_from_xml(force=False)
+            abbr.load(force=False)
             assert abbr._db.count(TABLE_NAME) == initial_count
 
-    def test_load_from_xml_force_reloads(self, tmp_path: Path) -> None:
+    def test_load_force_reloads(self, tmp_path: Path) -> None:
         """Loading with force=True should reload the data."""
         with Abbreviations(db=BeoDB(tmp_path / "abbrev_force.duckdb")) as abbr:
-            abbr.load_from_xml()
+            abbr.load()
             assert abbr._db.count(TABLE_NAME) == 632
             # Force reload
-            count = abbr.load_from_xml(force=True)
+            count = abbr.load(force=True)
             assert count == 632
 
     def test_lookup(self, tmp_path: Path) -> None:
         """Should find abbreviations by partial match."""
         with Abbreviations(db=BeoDB(tmp_path / "abbrev_lookup.duckdb")) as abbr:
-            abbr.load_from_xml()
+            abbr.load()
             results = abbr.lookup("Beo.")
             assert len(results) >= 1
             assert any("Beowulf" in r["description"] for r in results)
@@ -49,7 +49,7 @@ class TestAbbreviations:
     def test_lookup_returns_all_fields(self, tmp_path: Path) -> None:
         """Lookup should return abbreviation, expansion, and description."""
         with Abbreviations(db=BeoDB(tmp_path / "abbrev_fields.duckdb")) as abbr:
-            abbr.load_from_xml()
+            abbr.load()
             results = abbr.lookup("Beo.")
             assert len(results) >= 1
             result = results[0]

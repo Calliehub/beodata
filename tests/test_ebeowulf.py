@@ -32,7 +32,7 @@ def ebeowulf_with_data(
     monkeypatch.setattr("sources.ebeowulf.get_asset_path", lambda filename: sample_txt)
 
     eb = EBeowulf(db=BeoDB(tmp_path / "test_ebeowulf.duckdb"))
-    eb.load_from_txt()
+    eb.load()
     yield eb
     eb._db.close()
 
@@ -62,7 +62,7 @@ class TestEBeowulf:
         with EBeowulf(db=BeoDB(tmp_path / "empty.duckdb")) as eb:
             assert eb._db.table_exists(TABLE_NAME) is False
 
-    def test_load_from_txt(self, ebeowulf_with_data: EBeowulf) -> None:
+    def test_load(self, ebeowulf_with_data: EBeowulf) -> None:
         """Loading TXT should create table with correct row count."""
         assert ebeowulf_with_data._db.table_exists(TABLE_NAME) is True
         assert ebeowulf_with_data._db.count(TABLE_NAME) == 5
@@ -70,7 +70,7 @@ class TestEBeowulf:
     def test_load_skips_if_exists(self, ebeowulf_with_data: EBeowulf) -> None:
         """Loading again without force should skip."""
         initial_count = ebeowulf_with_data._db.count(TABLE_NAME)
-        ebeowulf_with_data.load_from_txt(force=False)
+        ebeowulf_with_data.load(force=False)
         assert ebeowulf_with_data._db.count(TABLE_NAME) == initial_count
 
     def test_load_force_reloads(
@@ -82,9 +82,9 @@ class TestEBeowulf:
         )
 
         with EBeowulf(db=BeoDB(tmp_path / "force_test.duckdb")) as eb:
-            eb.load_from_txt()
+            eb.load()
             assert eb._db.count(TABLE_NAME) == 5
-            count = eb.load_from_txt(force=True)
+            count = eb.load(force=True)
             assert count == 5
 
     def test_count(self, ebeowulf_with_data: EBeowulf) -> None:

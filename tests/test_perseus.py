@@ -32,7 +32,7 @@ def perseus_with_data(
     monkeypatch.setattr("sources.perseus.get_asset_path", lambda filename: sample_txt)
 
     p = Perseus(db=BeoDB(tmp_path / "test_perseus.duckdb"))
-    p.load_from_txt()
+    p.load()
     yield p
     p._db.close()
 
@@ -62,7 +62,7 @@ class TestPerseus:
         with Perseus(db=BeoDB(tmp_path / "empty.duckdb")) as p:
             assert p._db.table_exists(TABLE_NAME) is False
 
-    def test_load_from_txt(self, perseus_with_data: Perseus) -> None:
+    def test_load(self, perseus_with_data: Perseus) -> None:
         """Loading TXT should create table with correct row count."""
         assert perseus_with_data._db.table_exists(TABLE_NAME) is True
         assert perseus_with_data._db.count(TABLE_NAME) == 5
@@ -70,7 +70,7 @@ class TestPerseus:
     def test_load_skips_if_exists(self, perseus_with_data: Perseus) -> None:
         """Loading again without force should skip."""
         initial_count = perseus_with_data._db.count(TABLE_NAME)
-        perseus_with_data.load_from_txt(force=False)
+        perseus_with_data.load(force=False)
         assert perseus_with_data._db.count(TABLE_NAME) == initial_count
 
     def test_load_force_reloads(
@@ -82,9 +82,9 @@ class TestPerseus:
         )
 
         with Perseus(db=BeoDB(tmp_path / "force_test.duckdb")) as p:
-            p.load_from_txt()
+            p.load()
             assert p._db.count(TABLE_NAME) == 5
-            count = p.load_from_txt(force=True)
+            count = p.load(force=True)
             assert count == 5
 
     def test_count(self, perseus_with_data: Perseus) -> None:

@@ -192,7 +192,7 @@ class Heorot:
         logger.info("Loaded Beowulf text", row_count=row_count)
         return row_count
 
-    def load_from_url(self, url: str = HEOROT_URL, force: bool = False) -> int:
+    def load(self, url: str = HEOROT_URL, force: bool = False) -> int:
         """
         Fetch HTML from URL and load into DuckDB.
 
@@ -333,7 +333,7 @@ def get_heorot() -> Heorot:
 
 def load(url: str = HEOROT_URL, force: bool = False) -> int:
     """Load the Beowulf text from URL into DuckDB."""
-    return get_heorot().load_from_url(url, force)
+    return get_heorot().load(url, force)
 
 
 def get_line(line_number: int) -> Optional[Dict[str, Any]]:

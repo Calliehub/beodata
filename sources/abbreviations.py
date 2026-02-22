@@ -35,7 +35,7 @@ class Abbreviations:
     def __exit__(self, exc_type: object, exc_val: object, exc_tb: object) -> None:
         self._db.close()
 
-    def load_from_xml(self, force: bool = False) -> int:
+    def load(self, force: bool = False) -> int:
         """
         Load the Bosworth-Toller abbreviations from XML into DuckDB.
 
@@ -135,4 +135,4 @@ def lookup(pattern: str) -> List[dict]:
 
 def load(force: bool = False) -> int:
     """Load the abbreviations from XML into DuckDB."""
-    return get_abbreviations().load_from_xml(force)
+    return get_abbreviations().load(force)

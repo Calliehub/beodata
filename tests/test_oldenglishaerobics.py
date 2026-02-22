@@ -34,7 +34,7 @@ def oea_with_data(
     )
 
     oea = OldEnglishAerobics(db=BeoDB(tmp_path / "test_oea.duckdb"))
-    oea.load_from_txt()
+    oea.load()
     yield oea
     oea._db.close()
 
@@ -64,7 +64,7 @@ class TestOldEnglishAerobics:
         with OldEnglishAerobics(db=BeoDB(tmp_path / "empty.duckdb")) as oea:
             assert oea._db.table_exists(TABLE_NAME) is False
 
-    def test_load_from_txt(self, oea_with_data: OldEnglishAerobics) -> None:
+    def test_load(self, oea_with_data: OldEnglishAerobics) -> None:
         """Loading TXT should create table with correct row count."""
         assert oea_with_data._db.table_exists(TABLE_NAME) is True
         assert oea_with_data._db.count(TABLE_NAME) == 5
@@ -72,7 +72,7 @@ class TestOldEnglishAerobics:
     def test_load_skips_if_exists(self, oea_with_data: OldEnglishAerobics) -> None:
         """Loading again without force should skip."""
         initial_count = oea_with_data._db.count(TABLE_NAME)
-        oea_with_data.load_from_txt(force=False)
+        oea_with_data.load(force=False)
         assert oea_with_data._db.count(TABLE_NAME) == initial_count
 
     def test_load_force_reloads(
@@ -84,9 +84,9 @@ class TestOldEnglishAerobics:
         )
 
         with OldEnglishAerobics(db=BeoDB(tmp_path / "force_test.duckdb")) as oea:
-            oea.load_from_txt()
+            oea.load()
             assert oea._db.count(TABLE_NAME) == 5
-            count = oea.load_from_txt(force=True)
+            count = oea.load(force=True)
             assert count == 5
 
     def test_count(self, oea_with_data: OldEnglishAerobics) -> None:

@@ -33,7 +33,7 @@ def brunetti_with_data(
     monkeypatch.setattr("sources.brunetti.get_asset_path", lambda filename: sample_txt)
 
     br = Brunetti(db=BeoDB(tmp_path / "test_brunetti.duckdb"))
-    br.load_from_txt()
+    br.load()
     yield br
     br._db.close()
 
@@ -46,7 +46,7 @@ class TestBrunetti:
         with Brunetti(db=BeoDB(tmp_path / "empty.duckdb")) as br:
             assert br._db.table_exists(TABLE_NAME) is False
 
-    def test_load_from_txt(self, brunetti_with_data: Brunetti) -> None:
+    def test_load(self, brunetti_with_data: Brunetti) -> None:
         """Loading TXT should create table with correct row count."""
         assert brunetti_with_data._db.table_exists(TABLE_NAME) is True
         assert brunetti_with_data._db.count(TABLE_NAME) == 6
@@ -54,7 +54,7 @@ class TestBrunetti:
     def test_load_skips_if_exists(self, brunetti_with_data: Brunetti) -> None:
         """Loading again without force should skip."""
         initial_count = brunetti_with_data._db.count(TABLE_NAME)
-        brunetti_with_data.load_from_txt(force=False)
+        brunetti_with_data.load(force=False)
         assert brunetti_with_data._db.count(TABLE_NAME) == initial_count
 
     def test_load_force_reloads(
@@ -66,9 +66,9 @@ class TestBrunetti:
         )
 
         with Brunetti(db=BeoDB(tmp_path / "force_test.duckdb")) as br:
-            br.load_from_txt()
+            br.load()
             assert br._db.count(TABLE_NAME) == 6
-            count = br.load_from_txt(force=True)
+            count = br.load(force=True)
             assert count == 6
 
     def test_get_columns(self, brunetti_with_data: Brunetti) -> None:

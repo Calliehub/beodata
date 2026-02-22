@@ -55,7 +55,7 @@ class Brunetti:
     def __exit__(self, exc_type: object, exc_val: object, exc_tb: object) -> None:
         self._db.close()
 
-    def load_from_txt(self, force: bool = False) -> int:
+    def load(self, force: bool = False) -> int:
         """
         Load Brunetti token data from pipe-delimited text into DuckDB.
 
@@ -245,4 +245,4 @@ def get_by_fitt(fitt_id: str) -> List[dict]:
 
 def load(force: bool = False) -> int:
     """Load Brunetti tokens from text into DuckDB."""
-    return get_brunetti().load_from_txt(force)
+    return get_brunetti().load(force)

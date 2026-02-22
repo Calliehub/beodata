@@ -106,19 +106,19 @@ def load_heorot() -> None:
 def load_bosworth() -> None:
     """Main function to process and load the Bosworth-Toller dictionary from csv."""
     bt = BosworthToller()
-    bt.load_from_csv(force=True)
+    bt.load(force=True)
 
 
 def load_abbreviations() -> None:
     """Main function to process and load the abbreviation dictionary from XML."""
     abbr = Abbreviations()
-    abbr.load_from_xml(force=True)
+    abbr.load(force=True)
 
 
 def load_brunetti() -> None:
     """Main function to process and load Brunetti tokenized Beowulf from txt."""
     br = Brunetti()
-    br.load_from_txt(force=True)
+    br.load(force=True)
 
 
 def load_all() -> None:

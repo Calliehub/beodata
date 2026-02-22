@@ -57,7 +57,7 @@ class McMaster:
     def __exit__(self, exc_type: object, exc_val: object, exc_tb: object) -> None:
         self._db.close()
 
-    def load_from_txt(self, force: bool = False) -> int:
+    def load(self, force: bool = False) -> int:
         """
         Load McMaster Beowulf text from the asset file into DuckDB.
 
@@ -184,7 +184,7 @@ def get_mcmaster() -> McMaster:
 
 def load(force: bool = False) -> int:
     """Load the McMaster Beowulf text into DuckDB."""
-    return get_mcmaster().load_from_txt(force)
+    return get_mcmaster().load(force)
 
 
 def get_line(line_number: int) -> Optional[dict]:
