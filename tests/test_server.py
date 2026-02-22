@@ -2,6 +2,7 @@
 
 import json
 import logging
+import os
 from collections.abc import AsyncGenerator
 from pathlib import Path
 
@@ -15,12 +16,19 @@ logging.getLogger("mcp.server.lowlevel.server").setLevel(logging.WARNING)
 
 
 @pytest_asyncio.fixture(loop_scope="module", scope="module")
-async def mcp_session(project_root: Path) -> AsyncGenerator[ClientSession, None]:
+async def mcp_session(
+    project_root: Path, tmp_path_factory: pytest.TempPathFactory
+) -> AsyncGenerator[ClientSession, None]:
     """Single MCP server session shared by all tests in this module."""
+    # Give the test server its own DuckDB file so it doesn't collide
+    # with a running MCP server's lock on output/beodb.duckdb.
+    test_db = tmp_path_factory.mktemp("server") / "test_beodb.duckdb"
+    env = {**os.environ, "DB_PATH": str(test_db)}
     server_params = StdioServerParameters(
         cwd=project_root,
         command="poetry",
         args=["run", "python", "beowulf_mcp/server.py"],
+        env=env,
     )
     # Manually manage context managers so we can suppress the anyio
     # cancel-scope task-mismatch error during teardown (a known issue
