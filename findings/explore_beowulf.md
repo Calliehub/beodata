@@ -9,7 +9,8 @@
 ```
 
 ## Claude's Response
-✻
+
+```
     |
    ▟█▙     Claude Code v2.1.49
  ▐▛███▜▌   Opus 4.6 · Claude Max
@@ -513,3 +514,4 @@
   Full suite: 285 tests, all passing.
 
 ✻ Baked for 8m 1s
+```
