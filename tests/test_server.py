@@ -58,9 +58,9 @@ class TestListTools:
     async def test_list_tools_returns_all_tools(
         self, mcp_session: ClientSession
     ) -> None:
-        """Server exposes exactly 31 tools (16 static + 15 edition-generated)."""
+        """Server exposes exactly 37 tools (22 static + 15 edition-generated)."""
         tools = await mcp_session.list_tools()
-        assert len(tools.tools) == 31
+        assert len(tools.tools) == 37
 
     async def test_get_beowulf_lines_tool_exists(
         self, mcp_session: ClientSession

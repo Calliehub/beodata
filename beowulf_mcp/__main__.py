@@ -2,6 +2,8 @@ from logging_config import get_logger
 from sources.abbreviations import Abbreviations
 from sources.analytical_lexicon import AnalyticalLexicon
 from sources.bosworth import BosworthToller
+from sources.brunanburh import Brunanburh
+from sources.brunanburh_normalized import BrunanburhNormalized
 from sources.brunetti import Brunetti
 from sources.ebeowulf import EBeowulf
 from sources.heorot import Heorot
@@ -22,6 +24,8 @@ SOURCES = [
     (OldEnglishAerobics, "oea"),
     (AnalyticalLexicon, "lexicon"),
     (Heorot, "heorot"),
+    (Brunanburh, "brunanburh"),
+    (BrunanburhNormalized, "brunanburh_normalized"),
 ]
 
 
