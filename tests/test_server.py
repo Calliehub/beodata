@@ -55,12 +55,12 @@ async def mcp_session(
 class TestListTools:
     """Tests for listing available tools."""
 
-    async def test_list_tools_returns_ten_tools(
+    async def test_list_tools_returns_all_tools(
         self, mcp_session: ClientSession
     ) -> None:
-        """Server exposes exactly ten tools."""
+        """Server exposes exactly 31 tools (16 static + 15 edition-generated)."""
         tools = await mcp_session.list_tools()
-        assert len(tools.tools) == 10
+        assert len(tools.tools) == 31
 
     async def test_get_beowulf_lines_tool_exists(
         self, mcp_session: ClientSession
@@ -89,47 +89,41 @@ class TestListTools:
 class TestListResources:
     """Tests for listing available resources."""
 
-    async def test_list_resources_returns_two_resources(
+    async def test_list_resources_returns_expected_count(
         self, mcp_session: ClientSession
     ) -> None:
-        """Server exposes exactly two resources."""
+        """Server exposes 7 resources (6 editions + brunetti)."""
         resources = await mcp_session.list_resources()
-        assert len(resources.resources) == 2
+        assert len(resources.resources) == 7
 
-    async def test_all_lines_resource_exists(self, mcp_session: ClientSession) -> None:
-        """beowulf://text/all resource is available."""
+    async def test_edition_resources_exist(self, mcp_session: ClientSession) -> None:
+        """All six text edition resources are listed."""
         resources = await mcp_session.list_resources()
         uris = [str(r.uri) for r in resources.resources]
-        assert "beowulf://text/all" in uris
+        for key in (
+            "ebeowulf",
+            "heorot",
+            "mcmaster",
+            "mit",
+            "perseus",
+            "oldenglishaerobics",
+        ):
+            assert f"beowulf://text/{key}" in uris
 
-    async def test_summary_resource_exists(self, mcp_session: ClientSession) -> None:
-        """beowulf://text/summary resource is available."""
+    async def test_brunetti_resource_exists(self, mcp_session: ClientSession) -> None:
+        """beowulf://text/brunetti resource is available."""
         resources = await mcp_session.list_resources()
         uris = [str(r.uri) for r in resources.resources]
-        assert "beowulf://text/summary" in uris
+        assert "beowulf://text/brunetti" in uris
 
 
 @pytest.mark.asyncio(loop_scope="module")
 class TestReadResources:
-    """Tests for reading resource content."""
+    """Tests for reading edition resource content."""
 
-    async def test_read_summary_resource(self, mcp_session: ClientSession) -> None:
-        """Reading summary resource returns valid JSON with expected fields."""
-        result = await mcp_session.read_resource("beowulf://text/summary")
-        assert len(result.contents) == 1
-
-        content = result.contents[0]
-        text = content.text if hasattr(content, "text") else str(content)
-        data = json.loads(text)
-
-        assert "total_lines" in data
-        assert "title_lines" in data
-        assert "fitt_titles" in data
-        assert data["total_lines"] > 3000
-
-    async def test_read_all_lines_resource(self, mcp_session: ClientSession) -> None:
-        """Reading all lines resource returns valid JSON array."""
-        result = await mcp_session.read_resource("beowulf://text/all")
+    async def test_read_ebeowulf_line(self, mcp_session: ClientSession) -> None:
+        """Reading a single ebeowulf line returns valid JSON."""
+        result = await mcp_session.read_resource("beowulf://text/ebeowulf/line/1")
         assert len(result.contents) == 1
 
         content = result.contents[0]
@@ -137,7 +131,19 @@ class TestReadResources:
         data = json.loads(text)
 
         assert isinstance(data, list)
-        assert len(data) == 3183
+        assert len(data) == 1
+
+    async def test_read_heorot_line_range(self, mcp_session: ClientSession) -> None:
+        """Reading a heorot line range returns multiple lines."""
+        result = await mcp_session.read_resource("beowulf://text/heorot/line/1/5")
+        assert len(result.contents) == 1
+
+        content = result.contents[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert isinstance(data, list)
+        assert len(data) >= 5
 
 
 @pytest.mark.asyncio(loop_scope="module")
@@ -486,3 +492,286 @@ class TestBrunettiTools:
         data = json.loads(text)
 
         assert data["count"] >= 1
+
+    async def test_brunetti_get_by_line(self, mcp_session: ClientSession) -> None:
+        """brunetti_get_by_line returns tokens for a known line."""
+        result = await mcp_session.call_tool(
+            name="brunetti_get_by_line", arguments={"line_id": "0001"}
+        )
+        content = result.content[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert data["count"] >= 1
+        assert "results" in data
+
+    async def test_brunetti_get_by_fitt(self, mcp_session: ClientSession) -> None:
+        """brunetti_get_by_fitt returns tokens for a known fitt."""
+        result = await mcp_session.call_tool(
+            name="brunetti_get_by_fitt", arguments={"fitt_id": "01"}
+        )
+        content = result.content[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert data["count"] >= 1
+        assert "results" in data
+
+
+@pytest.mark.asyncio(loop_scope="module")
+class TestHeorotSearch:
+    """Tests for the heorot_search tool."""
+
+    async def test_heorot_search_both_languages(
+        self, mcp_session: ClientSession
+    ) -> None:
+        """heorot_search without language param searches both OE and ME."""
+        result = await mcp_session.call_tool(
+            name="heorot_search", arguments={"term": "Beowulf"}
+        )
+        content = result.content[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert data["count"] >= 1
+
+    async def test_heorot_search_oe_only(self, mcp_session: ClientSession) -> None:
+        """heorot_search with language='oe' restricts to Old English."""
+        result = await mcp_session.call_tool(
+            name="heorot_search",
+            arguments={"term": "Beowulf", "language": "oe"},
+        )
+        content = result.content[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert data["count"] >= 1
+
+    async def test_heorot_search_me_only(self, mcp_session: ClientSession) -> None:
+        """heorot_search with language='me' restricts to Modern English."""
+        result = await mcp_session.call_tool(
+            name="heorot_search",
+            arguments={"term": "warrior", "language": "me"},
+        )
+        content = result.content[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert data["count"] >= 1
+
+
+@pytest.mark.asyncio(loop_scope="module")
+class TestLexiconTools:
+    """Tests for the Analytical Lexicon tools."""
+
+    async def test_lexicon_lookup_finds_word(self, mcp_session: ClientSession) -> None:
+        """lexicon_lookup returns results for a known headword."""
+        result = await mcp_session.call_tool(
+            name="lexicon_lookup", arguments={"headword": "cyning"}
+        )
+        content = result.content[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert data["count"] >= 1
+
+    async def test_lexicon_lookup_no_match(self, mcp_session: ClientSession) -> None:
+        """lexicon_lookup returns empty results for gibberish."""
+        result = await mcp_session.call_tool(
+            name="lexicon_lookup", arguments={"headword": "xyzzyplugh"}
+        )
+        content = result.content[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert data["count"] == 0
+
+    async def test_lexicon_lookup_like_prefix(self, mcp_session: ClientSession) -> None:
+        """lexicon_lookup_like with a prefix pattern returns results."""
+        result = await mcp_session.call_tool(
+            name="lexicon_lookup_like", arguments={"pattern": "cyn%"}
+        )
+        content = result.content[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert data["count"] >= 1
+
+    async def test_lexicon_search(self, mcp_session: ClientSession) -> None:
+        """lexicon_search finds results for a term."""
+        result = await mcp_session.call_tool(
+            name="lexicon_search", arguments={"term": "cyning"}
+        )
+        content = result.content[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert data["count"] >= 1
+
+
+@pytest.mark.asyncio(loop_scope="module")
+class TestEditionTools:
+    """Tests for text edition tools (eBeowulf, Perseus, MIT, McMaster, OE Aerobics)."""
+
+    async def test_all_edition_tools_exist(self, mcp_session: ClientSession) -> None:
+        """All 15 edition tools are listed."""
+        tools = await mcp_session.list_tools()
+        tool_names = {t.name for t in tools.tools}
+        for prefix in ("ebeowulf", "perseus", "mit", "mcmaster", "oea"):
+            assert f"{prefix}_get_line" in tool_names
+            assert f"{prefix}_get_lines" in tool_names
+            assert f"{prefix}_search" in tool_names
+
+    async def test_ebeowulf_get_line(self, mcp_session: ClientSession) -> None:
+        """ebeowulf_get_line returns data for a valid line number."""
+        result = await mcp_session.call_tool(
+            name="ebeowulf_get_line", arguments={"line_number": 1}
+        )
+        content = result.content[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert data["found"] is True
+        assert data["result"] is not None
+
+    async def test_ebeowulf_get_lines_range(self, mcp_session: ClientSession) -> None:
+        """ebeowulf_get_lines returns a range of lines."""
+        result = await mcp_session.call_tool(
+            name="ebeowulf_get_lines", arguments={"start": 1, "end": 5}
+        )
+        content = result.content[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert data["count"] >= 1
+
+    async def test_ebeowulf_search(self, mcp_session: ClientSession) -> None:
+        """ebeowulf_search finds lines containing the term."""
+        result = await mcp_session.call_tool(
+            name="ebeowulf_search", arguments={"term": "Beowulf"}
+        )
+        content = result.content[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert data["count"] >= 1
+
+    async def test_perseus_get_line(self, mcp_session: ClientSession) -> None:
+        """perseus_get_line returns data for a valid line number."""
+        result = await mcp_session.call_tool(
+            name="perseus_get_line", arguments={"line_number": 1}
+        )
+        content = result.content[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert data["found"] is True
+
+    async def test_mit_search(self, mcp_session: ClientSession) -> None:
+        """mit_search finds results."""
+        result = await mcp_session.call_tool(
+            name="mit_search", arguments={"term": "Beowulf"}
+        )
+        content = result.content[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert data["count"] >= 1
+
+    async def test_mcmaster_get_line(self, mcp_session: ClientSession) -> None:
+        """mcmaster_get_line returns data for a valid line number."""
+        result = await mcp_session.call_tool(
+            name="mcmaster_get_line", arguments={"line_number": 1}
+        )
+        content = result.content[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert data["found"] is True
+
+    async def test_oea_get_line(self, mcp_session: ClientSession) -> None:
+        """oea_get_line returns data for a valid line number."""
+        result = await mcp_session.call_tool(
+            name="oea_get_line", arguments={"line_number": 1}
+        )
+        content = result.content[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert data["found"] is True
+
+
+@pytest.mark.asyncio(loop_scope="module")
+class TestBrunettiResources:
+    """Tests for Brunetti resource templates and static resource."""
+
+    async def test_brunetti_all_resource_exists(
+        self, mcp_session: ClientSession
+    ) -> None:
+        """beowulf://text/brunetti resource is listed."""
+        resources = await mcp_session.list_resources()
+        uris = [str(r.uri) for r in resources.resources]
+        assert "beowulf://text/brunetti" in uris
+
+    async def test_brunetti_templates_listed(self, mcp_session: ClientSession) -> None:
+        """Brunetti resource templates are present among all templates."""
+        templates = await mcp_session.list_resource_templates()
+        # 6 editions × 2 (line + line range) + 3 brunetti = 15
+        assert len(templates.resourceTemplates) == 15
+        uri_templates = [t.uriTemplate for t in templates.resourceTemplates]
+        assert "beowulf://text/brunetti/fitt/{fitt_id}" in uri_templates
+        assert "beowulf://text/brunetti/line/{line_id}" in uri_templates
+        assert "beowulf://text/brunetti/line/{from}/{to}" in uri_templates
+
+    async def test_read_brunetti_all(self, mcp_session: ClientSession) -> None:
+        """Reading beowulf://text/brunetti returns a non-empty JSON array."""
+        result = await mcp_session.read_resource("beowulf://text/brunetti")
+        assert len(result.contents) == 1
+
+        content = result.contents[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert isinstance(data, list)
+        assert len(data) > 0
+
+    async def test_read_brunetti_fitt(self, mcp_session: ClientSession) -> None:
+        """Reading brunetti fitt 1 returns tokens."""
+        result = await mcp_session.read_resource("beowulf://text/brunetti/fitt/1")
+        assert len(result.contents) == 1
+
+        content = result.contents[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert isinstance(data, list)
+        assert len(data) > 0
+        assert all(entry["fitt_id"] == "01" for entry in data)
+
+    async def test_read_brunetti_line(self, mcp_session: ClientSession) -> None:
+        """Reading brunetti line 1 returns tokens."""
+        result = await mcp_session.read_resource("beowulf://text/brunetti/line/1")
+        assert len(result.contents) == 1
+
+        content = result.contents[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert isinstance(data, list)
+        assert len(data) > 0
+        assert all(entry["line_id"] == "0001" for entry in data)
+
+    async def test_read_brunetti_line_range(self, mcp_session: ClientSession) -> None:
+        """Reading brunetti lines 1-5 returns tokens from multiple lines."""
+        result = await mcp_session.read_resource("beowulf://text/brunetti/line/1/5")
+        assert len(result.contents) == 1
+
+        content = result.contents[0]
+        text = content.text if hasattr(content, "text") else str(content)
+        data = json.loads(text)
+
+        assert isinstance(data, list)
+        assert len(data) > 0
+        line_ids = {entry["line_id"] for entry in data}
+        assert len(line_ids) > 1
+        assert all(lid in {"0001", "0002", "0003", "0004", "0005"} for lid in line_ids)
