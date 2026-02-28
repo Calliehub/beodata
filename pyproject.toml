@@ -1,12 +1,13 @@
 [tool.poetry]
 name = "beodata"
 version = "0.1.3"
-description = ""
+description = "Beowulf multi-manuscript Python REPL, framework, and MCP for use in digital and AI-enhanced Beowulf scholarship."
 authors = ["Callie Tweney <cat@pobox.com>"]
 readme = "README.md"
 packages = [
-    {"include" = "beowulf_mcp"},
     {"include" = "assets"},
+    {"include" = "beowulf_mcp"},
+    {"include" = "repl"},
     {"include" = "sources"},
     {"include" = "text"},
     {"include" = "writers"},
@@ -17,6 +18,9 @@ include = [
     "assets/*.duckdb",
     "assets/*.json",
     "assets/*.xml",
+    "assets/*.txt",
+    "assets/*.md",
+    "*.md"
 ]
 
 # handy run target definitions: here is your entry point to fetch and sources data
