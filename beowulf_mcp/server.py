@@ -25,7 +25,10 @@ from mcp.types import (
 from pydantic import AnyUrl
 
 from beowulf_mcp.cli import fetch_and_store, fetch_store_and_parse
-from sources import abbreviations, analytical_lexicon, bosworth, brunetti, ebeowulf
+from sources import abbreviations, analytical_lexicon, bosworth
+from sources import brunanburh as brunanburh_source
+from sources import brunanburh_normalized as brunanburh_norm_source
+from sources import brunetti, ebeowulf
 from sources import heorot as heorot_source
 from sources import mcmaster, mit, oldenglishaerobics, perseus
 from sources.heorot import HEOROT_URL, Heorot
@@ -537,6 +540,117 @@ async def list_tools() -> List:
                 "required": ["term"],
             },
         ),
+        # ── Brunanburh (sacred-texts, OE only) ────────────────────
+        Tool(
+            name="brunanburh_get_line",
+            description="Get a specific line by number from the Battle of Brunanburh (sacred-texts edition)",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "line_number": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 73,
+                        "description": "The line number to retrieve",
+                    },
+                },
+                "required": ["line_number"],
+            },
+        ),
+        Tool(
+            name="brunanburh_get_lines",
+            description="Get a range of lines from the Battle of Brunanburh (sacred-texts edition)",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "start": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 73,
+                        "description": "Start line number (inclusive)",
+                    },
+                    "end": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 73,
+                        "description": "End line number (inclusive). Omit for all lines from start.",
+                    },
+                },
+                "required": ["start"],
+            },
+        ),
+        Tool(
+            name="brunanburh_search",
+            description="Search the Old English text of the Battle of Brunanburh (sacred-texts edition, case-insensitive)",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "term": {
+                        "type": "string",
+                        "description": "The term to search for",
+                    },
+                },
+                "required": ["term"],
+            },
+        ),
+        # ── Brunanburh Normalized (CLASP, OE + normalized) ────────
+        Tool(
+            name="brunanburh_normalized_get_line",
+            description="Get a specific line by number from the Battle of Brunanburh (CLASP normalized edition, OE + normalized text with macrons)",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "line_number": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 73,
+                        "description": "The line number to retrieve",
+                    },
+                },
+                "required": ["line_number"],
+            },
+        ),
+        Tool(
+            name="brunanburh_normalized_get_lines",
+            description="Get a range of lines from the Battle of Brunanburh (CLASP normalized edition, OE + normalized text with macrons)",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "start": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 73,
+                        "description": "Start line number (inclusive)",
+                    },
+                    "end": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 73,
+                        "description": "End line number (inclusive). Omit for all lines from start.",
+                    },
+                },
+                "required": ["start"],
+            },
+        ),
+        Tool(
+            name="brunanburh_normalized_search",
+            description="Search the Battle of Brunanburh (CLASP normalized edition, case-insensitive)",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "term": {
+                        "type": "string",
+                        "description": "The term to search for",
+                    },
+                    "column": {
+                        "type": "string",
+                        "description": "Restrict to original OE or normalized text. Omit to search both.",
+                        "enum": ["oe", "normed"],
+                    },
+                },
+                "required": ["term"],
+            },
+        ),
         # ── Text editions (generated) ───────────────────────────
         *_edition_tools(),
     ]
@@ -806,6 +920,50 @@ async def call_tool(tool_name: str, tool_args: dict[str, Any]) -> CallToolResult
         analytical_lexicon.load()
         column = tool_args.get("column")
         results = analytical_lexicon.search(tool_args["term"], column=column)
+        return _json_result({"results": results, "count": len(results)})
+
+    # ── Brunanburh (sacred-texts) ──────────────────────────
+    elif tool_name == "brunanburh_get_line":
+        brunanburh_source.load()
+        line = brunanburh_source.get_line(tool_args["line_number"])
+        return _json_result({"result": line, "found": line is not None})
+
+    elif tool_name == "brunanburh_get_lines":
+        brunanburh_source.load()
+        end = tool_args.get("end")
+        results = brunanburh_source.get_lines(tool_args["start"], end)
+        return _json_result({"results": results, "count": len(results)})
+
+    elif tool_name == "brunanburh_search":
+        brunanburh_source.load()
+        results = brunanburh_source.search(tool_args["term"])
+        return _json_result({"results": results, "count": len(results)})
+
+    # ── Brunanburh Normalized (CLASP) ────────────────────
+    elif tool_name == "brunanburh_normalized_get_line":
+        brunanburh_norm_source.load()
+        line = brunanburh_norm_source.get_line(tool_args["line_number"])
+        return _json_result({"result": line, "found": line is not None})
+
+    elif tool_name == "brunanburh_normalized_get_lines":
+        brunanburh_norm_source.load()
+        end = tool_args.get("end")
+        results = brunanburh_norm_source.get_lines(tool_args["start"], end)
+        return _json_result({"results": results, "count": len(results)})
+
+    elif tool_name == "brunanburh_normalized_search":
+        brunanburh_norm_source.load()
+        column = tool_args.get("column")
+        if column == "oe":
+            results = brunanburh_norm_source.get_brunanburh_normalized().search_oe(
+                tool_args["term"]
+            )
+        elif column == "normed":
+            results = brunanburh_norm_source.get_brunanburh_normalized().search_normed(
+                tool_args["term"]
+            )
+        else:
+            results = brunanburh_norm_source.search(tool_args["term"])
         return _json_result({"results": results, "count": len(results)})
 
     else:
