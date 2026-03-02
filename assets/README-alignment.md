@@ -1,6 +1,6 @@
 ## Alignment Between Different Beowulf Texts
 
-by James Tauber 
+by [James Tauber](https://github.com/jtauber) 
 
 In `aligned.txt` and elsewhere, I make use of **token identifiers** that look like `0003a2`.
 

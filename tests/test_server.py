@@ -440,8 +440,8 @@ class TestBrunettiTools:
         assert data["count"] >= 1
         entry = data["results"][0]
         assert "lemma" in entry
-        assert "text" in entry
-        assert "gloss" in entry
+        assert "oe_line" in entry
+        assert "gloss_en" in entry
 
     async def test_brunetti_lookup_no_match(self, mcp_session: ClientSession) -> None:
         """brunetti_lookup returns empty results for gibberish."""
@@ -485,7 +485,7 @@ class TestBrunettiTools:
         """brunetti_search with column param restricts search to that column."""
         result = await mcp_session.call_tool(
             name="brunetti_search",
-            arguments={"term": "warrior", "column": "gloss"},
+            arguments={"term": "warrior", "column": "gloss_en"},
         )
         content = result.content[0]
         text = content.text if hasattr(content, "text") else str(content)
@@ -746,7 +746,8 @@ class TestBrunettiResources:
 
         assert isinstance(data, list)
         assert len(data) > 0
-        assert all(entry["fitt_id"] == "01" for entry in data)
+        # Fitt 1 covers lines 53–114
+        assert all(53 <= int(entry["line_id"]) <= 114 for entry in data)
 
     async def test_read_brunetti_line(self, mcp_session: ClientSession) -> None:
         """Reading brunetti line 1 returns tokens."""
