@@ -5,13 +5,15 @@ Each test encodes a discovery made by running explore_beowulf.py against
 the beodata sources. These serve as regression guards: if the underlying
 data or parsing changes, these assertions will flag it.
 
-All data comes from parsing raw asset files (brunetti-length.txt and
-aligned-sources.txt) — no DuckDB, no internet, no LLM training data.
+Brunetti data is fetched from the Brunetti online URL and parsed directly
+(no DuckDB). Aligned data comes from output/aligned-sources.txt.
 
 Run with: poetry run pytest tests/test_explore_findings.py -v
 """
 
 import pytest
+
+pytestmark = pytest.mark.slow
 
 from explore_beowulf import (
     analyze_compounds,
@@ -311,14 +313,14 @@ class TestVocabularyDensity:
         ), f"Expected fitt 35 to be most formulaic, got fitt {sparsest['fitt']}"
 
     def test_all_fitts_represented(self, density):
-        # Brunetti numbers fitts 0–43 but skips fitt 30 (43 total).
-        # Heorot.dk skips fitt 24 instead — different editorial traditions
-        # disagree on where to place the fitt boundary.
+        # Fitt IDs come from FITT_BOUNDARIES (heorot.dk numbering),
+        # which skips fitt 24 — a placeholder for a non-existent section.
+        # 43 real fitts: 0–43 minus 24.
         fitt_numbers = {d["fitt"] for d in density}
         assert len(fitt_numbers) == 43, f"Expected 43 fitts, got {len(fitt_numbers)}"
         assert (
-            30 not in fitt_numbers
-        ), "Fitt 30 should be absent in Brunetti's numbering"
+            24 not in fitt_numbers
+        ), "Fitt 24 should be absent (FITT_BOUNDARIES placeholder)"
 
 
 # ═════════════════════════════════════════════════════════════

@@ -17,45 +17,66 @@ Findings are captured as assertions in tests/test_explore_findings.py.
 from collections import Counter, defaultdict
 from typing import Dict, List, Tuple
 
+_brunetti_cache: List[dict] = []
+
 
 def parse_brunetti_file() -> List[dict]:
-    """Parse the raw Brunetti file into dicts without touching DuckDB."""
-    from assets import get_asset_path
+    """Parse Brunetti data by fetching from the Brunetti online URL.
 
-    COLS = [
-        "fitt_id",
-        "para_id",
-        "para_first",
-        "non_verse",
-        "line_id",
-        "half_line",
-        "token_offset",
-        "caesura_code",
-        "pre_punc",
-        "text",
-        "post_punc",
-        "syntax",
-        "parse",
-        "lemma",
-        "pos",
-        "inflection",
-        "gloss",
-        "with_length",
-    ]
+    Uses the Brunetti parser directly (no DuckDB). Surface text is
+    reconstructed from oe_line via extract_brunetti_surface(). Fitt IDs
+    are assigned from FITT_BOUNDARIES (which skips fitt 24).
+
+    Results are cached at module level so multiple fixtures share one fetch.
+    """
+    global _brunetti_cache
+    if _brunetti_cache:
+        return _brunetti_cache
+
+    import requests
+
+    from sources.align_sources import extract_brunetti_surface
+    from sources.brunetti import BRUNETTI_ONLINE_URL
+    from sources.brunetti import parse as parse_brunetti_html
+    from text.numbering import FITT_BOUNDARIES
+
+    # Build line → fitt index lookup
+    fitt_lookup: Dict[int, str] = {}
+    for i, (start, end, _) in enumerate(FITT_BOUNDARIES):
+        if start == 0 and end == 0:
+            continue  # skip placeholder (fitt 24)
+        for line_num in range(start, end + 1):
+            fitt_lookup[line_num] = str(i)
+
+    response = requests.get(BRUNETTI_ONLINE_URL, timeout=60)
+    response.encoding = "utf-8"
+    response.raise_for_status()
+    all_rows = parse_brunetti_html(response.text)
+
     tokens = []
-    path = get_asset_path("brunetti-length.txt")
-    with open(path) as f:
-        for line in f:
-            line = line.rstrip("\n")
-            if not line:
-                continue
-            fields = line.split("|")
-            if len(fields) < 18:
-                continue
-            row = {}
-            for i, col in enumerate(COLS):
-                row[col] = fields[i] if fields[i] else None
-            tokens.append(row)
+    for row in all_rows:
+        line_id = row["line_id"]
+        half_line = row["half_line"]
+        token_offset = row["token_offset"]
+        text = extract_brunetti_surface(row["oe_line"], half_line, token_offset)
+        fitt_id = fitt_lookup.get(int(line_id))
+
+        tokens.append(
+            {
+                "fitt_id": fitt_id,
+                "line_id": line_id,
+                "half_line": half_line,
+                "token_offset": token_offset,
+                "text": text,
+                "with_length": text,  # no macronized forms available
+                "lemma": row["lemma"],
+                "pos": row["pos"],
+                "parse": row["parse"],
+                "gloss": row["gloss_en"],
+            }
+        )
+
+    _brunetti_cache = tokens
     return tokens
 
 

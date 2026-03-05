@@ -31,12 +31,14 @@ def heorot_text(project_root: Path) -> List[dict[str, Any]]:
         return json.load(f)
 
 
+@pytest.mark.slow
 def test_line_numbering_sequential(heorot_text: List[dict[str, Any]]) -> None:
     """Line numbers should be sequential starting from 0."""
     for i, line_data in enumerate(heorot_text):
         assert line_data["line"] == i, f"Line {i} has wrong number: {line_data['line']}"
 
 
+@pytest.mark.slow
 def test_total_line_count(heorot_text: List[dict[str, Any]]) -> None:
     """Total line count should match expected value."""
     expected_count = 3183
@@ -46,6 +48,7 @@ def test_total_line_count(heorot_text: List[dict[str, Any]]) -> None:
     ), f"Expected {expected_count} lines, got {actual_count}"
 
 
+@pytest.mark.slow
 def test_fitt_boundaries_valid(heorot_text: List[dict[str, Any]]) -> None:
     """Fitt boundaries should be within valid line ranges."""
     max_line = len(heorot_text) - 1
@@ -57,6 +60,7 @@ def test_fitt_boundaries_valid(heorot_text: List[dict[str, Any]]) -> None:
         assert start <= end, f"Fitt {i} start {start} > end {end}"
 
 
+@pytest.mark.slow
 def test_required_fields_present(heorot_text: List[dict[str, Any]]) -> None:
     """Each line must have 'line', 'OE', and 'ME' fields."""
     required_fields = {"line", "OE", "ME"}
@@ -65,6 +69,7 @@ def test_required_fields_present(heorot_text: List[dict[str, Any]]) -> None:
         assert not missing, f"Line {i} missing fields: {missing}"
 
 
+@pytest.mark.slow
 def test_line_zero_empty(heorot_text: List[dict[str, Any]]) -> None:
     """Line 0 should have empty OE and ME text."""
     line_0 = heorot_text[0]
@@ -73,6 +78,7 @@ def test_line_zero_empty(heorot_text: List[dict[str, Any]]) -> None:
     assert line_0["ME"] == "", "Line 0 ME text should be empty"
 
 
+@pytest.mark.slow
 def test_famous_opening_line(heorot_text: List[dict[str, Any]]) -> None:
     """Line 1 should contain the famous 'Hwæt!' opening."""
     line_1 = heorot_text[1]
@@ -82,6 +88,7 @@ def test_famous_opening_line(heorot_text: List[dict[str, Any]]) -> None:
     assert line_1["ME"].strip(), "Line 1 should have a translation"
 
 
+@pytest.mark.slow
 def test_no_empty_text_after_line_zero(heorot_text: List[dict[str, Any]]) -> None:
     """Lines 1+ should not have empty OE or ME text, unless both are empty (structural)."""
     for line_data in heorot_text[1:]:
@@ -98,6 +105,7 @@ def test_no_empty_text_after_line_zero(heorot_text: List[dict[str, Any]]) -> Non
             assert not me_empty, f"Line {line_num} has empty ME text"
 
 
+@pytest.mark.slow
 def test_line_2229_empty(heorot_text: List[dict[str, Any]]) -> None:
     """Line 2229 should be empty (it's missing in the ms)"""
     line_2229 = heorot_text[2229]

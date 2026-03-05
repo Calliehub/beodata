@@ -6,13 +6,15 @@ encode the systematic orthographic preferences that distinguish them, as
 discovered by running scribal_differences_exploration.py against the Brunetti
 tokenization data.
 
-All data comes from parsing raw asset files — no DuckDB, no internet,
-no LLM training data.
+Brunetti data is fetched from the Brunetti online URL and parsed directly
+(no DuckDB).
 
 Run with: poetry run pytest tests/test_scribal_differences.py -v
 """
 
 import pytest
+
+pytestmark = pytest.mark.slow
 
 from explore_beowulf import parse_brunetti_file
 from scribal_differences_exploration import (
