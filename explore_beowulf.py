@@ -60,12 +60,12 @@ def parse_brunetti_file() -> List[dict]:
 
 
 def parse_aligned_file() -> List[dict]:
-    """Parse aligned_with_brunetti.txt into structured rows."""
-    from assets import get_asset_path
+    """Parse aligned-sources.txt into structured rows."""
+    from pathlib import Path
 
     editions = ["mit", "mcmaster", "heorot", "ebeowulf", "perseus", "brunetti"]
     rows = []
-    path = get_asset_path("aligned_with_brunetti.txt")
+    path = Path("output") / "aligned-sources.txt"
     with open(path) as f:
         for line in f:
             line = line.rstrip("\n")

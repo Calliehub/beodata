@@ -6,7 +6,7 @@ the beodata sources. These serve as regression guards: if the underlying
 data or parsing changes, these assertions will flag it.
 
 All data comes from parsing raw asset files (brunetti-length.txt and
-aligned_with_brunetti.txt) — no DuckDB, no internet, no LLM training data.
+aligned-sources.txt) — no DuckDB, no internet, no LLM training data.
 
 Run with: poetry run pytest tests/test_explore_findings.py -v
 """

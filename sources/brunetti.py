@@ -2,8 +2,8 @@
 Brunetti Online trilingual Beowulf fetcher and parser.
 
 Fetches the interlinear-glossed dual-language (OE + Modern English) edition from
-giuseppebrunetti.eu, parses every gloss entry, assigns half-lines using the
-project's brunetti.txt as the primary reference, and can write the result as CSV.
+giuseppebrunetti.eu, parses every gloss entry, assigns half-lines using
+caesura-based word counting, and can write the result as CSV.
 """
 
 import csv
