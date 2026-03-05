@@ -42,6 +42,12 @@ def brunetti_tokens():
 @pytest.fixture(scope="session")
 def aligned_rows():
     """All 6-way aligned rows, parsed once for the entire test session."""
+    from pathlib import Path
+
+    if not (Path("output") / "aligned-sources.txt").exists():
+        from sources.align_sources import main
+
+        main()
     return parse_aligned_file()
 
 
