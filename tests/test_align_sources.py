@@ -135,15 +135,38 @@ class TestExtractBrunettiSurface:
 
 
 def _make_streams(*lines: str) -> List[List[Token]]:
-    """Build 5 identical edition streams from line strings.
+    """Build 4 identical txt-edition streams from line strings.
 
-    Each line string is tokenized as line 1. For simplicity, all 5
-    editions get the same tokens.
+    Each line string is tokenized sequentially starting at line 1.
+    All 4 editions get the same tokens (they're positionally zipped).
     """
     tokens: List[Token] = []
     for i, line in enumerate(lines, start=1):
         tokens.extend(tokenize_edition_line(i, line))
-    return [tokens] * 5
+    return [tokens] * 4
+
+
+def _make_heorot_tokens(*lines: str) -> List[Token]:
+    """Build Heorot tokens from plain text (no caesura, no @ or _ markers).
+
+    Strips @, replaces _ joins with separate words, collapses caesura.
+    """
+    tokens: List[Token] = []
+    for i, line in enumerate(lines, start=1):
+        # Collapse 5-space caesura, drop @, expand _ joins
+        clean = line.replace("     ", " ")
+        words = []
+        for w in clean.split():
+            if w == "@":
+                continue
+            if "_" in w:
+                words.extend(w.split("_"))
+            else:
+                words.append(w)
+        line_str = str(i).zfill(4)
+        for j, word in enumerate(words, start=1):
+            tokens.append(Token(f"{line_str}a{j}", word))
+    return tokens
 
 
 def _parse_output(lines: List[str]) -> List[dict]:
@@ -159,99 +182,126 @@ class TestAlignAll:
     """Tests for the full alignment pipeline."""
 
     def test_simple_1to1(self) -> None:
-        """Each aligned row matches one Brunetti token."""
-        streams = _make_streams("Hwæt! We     Gardena")
+        """Each aligned row matches one Heorot and Brunetti token."""
+        ed_lines = ("Hwæt! We     Gardena",)
+        streams = _make_streams(*ed_lines)
+        heo_tokens = _make_heorot_tokens(*ed_lines)
         bru_tokens = [
             Token("0001a1", "Hwæt!"),
             Token("0001a2", "We"),
             Token("0001b1", "Gardena"),
         ]
-        output = align_all(streams, bru_tokens)
+        output = align_all(streams, heo_tokens, bru_tokens)
         parsed = _parse_output(output)
 
         assert len(output) == 3
+        # Heorot column (index 2)
+        assert parsed[0]["texts"][2] == "Hwæt!"
+        assert parsed[1]["texts"][2] == "We"
+        assert parsed[2]["texts"][2] == "Gardena"
+        # Brunetti column (index 5)
         assert parsed[0]["ids"][5] == "0001a1"
         assert parsed[0]["texts"][5] == "Hwæt!"
         assert parsed[1]["texts"][5] == "We"
         assert parsed[2]["texts"][5] == "Gardena"
 
     def test_join_row(self) -> None:
-        """A _ join row collects multiple Brunetti tokens."""
-        streams = _make_streams("mægen_Hreðmanna.     Na")
+        """A _ join row collects multiple Heorot and Brunetti tokens."""
+        ed_lines = ("mægen_Hreðmanna.     Na",)
+        streams = _make_streams(*ed_lines)
+        heo_tokens = _make_heorot_tokens(*ed_lines)
         bru_tokens = [
             Token("0001a1", "mægenhrēð"),
             Token("0001a2", "manna."),
             Token("0001b1", "Nā"),
         ]
-        output = align_all(streams, bru_tokens)
+        output = align_all(streams, heo_tokens, bru_tokens)
         parsed = _parse_output(output)
 
+        # Heorot should collect the 2 expanded words joined with _
+        assert parsed[0]["texts"][2] == "mægen_Hreðmanna."
+        assert parsed[1]["texts"][2] == "Na"
+        # Brunetti
         assert parsed[0]["texts"][5] == "mægenhrēð_manna."
         assert parsed[1]["texts"][5] == "Nā"
 
     def test_gap_no_brunetti(self) -> None:
-        """@ gap with no Brunetti match → '@' in output."""
-        streams = _make_streams("word     @ @")
+        """@ gap with no Brunetti/Heorot match → '@' in output."""
+        ed_lines = ("word     @ @",)
+        streams = _make_streams(*ed_lines)
+        heo_tokens = _make_heorot_tokens(*ed_lines)
         bru_tokens = [
             Token("0001a1", "word"),
         ]
-        output = align_all(streams, bru_tokens)
+        output = align_all(streams, heo_tokens, bru_tokens)
         parsed = _parse_output(output)
 
-        assert parsed[0]["texts"][5] == "word"
-        # @ tokens get offset 0, no Brunetti token there
+        assert parsed[0]["texts"][2] == "word"  # Heorot
+        assert parsed[0]["texts"][5] == "word"  # Brunetti
+        # @ tokens — Heorot has no words left, Brunetti has none either
+        assert parsed[1]["texts"][2] == "@"
         assert parsed[1]["texts"][5] == "@"
+        assert parsed[2]["texts"][2] == "@"
         assert parsed[2]["texts"][5] == "@"
 
     def test_gap_brunetti_has_tokens(self) -> None:
         """@ gaps where Brunetti has real tokens (like ms. lacunae filled)."""
-        # Line 1: "leodum.     @ @"  (a has real word, b has gaps)
-        # Line 2: "@ @     word"    (a has gaps, b has real word)
-        streams = _make_streams('leodum."     @ @', "@ @     word")
+        ed_lines = ('leodum."     @ @', "@ @     word")
+        streams = _make_streams(*ed_lines)
+        heo_tokens = _make_heorot_tokens(*ed_lines)
         bru_tokens = [
             Token("0001a1", 'leodum."'),
-            # No Brunetti for 0001b (gap)
             Token("0002a1", "Wedera"),
             Token("0002a2", "lēodum"),
             Token("0002b1", "word"),
         ]
-        output = align_all(streams, bru_tokens)
+        output = align_all(streams, heo_tokens, bru_tokens)
         parsed = _parse_output(output)
 
         # Line 1a: normal match
-        assert parsed[0]["texts"][5] == 'leodum."'
-        # Line 1b: @ gaps, no Brunetti
+        assert parsed[0]["texts"][2] == 'leodum."'  # Heorot
+        assert parsed[0]["texts"][5] == 'leodum."'  # Brunetti
+        # Line 1b: @ gaps
+        assert parsed[1]["texts"][2] == "@"
         assert parsed[1]["texts"][5] == "@"
+        assert parsed[2]["texts"][2] == "@"
         assert parsed[2]["texts"][5] == "@"
-        # Line 2a: @ gaps, but Brunetti has tokens
+        # Line 2a: @ gaps in txt editions, but Brunetti has tokens
+        # Heorot only has "word" for line 2, cursor doesn't advance on @
         assert parsed[3]["texts"][5] == "Wedera"
         assert parsed[4]["texts"][5] == "lēodum"
         # Line 2b: normal
-        assert parsed[5]["texts"][5] == "word"
+        assert parsed[5]["texts"][2] == "word"  # Heorot
+        assert parsed[5]["texts"][5] == "word"  # Brunetti
 
     def test_output_has_12_columns(self) -> None:
         """Each output line has exactly 12 space-separated columns."""
-        streams = _make_streams("Hwæt!     We")
+        ed_lines = ("Hwæt!     We",)
+        streams = _make_streams(*ed_lines)
+        heo_tokens = _make_heorot_tokens(*ed_lines)
         bru_tokens = [
             Token("0001a1", "Hwæt!"),
             Token("0001b1", "Wē"),
         ]
-        output = align_all(streams, bru_tokens)
+        output = align_all(streams, heo_tokens, bru_tokens)
         for line in output:
             parts = line.split(" ")
             assert len(parts) == 12
 
     def test_last_row_sentinel(self) -> None:
         """The last aligned row should still collect its Brunetti token."""
-        streams = _make_streams("lofgeornost.     end")
+        ed_lines = ("lofgeornost.     end",)
+        streams = _make_streams(*ed_lines)
+        heo_tokens = _make_heorot_tokens(*ed_lines)
         bru_tokens = [
             Token("0001a1", "lofgeornost."),
             Token("0001b1", "end"),
         ]
-        output = align_all(streams, bru_tokens)
+        output = align_all(streams, heo_tokens, bru_tokens)
         parsed = _parse_output(output)
 
-        assert parsed[-1]["texts"][5] == "end"
+        assert parsed[-1]["texts"][2] == "end"  # Heorot
+        assert parsed[-1]["texts"][5] == "end"  # Brunetti
 
     def test_token_count_mismatch_raises(self) -> None:
         """Mismatched edition token counts should raise AssertionError."""
@@ -260,33 +310,31 @@ class TestAlignAll:
             [Token("0001a1", "Hwæt!"), Token("0001a2", "We")],
             [Token("0001a1", "Hwæt!")],
             [Token("0001a1", "Hwæt!")],
-            [Token("0001a1", "Hwæt!")],
         ]
         with pytest.raises(AssertionError, match="Token count mismatch"):
-            align_all(streams, [])
+            align_all(streams, [], [])
 
 
 class TestReadTxtEdition:
     """Tests for direct txt-file asset reading."""
 
-    def test_reads_heorot_txt(self) -> None:
-        """Should read heorot.txt and return lines with 'line' and 'oe' keys."""
-        lines = read_txt_edition("heorot.txt")
+    def test_reads_mit_txt(self) -> None:
+        """Should read mit.txt and return lines with 'line' and 'oe' keys."""
+        lines = read_txt_edition("mit.txt")
         assert len(lines) >= 3180
         assert lines[0]["line"] == 1
         assert "Hwæt" in lines[0]["oe"]
 
     def test_preserves_caesura(self) -> None:
         """The 5-space caesura should survive the read."""
-        lines = read_txt_edition("heorot.txt")
+        lines = read_txt_edition("mit.txt")
         assert "     " in lines[0]["oe"]
 
-    def test_all_five_editions_same_token_count(self) -> None:
-        """All 5 text-file editions must produce exactly 17,302 tokens."""
+    def test_all_four_txt_editions_same_token_count(self) -> None:
+        """All 4 text-file editions must produce exactly 17,302 tokens."""
         for asset in [
             "mit.txt",
             "mcmaster.txt",
-            "heorot.txt",
             "ebeowulf.txt",
             "perseus.txt",
         ]:

@@ -9,6 +9,7 @@ from assets import get_asset_path
 from beowulf_mcp.db import BeoDB
 from logging_config import get_logger
 from sources.brunetti import Brunetti
+from sources.heorot import Heorot
 
 logger = get_logger()
 
@@ -68,7 +69,7 @@ def read_txt_edition(asset_name: str) -> List[dict]:
     """Read a text-file edition asset directly into [{line, oe}] dicts.
 
     For editions whose source class loads from a txt asset anyway (MIT, McMaster,
-    eBeowulf, Perseus, Heorot-txt), this skips the DB round-trip entirely.
+    eBeowulf, Perseus), this skips the DB round-trip entirely.
     """
     path = get_asset_path(asset_name)
     lines: List[dict] = []
@@ -117,43 +118,147 @@ def load_brunetti_tokens(brunetti: Brunetti) -> List[Token]:
     return tokens
 
 
+def load_heorot_tokens(heorot: Heorot) -> List[Token]:
+    """Load Heorot tokens from the source class (network-fetched, no caesura).
+
+    Since Heorot's normalize_text() collapses whitespace, we just split on
+    whitespace and assign sequential IDs (all a-half).  The cursor walk in
+    align_all handles matching these to the MIT-based skeleton.
+    """
+    lines = heorot.get_lines()
+    tokens: List[Token] = []
+    for line_data in lines:
+        line_num = line_data["line"]
+        oe = line_data["OE"]
+        if line_num == 0 or not oe.strip():
+            continue
+        line_str = str(line_num).zfill(4)
+        for i, word in enumerate(oe.split(), start=1):
+            tokens.append(Token(f"{line_str}a{i}", word))
+    return tokens
+
+
 def parse_mit_id(id_str: str) -> Tuple[int, str, int]:
     """Parse '0001a1' → (1, 'a', 1) for tuple comparison."""
     return (int(id_str[:4]), id_str[4], int(id_str[5:]))
 
 
+def _cursor_collect_brunetti(
+    mit_id: Tuple[int, str, int],
+    range_end: Tuple[int, str, int],
+    is_join: bool,
+    brunetti_tokens: List[Token],
+    cursor: int,
+) -> Tuple[str, str, int]:
+    """Walk the Brunetti cursor and return (id, text, new_cursor)."""
+    num_bru = len(brunetti_tokens)
+
+    # Skip tokens that fall before this row's mit_id
+    while cursor < num_bru and parse_mit_id(brunetti_tokens[cursor].id_str) < mit_id:
+        cursor += 1
+
+    collected: List[Token] = []
+    if is_join:
+        while (
+            cursor < num_bru
+            and parse_mit_id(brunetti_tokens[cursor].id_str) < range_end
+        ):
+            collected.append(brunetti_tokens[cursor])
+            cursor += 1
+    else:
+        if (
+            cursor < num_bru
+            and parse_mit_id(brunetti_tokens[cursor].id_str) < range_end
+        ):
+            collected.append(brunetti_tokens[cursor])
+            cursor += 1
+
+    if collected:
+        return collected[0].id_str, "_".join(t.text for t in collected), cursor
+    return "", "@", cursor
+
+
+def _cursor_collect_heorot(
+    mit_line: int,
+    mit_text: str,
+    is_join: bool,
+    heorot_tokens: List[Token],
+    cursor: int,
+) -> Tuple[str, str, int]:
+    """Walk the Heorot cursor and return (id, text, new_cursor).
+
+    Heorot tokens have no caesura / @ / _ markers — just sequential words
+    per line.  We advance past earlier lines, then:
+      - @ row  → output "@", don't advance
+      - _ join → collect 1+count("_") words
+      - normal → take one word
+    """
+    num_heo = len(heorot_tokens)
+
+    # Advance past tokens from earlier lines
+    while cursor < num_heo and int(heorot_tokens[cursor].id_str[:4]) < mit_line:
+        cursor += 1
+
+    if mit_text == "@":
+        return "", "@", cursor
+
+    on_line = cursor < num_heo and int(heorot_tokens[cursor].id_str[:4]) == mit_line
+
+    if not on_line:
+        return "", "@", cursor
+
+    if is_join:
+        n_words = 1 + mit_text.count("_")
+        collected: List[Token] = []
+        for _ in range(n_words):
+            if cursor < num_heo and int(heorot_tokens[cursor].id_str[:4]) == mit_line:
+                collected.append(heorot_tokens[cursor])
+                cursor += 1
+        if collected:
+            return collected[0].id_str, "_".join(t.text for t in collected), cursor
+        return "", "@", cursor
+
+    tok = heorot_tokens[cursor]
+    return tok.id_str, tok.text, cursor + 1
+
+
 def align_all(
     edition_streams: List[List[Token]],
+    heorot_tokens: List[Token],
     brunetti_tokens: List[Token],
 ) -> List[str]:
-    """Align 5 text-file editions positionally and merge Brunetti via cursor walk.
+    """Align 4 txt editions positionally, merge Heorot + Brunetti via cursor walk.
 
-    edition_streams order: [mit, mcmaster, heorot, ebeowulf, perseus]
-    Output: 12 columns per line (6 IDs + 6 texts), space-separated.
+    edition_streams order: [mit, mcmaster, ebeowulf, perseus]
+    Output columns: mit mcmaster heorot ebeowulf perseus brunetti (6 IDs + 6 texts).
     """
     counts = [len(s) for s in edition_streams]
     assert all(c == counts[0] for c in counts), f"Token count mismatch: {counts}"
 
     num_rows = counts[0]
-    cursor = 0
-    num_bru = len(brunetti_tokens)
+    heo_cursor = 0
+    bru_cursor = 0
     sentinel: Tuple[int, str, int] = (99999, "z", 99999)
     output_lines: List[str] = []
 
     for i in range(num_rows):
-        row_tokens = [stream[i] for stream in edition_streams]
-        mit_id = parse_mit_id(row_tokens[0].id_str)
+        mit_tok = edition_streams[0][i]
+        mcm_tok = edition_streams[1][i]
+        ebe_tok = edition_streams[2][i]
+        per_tok = edition_streams[3][i]
+        mit_id = parse_mit_id(mit_tok.id_str)
 
         # Is this a join row? (any non-@ text contains _)
-        is_join = any("_" in t.text for t in row_tokens if t.text != "@")
+        is_join = any(
+            "_" in t.text for t in (mit_tok, mcm_tok, ebe_tok, per_tok) if t.text != "@"
+        )
 
-        # Compute range_end: mit_id of the first later row that differs
+        # Compute range_end for Brunetti cursor
         if i + 1 < num_rows:
             next_mit = parse_mit_id(edition_streams[0][i + 1].id_str)
             if next_mit != mit_id:
                 range_end = next_mit
             else:
-                # mit stuck on same ID (@ gap) — scan forward
                 range_end = sentinel
                 for j in range(i + 2, num_rows):
                     candidate = parse_mit_id(edition_streams[0][j].id_str)
@@ -163,41 +268,36 @@ def align_all(
         else:
             range_end = sentinel
 
-        # Skip Brunetti tokens that fall before this row's mit_id
-        while (
-            cursor < num_bru and parse_mit_id(brunetti_tokens[cursor].id_str) < mit_id
-        ):
-            cursor += 1
+        # Cursor walks
+        heo_id, heo_text, heo_cursor = _cursor_collect_heorot(
+            mit_id[0], mit_tok.text, is_join, heorot_tokens, heo_cursor
+        )
+        bru_id, bru_text, bru_cursor = _cursor_collect_brunetti(
+            mit_id, range_end, is_join, brunetti_tokens, bru_cursor
+        )
 
-        # Collect matching Brunetti tokens
-        collected: List[Token] = []
-        if is_join:
-            # Grab all tokens in [mit_id, range_end)
-            while (
-                cursor < num_bru
-                and parse_mit_id(brunetti_tokens[cursor].id_str) < range_end
-            ):
-                collected.append(brunetti_tokens[cursor])
-                cursor += 1
-        else:
-            # Grab at most one token in [mit_id, range_end)
-            if (
-                cursor < num_bru
-                and parse_mit_id(brunetti_tokens[cursor].id_str) < range_end
-            ):
-                collected.append(brunetti_tokens[cursor])
-                cursor += 1
+        # Fall back to MIT id when cursor source had no match
+        if not heo_id:
+            heo_id = mit_tok.id_str
+        if not bru_id:
+            bru_id = mit_tok.id_str
 
-        # Format output
-        if collected:
-            bru_text = "_".join(t.text for t in collected)
-            bru_id = collected[0].id_str
-        else:
-            bru_text = "@"
-            bru_id = row_tokens[0].id_str
-
-        out_ids = [t.id_str for t in row_tokens] + [bru_id]
-        out_texts = [t.text for t in row_tokens] + [bru_text]
+        out_ids = [
+            mit_tok.id_str,
+            mcm_tok.id_str,
+            heo_id,
+            ebe_tok.id_str,
+            per_tok.id_str,
+            bru_id,
+        ]
+        out_texts = [
+            mit_tok.text,
+            mcm_tok.text,
+            heo_text,
+            ebe_tok.text,
+            per_tok.text,
+            bru_text,
+        ]
         output_lines.append(" ".join(out_ids + out_texts))
 
     return output_lines
@@ -205,11 +305,10 @@ def align_all(
 
 def main() -> None:
     """Load all 6 sources, align, and write aligned-sources.txt."""
-    # The 5 text-file editions are just asset files — read them directly.
+    # 4 text-file editions are local assets — read them directly.
     txt_editions = [
         ("MIT", "mit.txt"),
         ("McMaster", "mcmaster.txt"),
-        ("Heorot", "heorot.txt"),
         ("eBeowulf", "ebeowulf.txt"),
         ("Perseus", "perseus.txt"),
     ]
@@ -222,19 +321,26 @@ def main() -> None:
         print(f"  {name}: {len(stream)} tokens")
         streams.append(stream)
 
-    # Brunetti needs its source class (parses HTML, assigns half-lines).
+    # Heorot and Brunetti are fetched over the network via their source classes.
     with tempfile.TemporaryDirectory() as tmp:
         db = BeoDB(Path(tmp) / "align.duckdb")
+
+        heorot = Heorot(db=db)
+        print("Loading Heorot (fetches from URL if not cached)...")
+        heorot.load()
+        heo_tokens = load_heorot_tokens(heorot)
+        print(f"  Heorot: {len(heo_tokens)} tokens")
+
         brunetti = Brunetti(db=db)
         print("Loading Brunetti (fetches from URL if not cached)...")
         brunetti.load()
-
         bru_tokens = load_brunetti_tokens(brunetti)
         print(f"  Brunetti: {len(bru_tokens)} tokens")
+
         db.close()
 
     print("Aligning...")
-    output = align_all(streams, bru_tokens)
+    output = align_all(streams, heo_tokens, bru_tokens)
     print(f"  {len(output)} output lines")
 
     out_path = Path("output") / "aligned-sources.txt"
